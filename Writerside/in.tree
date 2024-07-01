@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="LuckyMonaco V3"
+                 start-page="intro.md">
+
+    <toc-element topic="intro.md"/>
+    <toc-element topic="auth.md"/>
+    <toc-element topic="gamelist.md"/>
+    <toc-element topic="wallet_intro.md">
+        <toc-element topic="balance.md"/>
+        <toc-element topic="cancel.md"/>
+        <toc-element topic="check.md"/>
+        <toc-element topic="round.md"/>
+    </toc-element>
+    <toc-element topic="free_intro.md">
+        <toc-element topic="bet_info.md"/>
+        <toc-element topic="delete.md"/>
+        <toc-element topic="get_info.md"/>
+    </toc-element>
+    <toc-element topic="extra_intro.md">
+        <toc-element topic="bet.md"/>
+        <toc-element topic="win.md"/>
+    </toc-element>
+    <toc-element topic="snapshot.md"/>
+    <toc-element topic="define.md"/>
+    <toc-element topic="create.md"/>
+    <toc-element topic="Reference.md"/>
+    <toc-element topic="How-to.md"/>
+    <toc-element topic="Transfer-Integration.md"/>
+    <toc-element topic="Tutorial.md"/>
+</instance-profile>

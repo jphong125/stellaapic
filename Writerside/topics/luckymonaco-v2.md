@@ -1,0 +1,3 @@
+# About LuckyMonaco V2
+
+Start typing here...
