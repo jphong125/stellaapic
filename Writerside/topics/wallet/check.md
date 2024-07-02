@@ -1,4 +1,4 @@
-# Check ( Checking Player Status)
+# Check
 
 A request to check whether player can bet or not.
 

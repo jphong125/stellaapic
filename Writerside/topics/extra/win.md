@@ -1,4 +1,4 @@
-# Win (Game Result => Winning)
+# Win
 
 Reporting Win results of Spin/Free Spins.
 

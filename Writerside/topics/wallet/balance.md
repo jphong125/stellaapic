@@ -1,4 +1,4 @@
-# Balance (Checking user's Balance)
+# Balance
 
 A request to check wallet balance
 

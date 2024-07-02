@@ -1,4 +1,4 @@
-# Bet (Game Result => Betting)
+# Bet
 
 Reporting betting results of Spin/Free Spins.
 

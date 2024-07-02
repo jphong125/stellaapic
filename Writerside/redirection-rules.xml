@@ -18,4 +18,29 @@
         <description>Created after removal of "Overview" from LuckyMonaco V3</description>
         <accepts>Overview.html</accepts>
     </rule>
+    <rule id="ff92027">
+        <description>Created after removal of "Balance" from LuckyMonaco V3</description>
+        <accepts>Balance.html</accepts>
+    </rule>
+    <rule id="45b5c641">
+        <description>Created after removal of "Reference" from LuckyMonaco V3</description>
+        <accepts>Reference.html</accepts>
+    </rule>
+    <rule id="460daf3a">
+        <description>Created after removal of "How to" from LuckyMonaco V3</description>
+        <accepts>How-to.html</accepts>
+    </rule>
+    <rule id="17fe97cd">
+        <description>Created after removal of "Tutorial" from LuckyMonaco V3</description>
+        <accepts>Tutorial.html</accepts>
+    </rule>
+    <rule id="1a607a9d">
+        <description>Created after removal of "Extra Integration" from LuckyMonaco V3</description>
+        <accepts>extra_intro.html</accepts>
+    </rule>
+    <rule id="2c511e88">
+        <description>
+            <![CDATA[Created after removal of "Round (Game Result =>Betting & Win)" from LuckyMonaco V3]]></description>
+        <accepts>round.html</accepts>
+    </rule>
 </rules>

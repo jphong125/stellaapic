@@ -1,4 +1,4 @@
-# Cancel (cancellation of the transaction)
+# Cancel
 
 Transaction will be cancelled when an error occurs during an API integration.
 
