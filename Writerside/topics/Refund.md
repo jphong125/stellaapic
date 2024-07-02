@@ -1,13 +1,13 @@
 # Refund Balance
 
 ## Overview
-사용자의 재화 보유량을 줄여준다.
+Reduces the user's possession of goods.
 
 ## Usage
-럭키모나코에서 제공하는 URL을 호출하여 원하는 재화의 양을 줄여줄수 있다.
+You can reduce the amount of desired goods by calling the URL provided by Lucky Monaco.
 
 ## API URL
-보안상의 이유로 개별 통보해 드립니다.
+For security reasons, we will notify you individually.
 
 ## Request Example
 
@@ -35,7 +35,7 @@ Content-Type: application/json
 |:---------|:---------------:|:--------------------------------------------------------------------------|
 | id       |   string(32)    | User ID                                                                   |
 | currency |    string(4)    | Currency code (ISO 4217 3-digit code)<br/>Please check SLOT_SPEC document |
-| amount   | string(decimal) | 늘릴 보유량                                                                    |
+| amount   | string(decimal) | reserves to reduce                                                                  |
 | uuid     |   string(36)    | A unique ID for each request(uuid4)                                       |
 
 ### Example of Request Body
@@ -58,8 +58,8 @@ Content-Type: application/json
 | status              |  string   | OK or Failed                         |
 | uuid(36)            |  string   | A unique ID for each response(uuid4) |
 | currency |    string(4)    | Currency code (ISO 4217 3-digit code)<br/>Please check SLOT_SPEC document |
-| balance         |  string(decimal)   | 보유금 (Decimal)                        |
-| amount   | string(decimal) | 늘릴 보유량                                                                    |
+| balance         |  string(decimal)   | reserves (Decimal)                        |
+| amount   | string(decimal) | reserves to reduce                                                                    |
 | code(Failed only)   |  number   | Failed Code                          |
 | reason(Failed only) |  number   | Error Reason                         |
 

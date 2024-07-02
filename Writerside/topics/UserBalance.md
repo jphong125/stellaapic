@@ -1,13 +1,13 @@
 # User Balance
 
 ## Overview
-사용자의 특정 재화의 소지금을 얻는다.
+Obtains the user's possession of a specific good.
 
 ## Usage
-럭키모나코에서 제공하는 URL을 호출하여 원하는 재화의 보유금액을 얻을 수 있다.
+You can obtain the amount of the desired goods by calling the URL provided by Lucky Monaco.
 
 ## API URL
-보안상의 이유로 개별 통보해 드립니다.
+For security reasons, we will notify you individually.
 
 ## Request Example
 
@@ -55,7 +55,7 @@ Content-Type: application/json
 |:--------------------|:---------:|:-------------------------------------|
 | status              |  string   | OK or Failed                         |
 | uuid(36)            |  string   | A unique ID for each response(uuid4) |
-| balance         |  string(decimal)   | 보유금 (Decimal)                        |
+| balance         |  string(decimal)   | reserves (Decimal)                        |
 | code(Failed only)   |  number   | Failed Code                          |
 | reason(Failed only) |  number   | Error Reason                         |
 

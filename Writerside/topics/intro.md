@@ -1,6 +1,6 @@
 # Introduction
 
-## IMPORTANT
+## Important
 
 * Partner ID and Token will be issued by LuckyMonaco.
 * Please refer to the provided SLOT_SPEC document for integration.
@@ -12,20 +12,20 @@ Creates a game session with logged in player for inviting into LuckyMonaco, and 
 
 ## Defines
 
-* LuckyMonaco : where the players are playing and progressing the game
+* LuckyMonaco : Where the players are playing and progressing the game
 * Partner(s) : Business partners (i.e. Platform providers or Operators)
 
 ## The Flow
 
-Users get redirected to corresponding game session after getting a game session from API servers when entering game. (Create a Game session)
+Users get redirected to corresponding game session after getting a game session from API servers when entering game. (Create a game session)
 After entering LuckyMonaco, the user can receive the bet amount and the game results, specified by Partner.  ( Game Money Integration )
 
 ## API call basic specifications
 
 * HTTP methods : POST
-* HTTP Content format : JSON
+* HTTP content format : JSON
 
-## HTTP Response Code
+## HTTP response code
 
 Standard RFC 2616 HTTP response codes are used to indicate the success or failure of an API request.
 

@@ -1,13 +1,13 @@
 # Get SlotLog
 
 ## Overview
-사용자의 슬롯 로그를 얻어올 수 있습니다.
+You can get the user's slot log.
 
 ## Usage
-럭키모나코에서 제공하는 URL을 호출하여 슬롯 로그 정보를 얻어올 수 있습니다.
+You can obtain slot log information by calling the URL provided by Lucky Monaco.
 
 ## API URL
-보안상의 이유로 개별 통보해 드립니다.
+For security reasons, we will notify you individually.
 
 ## Request Example
 
@@ -33,8 +33,8 @@ Content-Type: application/json
 
 | Name  |    Data Type    | Description                         |
 |:------|:---------------:|:------------------------------------|
-| start |     number      | 로그의 시작 인덱스                          |
-| limit |     number      | 얻어올 로그의 개수 (최대 1,000개)              |
+| start |     number      | starting index of log                          |
+| limit |     number      | Number of logs to obtain (up to 1,000)           |
 | uuid  |   string(36)    | A unique ID for each request(uuid4) |
 
 ### Example of Request Body
