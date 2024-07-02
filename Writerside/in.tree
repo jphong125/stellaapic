@@ -29,7 +29,9 @@
         <toc-element topic="UserBalance.md"/>
         <toc-element topic="Charge.md"/>
         <toc-element topic="Refund.md"/>
+        <toc-element topic="GetLog.md"/>
     </toc-element>
-    <toc-element topic="snapshot.md"/>
+    <toc-element topic="snapshot.md">
+    </toc-element>
     <toc-element topic="define.md"/>
 </instance-profile>

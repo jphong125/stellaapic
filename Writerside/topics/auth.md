@@ -20,19 +20,19 @@ Requesting a game session to LuckyMonaco API Servers.
 
 ### Request parameters
 
-|Name|Data Type| Description                                                                                                                           |
-|:---|:---:|:--------------------------------------------------------------------------------------------------------------------------------------|
-|uuid|string| Unique request ID, each requested ID must be unique.<br/>(uuid4)                                                                      |
-|[gametype](define.md)|string| Choose to launch Slot game or Table game (table game are not available now)                                                           |
-|[gameid](define.md)|string| "gameid" is a unique ID for each games, you can find from separately provided "SLOT_SPEC" document.                                   |
-|player|object| contain player details.                                                                                                               |
-|player.id|string| Player's ID.                                                                                                                          |
-|player.nickname|string| Player's nickname.                                                                                                                    |
-|[player.language](define.md)|string| In-game UI language determined by ISO 639-1 2-digit code<br/>Refer separately provided "SLOT_SPEC" document "Language support" sheet. |
-|player.currency|string| Currency code (ISO 4217 3-digit code)<br/>Refer seperately provided SLOT_SPEC document "Currency support" sheet.                 |
-|player.session|object| Contain player session details.                                                                                                       |
-|player.session.id|string| Player's session ID, assigned by Partner.                                                                                             |
-|player.session.ip|string| Player's session IP address.                                                                                                          |
+| Name                  |                   |     | Data Type | Description                                                                                                                           |
+|:----------------------|:-----------------|:-----|:---------:|:--------------------------------------------------------------------------------------------------------------------------------------|
+| uuid                  |                      |  |  string   | Unique request ID, each requested ID must be unique.<br/>(uuid4)                                                                      |
+| [gametype](define.md) |                      |  |  string   | Choose to launch Slot game or Table game (table game are not available now)                                                           |
+| [gameid](define.md)   |                      |  |  string   | "gameid" is a unique ID for each games, you can find from separately provided "SLOT_SPEC" document.                                   |
+| player                |                      |  |  object   | contain player details.                                                                                                               |
+|                       |           id          | |  string   | Player's ID.                                                                                                                          |
+|                       |        nickname       | |  string   | Player's nickname.                                                                                                                    |
+|                       | [language](define.md) | |  string   | In-game UI language determined by ISO 639-1 2-digit code<br/>Refer separately provided "SLOT_SPEC" document "Language support" sheet. |
+|                       |        currency        | |  string   | Currency code (ISO 4217 3-digit code)<br/>Refer seperately provided SLOT_SPEC document "Currency support" sheet.                 |
+|                       |        session         | |  object   | Contain player session details.                                                                                                       |
+|    |                        |    id       |string| Player's session ID, assigned by Partner.                                                                                             |
+|    |                        |  ip |  string   | Player's session IP address.                                                                                                          |
 
 ### Examples
 

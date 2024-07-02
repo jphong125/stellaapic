@@ -1,10 +1,10 @@
-# Refund Balance
+# Get SlotLog
 
 ## Overview
-사용자의 재화 보유량을 줄여준다.
+사용자의 슬롯 로그를 얻어올 수 있습니다.
 
 ## Usage
-럭키모나코에서 제공하는 URL을 호출하여 원하는 재화의 양을 줄여줄수 있다.
+럭키모나코에서 제공하는 URL을 호출하여 슬롯 로그 정보를 얻어올 수 있습니다.
 
 ## API URL
 보안상의 이유로 개별 통보해 드립니다.
@@ -20,7 +20,7 @@ METHOD
 URL
 
 ``` http
-https://<API URL>/user/refund?partner_id=<Partner ID>&token=<TOKEN>
+https://<API URL>/slot_log/get?partner_id=<Partner ID>&token=<TOKEN>
 ```
 
 HEADER
@@ -31,21 +31,19 @@ Content-Type: application/json
 
 ### Request Parameters
 
-| Name     |    Data Type    | Description                                                               |
-|:---------|:---------------:|:--------------------------------------------------------------------------|
-| id       |   string(32)    | User ID                                                                   |
-| currency |    string(4)    | Currency code (ISO 4217 3-digit code)<br/>Please check SLOT_SPEC document |
-| amount   | string(decimal) | 늘릴 보유량                                                                    |
-| uuid     |   string(36)    | A unique ID for each request(uuid4)                                       |
+| Name  |    Data Type    | Description                         |
+|:------|:---------------:|:------------------------------------|
+| start |     number      | 로그의 시작 인덱스                          |
+| limit |     number      | 얻어올 로그의 개수 (최대 1,000개)              |
+| uuid  |   string(36)    | A unique ID for each request(uuid4) |
 
 ### Example of Request Body
 
 ``` json
 {
-    "id": "tester",
-    "currency": "USD",
-    "uuid" : "ab64cee3-f73b-4631-9abf-b1a09c1f9c36",
-    "amount" : "200.0"
+    "start": 100,
+    "limit": 1000
+    "uuid" : "ab64cee3-f73b-4631-9abf-b1a09c1f9c36"
 }
 ```
 
