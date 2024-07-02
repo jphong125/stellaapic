@@ -1,8 +1,8 @@
-# Game Money Integration
+# Seamless integration (For game money)
 
 ## Overview
 
-Should be used for integration of user's Game Money with Partner's Game Money while placing bets and winning in LuckyMonaco.
+Should be used for integration of user's Game money with partner's Game money while placing bets and winning in LuckyMonaco.
 
 LuckyMonaco servers will respond to 6 requests related to the user's Game Money.
 

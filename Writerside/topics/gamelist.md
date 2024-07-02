@@ -12,9 +12,9 @@ Game list can be retrieved as per your request through individual API URL.
 
 Requested game session API URL will be notified individually, for security reasons.
 
-| Name                |Data Type|Description|
-|:--------------------|:---:|:---|
-| [gametype](define.md)|string|Types of game (I.e. slot or table game)|
+| Name                  |Data Type|Description|
+|:----------------------|:---:|:---|
+| [Gametype](define.md) |string|Types of game (I.e. slot or table game)|
 
 ### Examples
 
@@ -38,15 +38,15 @@ Content-Type: application/json
 
 ## Successful response for getting Game List ( response )
 
-| Name                       |Data Type|Description|
-|:---------------------------|:---:|:---|
-| [gametype](define.md)      |string|Types of game (I.e. slot or table game)|
-| gamelist                   |array|List of game information|
-| [gamelist.gameid](define.md)|string|string|"gameid" is a unique ID for each games, you can find from separately provided "SLOT_SPEC" document.|
-| gamelist.gamename          |string|Game Title(English)|
-| gamelist.icon_url          |string|URL for gaming icons|
+| Name                         |Data Type|Description|
+|:-----------------------------|:---:|:---|
+| [Gametype](define.md)        |string|Types of game (I.e. slot or table game)|
+| Gamelist                     |array|List of game information|
+| [Gamelist.gameid](define.md) |string|string|"Gameid" is a unique ID for each games, you can find from separately provided "SLOT_SPEC" document.|
+| Gamelist.gamename            |string|Game Title(English)|
+| Gamelist.icon_url            |string|URL for gaming icons|
 
-### Example of BODY
+### Example of body
 
 ``` json
 {
@@ -68,7 +68,7 @@ Example of failure response from LuckyMonaco API servers.
 
 In case of failure, LuckyMonaco servers will return  'HTTP status 4XX' or 'HTTP status 5XX' and following response body.
 
-### Example of BODY2
+### Example of body2
 
 ``` json
 {
@@ -79,12 +79,12 @@ In case of failure, LuckyMonaco servers will return  'HTTP status 4XX' or 'HTTP 
 }
 ```
 
-### Error Codes
+### Error codes
 
 Error codes are classified into following categories.
 
-* G - generic failures
-* V - validation of input parameters failed
+* G - Generic failures
+* V - Validation of input parameters failed
 
 |Code|Description (omitting error codes)|
 |:---|:---:|
