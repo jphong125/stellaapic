@@ -54,7 +54,7 @@ Content-Type: application/json
 | Name                | Data Type | Description                          |
 |:--------------------|:---------:|:-------------------------------------|
 | status              |  string   | OK or Failed                         |
-| uuid                |  string   | A unique ID for each response(uuid4) |
+| uuid(36)            |  string   | A unique ID for each response(uuid4) |
 | code(Failed only)   |  number   | Failed Code                          |
 | reason(Failed only) |  number   | Error Reason                         |
 
