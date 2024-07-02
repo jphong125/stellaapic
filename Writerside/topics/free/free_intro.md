@@ -4,7 +4,7 @@
 
 Free rounds for promotions can be provided to users.
 
-!! 현재 트랜스퍼 서버 방식을 지원하지 않습니다.
+!! Transfer server method is not currently supported.
 
 ## Usage
 

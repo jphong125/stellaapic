@@ -1,14 +1,14 @@
 # User Info
 
 ## Overview
-유저 정보를 얻어온다.
+Get user information.
 
 ## Usage
-럭키모나코에서 제공하는 URL을 호출하여 특정 유저의 정보를 얻어올 수 있다.
-해당 api를 호출하면 지갑별 보유 금액을 얻을 수 있다.
+You can obtain information about a specific user by calling the URL provided by Lucky Monaco.
+By calling the API, you can get the amount held by each wallet.
 
 ## API URL
-보안상의 이유로 개별 통보해 드립니다.
+For security reasons, we will notify you individually.
 
 ## Request Example
 

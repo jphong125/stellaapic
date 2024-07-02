@@ -4,10 +4,10 @@
 Create User Account
 
 ## Usage
-럭키모나코에서 제공하는 URL을 호출하여 당사의 서버에 유저를 생성할 수 있습니다.
+You can create a user on our server by calling the URL provided by Lucky Monaco.
 
 ## API URL
-보안상의 이유로 개별 통보해 드립니다.
+For security reasons, we will notify you individually.
 
 ## Request Example
 
