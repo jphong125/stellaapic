@@ -1,4 +1,4 @@
-# Freeround Integration (Seamless only)
+# Freeround Integration 
 
 ## Overview
 
