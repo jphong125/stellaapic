@@ -55,7 +55,7 @@ Content-Type: application/json
 |:--------------------|:---------:|:-------------------------------------|
 | status              |  string   | OK or Failed                         |
 | uuid(36)            |  string   | A unique ID for each response(uuid4) |
-| balance         |  string   | 보유금 (Decimal)                        |
+| balance         |  string(decimal)   | 보유금 (Decimal)                        |
 | code(Failed only)   |  number   | Failed Code                          |
 | reason(Failed only) |  number   | Error Reason                         |
 
