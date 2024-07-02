@@ -20,7 +20,7 @@ METHOD
 URL
 
 ``` http
-https://<API URL>/slot_log/get?partner_id=<Partner ID>&token=<TOKEN>
+https://<API URL>/log/slot?partner_id=<Partner ID>&token=<TOKEN>
 ```
 
 HEADER
@@ -51,15 +51,26 @@ Content-Type: application/json
 
 ### Response Parameters
 
-| Name                | Data Type | Description                          |
-|:--------------------|:---------:|:-------------------------------------|
-| status              |  string   | OK or Failed                         |
-| uuid(36)            |  string   | A unique ID for each response(uuid4) |
-| currency |    string(4)    | Currency code (ISO 4217 3-digit code)<br/>Please check SLOT_SPEC document |
-| balance         |  string(decimal)   | 보유금 (Decimal)                        |
-| amount   | string(decimal) | 늘릴 보유량                                                                    |
-| code(Failed only)   |  number   | Failed Code                          |
-| reason(Failed only) |  number   | Error Reason                         |
+| Name                |    Data Type    | Description                          |
+|:--------------------|:---------------:|:-------------------------------------|
+| status              |     string      | OK or Failed                         |
+| uuid(36)            |     string      | A unique ID for each response(uuid4) |
+| logs                |      array      | log list                             |
+| code(Failed only)   |     number      | Failed Code                          |
+| reason(Failed only) |     number      | Error Reason                         |
+
+Log Detail
+
+| Index |      Name      |    Data Type  |  Description  |
+|:-----:|:--------------:|:-------------:|:-------------:|
+|   0   |     Index      |    number     |Log Index|
+|   1   |    Game ID     |  string(32)   |Game ID|
+|   2   |    Currency    |   string(4)   |Currency code (ISO 4217 3-digit code)<br/>Please check SLOT_SPEC document|
+|   3   | Betting Amount | string(32,18) |Betting Amount|
+|   4   |   Win Amount   | string(32,18) |Total Win Amouint|
+|   5   |  Jackpot Type  |   string(8)   |Jackpot Name|
+|   6   | Jackpot Amount | string(32,18) |Jackopt Win Amount|
+
 
 ### Success Example
 
@@ -67,9 +78,26 @@ Content-Type: application/json
 {
     "status": "OK",
     "uuid" : "ab64cee3-f73b-4631-9abf-b1a09c1f9c36",
-    "currency": "USD",
-    "amount" : "200.0",
-    "balance" : "100.0"
+    "logs": [
+        [
+            100,
+            "lm_8_treasureofzeus",
+            "USD",
+            "10.0",
+            "0.0",
+            "none",
+            "0.0"
+        ],
+        [
+            101,
+            "lm_8_treasureofzeus",
+            "USD",
+            "0.0",
+            "0.0",
+            "none",
+            "0.0"
+        ],...
+    ]
 }
 ```
 
@@ -80,6 +108,6 @@ Content-Type: application/json
     "status": "Failed",
     "uuid" : "ab64cee3-f73b-4631-9abf-b1a09c1f9c36",
     "code" : 3,
-    "reason" : "Not Enough Balance"
+    "reason" : "Have No Additional Record"
 }
 ````
