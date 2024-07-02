@@ -4,10 +4,10 @@
 Create User Wallet
 
 ## Usage
-럭키모나코에서 제공하는 URL을 호출하여 특정 유저의 지갑을 만들 수 있습니다.
+You can create a wallet for a specific user by calling the URL provided by Lucky Monaco.
 
 ## API URL
-보안상의 이유로 개별 통보해 드립니다.
+For security reasons, we will notify you individually.
 
 ## Request Example
 

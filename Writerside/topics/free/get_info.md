@@ -2,11 +2,11 @@
 
 ## Overview
 
-Get freeround information
+Get free round information
 
 ## Usage
 
-You can get freeround information by calling the API of the provided address.
+You can get free round information by calling the API of the provided address.
 
 ## API URL
 
