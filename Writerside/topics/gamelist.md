@@ -38,13 +38,13 @@ Content-Type: application/json
 
 ## Successful response for getting Game List ( response )
 
-| Name                         |Data Type|Description|
-|:-----------------------------|:---:|:---|
-| [Gametype](define.md)        |string|Types of game (I.e. slot or table game)|
-| Gamelist                     |array|List of game information|
-| [Gamelist.gameid](define.md) |string|string|"Gameid" is a unique ID for each games, you can find from separately provided "SLOT_SPEC" document.|
-| Gamelist.gamename            |string|Game Title(English)|
-| Gamelist.icon_url            |string|URL for gaming icons|
+|         Name          |  |Data Type| Description                                                                                         |
+|:---------------------:|:---:|:-------:|:----------------------------------------------------------------------------------------------------|
+| [Gametype](define.md) | | string  | Types of game (I.e. slot or table game)                                                             |
+|       Gamelist        | |  array  | List of game information                                                                            |
+|                       | [gameid](define.md)| string  | "Gameid" is a unique ID for each games, you can find from separately provided "SLOT_SPEC" document. |
+|                       |gamename | string  | Game Title(English)                                                                                 |
+|                       |icon_url | string  | URL for gaming icons                                                                                |
 
 ### Example of body
 
@@ -53,9 +53,9 @@ Content-Type: application/json
     "gametype" : "slot",
     "gamelist" : [
         {
-            "gameid": "pc_1001_rising_fortune",
-            "gamename": "Rising Fortune",
-            "icon_url": "https://cdn.LuckyMonaco/Images/1001.png"
+            "gameid": "lm_8_treasureofzeus",
+            "gamename": "Treasure of Zeus",
+            "icon_url": "https://cdn.lmgamelab/Images/8.png"
         }
     ],
     ...
