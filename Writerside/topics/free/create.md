@@ -34,16 +34,16 @@ Content-Type: application/json
 
 ### Request parameters
 
-|Name|Data Type|Description|
-|:---|:---:|:---|
-|user_id|string|Partner user ID|
-|currency|string|currency to use|
-|betting|string|Bet amount (reference betting table)|
-|bonus_code|string|Bonus code determined by the partner|
-|rounds_count|number|Total quantity of Free Round to be created to use in designated slot games.<br/><br/>User can play Free Round of their desire combination on any slot games specified here within the "rounds_count".|
-|start_timestamp|number|Free spins offer start time(UNIX TIMESTAMP)|
-|expiration_timestamp|number|Free spins offer end time(UNIX TIMESTAMP)|
-|slot_ids|Array|list of slots(If the bet amount does not match the slot, it is an error)|
+|Name|Data Type| Description                                                                                                                                                                                           |
+|:---|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|user_id|string| Partner user ID                                                                                                                                                                                       |
+|currency|string| currency to use                                                                                                                                                                                       |
+|betting|string| Bet amount (reference betting table)                                                                                                                                                                  |
+|bonus_code|string| Bonus code determined by the partner                                                                                                                                                                  |
+|rounds_count|number| Total quantity of Free Round to be created to use in designated slot games.<br/><br/>User can play Free Round of their desire combination on any slot games specified here within the "rounds_count". |
+|start_timestamp|number| Free spins offer start time(UNIX TIMESTAMP)                                                                                                                                                           |
+|expiration_timestamp|number| Free spins offer end time(UNIX TIMESTAMP)                                                                                                                                                             |
+|slot_ids|Array| list of slots<br/>IMPORTANT: If the requested "betting" value is not supported by the "slot game" you requested to create, it will then return an error. (IE. Error Code V.5)                         |
 
 ### Example of BODY
 

@@ -23,12 +23,12 @@ Requesting a game session to LuckyMonaco API Servers.
 | Name                  |                   |     | Data Type | Description                                                                                                                           |
 |:----------------------|:-----------------|:-----|:---------:|:--------------------------------------------------------------------------------------------------------------------------------------|
 | uuid                  |                      |  |  string   | Unique request ID, each requested ID must be unique.<br/>(uuid4)                                                                      |
-| [gametype](define.md) |                      |  |  string   | Choose to launch slot game or table game (table game are not available now)                                                           |
+| [gametype] |                      |  |  string   | Choose to launch slot game or table game (table game are not available now)                                                           |
 | [gameid](define.md)   |                      |  |  string   | "Gameid" is a unique ID for each games, you can find from separately provided "SLOT_SPEC" document.                                   |
 | player                |                      |  |  object   | Contain player details.                                                                                                               |
 |                       |           id          | |  string   | Player's ID.                                                                                                                          |
 |                       |        nickname       | |  string   | Player's nickname.                                                                                                                    |
-|                       | [language](define.md) | |  string   | In-game UI language determined by ISO 639-1 2-digit code<br/>Refer separately provided "SLOT_SPEC" document "Language support" sheet. |
+|                       | [language] | |  string   | In-game UI language determined by ISO 639-1 2-digit code<br/>Refer separately provided "SLOT_SPEC" document "Language support" sheet. |
 |                       |        currency        | |  string   | Currency code (ISO 4217 3-digit code)<br/>Refer seperately provided SLOT_SPEC document "Currency support" sheet.                      |
 |                       |        session         | |  object   | Contain player session details.                                                                                                       |
 |    |                        |    id       |string| Player's session ID, assigned by Partner.                                                                                             |

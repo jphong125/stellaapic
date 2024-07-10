@@ -2,9 +2,10 @@
 
 ## Overview
 
-Free rounds for promotions can be provided to users.
+Free rounds is a promotional tool to grant spinning to player for "free of charge".
+Usage and polish for the Free Round must be consulted with Lucky Monaco team.
 
-!! Transfer server method is not currently supported.
+IMPORTANT : PLEASE NOTE THAT, FREE ROUND IS CURRENTLY NOT SUPPORTED IN TRANSFER WALLET TYPE. 
 
 ## Usage
 
