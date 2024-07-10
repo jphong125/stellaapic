@@ -3,7 +3,7 @@
 ## Important
 
 * Partner ID and Token will be issued by LuckyMonaco. 
-* When you need to add sub-brand, you will be needed an additional PartnerID to do so. 
+* When you need to add sub-brand, you will be needed an additional PartnerID to do so....
 * Please refer to the provided SLOT_SPEC document for integration.
 
 ## Overview
