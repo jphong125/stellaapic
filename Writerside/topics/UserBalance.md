@@ -1,10 +1,10 @@
 # User Balance
 
 ## Overview
-Obtains the user's possession of a specific good.
+Obtains the user's possession of a specific currency (include both fiat or crypto).
 
 ## Usage
-You can obtain the amount of the desired goods by calling the URL provided by Lucky Monaco.
+You can obtain the amount of the desired currency (include both fiat or crypto) by calling the URL provided by Lucky Monaco.
 
 ## API URL
 For security reasons, we will notify you individually.

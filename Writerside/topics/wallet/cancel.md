@@ -6,13 +6,13 @@ Transaction will be cancelled when an error occurs during an API integration.
 
 ### Parameters
 
-|Name|Data Type|Description|
-|:---|:---:|:---|
-|sid|string|Player's session ID, specified by Partner when creating a game session.|
-|userid|string|Player's ID, specified by Partner when creating a game session.|
-|transaction|object|Object containing transaction details.|
-|transaction.id|string| used ID in failed API|
-|uuid|string|A unique ID for each request|
+|Name|Data Type| Description                                                             |
+|:---|:---:|:------------------------------------------------------------------------|
+|sid|string| Player's session ID, specified by Partner when creating a game session. |
+|userid|string| Player's ID, specified by Partner when creating a game session.         |
+|transaction|object| Object containing transaction details.                                  |
+|transaction.id|string| used ID in failed API<br/>ID that was in failed API                     |
+|uuid|string| A unique ID for each request                                            |
 
 ### Example of URL
 

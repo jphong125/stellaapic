@@ -4,7 +4,7 @@
 
 Should be used for integration of user's Game money with partner's Game money while placing bets and winning in LuckyMonaco.
 
-LuckyMonaco servers will respond to 6 requests related to the user's Game Money.
+LuckyMonaco servers will respond to 5 requests related to the user's Game Money.
 
 ## Usage
 
@@ -20,15 +20,11 @@ LuckyMonaco will request API call to this designated url, and Partner will respo
 
 API integration is possible in two ways.
 
-Type 1 (debit api -> credit api)
+Type 1 (bet api -> win api)
 
-Integration of debit and credit methods is By placing a bet (-) with the debit API and processing a win (+) with the credit API.
+Integration of bet and win methods is By placing a bet (-) with the bet API and processing a win (+) with the win API.
 
 When running one spin, two API calls are required in the debit -> win order.
-
-Type 2 (round api)
-
-The round method of linking is round is possible with one API call, and both bets (-) and wins (+) are sent to the call.
 
 ## You must connect using one of two methods
 
@@ -37,7 +33,7 @@ so that we can call the API using that method.
 
 ## Exception handling flow (Time out, retry, cancel)
 
-A total of 80 seconds have passed since the spin request began, before the spin request fails.
+It will be considered as exception after total of 30 seconds passed since the initial spin request.
 
 * Each API (debit, credit, round, cancel) has a timeout of 10 seconds.
 * If an error or timeout occurs, it will be retried up to 3 times.
