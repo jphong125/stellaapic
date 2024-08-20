@@ -30,13 +30,11 @@ LuckyMonaco will request API call to this designated url, and Partner will respo
 
 ## Integration
 
-API integration is possible in two ways.
-
-Type 1 (bet api -> win api)
+bet api -> win api
 
 Integration of bet and win methods is By placing a bet (-) with the bet API and processing a win (+) with the win API.
 
-When running one spin, two API calls are required in the debit -> win order.
+When running Round of spin, at least two API calls are required in the debit -> win order.
 
 ## You must connect using one of two methods
 
