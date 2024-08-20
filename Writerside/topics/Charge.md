@@ -1,10 +1,10 @@
-# Charge Balance
+# Deposit Balance
 
 ## Overview
 Increases the user’s possession of currency (include both fiat or crypto).
 
 ## Usage
-You can increase the amount of desired currency (include both fiat or crypto) by calling the URL provided by Lucky Monaco.
+You can deposit (increase) the amount of desired currency (include both fiat or crypto) into the wallet by calling the URL provided by Lucky Monaco.
 
 ## API URL
 For security reasons, we will notify you individually.

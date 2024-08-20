@@ -1,5 +1,8 @@
 # Delete Freeround
 
+This will delete the created Free Round
+In case if the player has already consumed it, or the created Free Round has passed it expiration, system will not return any message regarding such status.
+
 ## Overview
 
 Delete a previously provided free round

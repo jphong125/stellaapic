@@ -1,5 +1,17 @@
 # Seamless integration (For game money)
 
+NOTE: We will send you the endpoints for the integration, once you receive them, please send us back your developed API in below format.
+* Make sure to use your appropriate URLs instead of "localhost" written below!
+
+EXAMPLE<br/>
+{<br/>
+    "check" : "http://localhost/check?authToken=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",<br/>
+    "balance" : "http://localhost/balance?authToken= xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx ",<br/>
+"win" : "http://localhost/balance?authToken= xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx ",<br/>
+"bet" : "http://localhost/balance?authToken= xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx ",<br/>
+    "cancel" : "http://localhost/cancel?authToken= xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx ",<br/>
+}
+
 ## Overview
 
 Should be used for integration of user's Game money with partner's Game money while placing bets and winning in LuckyMonaco.
