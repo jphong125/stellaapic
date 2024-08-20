@@ -3,21 +3,22 @@
 Reporting Win results of Spin/Free Spins.
 
 In general, one round (Transaction ID) has one win value.
-However, if there is an additional win during a round of play, such as a regular spin win or a bonus game, multiple win values are sent within the same round.
+However, if there is an additional win during a round of play, such as a regular spin win or a bonus game, multiple win values are sent under the same round (Transaction ID).
+
 If a free spin is entered during a regular spin, the free spin will have a separate TransactionID in addition to the existing regular spin.
 
 **Important**
-1. Multiple win values (win) within the round (Transaction ID) are not referred to separately by type, but are all referred to as win.
+1. Multiple Win values (win) within the round (Transaction ID) are all referred as Win, each of them are not referred with exclusive names.
 
 2. Each win value is distinguished by uuid.
 3. When sending the final win, send "is_end_round": "ok" at the bottom of the message to indicate that this round is over.
+    - "is_end_round" is not sent for other wins.
 
-- "is_end_round" is not sent for other wins.
-
-4. If a free spin is entered after a regular spin, an additional TransactionID is received for the free spin. - In this case, when the free spin ends, the "is_end_round": "ok" message for the previous regular spin win is sent first, and then a separate message "is_end_round": "ok" for the end of the free spin is sent.
+4. If a free spin is entered after a regular spin, an additional TransactionID is received for the free spin.
+    - In this case, when the free spin ends, the "is_end_round": "ok" message for the previous regular spin win is sent first, and then a separate message of "is_end_round": "ok" for the free spin is sent.
 
 **Summary**
-1. One Transaction ID can have different uuids and send different win values multiple times.
+1. One Transaction ID may have multiple Wins and receive Win message multiple times with the different uuid.
 2. If "is_end_round": "ok" is not included in the Win message, an additional Win message is sent.
 3. The end of the round can be processed after receiving "is_end_round": "ok".
 4. Free spins are managed through a separate TransactionID and "is_end_round": "ok" from the regular spins.
