@@ -20,6 +20,7 @@ Reporting Win results of Spin/Free Spins.
 | transaction.amount    |string| Total Win(spin+jackpot) (decimal string)                                                                                                                                                                                                                                                                    |
 | transaction.jackpot   |string| Jackpot Win (decimal string)                                                                                                                                                                                                                                                                                |
 | transaction.win       |string| Spin Win (decimal string)                                                                                                                                                                                                                                                                                   |
+| transaction.is_end_round   |  string   | Always "ok" , End Of Round (optional)                           |
 | uuid                  |string| A unique ID for each request                                                                                                                                                                                                                                                                                |
 
 ### Example of URL
@@ -43,6 +44,25 @@ https://<Partner website(Domain)/<Win, specified by partner>?authToken=<TOKEN>
         "amount": "<Win amount>",
         "jackpot": "<Win amount>",
         "win": "<Win amount>"
+    },
+    "uuid": "<Unique Request ID>"
+}
+```
+
+``` json
+{
+    "sid": "<Sesseion ID>",
+    "userid": "<User ID>",
+    "currency": "USD",
+    "gametype": "<Game Type>",
+    "gameid": "<Game ID>",
+    "gamename": "<Game Title>",
+    "transaction": {
+        "id": "<Unique transaction ID>",
+        "amount": "<Win amount>",
+        "jackpot": "<Win amount>",
+        "win": "<Win amount>",
+        "is_end_round" : "ok"
     },
     "uuid": "<Unique Request ID>"
 }
