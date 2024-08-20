@@ -3,11 +3,11 @@
 Reporting Win results of Spin/Free Spins.
 
 In general, one round (Transaction ID) has one win value.
-However, if there is an additional win during a round of play, such as a regular spin win or a bonus game, multiple win values ​​are sent within the same round.
+However, if there is an additional win during a round of play, such as a regular spin win or a bonus game, multiple win values are sent within the same round.
 If a free spin is entered during a regular spin, the free spin will have a separate TransactionID in addition to the existing regular spin.
 
 **Important**
-1. Multiple win values ​​(win) within the round (Transaction ID) are not referred to separately by type, but are all referred to as win.
+1. Multiple win values (win) within the round (Transaction ID) are not referred to separately by type, but are all referred to as win.
 
 2. Each win value is distinguished by uuid.
 3. When sending the final win, send "is_end_round": "ok" at the bottom of the message to indicate that this round is over.
@@ -17,7 +17,7 @@ If a free spin is entered during a regular spin, the free spin will have a separ
 4. If a free spin is entered after a regular spin, an additional TransactionID is received for the free spin. - In this case, when the free spin ends, the "is_end_round": "ok" message for the previous regular spin win is sent first, and then a separate message "is_end_round": "ok" for the end of the free spin is sent.
 
 **Summary**
-1. One Transaction ID can have different uuids and send different win values ​​multiple times.
+1. One Transaction ID can have different uuids and send different win values multiple times.
 2. If "is_end_round": "ok" is not included in the Win message, an additional Win message is sent.
 3. The end of the round can be processed after receiving "is_end_round": "ok".
 4. Free spins are managed through a separate TransactionID and "is_end_round": "ok" from the regular spins.
@@ -25,18 +25,25 @@ If a free spin is entered during a regular spin, the free spin will have a separ
 
 **Note**
 
+1. amount : Sum of Spin Win + Jackpot Win in this Win message
+
+2. jackpot :  Jackpot win
+
+3. win : Win amount of either Spin win or Bonus win
+
+4. is_end_round : If this line is present, this is the final win message.
+If this line is absent, additional win messages will be received
+after this win message.
+ 
+``` json
 "transaction": {
-
-"id": "<Unique transaction ID>",
-
-"amount": "<Win amount>", <- Sum of Spin Win + Jackpot Win in this Win message
-
-"jackpot": "<Win amount>", <- Jackpot win
-
-"win": "<Win amount>", <- Win amount of either Spin win or Bonus win
-
-"is_end_round" : "ok" <- If this line is present, this is the final win message. If this line is absent, additional win messages will be received after this win message.
-
+    "id": "<Unique transaction ID>",
+    "amount": "<Win amount>", 
+    "jackpot": "<Win amount>",
+    "win": "<Win amount>", 
+    "is_end_round" : "ok" 
+}
+```
 
 ## Requested by LuckyMonaco
 
@@ -56,7 +63,7 @@ If a free spin is entered during a regular spin, the free spin will have a separ
 | transaction.amount    |string| Total Win(spin+jackpot) (decimal string)                                                                                                                                                                                                                                                                    |
 | transaction.jackpot   |string| Jackpot Win (decimal string)                                                                                                                                                                                                                                                                                |
 | transaction.win       |string| Spin Win (decimal string)                                                                                                                                                                                                                                                                                   |
-| transaction.is_end_round   |  string   | Always "ok" , End Of Round (optional)                           |
+| transaction.is_end_round   |  string   | Always "ok" , End Of Round (conditional)                                                                                                                                                                                                                                                                    |
 | uuid                  |string| A unique ID for each request                                                                                                                                                                                                                                                                                |
 
 ### Example of URL
