@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="lv4"
+                  name="LuckyMonaco V4"
+                  start-page="luckymonaco-v4.md" is-library="true">
+
+    <toc-element topic="luckymonaco-v4.md"/>
+</instance-profile>
