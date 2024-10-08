@@ -43,4 +43,12 @@
             <![CDATA[Created after removal of "Round (Game Result =>Betting & Win)" from LuckyMonaco V3]]></description>
         <accepts>round.html</accepts>
     </rule>
+    <rule id="2cb8f2d5">
+        <description>Created after removal of "Introduction" from LuckyMonaco V4</description>
+        <accepts>Introduction.html</accepts>
+    </rule>
+    <rule id="2418287d">
+        <description>Created after removal of "Empty MD Topic" from LuckyMonaco V4</description>
+        <accepts>Empty-MD-Topic.html</accepts>
+    </rule>
 </rules>

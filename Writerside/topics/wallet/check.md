@@ -2,6 +2,7 @@
 
 A request to check whether player can bet or not.
 
+
 ## Requested by LuckyMonaco
 
 ### Parameters
