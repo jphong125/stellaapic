@@ -1,0 +1,3 @@
+# Error code for Transfer Wallet
+
+Start typing here...

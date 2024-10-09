@@ -34,8 +34,18 @@
             <toc-element topic="Refund.md"/>
             <toc-element topic="Get-Balance-Per-Game.md"/>
             <toc-element topic="Get-Balance-Per-Currency.md"/>
+            <toc-element topic="Error-code-for-seamless-Wallet.md"/>
         </toc-element>
-        <toc-element topic="Transfer-Wallet-API.md"/>
+        <toc-element topic="Transfer-Wallet-API.md">
+            <toc-element topic="Create-User.md"/>
+            <toc-element topic="Create-Wallet.md"/>
+            <toc-element topic="Deposit-Balance.md"/>
+            <toc-element topic="Withdrawl-balance.md"/>
+            <toc-element topic="User-Info.md"/>
+            <toc-element topic="Get-Balance.md"/>
+            <toc-element topic="Get-transfer-status.md"/>
+            <toc-element topic="Error-Code.md"/>
+        </toc-element>
         <toc-element topic="Free-Round.md"/>
     </toc-element>
 </instance-profile>

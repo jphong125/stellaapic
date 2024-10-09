@@ -1,0 +1,3 @@
+# Error code for seamless Wallet
+
+Start typing here...

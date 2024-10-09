@@ -1,0 +1,75 @@
+# User Info
+
+You can obtain information about a specific user by calling the URL provided by Lucky Monaco.
+By calling the API, you can get the amount held by each wallet.
+
+## API URL
+For security reasons, we will notify you individually.
+
+## Request Example
+
+METHOD
+
+``` http
+ POST
+```
+
+URL
+
+``` http
+https://<API URL>/user/info?partner_id=<Partner ID>&token=<TOKEN>
+```
+
+HEADER
+
+``` http
+Content-Type: application/json
+```
+
+### Request Parameters
+
+| Name     | Data Type  | Description                         |Ramark|
+|:---------|:----------:|:------------------------------------|---|
+| secureLogin      |string| User name for authentication in the Casino Game API service | Required |
+| externalPlayerId      |string| Id of the player within the Operator system.                | Required |
+| hash             |string| Hash code of request.                                       | Required |
+
+### Example of Request Body
+
+``` json
+{
+    "externalPlayerId ": "tester",
+}
+```
+
+## Response Example
+
+### Response Parameters
+
+| Name             | Data Type  | Description                                                 | Ramark                          |
+|:-----------------|:----------:|:------------------------------------------------------------|---------------------------------|
+| secureLogin      |   string   | User name for authentication in the Casino Game API service | Required                        |
+| externalPlayerId |   string   | Id of the player within the Operator system.                | Required                        |
+| at_create        |   string   | at create (yyyy-MM-dd HH:mm:ss)                             |  Required |
+| at_login         |   string   | at login (yyyy-MM-dd HH:mm:ss)                              |     Required |
+| wallet           | dictionary | wallets                                                     |      Required |
+| currency         |    string  | each balance of currency                                    |      Required |
+| error            |   number   | error code                                                  |     Required |
+| descrition       |   string   | Description of the error for troubleshooting.               |     Required |
+
+### Success Example
+
+``` json
+{
+    "error": "0",
+    "description" : "success",
+    "externalPlayerId" : "test",
+    "at_create" : "2024-07-02 11:50:12"
+    "at_login" : "2024-07-02 12:10:32"
+    "wallet" : {
+        "USD" : "100.0",
+        "CNY" : "1023"
+    }
+}
+```
+

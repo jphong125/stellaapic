@@ -1,0 +1,68 @@
+# Deposit Balance
+
+This method transfers funds in to player’s balance (i.e. deposit) within
+Lucky Monaco system. 
+
+Important: In cases where transfer call fails due to:
+∙ network error (HTTP status ≠ 200)
+∙ error: 1 (description: “internal error”) in response
+
+Operator should send idempotent retry calls (with the same externalTransactionId).
+Recommended actions are specified in 4.10 Error codes
+
+Important: The call is idempotent, i.e. sending it again only creates one transaction.
+
+
+
+## Requested by LuckyMonaco
+
+### Parameters
+
+| Name                  |Data Type| Description                                                 | Remark   |
+|:----------------------|:---:|:------------------------------------------------------------|----------|
+| secureLogin           |string| User name for authentication in the Casino Game API service | Required |
+| externalPlayerId      |string| Id of the player within the Operator system.                | Required |
+| currency              |string| Currency of the player.           | Required |
+| externalTransactionId |string|  Id of the transaction within Casino Operator system.                                    | Required |
+| amount                |string|   Amount to be added to player’s balance                                    | Required |
+| hash             |string| Hash code of request.                                       | Required |
+
+### Example of URL
+
+``` http
+https://<API URL>/user/charge?authToken=<TOKEN>
+```
+
+### Example of HTTP BODY
+
+``` json
+{
+    "externalplayerid": "tester",
+    "externalTransactionId": "EXT12345678",
+    "currency": "USD",
+    "amount": 1000,
+    "hash": "<hash>"
+}
+```
+
+## Response from partner
+
+### Parameters 2
+
+| Name          |Data Type| Description                                       | Required |
+|:--------------|:---:|:--------------------------------------------------|---|
+| currency      |string| Currency of the player.                           | Required |
+| transactionId |string| Id of the transaction within Lucky Monaco system. | Required |
+| balance       |string| Player’s balance after successful transaction.    | Required |
+
+
+
+### Example of HTTP BODY 2
+
+``` json
+{
+    "error": "0",
+    "description": "success",
+    "transactionId": "1908759",
+    "balance": 1000
+}
