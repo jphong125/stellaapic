@@ -118,33 +118,3 @@ Response parameters
     },
 ```
 
-## Failure response for getting Game List ( response )
-
-Example of failure response from LuckyMonaco API servers.
-
-In case of failure, LuckyMonaco servers will return  'HTTP status 4XX' or 'HTTP status 5XX' and following response body.
-
-### Example of body2
-
-``` json
-{
-    "error": {
-        "code": "G.1",
-        "message": "INVALID GAME TYPE"
-    }
-}
-```
-
-### Error codes
-
-Error codes are classified into following categories.
-
-* G - Generic failures
-* V - Validation of input parameters failed
-
-|Code|Description (omitting error codes)|
-|:---|:---:|
-|G.01|Invalid game type|
-
-Error codes will be additionally updated
-
