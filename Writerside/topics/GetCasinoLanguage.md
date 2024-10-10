@@ -94,6 +94,3 @@ Error codes are classified into following categories.
 |G.01|Invalid game type|
 
 Error codes will be additionally updated
-
-Start typing here...
-Start typing here...

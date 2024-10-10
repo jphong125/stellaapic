@@ -12,7 +12,7 @@ Important: The call is idempotent, i.e. sending bet again only creates one trans
 | Name                  | Data Type | Description                                                              | Required |
 |:----------------------|:---------:|:-------------------------------------------------------------------------|----------|
 | hash                  |  string   | Hash code of the request                                                 | Required |
-| userid                |  string   | Player's ID, specified by Partner when creating a game session.          | Required |
+|userid               |  string   | Player's ID, specified by Partner when creating a game session.          | Required |
 | gameId               |  string   | Id of the game.                                                          | Required |
 |  roundId  |  string   | Id of the round.                                                         | Required |
 | amount  |  decimal  | Amount of the bet.                                                       | Required |
@@ -44,7 +44,7 @@ https://<Partner website(Domain)/Bet?authToken=<TOKEN>
     "gameId": "Im_60_tumblefortune",
     "amount": 100,
     "providerId": "luckymonaco",
-    "userId": "421",
+    "userid": "421",
     "roundid" : "5103188801"
     "hash": "4a5d375ac1311b04fba2ea66d067b8e5"
     "timestamp": "1482429190374"

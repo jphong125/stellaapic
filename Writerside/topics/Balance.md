@@ -9,7 +9,7 @@ A request to check wallet balance
 | Name                  |Data Type| Description                                                              | Remark   |
 |:----------------------|:---:|:-------------------------------------------------------------------------|----------|
 | providerid            |string| Game Provider identifier                                                 | Required |
-| userid                |string| Identifier of the user within the Casino Operator’s system.              | Required |
+| userid             |string| Identifier of the user within the Casino Operator’s system.              | Required |
 | token                 |string| Token of the player from Authenticate response.| Required |
 | hash         |string| Hash code of request.                                             | Required|
 

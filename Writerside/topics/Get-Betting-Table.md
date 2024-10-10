@@ -1,12 +1,12 @@
-# Get Betting Table
+# Get Betting table
 
 ## Overview
 
-Retrieve the game Betting Table for Specific currency  from LuckyMonaco to proceed a specific game.
+Retrieve the game betting table from LuckyMonaco to proceed a specific game.
 
 ## Usage
 
-Betting Table can be retrieved as per your request through individual API URL.
+Game Currency can be retrieved as per your request through individual API URL.
 
 ## API URL
 
@@ -14,12 +14,11 @@ Requested game session API URL will be notified individually, for security reaso
 
 Request parameters
 
-| Name        |Data Type| Description                                                 | Remark |
-|:------------|:---:|:------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentacation in the Casino Game API service | Required |
-| gameid      |string| Id of game                                                  | Required |
-| currency    |string| Supported currency of game                                  | Required |
-| hash        |string| Hash code of request.                                       | Required |
+| Name        |Data Type| Description                                                                                                                                                        | Remark |
+|:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
+| secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
+| currency    |string| Player’s currency.                                                                                                                                           | Required |
+| hash        |string| Hash code of request.                                                                                                                                              | Required |
 ### Examples
 
 METHOD
@@ -44,12 +43,11 @@ Content-Type: application/json
 
 Response parameters
 
-|     Name      |         | Data Type | Description                        |
-|:-------------:|:-------:|:---------:|:-----------------------------------|
-|    gameid     |         |  string   | Id of game                         |
-|   currency    |         |  string   | Supported currency of game         |
-| Betting Table |         |   array   | List of betting table information. |
-|               | betting |  string   | List of betting range              |
+|        Name         |                | Data Type | Description                        |
+|:-------------------:|:--------------:|:---------:|:-----------------------------------|
+|      Currency       |                |  string   | Player's ISO 4217 currency code    |
+|    Betting table    |                |   array   | List of betting table information. |
+|                     | betting amount |  string   | betting amount    |
 
 
 ### Example of body
@@ -60,12 +58,10 @@ Response parameters
   "error": 0,
   "description": "Success",
   "currency": "USD",
-  "betting table": [
-    "0.1",
-    "0.3",
-    "0.5",
-    "1",
-    "100"
+  "bettingtable": [
+   "0.1", "0.3", "0.5", "1", "1.5", "2", "2.5", "3", "4", "5", "7.5", 
+   "10", "12.5", "15", "20", "25", "30", "35", "40", "50", "60", "70", 
+   "80", "90", "100" 
   ]
 }
 ```
@@ -100,5 +96,3 @@ Error codes are classified into following categories.
 
 Error codes will be additionally updated
 
-Start typing here...
-Start typing here...Start typing here...

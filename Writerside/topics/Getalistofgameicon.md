@@ -30,7 +30,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/getcasinogame?MEMB_ID=<Partner ID>&HASH=<TOKEN>
+https://<API URL>/V4/getalistofgameicon?MEMB_ID=<Partner ID>&HASH=<TOKEN>
 ```
 
 HEADER
@@ -148,4 +148,3 @@ Error codes are classified into following categories.
 
 Error codes will be additionally updated
 
-Start typing here...

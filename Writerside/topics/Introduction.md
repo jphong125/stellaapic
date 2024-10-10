@@ -18,7 +18,7 @@ Game Opening with logged in player for inviting into LuckyMonaco, and you can st
 
 ## The Flow
 
-Users get redirected to corresponding game session after getting a game session from API servers when entering game. (Create a game session)
+Users get redirected to corresponding game session after getting a game session from API servers when entering game. (Start game)
 After entering LuckyMonaco, the user can receive the bet amount and the game results, specified by Partner.
 * IF you are a seamless system, please refer to Seamless Integration
 * If you are a transfer system, please refer to Transfer Integration
@@ -35,4 +35,3 @@ Standard RFC 2616 HTTP response codes are used to indicate the success or failur
 * 2XX : Success
 * 4XX : Problem with the HTTP request
 * 5XX : Error with LuckyMonaco's servers
-Start typing here...

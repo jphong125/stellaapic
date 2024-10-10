@@ -17,7 +17,7 @@ transaction.
 | Name           | Data Type | Description                                                                 | Required |
 |:---------------|:---------:|:----------------------------------------------------------------------------|----------|
 | hash           |  string   | Hash code of the request                                                    | Required |
-| userid         |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
+| userid     |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
 | gameId         |  string   | Id of the game.                                                             | Required |
 | roundId        |  string   | Id of the round.                                                            | Required |
 | amount         |  decimal  | Amount of the bet.                                                          | Required |

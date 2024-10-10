@@ -46,6 +46,20 @@
             <toc-element topic="Get-transfer-status.md"/>
             <toc-element topic="Error-Code.md"/>
         </toc-element>
-        <toc-element topic="Free-Round.md"/>
+        <toc-element topic="Free-Round.md">
+            <toc-element topic="Get-Info.md"/>
+            <toc-element topic="Get-Betting-Table-FreeRound.md"/>
+            <toc-element topic="Create-FreeRound.md"/>
+            <toc-element topic="Delete-Freeround.md"/>
+            <toc-element topic="Add-Player.md"/>
+            <toc-element topic="Remove-Player.md"/>
+            <toc-element topic="Error-code-for-Freeround.md"/>
+        </toc-element>
+        <toc-element topic="Game-History-API.md">
+            <toc-element topic="Get-Played-Games.md"/>
+            <toc-element topic="Get-Game-Rounds.md"/>
+            <toc-element topic="Open-Histiory.md"/>
+            <toc-element topic="Get-Round-Status.md"/>
+        </toc-element>
     </toc-element>
 </instance-profile>

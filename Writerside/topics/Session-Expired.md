@@ -19,7 +19,7 @@ Request parameters
 |:-----------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
 | providerId |string| Lucky Monaco provider id in Operator’s system                                                                                                                                                                                                              | Required |
 | sessionId  |string| Player’s game session id on Lucky Monaco side                                                                                                                                                                                                              | Required |
-| playerId   |string| Id of the player within the operator’s system. | Required |
+| externalPlayerId   |string| Id of the player within the operator’s system. | Required |
 | hash       |string| Hash code of request.                                                                                                                                                                                                                                      | Required |
 | token      |string| Token of the player from Authenticate response. | Optional |
 
@@ -44,7 +44,7 @@ Content-Type: application/json
 {
  "providerId": "luckymonaco"
  "sessionId": "6fd2d6f3bb8f4c5a9fadf15d81206af2"
- "playerId": "123456"
+ "externalPlayerId": "123456"
  "hash": "c46d5b113e81d30 6831a06765e12067f"
 }
 ```
