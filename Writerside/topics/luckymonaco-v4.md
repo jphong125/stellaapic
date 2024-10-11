@@ -64,7 +64,7 @@ External Player ID (external userId parameter) is unique identifier of the user 
 
 Before sending to Lucky Monaco any gaming related request Casino Operator should authenticate a player using Authenticate method.
 
-If player is new and its account does not exist in the Pragmatic Play system it will be created automatically on the base of the data sent by Casino Operator server in the Authenticate response.
+If player is new and its account does not exist in the Lucky Monaco system it will be created automatically on the base of the data sent by Casino Operator server in the Authenticate response.
 
 If player account already exists in the Lucky Monaco database it will be updated with the response data if necessary.
 

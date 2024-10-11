@@ -1,0 +1,54 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-10-11T16:46:16.3942675"><title>Get Slot Log | LuckyMonaco V4</title><script type="application/json" id="virtual-toc-data">[{"id":"overview","level":0,"title":"Overview","anchor":"#overview"},{"id":"api-url","level":0,"title":"API URL","anchor":"#api-url"},{"id":"request-example","level":0,"title":"Request Example","anchor":"#request-example"},{"id":"response-example","level":0,"title":"Response Example","anchor":"#response-example"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Get Slot Log | LuckyMonaco V4"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="LuckyMonaco V4 Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/get-slot-log.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Get Slot Log | LuckyMonaco V4"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/get-slot-log.html#webpage",
+    "url": "writerside-documentation/get-slot-log.html",
+    "name": "Get Slot Log | LuckyMonaco V4",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "LuckyMonaco V4 Help"
+}</script><!-- End Schema.org --></head><body data-id="Get-Slot-Log" data-main-title="Get Slot Log" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="luckymonaco-v4.md|About LuckyMonaco V4///Game-History-API.md|Game History API"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>LuckyMonaco V4  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Get-Slot-Log" id="Get-Slot-Log.md">Get Slot Log</h1><section class="chapter"><h2 id="overview" data-toc="overview">Overview</h2><p id="-3xk40f_7">Method returns the user's slot log.</p></section><section class="chapter"><h2 id="api-url" data-toc="api-url">API URL</h2><p id="-3xk40f_8">Requested get round status API URL will be notified individually, for security reasons.</p></section><section class="chapter"><h2 id="request-example" data-toc="request-example">Request Example</h2><p id="-3xk40f_9">METHOD</p><div class="code-block" data-lang="http">
+ POST
+</div><p id="-3xk40f_11">URL</p><div class="code-block" data-lang="http">
+https://&lt;API URL&gt;/log/slot?partner_id=&lt;securelogin&gt;&amp;token=&lt;TOKEN&gt;
+</div><p id="-3xk40f_13">HEADER</p><div class="code-block" data-lang="http">
+Content-Type: application/json
+</div><section class="chapter"><h3 id="request-parameters" data-toc="request-parameters">Request Parameters</h3><div class="table-wrapper"><table class="wide" id="-3xk40f_17"><thead><tr class="ijRowHead" id="-3xk40f_18"><th id="-3xk40f_22"><p>Name</p></th><th id="-3xk40f_23"><p>Data Type</p></th><th id="-3xk40f_24"><p>Description</p></th><th id="-3xk40f_25"><p>Remark</p></th></tr></thead><tbody><tr id="-3xk40f_19"><td id="-3xk40f_26"><p>start</p></td><td id="-3xk40f_27"><p>number</p></td><td id="-3xk40f_28"><p>starting index of log</p></td><td id="-3xk40f_29"><p>Required</p></td></tr><tr id="-3xk40f_20"><td id="-3xk40f_30"><p>limit</p></td><td id="-3xk40f_31"><p>number</p></td><td id="-3xk40f_32"><p>Number of logs to obtain (up to 1,000)</p></td><td id="-3xk40f_33"><p>Required</p></td></tr><tr id="-3xk40f_21"><td id="-3xk40f_34"><p>hash</p></td><td id="-3xk40f_35"><p>string</p></td><td id="-3xk40f_36"><p>Hash code of request.</p></td><td id="-3xk40f_37"><p>Required</p></td></tr></tbody></table></div></section><section class="chapter"><h3 id="example-of-request-body" data-toc="example-of-request-body">Example of Request Body</h3><div class="code-block" data-lang="json">
+{
+    &quot;start&quot;: 100,
+    &quot;limit&quot;: 1000
+    &quot;hash&quot; : &quot;ab64cee3-f73b-4631-9abf-b1a09c1f9c36&quot;
+}
+</div></section></section><section class="chapter"><h2 id="response-example" data-toc="response-example">Response Example</h2><section class="chapter"><h3 id="response-parameters" data-toc="response-parameters">Response Parameters</h3><div class="table-wrapper"><table class="wide" id="-3xk40f_41"><thead><tr class="ijRowHead" id="-3xk40f_44"><th id="-3xk40f_50"><p>Name</p></th><th id="-3xk40f_51"><p>Data Type</p></th><th id="-3xk40f_52"><p>Description</p></th><th id="-3xk40f_53"><p>Remark</p></th></tr></thead><tbody><tr id="-3xk40f_45"><td id="-3xk40f_54"><p>status</p></td><td id="-3xk40f_55"><p>string</p></td><td id="-3xk40f_56"><p>OK or Failed</p></td><td id="-3xk40f_57"><p>Required</p></td></tr><tr id="-3xk40f_46"><td id="-3xk40f_58"><p>hash</p></td><td id="-3xk40f_59"><p>string</p></td><td id="-3xk40f_60"><p>Hash code of response.</p></td><td id="-3xk40f_61"><p>Required</p></td></tr><tr id="-3xk40f_47"><td id="-3xk40f_62"><p>logs</p></td><td id="-3xk40f_63"><p>array</p></td><td id="-3xk40f_64"><p>log list</p></td><td id="-3xk40f_65"><p>Required</p></td></tr><tr id="-3xk40f_48"><td id="-3xk40f_66"><p>error</p></td><td id="-3xk40f_67"><p>string</p></td><td id="-3xk40f_68"><p>Failed Code</p></td><td id="-3xk40f_69"><p>Required</p></td></tr><tr id="-3xk40f_49"><td id="-3xk40f_70"><p>description</p></td><td id="-3xk40f_71"><p>string</p></td><td id="-3xk40f_72"><p>Description of the error for troubleshooting.</p></td><td id="-3xk40f_73"><p>Required</p></td></tr></tbody></table></div><p id="-3xk40f_42">Log Detail</p><div class="table-wrapper"><table class="wide" id="-3xk40f_43"><thead><tr class="ijRowHead" id="-3xk40f_74"><th id="-3xk40f_82"><p>Index</p></th><th id="-3xk40f_83"><p>Name</p></th><th id="-3xk40f_84"><p>Data Type</p></th><th id="-3xk40f_85"><p>Description</p></th></tr></thead><tbody><tr id="-3xk40f_75"><td id="-3xk40f_86"><p>0</p></td><td id="-3xk40f_87"><p>Index</p></td><td id="-3xk40f_88"><p>number</p></td><td id="-3xk40f_89"><p>Log Index</p></td></tr><tr id="-3xk40f_76"><td id="-3xk40f_90"><p>1</p></td><td id="-3xk40f_91"><p>gameId</p></td><td id="-3xk40f_92"><p>string</p></td><td id="-3xk40f_93"><p>Symbolic unique identifier of the game.</p></td></tr><tr id="-3xk40f_77"><td id="-3xk40f_94"><p>2</p></td><td id="-3xk40f_95"><p>Currency</p></td><td id="-3xk40f_96"><p>string</p></td><td id="-3xk40f_97"><p>Currency code (ISO 4217 3-digit code) </p><br><p> Please check SLOT_SPEC document</p></td></tr><tr id="-3xk40f_78"><td id="-3xk40f_99"><p>3</p></td><td id="-3xk40f_100"><p>Betting Amount</p></td><td id="-3xk40f_101"><p>string</p></td><td id="-3xk40f_102"><p>Betting Amount</p></td></tr><tr id="-3xk40f_79"><td id="-3xk40f_103"><p>4</p></td><td id="-3xk40f_104"><p>Win Amount</p></td><td id="-3xk40f_105"><p>string</p></td><td id="-3xk40f_106"><p>Total Win Amouint</p></td></tr><tr id="-3xk40f_80"><td id="-3xk40f_107"><p>5</p></td><td id="-3xk40f_108"><p>Jackpot Type</p></td><td id="-3xk40f_109"><p>string</p></td><td id="-3xk40f_110"><p>Jackpot Name</p></td></tr><tr id="-3xk40f_81"><td id="-3xk40f_111"><p>6</p></td><td id="-3xk40f_112"><p>Jackpot Amount</p></td><td id="-3xk40f_113"><p>string</p></td><td id="-3xk40f_114"><p>Jackopt Win Amount</p></td></tr></tbody></table></div></section><section class="chapter"><h3 id="success-example" data-toc="success-example">Success Example</h3><div class="code-block" data-lang="json">
+{
+    &quot;error&quot;: &quot;0&quot;,
+    &quot;status&quot;: &quot;success&quot;,
+    &quot;hash&quot; : &quot;ab64cee3-f73b-4631-9abf-b1a09c1f9c36&quot;,
+    &quot;logs&quot;: [
+        [
+            100,
+            &quot;lm_8_treasureofzeus&quot;,
+            &quot;USD&quot;,
+            &quot;10.0&quot;,
+            &quot;0.0&quot;,
+            &quot;none&quot;,
+            &quot;0.0&quot;
+        ],
+        [
+            101,
+            &quot;lm_8_treasureofzeus&quot;,
+            &quot;USD&quot;,
+            &quot;0.0&quot;,
+            &quot;0.0&quot;,
+            &quot;none&quot;,
+            &quot;0.0&quot;
+        ],...
+    ]
+}
+</div></section></section><div class="last-modified">Last modified: 11 10월 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="get-round-status.html" class="navigation-links__prev">Get Round Status</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.js"></script></body></html>

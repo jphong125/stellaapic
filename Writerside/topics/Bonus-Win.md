@@ -3,7 +3,7 @@
 ## Overview
 
 Using this method a Lucky Monaco system will send to Casino Operator winning result of all rounds played on Free Round
-Bonus. Casino Operator will change a player balance in appliance with this request and will return an updated balance.
+Bonus. **Casino Operator will change a player balance in appliance with this request and will return an updated balance.**
 
 Important:The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.

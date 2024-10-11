@@ -1,8 +1,8 @@
 # Result
 
 ## Overview
-Using this method the Lucky Monaco system will send to Casino Operator the winning result of a bet. The Casino Operator
-will change the balance of the player in accordance with this request and return the updated balance.
+Using this method the Lucky Monaco system will send to Casino Operator the winning result of a bet. **The Casino Operator
+will change the balance of the player in accordance with this request and return the updated balance.**
 
 Result request may contain a prize that the player is awarded with during the game round, if there is an active promotional 
 campaigns like PrizeDrop. Parameters related to the PrizeDropprizes are optional and should be configured by

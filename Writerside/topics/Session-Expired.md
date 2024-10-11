@@ -41,6 +41,8 @@ HEADER
 
 ``` http
 Content-Type: application/json
+```
+``` http
 {
  "providerId": "luckymonaco"
  "sessionId": "6fd2d6f3bb8f4c5a9fadf15d81206af2"

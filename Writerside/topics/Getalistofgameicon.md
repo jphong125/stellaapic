@@ -74,3 +74,6 @@ https://<server domain>/icons/<gameid>/<gameIdNumeric>_760x539.png
 ```
 
 
+## Successful response
+
+![Tumble Fortune](https://r2.lmgamelab.com/icons/lm_60_tumblefortune/60_340x340.png)

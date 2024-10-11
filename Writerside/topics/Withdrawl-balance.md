@@ -1,15 +1,17 @@
 # Withdrawl balance
 
 ## Overview
-This method transfers funds out of player’s balance (i.e. withdrawl) within
-Lucky Monaco system.
+**This method transfers funds out of player’s balance (i.e. withdrawl) within
+Lucky Monaco system.**
 
 Important: In cases where transfer call fails due to:
+
 ∙ network error (HTTP status ≠ 200)
+
 ∙ error: 1 (description: “internal error”) in response
 
 Operator should send idempotent retry calls (with the same externalTransactionId).
-Recommended actions are specified in 4.10 Error codes
+Recommended actions are specified in Error codes
 
 Important: The call is idempotent, i.e. sending it again only creates one transaction.
 

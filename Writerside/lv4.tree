@@ -60,6 +60,7 @@
             <toc-element topic="Get-Game-Rounds.md"/>
             <toc-element topic="Open-Histiory.md"/>
             <toc-element topic="Get-Round-Status.md"/>
+            <toc-element topic="Get-Slot-Log.md"/>
         </toc-element>
     </toc-element>
 </instance-profile>

@@ -14,13 +14,13 @@ Requested cancel round API URL will be notified individually, for security reaso
 
 ###  Request parameters
 
-| Name         |Data Type| Description                                                                                                                                                                                                                                                     |  Remark  |
-|:-------------|:---:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| secureLogin  |string| User name for authentacation in the Casino Game API service                                                                                                                                                                                                     | Required |
-| externalPlayerId  |string|  Id of the player within the Operator system.                                                                                                                                                                                                     | Required |
-| gameId       |string| Id of the game. This is optional parameter,which has to be sent by Operator if only the session for specific game should be closed.                                                                                                                             | Required |
-|  roundId |string| Id of the game round to be canceled (play session id). | optional |
-| hash         |string| Hash code of request.                                                                                                                                                                                                                                           | Required |
+| Name         |Data Type| Description                                                                                                                          |  Remark  |
+|:-------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| secureLogin  |string| User name for authentacation in the Casino Game API service                                                                          | Required |
+| externalPlayerId  |string| Id of the player within the Operator system.                                                                                         | Required |
+| gameId       |string| Id of the game. This is optional parameter, which has to be sent by Operator if only the session for specific game should be closed. | Required |
+|  roundId |string| Id of the game round to be canceled (play session id).                                                                               | optional |
+| hash         |string| Hash code of request.                                                                                                                | Required |
 ### Examples
 
 METHOD
