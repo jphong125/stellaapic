@@ -1,150 +1,76 @@
 # Get a list of game icon
 
 ## Overview
-
-Retrieve icon of the game list from LuckyMonaco to proceed a specific game.
-
-## Usage
-
-Icon of the game list can be retrieved as per your request through individual API URL.
+Using this method Casino Operator will get to use URLs below in order to get icons for the games :
 
 ## API URL
+Requested get a list of game URL will be notified individually, for security reasons.
 
-Requested game session API URL will be notified individually, for security reasons.
+###  Request parameters
 
-Request parameters
+| Name          |Data Type| Description                                                                                                                                                        | Remark |
+|:--------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
+| gameid        |string| Symbolic unique identifier of the game within the Lucky Monaco system.                                                                                                       | Required | 
+| gameIdnumeric |string| Numeric value of gameId | Required |
 
-| Name        |Data Type| Description                                                                                                                                                        | Remark |
-|:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required | 
-| options     |string| List of settings. By including it, operator can get additional information about<br/>possible valeues are : <br/>. GetFrbDetails<br/>. GetLines<br/>. GetDataTypes | Optional |
-| hash        |string| Hash code of request.                                                                                                                                              | Required |
-### Examples
 
-METHOD
-
+size 150x150 
 ``` http
-POST
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_150x150.png
 ```
-
-URL
-
+size 170x170
 ``` http
-https://<API URL>/V4/getalistofgameicon?MEMB_ID=<Partner ID>&HASH=<TOKEN>
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_170x170.png
 ```
 
-HEADER
-
+size 170x170_ZH
 ``` http
-Content-Type: application/json
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_170x170_CN.png
 ```
 
-## Successful response for getting Game List
-
-Response parameters
-
-|        Name         |                   | Data Type | Description                                                                           |
-|:-------------------:|:-----------------:|:---------:|:--------------------------------------------------------------------------------------|
-|      Gamelist       |                   |   array   | List of game information.                                                             |
-|                     |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                      |
-|                     |     gameName      |  string   | Name of the game.                                                                     |
-|                     |    gameNameZh     |  string   | Chines name of the game.                                                              |
-|                     |    gameName-Tw    |  string   | Chines (Traditional) name of the game.                                                |
-|                     |  typeDescription  |  string   | Short description of the game type.                                                   |
-|                     |     platform      |  string   | Platform for which the game can be opened.                                            |
-|                     | demoGameAvailable |  boolean  | If true, a demo version of the game is available.                                     |
-|                     |    aspectRatio    |  string   | Describes the proportional relationship between the width and the height of the game. |
-|                     |   gameIdNumeric   |  number   | Numeric value of gameId                                                               |
-|                     |   jurisdictions   |  string   | Jurisdiction of the player                                                            |
-|                     |   frbAvailable    |  boolean  | Boolean If true, a free round bonus of the game is available.                         |
-|                     |       lines       |  string   | Number of available pay lines in the game                                             |
-|                     |     rowreels      |  string   | Layout of the game                                                                    |
-|                     |        rtp        |  string   | Rtp of the game                                                                       |
-|                     |     dataType      |  string   | Type of game portfolio                                                                |
-|                     |  gameDescription  |  string   | Description of the game                                                               |
-|                     |      release      |  boolean  | If true, the game is available.                                                       |
-|                     |    releaseDate    |  string   | Date of release of the game                                                           |
-
-### Example of body
-
-``` json
-{
-
-  "error": 0,
-  "description": "Success",
-  "gameList": [
-
-    {
-
-      "gameId": "lm_1_pumpkinfarm",
-      "gameName": "Pumpkin Farm",
-      "gameNameZh": "南瓜农场",
-      "gameName-Tw": "南瓜農場",
-      "typeDescription": "vs",
-      "platform": "MOBILE, PC",
-      "demoGameAvailable": true,
-      "aspectRatio": "16:9",
-      "gameIdNumeric": 1,
-      "jurisdictions": "99",
-      "frbAvailable": true,
-      "lines": "25",
-      "rowreels": "5x3",
-      "rtp": "96.08%",
-      "dataType": "RNG",
-      "gameDescription": "Hard working farmer is living with animals and farming pumpkin patch. \nIn the bonus game, you can select and earn something valuable from this special pumpkin farm.",
-      "release": true,
-      "releaseDate": "2023-01-11"
-    },
-    {
-
-      "gameId": "lm_2_kellyswheeldouble",
-      "gameName": "Kelly's Wheel Double",
-      "gameNameZh": "凯利双轮",
-      "gameName-Tw": "凱利雙輪",
-      "typeDescription": "vs",
-      "platform": "MOBILE, PC",
-      "demoGameAvailable": true,
-      "aspectRatio": "16:9",
-      "gameIdNumeric": 2,
-      "jurisdictions": "99",
-      "frbAvailable": true,
-      "lines": "5",
-      "rowreels": "3x3",
-      "rtp": "96.03%",
-      "dataType": "RNG",
-      "gameDescription": "Enjoy the big win from 3x3, \n5-line machine slot in Kelly's Wheel Double. \nNot only that, you can count on a great chance in the bonus game \nwhere two wheels are spinning.",
-      "release": true,
-      "releaseDate": "1899-12-30"
-    },
+size 200x270
+``` http  
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_200x270.png
 ```
 
-## Failure response for getting Game List ( response )
-
-Example of failure response from LuckyMonaco API servers.
-
-In case of failure, LuckyMonaco servers will return  'HTTP status 4XX' or 'HTTP status 5XX' and following response body.
-
-### Example of body2
-
-``` json
-{
-    "error": {
-        "code": "G.1",
-        "message": "INVALID GAME TYPE"
-    }
-}
+size 200x270_ZH
+``` http 
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_200x270_CN.png
 ```
 
-### Error codes
+size 300x300_ZH-TW 
+``` http 
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_300x300_CN2.png
+```
 
-Error codes are classified into following categories.
+size 340x340
+``` http 
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_340x340.png
+```
 
-* G - Generic failures
-* V - Validation of input parameters failed
+size 340x340_ZH
+``` http 
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_340x3400_CN.png
+```
 
-|Code|Description (omitting error codes)|
-|:---|:---:|
-|G.01|Invalid game type|
+size 400x540
+``` http 
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_400x540.png
+```
 
-Error codes will be additionally updated
+size 400x540_ZH
+``` http 
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_400x540_CN.png
+```
+
+size 700x840
+``` http 
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_700x840.png
+```
+
+size 760x539
+``` http 
+https://<server domain>/icons/<gameid>/<gameIdNumeric>_760x539.png
+```
+
 

@@ -1,10 +1,13 @@
 # Create User
 
+## Overview
 Using this method Casino Operator will create player’s account within the Lucky Monaco system. This method should be called
 before player is sent to the Lucky Monaco’s games.
 
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested Create User API URL will be notified individually, for security reasons.
 
 ### Parameters
 

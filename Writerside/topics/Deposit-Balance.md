@@ -1,5 +1,6 @@
 # Deposit Balance
 
+## Overview
 This method transfers funds in to player’s balance (i.e. deposit) within
 Lucky Monaco system. 
 
@@ -14,7 +15,9 @@ Important: The call is idempotent, i.e. sending it again only creates one transa
 
 
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested deposit balance API URL will be notified individually, for security reasons.
 
 ### Parameters
 

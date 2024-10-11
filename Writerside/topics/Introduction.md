@@ -9,6 +9,7 @@
 ## Overview
 
 LuckyMonaco API provides interfaces that allow you to use information from existing players in LuckyMonaco.
+
 Game Opening with logged in player for inviting into LuckyMonaco, and you can start an integration between Player's and Partner's Game Money.
 
 ## Defines
@@ -19,6 +20,7 @@ Game Opening with logged in player for inviting into LuckyMonaco, and you can st
 ## The Flow
 
 Users get redirected to corresponding game session after getting a game session from API servers when entering game. (Start game)
+
 After entering LuckyMonaco, the user can receive the bet amount and the game results, specified by Partner.
 * IF you are a seamless system, please refer to Seamless Integration
 * If you are a transfer system, please refer to Transfer Integration

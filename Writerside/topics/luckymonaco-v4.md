@@ -2,8 +2,11 @@
 
 Casino Game API supports different types of games: video slots, video poker, keno, etc. 
 and API should not be changed if Casino Operator needs to add more games to their portfolio.
-As soon as new game is available, it is added to Game Library with game symbols. 
-Casino Operator will use provided symbol for StartGame method during opening specific game and Bet requests will be also sent using this symbol. 
+
+As soon as new game is available, it is added to Game Library with game symbols.
+
+Casino Operator will use provided symbol for StartGame method during opening specific game and Bet requests will be also sent using this symbol.
+
 Game Library will be provided to Casino Operator together with integration package or resent when new games are available.
 
 ## Seamless Wallet API
@@ -42,21 +45,37 @@ Operator can use this API for game opening and transferring funds to player’s 
 
 Integration API offers generic methods that allow Operators to create a game lobby, get statistics and close player sessions forcefully.
 
-| Name                  | Description                                                                                                                                    |  Remark  |
-|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-|GetCasinoGames           | Using this method Casino Operator can retrieve the list of games available for integration.May be used for automatic building games lobby at casino website                                                                            | Optional |
-|CloseSession           | This method terminates active game sessions of the player.                                                                      | Optional |
-|TerminateSession           | Using this method Casino Operator can terminate the current player session and kick him out all games                                   | Optional |
+| Name               | Description                                                                                                                                                      |  Remark  |
+|:-------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| Start Game         | Using this method Casino Operator can start game                                                                                                                 | required |
+| GetCasinoGames     | Using this method Casino Operator can retrieve the list of games available for integration.May be used for automatic building games lobby at casino website      | Optional |
+| Getalistofgameicon | Using this method Casino Operator can retrieve the icon of games available for integration.May be used for automatic building games lobby at casino website      | Optional |
+| GetCasinoLanguage  | Using this method Casino Operator can retrieve the list of language of games available for integration.                                                          | Optional |
+| GetCasinoCurrency  | Using this method Casino Operator can retrieve the list of about a specific currency of games available for integration.                                         | Optional |
+| GetBettingTable    | Using this method Casino Operator can retrieve the list of betting table of games available for integration.                                                     | Optional |
+| CloseSession       | This method terminates active game sessions of the player.                                                                                                       | Optional |
+| TerminateSession   | Using this method Casino Operator can terminate the current player session and kick him out all games                                                            | Optional |
+| CancelRound        | Using this method Casino Operator can use any time they want to close player’s round forcefully.                                                                 | Optional |
+| HealthCheck        | Using this method Casino Operator can check if Lucky Monaco provider API service or Game server are live and ready.                                              | Optional |
+| SessionExpired     | Using this method Casino Operator can get information, that player’s game session has expired in PragmaticPlay system due to inactivity or game client closing. | Optional |
 
 ## External Player ID
 External Player ID (external userId parameter) is unique identifier of the user within Casino Operator system. 
+
 Before sending to Lucky Monaco any gaming related request Casino Operator should authenticate a player using Authenticate method.
-If player is new and its account does not exist in the Pragmatic Play system it will be created automatically on the base of the data sent by Casino Operator server in the Authenticate response. 
-If player account already exists in the Lucky Monaco database it will be updated with the response data if necessary. 
+
+If player is new and its account does not exist in the Pragmatic Play system it will be created automatically on the base of the data sent by Casino Operator server in the Authenticate response.
+
+If player account already exists in the Lucky Monaco database it will be updated with the response data if necessary.
+
 External Player id received in the Authenticate response will be sent with all subsequent requests to Casino Operator.
 
 ## Play Session
-Play session is a game round in which bet and wins are combined together. Each round can contain several bets, win and refunds of the bets.
+Play session is a game round in which bet and wins are combined together.
+
+Each round can contain several bets, win and refunds of the bets.
 
 ## Transaction Reference
-Transaction reference is unique transaction id within Pragmatic Play system. Transaction reference used for bets and wins has to be different.
+Transaction reference is unique transaction id within Lucky Monaco system.
+
+Transaction reference used for bets and wins has to be different.

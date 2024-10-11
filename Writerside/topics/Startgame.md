@@ -1,23 +1,19 @@
 # Start game
 
-
 ## Overview
-
 In order to connect to servers, creates a game session for users.
 
-## Usage
-
-After requesting a game session with individual notified API URL, API servers will respond accordingly.
+After requesting start game with individual notified API URL, API servers will respond accordingly.
 
 Redirect a user to received game session URL for entering LuckyMonaco.
 
 ## API URL
 
-Requested game session API URL will be notified individually, for security reasons.
+Requested start game API URL will be notified individually, for security reasons.
 
 ## Request for a start game 
 
-Requesting a game session to LuckyMonaco API Servers.
+Requesting start game to LuckyMonaco API Servers.
 
 ### Request parameters
 
@@ -46,7 +42,7 @@ POST
 URL
 
 ``` html
-https://<API URL>/api/startgame?MEMB_ID=<Partner ID>&HASH=<TOKEN>
+https://<API URL>/api/startgame?MEMB_ID=<securelogin>&HASH=<TOKEN>
 ```
 
 HEADER
@@ -59,7 +55,7 @@ Content-Type: application/json
 
 Example of successful response from LuckyMonaco API servers. Use URL parameters.
 
-
+### response parameter
 |Name|Data Type|Description|
 |:---|:---:|:---:|
 |url|string|used for player redirection.|
@@ -75,33 +71,3 @@ Example of successful response from LuckyMonaco API servers. Use URL parameters.
 }
 ```
 
-## Failure response for a game session ( response )
-
-Example of failure response from LuckyMonaco API servers.
-
-In case of failure, LuckyMonaco servers will return  'HTTP status 4XX' or 'HTTP status 5XX' and following response body.
-
-### Example of BODY
-
-``` json
-{
-    "errors": {
-        "code": "G.0",
-        "message": "Could not authenticate, please review sent data and try again. If problem persists, contact customer support "
-    }
-}
-```
-
-### Error Codes
-
-Error codes are classified into following categories.
-
-* G - generic failures
-* V - validation of input parameters failed
-
-|Code|Description (omitting error codes)|
-|:---|:---:|
-|G.01|System error, should be retried, in case of constant occurrences should be reported to LuckyMonaco.|
-
-Error codes will be additionally updated
-Start typing here...

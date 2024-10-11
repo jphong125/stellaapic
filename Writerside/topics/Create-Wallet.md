@@ -1,10 +1,13 @@
 # Create Wallet
 
+## Overview
 Using this method Casino Operator will create player’s Wallet within the Lucky Monaco system. This method should be called
 before player is sent to the Lucky Monaco’s games.
 
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested Create wallet API URL will be notified individually, for security reasons.
 
 ### Parameters
 

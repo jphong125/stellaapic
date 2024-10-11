@@ -1,7 +1,13 @@
 # Cancel Free Rounds
 
+## Overview
+
 Using this method Operator can cancel an existing Free Rounds Bonus in the Lucky Monaco system. Free Rounds will be canceled in the Lucky Monaco system regardless of whether the player started to play them or not.
 
+## API URL
+Requested cancel free round API URL will be notified individually, for security reasons.
+
+### Parameters
 | Name           | Data Type | Description                                                                  | Required |
 |:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
 | hash           |  string   | Hash code of the request                                                     | Required |
@@ -12,7 +18,7 @@ Using this method Operator can cancel an existing Free Rounds Bonus in the Lucky
 ### Example of URL
 
 ``` http
-https://<API URL>/api/cancel.php?MEMB_ID=<Partner ID>&HASH=<TOKEN>
+https://<API URL>/api/cancel.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
 ```
 
 ### Example of HTTP BODY

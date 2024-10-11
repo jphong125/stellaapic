@@ -2,18 +2,14 @@
 
 
 ## Overview
+Using this method Casino Operator will get the game language from LuckyMonaco to proceed a specific game.
 
-Retrieve the game language from LuckyMonaco to proceed a specific game.
-
-## Usage
-
-Game language can be retrieved as per your request through individual API URL.
 
 ## API URL
 
-Requested game session API URL will be notified individually, for security reasons.
+Requested get casino language URL will be notified individually, for security reasons.
 
-Request parameters
+###  Request parameters
 
 | Name        |Data Type| Description                                                                                                                                                        | Remark |
 |:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
@@ -30,7 +26,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/getcasinolanguage?MEMB_ID=<Partner ID>&HASH=<TOKEN>
+https://<API URL>/V4/getcasinolanguage?MEMB_ID=<securelogin>&HASH=<TOKEN>
 ```
 
 HEADER
@@ -39,9 +35,9 @@ HEADER
 Content-Type: application/json
 ```
 
-## Successful response for getting Language List
+## Successful response
 
-Response parameters
+###  Response parameters
 
 |     Name      |                   | Data Type | Description                                                                           |
 |:-------------:|:-----------------:|:---------:|:--------------------------------------------------------------------------------------|
@@ -65,32 +61,3 @@ Response parameters
 }
 ```
 
-## Failure response for getting Game List ( response )
-
-Example of failure response from LuckyMonaco API servers.
-
-In case of failure, LuckyMonaco servers will return  'HTTP status 4XX' or 'HTTP status 5XX' and following response body.
-
-### Example of body2
-
-``` json
-{
-    "error": {
-        "code": "G.1",
-        "message": "INVALID GAME TYPE"
-    }
-}
-```
-
-### Error codes
-
-Error codes are classified into following categories.
-
-* G - Generic failures
-* V - Validation of input parameters failed
-
-|Code|Description (omitting error codes)|
-|:---|:---:|
-|G.01|Invalid game type|
-
-Error codes will be additionally updated

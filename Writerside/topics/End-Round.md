@@ -1,5 +1,6 @@
 # End Round
 
+## Overview
 Every time a game round is over, the Lucky Monaco system will call EndRound method, so that Operator can finalize the
 game round transactions on their side in real time.
 
@@ -12,7 +13,9 @@ Important: EndRound request may be sent more than once. If the game round is alr
 should  ignore the EndRound request and return the success response.
 
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested promo win API URL will be notified individually, for security reasons.
 
 ### Parameters
 

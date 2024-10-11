@@ -1,8 +1,13 @@
 # Create FreeRound
 
+## Overview
 Using this method, the operator can create a new free round bonus with the Lucky Monaco system. In case of network failure, the operator can send a repeated free round creation request. 
 The Lucky Monaco system will not create a new FR bonus if there is an active FR bonus with the same bonus code.
 
+## API URL
+Requested create free round API URL will be notified individually, for security reasons.
+
+### Parameters
 | Name           | Data Type | Description                                                                  | Required |
 |:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
 | hash           |  string   | Hash code of the request                                                     | Required |
@@ -19,7 +24,7 @@ The Lucky Monaco system will not create a new FR bonus if there is an active FR 
 ### Example of URL
 
 ``` http
-https://<API URL>/api/create.php?MEMB_ID=<Partner ID>&HASH=<TOKEN>
+https://<API URL>/api/create.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
 ```
 
 ### Example of HTTP BODY

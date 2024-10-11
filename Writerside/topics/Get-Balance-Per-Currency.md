@@ -1,10 +1,13 @@
 # Get Balance Per Currency
 
+## Overview
 The method allows Lucky Monaco to get player’s balance available for certain games. This method is applicable to
 operators that needs different currency amount of money to be available in the game client depending on the game type and the
 policy within  Casino Operator system.
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested get balance currency game API URL will be notified individually, for security reasons.
 
 ### Parameters
 

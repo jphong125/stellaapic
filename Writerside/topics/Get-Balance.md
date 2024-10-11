@@ -1,8 +1,10 @@
 # Get Balance
 
+## Overview
 Using this method Operator can get the current balance of the player in the Lucky Monaco
 
-## Requested by LuckyMonaco
+## API URL
+Requested get balance API URL will be notified individually, for security reasons.
 
 ### Parameters
 

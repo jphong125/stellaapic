@@ -1,7 +1,12 @@
 # Add Player
 
+## Overview
 Using this method Operator can add players to the existing Free Round Bonus. If player’s account does not exist in the Lucky Monaco system yet, it will be registered automatically.
 
+## API URL
+Requested add player round API URL will be notified individually, for security reasons.
+
+### Parameters
 | Name           | Data Type | Description                                                                                                                              | Required |
 |:---------------|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------------|----------|
 | hash           |  string   | Hash code of the request                                                                                                                 | Required |
@@ -12,7 +17,7 @@ Using this method Operator can add players to the existing Free Round Bonus. If 
 ### Example of URL
 
 ``` http
-https://<API URL>/api/add.php?MEMB_ID=<Partner ID>&HASH=<TOKEN>
+https://<API URL>/api/add.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
 ```
 
 ### Example of HTTP BODY

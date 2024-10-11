@@ -1,8 +1,10 @@
 # Get Played Games
 
+## Overview
 Using this method Casino Operator can get a list of the games played by the player during the day.
 
-## Requested by LuckyMonaco
+## API URL
+Requested get played game API URL will be notified individually, for security reasons.
 
 ### Parameters
 

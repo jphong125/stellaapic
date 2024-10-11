@@ -1,0 +1,78 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-10-10T18:35:27.3161921"><title>Get a list of game icon | LuckyMonaco V4</title><script type="application/json" id="virtual-toc-data">[{"id":"overview","level":0,"title":"Overview","anchor":"#overview"},{"id":"usage","level":0,"title":"Usage","anchor":"#usage"},{"id":"api-url","level":0,"title":"API URL","anchor":"#api-url"},{"id":"successful-response-for-getting-game-list","level":0,"title":"Successful response for getting Game List","anchor":"#successful-response-for-getting-game-list"},{"id":"failure-response-for-getting-game-list-response","level":0,"title":"Failure response for getting Game List ( response )","anchor":"#failure-response-for-getting-game-list-response"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Get a list of game icon | LuckyMonaco V4"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="LuckyMonaco V4 Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/getalistofgameicon.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Get a list of game icon | LuckyMonaco V4"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/getalistofgameicon.html#webpage",
+    "url": "writerside-documentation/getalistofgameicon.html",
+    "name": "Get a list of game icon | LuckyMonaco V4",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "LuckyMonaco V4 Help"
+}</script><!-- End Schema.org --></head><body data-id="Getalistofgameicon" data-main-title="Get a list of game icon" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="luckymonaco-v4.md|About LuckyMonaco V4///Integration-API.md|Integration API"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>LuckyMonaco V4  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Getalistofgameicon" id="Getalistofgameicon.md">Get a list of game icon</h1><section class="chapter"><h2 id="overview" data-toc="overview">Overview</h2><p id="b0dtyq_8">Retrieve icon of the game list from LuckyMonaco to proceed a specific game.</p></section><section class="chapter"><h2 id="usage" data-toc="usage">Usage</h2><p id="b0dtyq_9">Icon of the game list can be retrieved as per your request through individual API URL.</p></section><section class="chapter"><h2 id="api-url" data-toc="api-url">API URL</h2><p id="b0dtyq_10">Requested game session API URL will be notified individually, for security reasons.</p><p id="b0dtyq_11">Request parameters</p><div class="table-wrapper"><table class="wide" id="b0dtyq_12"><thead><tr class="ijRowHead" id="b0dtyq_14"><th id="b0dtyq_18"><p>Name</p></th><th id="b0dtyq_19"><p>Data Type</p></th><th id="b0dtyq_20"><p>Description</p></th><th id="b0dtyq_21"><p>Remark</p></th></tr></thead><tbody><tr id="b0dtyq_15"><td id="b0dtyq_22"><p>secureLogin</p></td><td id="b0dtyq_23"><p>string</p></td><td id="b0dtyq_24"><p>User name for authentacation in the Casino Game API service</p></td><td id="b0dtyq_25"><p>Required</p></td></tr><tr id="b0dtyq_16"><td id="b0dtyq_26"><p>options</p></td><td id="b0dtyq_27"><p>string</p></td><td id="b0dtyq_28"><p>List of settings. By including it, operator can get additional information about</p><br><p> possible valeues are : </p><br><p>. GetFrbDetails</p><br><p>. GetLines</p><br><p>. GetDataTypes</p></td><td id="b0dtyq_29"><p>Optional</p></td></tr><tr id="b0dtyq_17"><td id="b0dtyq_34"><p>hash</p></td><td id="b0dtyq_35"><p>string</p></td><td id="b0dtyq_36"><p>Hash code of request.</p></td><td id="b0dtyq_37"><p>Required</p></td></tr></tbody></table></div><section class="chapter"><h3 id="examples" data-toc="examples">Examples</h3><p id="b0dtyq_38">METHOD</p><div class="code-block" data-lang="http">
+POST
+</div><p id="b0dtyq_40">URL</p><div class="code-block" data-lang="http">
+https://&lt;API URL&gt;/V4/getalistofgameicon?MEMB_ID=&lt;Partner ID&gt;&amp;HASH=&lt;TOKEN&gt;
+</div><p id="b0dtyq_42">HEADER</p><div class="code-block" data-lang="http">
+Content-Type: application/json
+</div></section></section><section class="chapter"><h2 id="successful-response-for-getting-game-list" data-toc="successful-response-for-getting-game-list">Successful response for getting Game List</h2><p id="b0dtyq_44">Response parameters</p><div class="table-wrapper"><table class="wide" id="b0dtyq_45"><thead><tr class="ijRowHead" id="b0dtyq_47"><th id="b0dtyq_67"><p>Name</p></th><th id="b0dtyq_68"></th><th id="b0dtyq_69"><p>Data Type</p></th><th id="b0dtyq_70"><p>Description</p></th></tr></thead><tbody><tr id="b0dtyq_48"><td id="b0dtyq_71"><p>Gamelist</p></td><td id="b0dtyq_72"></td><td id="b0dtyq_73"><p>array</p></td><td id="b0dtyq_74"><p>List of game information.</p></td></tr><tr id="b0dtyq_49"><td id="b0dtyq_75"></td><td id="b0dtyq_76"><p>gameId</p></td><td id="b0dtyq_77"><p>string</p></td><td id="b0dtyq_78"><p>Symbolic unique identifier of the game provided by Lucky Monaco.</p></td></tr><tr id="b0dtyq_50"><td id="b0dtyq_79"></td><td id="b0dtyq_80"><p>gameName</p></td><td id="b0dtyq_81"><p>string</p></td><td id="b0dtyq_82"><p>Name of the game.</p></td></tr><tr id="b0dtyq_51"><td id="b0dtyq_83"></td><td id="b0dtyq_84"><p>gameNameZh</p></td><td id="b0dtyq_85"><p>string</p></td><td id="b0dtyq_86"><p>Chines name of the game.</p></td></tr><tr id="b0dtyq_52"><td id="b0dtyq_87"></td><td id="b0dtyq_88"><p>gameName-Tw</p></td><td id="b0dtyq_89"><p>string</p></td><td id="b0dtyq_90"><p>Chines (Traditional) name of the game.</p></td></tr><tr id="b0dtyq_53"><td id="b0dtyq_91"></td><td id="b0dtyq_92"><p>typeDescription</p></td><td id="b0dtyq_93"><p>string</p></td><td id="b0dtyq_94"><p>Short description of the game type.</p></td></tr><tr id="b0dtyq_54"><td id="b0dtyq_95"></td><td id="b0dtyq_96"><p>platform</p></td><td id="b0dtyq_97"><p>string</p></td><td id="b0dtyq_98"><p>Platform for which the game can be opened.</p></td></tr><tr id="b0dtyq_55"><td id="b0dtyq_99"></td><td id="b0dtyq_100"><p>demoGameAvailable</p></td><td id="b0dtyq_101"><p>boolean</p></td><td id="b0dtyq_102"><p>If true, a demo version of the game is available.</p></td></tr><tr id="b0dtyq_56"><td id="b0dtyq_103"></td><td id="b0dtyq_104"><p>aspectRatio</p></td><td id="b0dtyq_105"><p>string</p></td><td id="b0dtyq_106"><p>Describes the proportional relationship between the width and the height of the game.</p></td></tr><tr id="b0dtyq_57"><td id="b0dtyq_107"></td><td id="b0dtyq_108"><p>gameIdNumeric</p></td><td id="b0dtyq_109"><p>number</p></td><td id="b0dtyq_110"><p>Numeric value of gameId</p></td></tr><tr id="b0dtyq_58"><td id="b0dtyq_111"></td><td id="b0dtyq_112"><p>jurisdictions</p></td><td id="b0dtyq_113"><p>string</p></td><td id="b0dtyq_114"><p>Jurisdiction of the player</p></td></tr><tr id="b0dtyq_59"><td id="b0dtyq_115"></td><td id="b0dtyq_116"><p>frbAvailable</p></td><td id="b0dtyq_117"><p>boolean</p></td><td id="b0dtyq_118"><p>Boolean If true, a free round bonus of the game is available.</p></td></tr><tr id="b0dtyq_60"><td id="b0dtyq_119"></td><td id="b0dtyq_120"><p>lines</p></td><td id="b0dtyq_121"><p>string</p></td><td id="b0dtyq_122"><p>Number of available pay lines in the game</p></td></tr><tr id="b0dtyq_61"><td id="b0dtyq_123"></td><td id="b0dtyq_124"><p>rowreels</p></td><td id="b0dtyq_125"><p>string</p></td><td id="b0dtyq_126"><p>Layout of the game</p></td></tr><tr id="b0dtyq_62"><td id="b0dtyq_127"></td><td id="b0dtyq_128"><p>rtp</p></td><td id="b0dtyq_129"><p>string</p></td><td id="b0dtyq_130"><p>Rtp of the game</p></td></tr><tr id="b0dtyq_63"><td id="b0dtyq_131"></td><td id="b0dtyq_132"><p>dataType</p></td><td id="b0dtyq_133"><p>string</p></td><td id="b0dtyq_134"><p>Type of game portfolio</p></td></tr><tr id="b0dtyq_64"><td id="b0dtyq_135"></td><td id="b0dtyq_136"><p>gameDescription</p></td><td id="b0dtyq_137"><p>string</p></td><td id="b0dtyq_138"><p>Description of the game</p></td></tr><tr id="b0dtyq_65"><td id="b0dtyq_139"></td><td id="b0dtyq_140"><p>release</p></td><td id="b0dtyq_141"><p>boolean</p></td><td id="b0dtyq_142"><p>If true, the game is available.</p></td></tr><tr id="b0dtyq_66"><td id="b0dtyq_143"></td><td id="b0dtyq_144"><p>releaseDate</p></td><td id="b0dtyq_145"><p>string</p></td><td id="b0dtyq_146"><p>Date of release of the game</p></td></tr></tbody></table></div><section class="chapter"><h3 id="example-of-body" data-toc="example-of-body">Example of body</h3><div class="code-block" data-lang="json">
+{
+
+  &quot;error&quot;: 0,
+  &quot;description&quot;: &quot;Success&quot;,
+  &quot;gameList&quot;: [
+
+    {
+
+      &quot;gameId&quot;: &quot;lm_1_pumpkinfarm&quot;,
+      &quot;gameName&quot;: &quot;Pumpkin Farm&quot;,
+      &quot;gameNameZh&quot;: &quot;南瓜农场&quot;,
+      &quot;gameName-Tw&quot;: &quot;南瓜農場&quot;,
+      &quot;typeDescription&quot;: &quot;vs&quot;,
+      &quot;platform&quot;: &quot;MOBILE, PC&quot;,
+      &quot;demoGameAvailable&quot;: true,
+      &quot;aspectRatio&quot;: &quot;16:9&quot;,
+      &quot;gameIdNumeric&quot;: 1,
+      &quot;jurisdictions&quot;: &quot;99&quot;,
+      &quot;frbAvailable&quot;: true,
+      &quot;lines&quot;: &quot;25&quot;,
+      &quot;rowreels&quot;: &quot;5x3&quot;,
+      &quot;rtp&quot;: &quot;96.08%&quot;,
+      &quot;dataType&quot;: &quot;RNG&quot;,
+      &quot;gameDescription&quot;: &quot;Hard working farmer is living with animals and farming pumpkin patch. \nIn the bonus game, you can select and earn something valuable from this special pumpkin farm.&quot;,
+      &quot;release&quot;: true,
+      &quot;releaseDate&quot;: &quot;2023-01-11&quot;
+    },
+    {
+
+      &quot;gameId&quot;: &quot;lm_2_kellyswheeldouble&quot;,
+      &quot;gameName&quot;: &quot;Kelly's Wheel Double&quot;,
+      &quot;gameNameZh&quot;: &quot;凯利双轮&quot;,
+      &quot;gameName-Tw&quot;: &quot;凱利雙輪&quot;,
+      &quot;typeDescription&quot;: &quot;vs&quot;,
+      &quot;platform&quot;: &quot;MOBILE, PC&quot;,
+      &quot;demoGameAvailable&quot;: true,
+      &quot;aspectRatio&quot;: &quot;16:9&quot;,
+      &quot;gameIdNumeric&quot;: 2,
+      &quot;jurisdictions&quot;: &quot;99&quot;,
+      &quot;frbAvailable&quot;: true,
+      &quot;lines&quot;: &quot;5&quot;,
+      &quot;rowreels&quot;: &quot;3x3&quot;,
+      &quot;rtp&quot;: &quot;96.03%&quot;,
+      &quot;dataType&quot;: &quot;RNG&quot;,
+      &quot;gameDescription&quot;: &quot;Enjoy the big win from 3x3, \n5-line machine slot in Kelly's Wheel Double. \nNot only that, you can count on a great chance in the bonus game \nwhere two wheels are spinning.&quot;,
+      &quot;release&quot;: true,
+      &quot;releaseDate&quot;: &quot;1899-12-30&quot;
+    },
+</div></section></section><section class="chapter"><h2 id="failure-response-for-getting-game-list-response" data-toc="failure-response-for-getting-game-list-response">Failure response for getting Game List ( response )</h2><p id="b0dtyq_148">Example of failure response from LuckyMonaco API servers.</p><p id="b0dtyq_149">In case of failure, LuckyMonaco servers will return 'HTTP status 4XX' or 'HTTP status 5XX' and following response body.</p><section class="chapter"><h3 id="example-of-body2" data-toc="example-of-body2">Example of body2</h3><div class="code-block" data-lang="json">
+{
+    &quot;error&quot;: {
+        &quot;code&quot;: &quot;G.1&quot;,
+        &quot;message&quot;: &quot;INVALID GAME TYPE&quot;
+    }
+}
+</div></section><section class="chapter"><h3 id="error-codes" data-toc="error-codes">Error codes</h3><p id="b0dtyq_153">Error codes are classified into following categories.</p><ul class="list _bullet" id="b0dtyq_154"><li class="list__item" id="b0dtyq_157"><p>G - Generic failures</p></li><li class="list__item" id="b0dtyq_158"><p>V - Validation of input parameters failed</p></li></ul><div class="table-wrapper"><table class="wide" id="b0dtyq_155"><thead><tr class="ijRowHead" id="b0dtyq_159"><th id="b0dtyq_161"><p>Code</p></th><th id="b0dtyq_162"><p>Description (omitting error codes)</p></th></tr></thead><tbody><tr id="b0dtyq_160"><td id="b0dtyq_163"><p>G.01</p></td><td id="b0dtyq_164"><p>Invalid game type</p></td></tr></tbody></table></div><p id="b0dtyq_156">Error codes will be additionally updated</p></section></section><div class="last-modified">Last modified: 10 10월 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="getcasinogames.html" class="navigation-links__prev">Get Casino Games</a><a href="getcasinolanguage.html" class="navigation-links__next">Get Casino Language</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.js"></script></body></html>

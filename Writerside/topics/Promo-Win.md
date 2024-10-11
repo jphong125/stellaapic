@@ -1,5 +1,6 @@
 # Promo Win
 
+## Overview
 Using this method the Lucky Monaco system will notify Casino Operator about winning that the player is awarded as a 
 result of a campaign that is finished. Notification is asynchronous and may come to the operator with a short delay after 
 the campaignisover.Operatorshouldhandlethetransactionintheirsystemandsendpromowintransactionidbackto
@@ -8,7 +9,9 @@ the  Lucky Monaco.
 Important:The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested promo win API URL will be notified individually, for security reasons.
 
 ### Parameters
 

@@ -1,8 +1,9 @@
 # Error code for Freeround
 
+## Overview
 The table below contains the error codes that the Lucky Monaco system will return in the response to Variable Free Rounds API calls.
 
-
+### Error code
 | Name |Data Type| Description                                                                                                                          | Remark   |
 |:-----|:---:|:-------------------------------------------------------------------------------------------------------------------------------------|----------|
 | 0    |string| Request was successfully processed.                                                                                                  | Required |

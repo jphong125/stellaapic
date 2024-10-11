@@ -1,5 +1,6 @@
 # ReFund
 
+## Overview
 Lucky Monaco system may use this method to rollback a bet transaction on the Casino Operator side, in order to reverse
 the transaction and adjust player’s balance. 
 When receive a Refund request Operator have to return money back to player’s  balance.
@@ -9,7 +10,9 @@ When receive a Refund request Operator have to return money back to player’s  
 - Important: If bet transaction is not found then nothing should happen on the Casino Operator side and success (0)
 or specific error code for this situation should be returned.
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested refund win API URL will be notified individually, for security reasons.
 
 ### Parameters
 

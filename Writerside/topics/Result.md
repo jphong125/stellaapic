@@ -1,5 +1,6 @@
 # Result
 
+## Overview
 Using this method the Lucky Monaco system will send to Casino Operator the winning result of a bet. The Casino Operator
 will change the balance of the player in accordance with this request and return the updated balance.
 
@@ -10,7 +11,9 @@ Lucky Monaco team based on Operator’s request.
 Important:The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested result API URL will be notified individually, for security reasons.
 
 ### Parameters
 

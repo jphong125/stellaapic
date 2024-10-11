@@ -1,5 +1,6 @@
 # Jackpot win
 
+## Overview
 Using this method a Lucky Monaco system will notify Casino Operator about Jackpot winning. Notification is asynchronous
 and may come to the operator with a short delay after game round is over. Operator should handle the transaction in their
 system and send the jackpot win transaction id back to the Lucky Monaco.
@@ -7,7 +8,9 @@ system and send the jackpot win transaction id back to the Lucky Monaco.
 Important: The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested jackpot win API URL will be notified individually, for security reasons.
 
 ### Parameters
 

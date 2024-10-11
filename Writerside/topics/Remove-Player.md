@@ -1,7 +1,12 @@
 # Remove Player
 
+## Overview
 Using this method Operator can remove players from the existing Free Round Bonus and cancel free rounds awarded to them. The  bonus will be canceled for a particular player even in case the player had started playing free rounds.
 
+## API URL
+Requested remove player API URL will be notified individually, for security reasons.
+
+### Parameters
 | Name           | Data Type | Description                                                                                                                              | Required |
 |:---------------|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------------|----------|
 | hash           |  string   | Hash code of the request                                                                                                                 | Required |
@@ -12,7 +17,7 @@ Using this method Operator can remove players from the existing Free Round Bonus
 ### Example of URL
 
 ``` http
-https://<API URL>/api/remove.php?MEMB_ID=<Partner ID>&HASH=<TOKEN>
+https://<API URL>/api/remove.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
 ```
 
 ### Example of HTTP BODY

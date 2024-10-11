@@ -1,8 +1,11 @@
 # Balance
 
+## Overview
 A request to check wallet balance
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested balance API URL will be notified individually, for security reasons. 
 
 ### Parameters
 

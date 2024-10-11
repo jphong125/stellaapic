@@ -1,10 +1,11 @@
 # User Info
 
+## Overview
 You can obtain information about a specific user by calling the URL provided by Lucky Monaco.
 By calling the API, you can get the amount held by each wallet.
 
 ## API URL
-For security reasons, we will notify you individually.
+Requested user info API URL will be notified individually, for security reasons.
 
 ## Request Example
 

@@ -1,8 +1,10 @@
 # Get Betting Table (FreeRound)
 
+## Overview
 Get a list of possible bet amounts for a specific game for a specific currency
 
-## Requested 
+## API URL
+Requested get betting table(for free round) API URL will be notified individually, for security reasons. 
 
 ### Parameters
 
@@ -16,7 +18,7 @@ Get a list of possible bet amounts for a specific game for a specific currency
 ### Example of URL
 
 ``` http
-https://<API URL>/api/betting_info.php?MEMB_ID=<Partner ID>&HASH=<TOKEN>
+https://<API URL>/api/betting_info.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
 ```
 ### Example of HTTP BODY
 

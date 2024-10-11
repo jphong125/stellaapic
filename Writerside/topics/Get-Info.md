@@ -1,8 +1,10 @@
 # Get Info
 
+## Overview
 You can get information about the free round you can set by making a simple call via URL.
 
-## Requested 
+## API URL
+Requested get info API URL will be notified individually, for security reasons. 
 
 ### Parameters
 
@@ -14,7 +16,7 @@ You can get information about the free round you can set by making a simple call
 ### Example of URL
 
 ``` http
-https://<API URL>/api/get_info.php?MEMB_ID=<Partner ID>&HASH=<TOKEN>
+https://<API URL>/api/get_info.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
 ```
 
 

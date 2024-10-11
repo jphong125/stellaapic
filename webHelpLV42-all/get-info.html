@@ -1,0 +1,41 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-10-10T18:35:27.3912076"><title>Get Info | LuckyMonaco V4</title><script type="application/json" id="virtual-toc-data">[{"id":"requested","level":0,"title":"Requested","anchor":"#requested"},{"id":"response-from-partner","level":0,"title":"Response from partner","anchor":"#response-from-partner"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Get Info | LuckyMonaco V4"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="LuckyMonaco V4 Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/get-info.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Get Info | LuckyMonaco V4"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/get-info.html#webpage",
+    "url": "writerside-documentation/get-info.html",
+    "name": "Get Info | LuckyMonaco V4",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "LuckyMonaco V4 Help"
+}</script><!-- End Schema.org --></head><body data-id="Get-Info" data-main-title="Get Info" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="luckymonaco-v4.md|About LuckyMonaco V4///Free-Round.md|Free Round"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>LuckyMonaco V4  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Get-Info" id="Get-Info.md">Get Info</h1><p id="-neifrc_3">You can get information about the free round you can set by making a simple call via URL.</p><section class="chapter"><h2 id="requested" data-toc="requested">Requested</h2><section class="chapter"><h3 id="parameters" data-toc="parameters">Parameters</h3><div class="table-wrapper"><table class="wide" id="-neifrc_8"><thead><tr class="ijRowHead" id="-neifrc_9"><th id="-neifrc_12"><p>Name</p></th><th id="-neifrc_13"><p>Data Type</p></th><th id="-neifrc_14"><p>Description</p></th><th id="-neifrc_15"><p>Remark</p></th></tr></thead><tbody><tr id="-neifrc_10"><td id="-neifrc_16"><p>secureLogin</p></td><td id="-neifrc_17"><p>string</p></td><td id="-neifrc_18"><p>User name for authentication in the Casino Game API service</p></td><td id="-neifrc_19"><p>Required</p></td></tr><tr id="-neifrc_11"><td id="-neifrc_20"><p>hash</p></td><td id="-neifrc_21"><p>string</p></td><td id="-neifrc_22"><p>Hash code of request.</p></td><td id="-neifrc_23"><p>Required</p></td></tr></tbody></table></div></section><section class="chapter"><h3 id="example-of-url" data-toc="example-of-url">Example of URL</h3><div class="code-block" data-lang="http">
+https://&lt;API URL&gt;/api/get_info.php?MEMB_ID=&lt;Partner ID&gt;&amp;HASH=&lt;TOKEN&gt;
+</div></section></section><section class="chapter"><h2 id="response-from-partner" data-toc="response-from-partner">Response from partner</h2><section class="chapter"><h3 id="parameters-2" data-toc="parameters-2">Parameters 2</h3><div class="table-wrapper"><table class="wide" id="-neifrc_27"><thead><tr class="ijRowHead" id="-neifrc_28"><th id="-neifrc_35"><p>Name</p></th><th id="-neifrc_36"><p>Data Type</p></th><th id="-neifrc_37"><p>Description</p></th><th id="-neifrc_38"><p>Required</p></th></tr></thead><tbody><tr id="-neifrc_29"><td id="-neifrc_39"><p>limit_spin</p></td><td id="-neifrc_40"><p>number</p></td><td id="-neifrc_41"><p>Max possible Freeround Count (1~limit_spin)</p></td><td id="-neifrc_42"><p>Required</p></td></tr><tr id="-neifrc_30"><td id="-neifrc_43"><p>slot</p></td><td id="-neifrc_44"><p>array</p></td><td id="-neifrc_45"><p>List of support slot</p></td><td id="-neifrc_46"><p>Required</p></td></tr><tr id="-neifrc_31"><td id="-neifrc_47"><p>slot.No</p></td><td id="-neifrc_48"><p>string</p></td><td id="-neifrc_49"><p>slot no</p></td><td id="-neifrc_50"><p>Required</p></td></tr><tr id="-neifrc_32"><td id="-neifrc_51"><p>slot.Name</p></td><td id="-neifrc_52"><p>string</p></td><td id="-neifrc_53"><p>slot name</p></td><td id="-neifrc_54"><p>Required</p></td></tr><tr id="-neifrc_33"><td id="-neifrc_55"><p>slot.ID</p></td><td id="-neifrc_56"><p>string</p></td><td id="-neifrc_57"><p>slot game id</p></td><td id="-neifrc_58"><p>Required</p></td></tr><tr id="-neifrc_34"><td id="-neifrc_59"><p>currency</p></td><td id="-neifrc_60"><p>array</p></td><td id="-neifrc_61"><p>List of support currency</p></td><td id="-neifrc_62"><p>Required</p></td></tr></tbody></table></div></section><section class="chapter"><h3 id="example-of-http-body-2" data-toc="example-of-http-body-2">Example of HTTP BODY 2</h3><div class="code-block" data-lang="json">
+{
+    &quot;slot&quot;: [
+        {
+            &quot;No&quot;: &quot;1&quot;,
+            &quot;Name&quot;: &quot;Pumpkin Farm&quot;,
+            &quot;ID&quot;: &quot;lm_1_pumpkinfarm&quot;
+        },
+        {
+            &quot;No&quot;: &quot;2&quot;,
+            &quot;Name&quot;: &quot;Kelly's Wheel Double&quot;,
+            &quot;ID&quot;: &quot;lm_2_kellyswheeldouble&quot;
+        },...
+    ],
+    &quot;currency&quot;: [
+        &quot;IDX&quot;,
+        &quot;USD&quot;,
+        &quot;JPY&quot;,
+        &quot;CNY&quot;,
+        &quot;RUB&quot;,...
+    ],
+    &quot;limit_spin&quot;: 999
+}
+</div></section></section><div class="last-modified">Last modified: 10 10월 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="free-round.html" class="navigation-links__prev">Free Round</a><a href="get-betting-table-freeround.html" class="navigation-links__next">Get Betting Table (FreeRound)</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.js"></script></body></html>

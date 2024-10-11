@@ -1,8 +1,9 @@
 # Error code for seamless Wallet
 
+## Overview
 Below table contains the error codes that should be returned by Casino Operator in the response to Seamless Wallet API calls.
 
-
+### Error code
 | Name |Data Type| Description                                                                                                                                                                                                                                                                                                        | Remark   |
 |:-----|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
 | 0    |string| Success                                                                                                                                                                                                                                                                                                            | Required |

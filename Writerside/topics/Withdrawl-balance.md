@@ -1,5 +1,6 @@
 # Withdrawl balance
 
+## Overview
 This method transfers funds out of player’s balance (i.e. withdrawl) within
 Lucky Monaco system.
 
@@ -14,7 +15,9 @@ Important: The call is idempotent, i.e. sending it again only creates one transa
 
 
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested withdrawl balance API URL will be notified individually, for security reasons.
 
 ### Parameters
 

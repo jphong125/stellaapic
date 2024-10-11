@@ -1,11 +1,13 @@
 # Get transfer status
 
+## Overview
 This method returns the status of a particular transaction that transferred the money in or out the player’s balance on the
 Lucky Monaco side.
 
 Important: This method will return player’s balance after successful transaction for all transactions 
 
-## Requested by LuckyMonaco
+## API URL
+Requested get transfer status API URL will be notified individually, for security reasons.
 
 ### Parameters
 

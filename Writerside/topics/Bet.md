@@ -1,11 +1,14 @@
 # Bet
 
+## Overview
 Using this method Lucky Monaco system will check the player balance on Casino Operator side to ensure they still have the
 funds to cover the bet. Amount of the bet must be subtracted from player balance in Casino Operator system.
 
 Important: The call is idempotent, i.e. sending bet again only creates one transaction.
 
-## Requested by LuckyMonaco
+## API URL
+
+Requested bet API URL will be notified individually, for security reasons.
 
 ### Parameters
 

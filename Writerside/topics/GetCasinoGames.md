@@ -1,18 +1,13 @@
 # Get Casino Games
 
 ## Overview
-
-Retrieve the game list from LuckyMonaco to proceed a specific game.
-
-## Usage
-
-Game list can be retrieved as per your request through individual API URL.
+Using this method Casino Operator will get the list of casino games available for the integration.
 
 ## API URL
 
-Requested game session API URL will be notified individually, for security reasons.
+Requested get casino game API URL will be notified individually, for security reasons.
 
-Request parameters
+###  Request parameters
 
 | Name        |Data Type| Description                                                                                                                                                        | Remark |
 |:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
@@ -30,7 +25,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/getcasinogame?MEMB_ID=<Partner ID>&HASH=<TOKEN>
+https://<API URL>/V4/getcasinogame?MEMB_ID=<securelogin>&HASH=<TOKEN>
 ```
 
 HEADER
@@ -39,9 +34,9 @@ HEADER
 Content-Type: application/json
 ```
 
-## Successful response for getting Game List 
+## Successful response  
 
-Response parameters
+###  Response parameters
 
 |        Name         |                   | Data Type | Description                                                                           |
 |:-------------------:|:-----------------:|:---------:|:--------------------------------------------------------------------------------------|

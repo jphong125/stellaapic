@@ -1,8 +1,10 @@
 # Get Game Rounds
 
+## Overview
 Using this method Casino Operator can get a list of the game rounds played by the player during the certain day and (optionally) the specific hour.
 
-## Requested by LuckyMonaco
+## API URL
+Requested get game round API URL will be notified individually, for security reasons.
 
 ### Parameters
 
