@@ -17,19 +17,19 @@ Requesting start game to LuckyMonaco API Servers.
 
 ### Request parameters
 
-| Name             |Data Type| Description                                                            |  Remark  |
-|:-----------------|:---:|:-----------------------------------------------------------------------|:--------:|
-| secureLogin      |string| User name for authentacation in the Casino Game API service            | Required |
-| hash             |string| Hash code of request.                                                  | Required |
-| externalPlayerId |string| Unique identifier of the player within the Casino Operator system.     | Required |
-| externalNickname |string| Nickname of the player within the Casino Operator system.              | Optional |
-| gameid           |string| Symbolic unique identifier of the game within the Lucky Monaco system. | Required |
-| sessionid        |string| Player’s game session id on Lucky Monaco system.                       | Required |
-| laguage          |string| Language on which the game should be opened.                           | Required |
-| currency         |string| Currency of the player.                                                | Required |
-| region           |string| The region where the player is located. (select "Asia" or "Europe")    | Optional |
-| cashierURL       |string| an URL for opening the Operator’s website Cashier page.                | optional |
-| lobbyURL         |string| an URL for opening the Operator’s website lobby page.                  | optional |
+| Name         |Data Type| Description                                                            |  Remark  |
+|:-------------|:---:|:-----------------------------------------------------------------------|:--------:|
+| secureLogin  |string| User name for authentacation in the Casino Game API service            | Required |
+| uuid         |string| A unique ID for each request                                                                                                                                              | Required |
+| UserId       |string| Unique identifier of the player within the Casino Operator system.     | Required |
+| UserNickname |string| Nickname of the player within the Casino Operator system.              | Optional |
+| gameId       |string| Symbolic unique identifier of the game within the Lucky Monaco system. | Required |
+| sessionId    |string| Player’s game session id on Lucky Monaco system.                       | Required |
+| language     |string| Language on which the game should be opened.                           | Required |
+| currency     |string| Currency of the player.                                                | Required |
+| region       |string| The region where the player is located. (select "Asia" or "Europe")    | Optional |
+| cashierURL   |string| an URL for opening the Operator’s website Cashier page.                | optional |
+| lobbyURL     |string| an URL for opening the Operator’s website lobby page.                  | optional |
 
 ### Examples
 
@@ -42,7 +42,7 @@ POST
 URL
 
 ``` html
-https://<API URL>/api/startgame?MEMB_ID=<securelogin>&HASH=<TOKEN>
+https://<API URL>/api/V4/StartGame
 ```
 
 HEADER

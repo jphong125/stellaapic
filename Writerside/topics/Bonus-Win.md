@@ -17,8 +17,8 @@ Requested bonus API URL will be notified individually, for security reasons.
 
 | Name       | Data Type | Description                                                                 | Required |
 |:-----------|:---------:|:----------------------------------------------------------------------------|----------|
-| hash       |  string   | Hash code of the request                                                    | Required |
-| userid     |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
+| uuid       |string| A unique ID for each request                                                                                                                                              | Required |
+| userId     |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
 | gameId     |  string   | Id of the game.                                                             | Required |
 | roundId    |  string   | Id of the round.                                                            | Required |
 | amount     |  decimal  | Amount of the bet.                                                          | Required |
@@ -28,13 +28,13 @@ Requested bonus API URL will be notified individually, for security reasons.
 | bonusCode  |  string   |  Id of the bonus in Casino Operator system.                   | Optional |
 | platform   |  string   | The platform type (channel) on which the game is played.                    | Optional |
 | roundId    |  string   | Id of the last played round in Free Round Bonus                 | Optional |
-| token      |  string   | Token of the player from Authenticate response.                             | Optional |
+| sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
 
 
 ### Example of URL
 
 ``` http
-https://<Partner website(Domain)/bonuswin?authToken=<TOKEN>
+https://<API URL>/V4/BonusWin
 ```
 
 ### Example of HTTP BODY

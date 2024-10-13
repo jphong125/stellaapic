@@ -14,25 +14,25 @@ Requested jackpot win API URL will be notified individually, for security reason
 
 ### Parameters
 
-| Name              | Data Type | Description                                                                 | Required |
-|:------------------|:---------:|:----------------------------------------------------------------------------|----------|
-| hash              |  string   | Hash code of the request                                                    | Required |
-| userid            |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
-| gameId            |  string   | Id of the game.                                                             | Required |
-| roundId           |  string   | Id of the round.                                                            | Required |
-| amount            |  decimal  | Amount of the bet.                                                          | Required |
-| reference         |  string   | Unique reference of this transaction.                                       | Required |
-| providerId        |  string   | Game Provider id.                                                           | Required |
-| timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side    | Required |
-| jackpotId         |  string   | Id of the jackpot.                         | Required | 
-| platform          |  string   | The platform type (channel) on which the game is played.                    | Optional |
-| token             |  string   | Token of the player from Authenticate response.                             | Optional |
+| Name       | Data Type | Description                                                                 | Required |
+|:-----------|:---------:|:----------------------------------------------------------------------------|----------|
+| hash       |  string   | Hash code of the request                                                    | Required |
+| userId     |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
+| gameId     |  string   | Id of the game.                                                             | Required |
+| roundId    |  string   | Id of the round.                                                            | Required |
+| amount     |  decimal  | Amount of the bet.                                                          | Required |
+| reference  |  string   | Unique reference of this transaction.                                       | Required |
+| providerId |  string   | Game Provider id.                                                           | Required |
+| timestamp  |  string   | Date and time when the transaction is processed on the Lucky Monaco side    | Required |
+| jackpotId  |  string   | Id of the jackpot.                         | Required | 
+| platform   |  string   | The platform type (channel) on which the game is played.                    | Optional |
+| token      |  string   | Token of the player from Authenticate response.                             | Optional |
 
 
 ### Example of URL
 
 ``` http
-https://<Partner website(Domain)/jackpotwin?authToken=<TOKEN>
+https://<API URL>/V4/JackPotWin
 ```
 
 ### Example of HTTP BODY

@@ -16,7 +16,7 @@ Requested get balance currency game API URL will be notified individually, for s
 | providerid   |string| Game Provider identifier                                                                                                       | Required |
 | userid       |string| Identifier of the user within the Casino Operator’s system.                                                                    | Required |
 | currencyList |string| The list of currecy amount for which player’s balance should be returned. It is a string contains currency separated by array. | Required |
-| hash         |string| Hash code of request.                                                                                                          | Required |
+| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
 | platform     |string| The platform type (channel) on which thegame is played                                                                         | Optional |
 | token        |string| Token of the player from Authenticate response.                                                                                | Optional |
 
@@ -24,7 +24,7 @@ Requested get balance currency game API URL will be notified individually, for s
 ### Example of URL
 
 ``` http
-https://<API URL>/getbalancepercurrency?authToken=<TOKEN>
+https://<API URL>/V4/GetBalancePerCurrency
 ```
 
 ### Example of HTTP BODY

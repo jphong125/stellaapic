@@ -20,11 +20,11 @@ POST
 URL
 
 ``` http
-https://<API-service-domain>/V4/health/heartbeatcheck?MEMB_ID=<securelogin>&HASH=<TOKEN>
+https://<API-service-domain>/V4/Check
 ```
 
 ``` http
-https://<game-server-domain>/V4/livetest?MEMB_ID=<securlogin>&HASH=<TOKEN>
+https://<game-server-domain>/V4/Check
 ```
 
 

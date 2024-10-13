@@ -12,7 +12,7 @@ Requested get casino currency URL will be notified individually, for security re
 | Name        |Data Type| Description                                                                                                                                                        | Remark |
 |:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
 | secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
-| hash        |string| Hash code of request.                                                                                                                                              | Required |
+| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
 ### Examples
 
 METHOD

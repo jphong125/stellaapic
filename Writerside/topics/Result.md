@@ -17,44 +17,46 @@ Requested result API URL will be notified individually, for security reasons.
 
 ### Parameters
 
-| Name           | Data Type | Description                                                                 | Required |
-|:---------------|:---------:|:----------------------------------------------------------------------------|----------|
-| hash           |  string   | Hash code of the request                                                    | Required |
-| userid     |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
-| gameId         |  string   | Id of the game.                                                             | Required |
-| roundId        |  string   | Id of the round.                                                            | Required |
-| amount         |  decimal  | Amount of the bet.                                                          | Required |
-| reference      |  string   | Unique reference of this transaction.                                       | Required |
-| providerId     |  string   | Game Provider id.                                                           | Required |
-| timestamp      |  string   | Date and time when the transaction is processed on the Lucky Monaco side    | Required |
-| roundDetails   |  string   | Additional information about the currentgame round.                         | Required |
-| bonusCode      |  string   | Id of the bonus in Casino Operator system.                                  | Optional |              
-| platform       |  string   | The platform type (channel) on which the game is played.                    | Optional |
-| token          |  string   | Token of the player from Authenticate response.                             | Optional |
-| promoWinAmount |  string   | Prize amount that the player is awarded with during a promotional campaign. | Optional |
+| Name              | Data Type | Description                                                                 | Required |
+|:------------------|:---------:|:----------------------------------------------------------------------------|----------|
+| uuid                |string| A unique ID for each request                                                                                                           | Required |
+| userId            |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
+| gameId            |  string   | Id of the game.                                                             | Required |
+| roundId           |  string   | Id of the round.                                                            | Required |
+| amount            |  decimal  | Amount of the bet.                                                          | Required |
+| reference         |  string   | Unique reference of this transaction.                                       | Required |
+|currency|string| Currency of the player                                       | Required |
+| providerId        |  string   | Game Provider id.                                                           | Required |
+| timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side    | Required |
+| roundDetails      |  string   | Additional information about the currentgame round.                         | Required |
+| bonusCode         |  string   | Id of the bonus in Casino Operator system.                                  | Optional |              
+| platform          |  string   | The platform type (channel) on which the game is played.                    | Optional |
+| sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
+| promoWinAmount    |  string   | Prize amount that the player is awarded with during a promotional campaign. | Optional |
 | promoWinReference |  string   | Unique reference of this transaction.                                       | Optional |
-|  promoCampaignID |  string   | Id of the promotional campaign.                                             | Optional |
-|   promoCampaignType |  string   | Type of the promotional campaign.                                             | Optional |
+| promoCampaignID   |  string   | Id of the promotional campaign.                                             | Optional |
+| promoCampaignType |  string   | Type of the promotional campaign.                                             | Optional |
 
 ### Example of URL
 
 ``` http
-https://<Partner website(Domain)/result?authToken=<TOKEN>
+https://<API URL>/V4/Result
 ```
 
 ### Example of HTTP BODY
 
 ``` json
 {
-    "roundDetails": "spin",
-    "reference": "585c1306f89c56f5ecfc2f5d",
-    "gameId": "Im_60_tumblefortune",
-    "amount": 10.0,
     "providerId": "luckymonaco",
     "userId": "421",
+    "sessionId": "sid"
+    "currency": "USD",
+    "amount": 10.0,
+    "roundDetails": "spin",
     "roundid" : "5103188801"
-    "platform" : "PC"
-    "hash": "4a5d375ac1311b04fba2ea66d067b8e5"
+    "reference": "585c1306f89c56f5ecfc2f5d",
+    "gameId": "Im_60_tumblefortune",
+    "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
     "timestamp": "1482429190374"
 }
 ```

@@ -17,8 +17,8 @@ Requested promo win API URL will be notified individually, for security reasons.
 
 | Name         | Data Type | Description                                                                 | Required |
 |:-------------|:---------:|:----------------------------------------------------------------------------|----------|
-| hash         |  string   | Hash code of the request                                                    | Required |
-| userid       |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
+| uuid         |string| A unique ID for each request                                                                                                                                              | Required |
+| userId       |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
 | amount       |  decimal  |  Prize amount that the player is awarded with.                                                         | Required |
 | reference    |  string   | Unique reference of this transaction.                                       | Required |
 | providerId   |  string   | Game Provider id.                                                           | Required |
@@ -31,7 +31,7 @@ Requested promo win API URL will be notified individually, for security reasons.
 ### Example of URL
 
 ``` http
-https://<Partner website(Domain)/promowin?authToken=<TOKEN>
+https://<API URL>/V4/PromoWin
 ```
 
 ### Example of HTTP BODY

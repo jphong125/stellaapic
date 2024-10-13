@@ -1,7 +1,7 @@
-# Get Casino Icon Info
+# Get Cason Icon List
 
 ## Overview
-Using this method Casino Operator will get icon info for the games :
+Using this method Casino Operator will get icons list for the games :
 
 ## API URL
 Requested get a list of game URL will be notified individually, for security reasons.

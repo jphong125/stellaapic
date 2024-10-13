@@ -13,7 +13,7 @@ Requested get betting table API URL will be notified individually, for security 
 |:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
 | secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
 | currency    |string| Player’s currency.                                                                                                                                           | Required |
-| hash        |string| Hash code of request.                                                                                                                                              | Required |
+| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
 ### Examples
 
 METHOD
@@ -25,7 +25,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/getbettingtable?MEMB_ID=<securelogin>&HASH=<TOKEN>
+https://<API URL>/V4/GetBettingTable
 ```
 
 HEADER
@@ -38,11 +38,11 @@ Content-Type: application/json
 
 ###  Response parameters
 
-|        Name         |                | Data Type | Description                        |
-|:-------------------:|:--------------:|:---------:|:-----------------------------------|
-|      Currency       |                |  string   | Player's ISO 4217 currency code    |
-|    Betting table    |                |   array   | List of betting table information. |
-|                     | betting amount |  string   | betting amount    |
+|     Name     |                | Data Type | Description                        |
+|:------------:|:--------------:|:---------:|:-----------------------------------|
+|   currency   |                |  string   | Player's ISO 4217 currency code    |
+| bettingTable |                |   array   | List of betting table information. |
+|              | betting amount |  string   | betting amount    |
 
 
 ### Example of body

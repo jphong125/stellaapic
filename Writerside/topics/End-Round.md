@@ -19,22 +19,22 @@ Requested promo win API URL will be notified individually, for security reasons.
 
 ### Parameters
 
-| Name              | Data Type | Description                                                                | Required |
-|:------------------|:---------:|:---------------------------------------------------------------------------|----------|
-| hash              |  string   | Hash code of the request                                                   | Required |
-| userid            |  string   | Player's ID, specified by Partner when creating a game session.            | Required |
-| gameId            |  string   | Id of the game.                                                            | Required |
-| roundId           |  string   | Id of the round.                                                           | Required |
-| providerId        |  string   | Game Provider id.                                                          | Required | 
-| platform          |  string   | The platform type (channel) on which the game is played.                   | Optional |
-| token             |  string   | Token of the player from Authenticate response.                            | Optional |
-| win               |  string   | Win amount in round. Intended to notify Operator about amount won in round | Optional |
+| Name       | Data Type | Description                                                                | Required |
+|:-----------|:---------:|:---------------------------------------------------------------------------|----------|
+| uuid       |string| A unique ID for each request                                                                                                                                              | Required |
+| userId     |  string   | Player's ID, specified by Partner when creating a game session.            | Required |
+| gameId     |  string   | Id of the game.                                                            | Required |
+| roundId    |  string   | Id of the round.                                                           | Required |
+| providerId |  string   | Game Provider id.                                                          | Required | 
+| platform   |  string   | The platform type (channel) on which the game is played.                   | Optional |
+| sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
+| win        |  string   | Win amount in round. Intended to notify Operator about amount won in round | Optional |
 
 
 ### Example of URL
 
 ``` http
-https://<Partner website(Domain)/endround?authToken=<TOKEN>
+https://<API URL>/V4/EndRound
 ```
 
 ### Example of HTTP BODY

@@ -13,13 +13,13 @@ Requested balance API URL will be notified individually, for security reasons.
 |:----------------------|:---:|:-------------------------------------------------------------------------|----------|
 | providerid            |string| Game Provider identifier                                                 | Required |
 | userid             |string| Identifier of the user within the Casino Operator’s system.              | Required |
-| token                 |string| Token of the player from Authenticate response.| Required |
-| hash         |string| Hash code of request.                                             | Required|
+| sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
+| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
 
 ### Example of URL
 
 ``` http
-https://<API URL>/Balance?authToken=<TOKEN>
+https://<API URL>/V4/Balance
 ```
 
 ### Example of HTTP BODY
@@ -28,8 +28,8 @@ https://<API URL>/Balance?authToken=<TOKEN>
 {
     "providerid": "<Luckymonaco>",
     "userid": "<User ID>",
-    "token": "<token>"
-    "hash": "<hash>"
+    "sessionId": "<sessionId>",
+    "uuid": "<uuid>"
 }
 ```
 
@@ -37,11 +37,11 @@ https://<API URL>/Balance?authToken=<TOKEN>
 
 ### Parameters 2
 
-|Name|Data Type| Description                  | Required |
-|:---|:---:|:-----------------------------|---|
-|currency|string| Currency of the player       |  Required |
-|cash|decimal| Real balance of the player.  |  Required |
-|bonus|decimal| Bonus balance of the player. |  Required |
+|Name|Data Type| Description                                                  | Required |
+|:---|:---:|:-------------------------------------------------------------|----------|
+|currency|string| Currency of the player                                       | Required |
+|cash|decimal| Real balance of the player.                                  | Required |
+|bonus|decimal| Bonus balance of the player. (when a FRB has occurred.) | Optional |
 
 
 ### Example of HTTP BODY 2
@@ -50,7 +50,6 @@ https://<API URL>/Balance?authToken=<TOKEN>
 {
     "currency": "USD",
     "cash": 99999.99,
-    "bonus": 99.99,
     "error": 0,
     "description":"Success"
 }

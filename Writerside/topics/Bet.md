@@ -12,45 +12,48 @@ Requested bet API URL will be notified individually, for security reasons.
 
 ### Parameters
 
-| Name                  | Data Type | Description                                                              | Required |
-|:----------------------|:---------:|:-------------------------------------------------------------------------|----------|
-| hash                  |  string   | Hash code of the request                                                 | Required |
-|userid               |  string   | Player's ID, specified by Partner when creating a game session.          | Required |
-| gameId               |  string   | Id of the game.                                                          | Required |
-|  roundId  |  string   | Id of the round.                                                         | Required |
-| amount  |  decimal  | Amount of the bet.                                                       | Required |
-| reference             |  string   | Unique reference of this transaction.                                    | Required |
-| providerId                |  string   | Game Provider id.                                                        | Required |
-|  timestamp           |  string   | Date and time when the transaction is processed on the Lucky Monaco side | Required |
-|  roundDetails        |  string   | Additional information about the currentgame round.                                      | Required |
-| bonusCode             |  string   |  Id of the bonus in Casino Operator system.                                            | Optional |              
-| platform    |  string   | The platform type (channel) on which the game is played.                                              | Optional |
-| language                  |  string   | Language on which the game was opened.                                            | Optional |
-|  jackpotContribution                 |  string   | Amount of the contribution tothe jackpot. If there is a multi-tier jackpot, contain the total amount of contributions to all jackpots.                                            | Optional |
-|   jackpotDetails                 |  string   | Amounts of the contribution for multi-tierjackpot, separated by tiers.                                             | Optional |
-|    jackpotId                 |  string   |  Id of the active jackpot to contribute.                                          | Optional |
-|    token                 |  string   |  Token of the player from Authenticate response.                                         | Optional |
-|     ipAddress                  |  string   |   IP address of the player.                                         | Optional |
+| Name                | Data Type | Description                                                                                                                            | Required |
+|:--------------------|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------|----------|
+| uuid                |string| A unique ID for each request                                                                                                           | Required |
+| userId              |  string   | Player's ID, specified by Partner when creating a game session.                                                                        | Required |
+| gameId              |  string   | Id of the game.                                                                                                                        | Required |
+| roundId             |  string   | Id of the round.                                                                                                                       | Required |
+| amount              |  decimal  | Amount of the bet.                                                                                                                     | Required |
+| reference           |  string   | Unique reference of this transaction.                                                                                                  | Required |
+| sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
+| providerId          |  string   | Game Provider id.                                                                                                                      | Required |
+|currency|string| Currency of the player                                       | Required |
+| timeStamp           |  string   | Date and time when the transaction is processed on the Lucky Monaco side                                                               | Required |
+| roundDetails        |  string   | Additional information about the currentgame round. (ex. "spin", "buyFreeSpin")                                                            | Required |
+| bonusCode           |  string   | Id of the bonus in Casino Operator system.                                                                                             | Optional |
+| language            |  string   | Language on which the game was opened.                                                                                                 | Optional |
+| jackpotContribution |  string   | Amount of the contribution tothe jackpot. If there is a multi-tier jackpot, contain the total amount of contributions to all jackpots. | Optional |
+| jackpotDetails      |  string   | Amounts of the contribution for multi-tierjackpot, separated by tiers.                                                                 | Optional |
+| jackpotId           |  string   | Id of the active jackpot to contribute.                                                                                                | Optional |
+| sessionId        |string| Player’s game session id on Lucky Monaco system.                                                                                       | Required |
+
 
 ### Example of URL
 
 ``` http
-https://<Partner website(Domain)/Bet?authToken=<TOKEN>
+https://<API URL>/V4/Bet
 ```
 
 ### Example of HTTP BODY
 
 ``` json
 {
+    "providerId": "luckymonaco",
+    "userId": "421",
+    "sessionId": "sid"
+    "currency": "USD"
+    "amount": 100, 
     "roundDetails": "spin",
     "reference": "585c1306f89c56f5ecfc2f5d",
-    "gameId": "Im_60_tumblefortune",
-    "amount": 100,
-    "providerId": "luckymonaco",
-    "userid": "421",
-    "roundid" : "5103188801"
-    "hash": "4a5d375ac1311b04fba2ea66d067b8e5"
-    "timestamp": "1482429190374"
+    "gameId": "Im_60_tumblefortune",  
+    "roundId" : "5103188801"
+    "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
+    "timeStamp": "1482429190374"
 }
 ```
 

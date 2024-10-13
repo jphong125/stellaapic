@@ -12,6 +12,7 @@
         <toc-element topic="Integration-API.md">
             <toc-element topic="GetCasinoGames.md"/>
             <toc-element topic="Getalistofgameicon.md"/>
+            <toc-element topic="Get-Cason-Icon-List.md"/>
             <toc-element topic="GetCasinoLanguage.md">
             </toc-element>
             <toc-element topic="GetCasinoCurrency.md"/>
@@ -24,6 +25,7 @@
             <toc-element topic="Session-Expired.md"/>
         </toc-element>
         <toc-element topic="Seamless-Wallet-API.md">
+            <toc-element topic="Check.md"/>
             <toc-element topic="Balance.md"/>
             <toc-element topic="Bet.md"/>
             <toc-element topic="Result.md"/>

@@ -16,26 +16,26 @@ Requested refund win API URL will be notified individually, for security reasons
 
 ### Parameters
 
-| Name           | Data Type | Description                                                                 | Required |
-|:---------------|:---------:|:----------------------------------------------------------------------------|----------|
-| hash           |  string   | Hash code of the request                                                    | Required |
-| userid         |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
-| reference      |  string   | Unique reference of this transaction.                                       | Required |
-| providerId     |  string   | Game Provider id.                                                           | Required |
-| gameId         |  string   | Id of the game.                                                             | Optional |
-| roundId        |  string   | Id of the round.                                                            | Optional |
-| timestamp      |  string   | Date and time when the transaction is processed on the Lucky Monaco side    | Optional |
-| roundDetails   |  string   | Additional information about the currentgame round.                         | Optional |
-| amount         |  decimal  | Amount to be refunded.                                                          | Optional |
-| bonusCode      |  string   | Id of the bonus in Casino Operator system.                                  | Optional |              
-| platform       |  string   | The platform type (channel) on which the game is played.                    | Optional |
-| token          |  string   | Token of the player from Authenticate response.                             | Optional |
+| Name         | Data Type | Description                                                                 | Required |
+|:-------------|:---------:|:----------------------------------------------------------------------------|----------|
+| hash         |  string   | Hash code of the request                                                    | Required |
+| userId       |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
+| reference    |  string   | Unique reference of this transaction.                                       | Required |
+| providerId   |  string   | Game Provider id.                                                           | Required |
+| gameId       |  string   | Id of the game.                                                             | Optional |
+| roundId      |  string   | Id of the round.                                                            | Optional |
+| timestamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco side    | Optional |
+| roundDetails |  string   | Additional information about the currentgame round.                         | Optional |
+| amount       |  decimal  | Amount to be refunded.                                                          | Optional |
+| bonusCode    |  string   | Id of the bonus in Casino Operator system.                                  | Optional |              
+| platform     |  string   | The platform type (channel) on which the game is played.                    | Optional |
+| token        |  string   | Token of the player from Authenticate response.                             | Optional |
 
 
 ### Example of URL
 
 ``` http
-https://<Partner website(Domain)/refund?authToken=<TOKEN>
+https://<API URL>/V4/Refund
 ```
 
 ### Example of HTTP BODY

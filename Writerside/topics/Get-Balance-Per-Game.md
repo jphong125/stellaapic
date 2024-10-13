@@ -16,7 +16,7 @@ Requested get balance per game API URL will be notified individually, for securi
 | providerid |string| Game Provider identifier                                                                                                         | Required |
 | userid     |string| Identifier of the user within the Casino Operator’s system.                                                                      | Required |
 | gameidList |string| The list of games for which player’s balance should be returned. It is a string contains gameid separated by comma.              | Required |
-| hash       |string| Hash code of request.                                                                                                            | Required |
+| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
 | platform   |string| The platform type (channel) on which thegame is played                                                                           | Optional |
 | token      |string| Token of the player from Authenticate response.                                                                                  | Optional |
 
@@ -24,7 +24,7 @@ Requested get balance per game API URL will be notified individually, for securi
 ### Example of URL
 
 ``` http
-https://<API URL>/getbalancepergame?authToken=<TOKEN>
+https://<API URL>/V4/GetBalancePerGame
 ```
 
 ### Example of HTTP BODY

@@ -14,7 +14,7 @@ Requested get casino language URL will be notified individually, for security re
 | Name        |Data Type| Description                                                                                                                                                        | Remark |
 |:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
 | secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
-| hash        |string| Hash code of request.                                                                                                                                              | Required |
+| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
 ### Examples
 
 METHOD
@@ -26,7 +26,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/getcasinolanguage?MEMB_ID=<securelogin>&HASH=<TOKEN>
+https://<API URL>/V4/GetCasinoLanguage
 ```
 
 HEADER
@@ -39,10 +39,10 @@ Content-Type: application/json
 
 ###  Response parameters
 
-|     Name      |                   | Data Type | Description                                                                           |
-|:-------------:|:-----------------:|:---------:|:--------------------------------------------------------------------------------------|
-| Language list |                   |   array   | List of language information.                                                         |
-|               |     language      |  string   |  Language code in ISO 639-1 standard                      |
+|     Name     |                   | Data Type | Description                                                                           |
+|:------------:|:-----------------:|:---------:|:--------------------------------------------------------------------------------------|
+| languageList |                   |   array   | List of language information.                                                         |
+|              |     language      |  string   |  Language code in ISO 639-1 standard                      |
 
 
 ### Example of body

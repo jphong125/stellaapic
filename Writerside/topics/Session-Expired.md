@@ -20,8 +20,8 @@ Requested session expired API URL will be notified individually, for security re
 | providerId |string| Lucky Monaco provider id in Operator’s system                                                                                                                                                                                                              | Required |
 | sessionId  |string| Player’s game session id on Lucky Monaco side                                                                                                                                                                                                              | Required |
 | externalPlayerId   |string| Id of the player within the operator’s system. | Required |
-| hash       |string| Hash code of request.                                                                                                                                                                                                                                      | Required |
-| token      |string| Token of the player from Authenticate response. | Optional |
+| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
+| sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
 
 ### Examples
 
@@ -34,7 +34,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/sessionexpired?MEMB_ID=<securelogin>&HASH=<TOKEN>
+https://<API URL>/V4/SessionExpired
 ```
 
 HEADER

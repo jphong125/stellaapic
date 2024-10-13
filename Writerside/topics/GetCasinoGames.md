@@ -11,9 +11,8 @@ Requested get casino game API URL will be notified individually, for security re
 
 | Name        |Data Type| Description                                                                                                                                                        | Remark |
 |:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required | 
-| options     |string| List of settings. By including it, operator can get additional information about<br/>possible valeues are : <br/>. GetFrbDetails<br/>. GetLines<br/>. GetDataTypes | Optional |
-| hash        |string| Hash code of request.                                                                                                                                              | Required |
+| secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
+| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
 ### Examples
 
 METHOD
@@ -25,7 +24,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/getcasinogame?MEMB_ID=<securelogin>&HASH=<TOKEN>
+https://<API URL>/V4/GetCasinoGame
 ```
 
 HEADER
@@ -38,27 +37,27 @@ Content-Type: application/json
 
 ###  Response parameters
 
-|        Name         |                   | Data Type | Description                                                                           |
-|:-------------------:|:-----------------:|:---------:|:--------------------------------------------------------------------------------------|
-|      Gamelist       |                   |   array   | List of game information.                                                             |
-|                     |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                      |
-|                     |     gameName      |  string   | Name of the game.                                                                     |
-|                     |    gameNameZh     |  string   | Chines name of the game.                                                              |
-|                     |    gameName-Tw    |  string   | Chines (Traditional) name of the game.                                                |
-|                     |  typeDescription  |  string   | Short description of the game type.                                                   |
-|                     |     platform      |  string   | Platform for which the game can be opened.                                            |
-|                     | demoGameAvailable |  boolean  | If true, a demo version of the game is available.                                     |
-|                     |    aspectRatio    |  string   | Describes the proportional relationship between the width and the height of the game. |
-|                     |   gameIdNumeric   |  number   | Numeric value of gameId                                                               |
-|                     |   jurisdictions   |  string   | Jurisdiction of the player                                                            |
-|                     |   frbAvailable    |  boolean  | Boolean If true, a free round bonus of the game is available.                         |
-|                     |       lines       |  string   | Number of available pay lines in the game                                             |
-|                     |     rowreels      |  string   | Layout of the game                                                                    |
-|                     |        rtp        |  string   | Rtp of the game                                                                       |
-|                     |     dataType      |  string   | Type of game portfolio                                                                |
-|                     |  gameDescription  |  string   | Description of the game                                                               |
-|                     |      release      |  boolean  | If true, the game is available.                                                       |
-|                     |    releaseDate    |  string   | Date of release of the game                                                           |
+|   Name   |                   | Data Type | Description                                                                           |
+|:--------:|:-----------------:|:---------:|:--------------------------------------------------------------------------------------|
+| gameList |                   |   array   | List of game information.                                                             |
+|          |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                      |
+|          |     gameName      |  string   | Name of the game.                                                                     |
+|          |    gameNameZh     |  string   | Chines name of the game.                                                              |
+|          |    gameName-Tw    |  string   | Chines (Traditional) name of the game.                                                |
+|          |  typeDescription  |  string   | Short description of the game type.                                                   |
+|          |     platform      |  string   | Platform for which the game can be opened.                                            |
+|          | demoGameAvailable |  boolean  | If true, a demo version of the game is available.                                     |
+|          |    aspectRatio    |  string   | Describes the proportional relationship between the width and the height of the game. |
+|          |   gameIdNumeric   |  number   | Numeric value of gameId                                                               |
+|          |   jurisdictions   |  string   | Jurisdiction of the player                                                            |
+|          |   frbAvailable    |  boolean  | Boolean If true, a free round bonus of the game is available.                         |
+|          |       lines       |  string   | Number of available pay lines in the game                                             |
+|          |     rowReels      |  string   | Layout of the game                                                                    |
+|          |        rtp        |  string   | Rtp of the game                                                                       |
+|          |     dataType      |  string   | Type of game portfolio                                                                |
+|          |  gameDescription  |  string   | Description of the game                                                               |
+|          |      release      |  boolean  | If true, the game is available.                                                       |
+|          |    releaseDate    |  string   | Date of release of the game                                                           |
 
 ### Example of body
 

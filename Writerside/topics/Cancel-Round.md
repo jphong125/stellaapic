@@ -20,7 +20,7 @@ Requested cancel round API URL will be notified individually, for security reaso
 | externalPlayerId  |string| Id of the player within the Operator system.                                                                                         | Required |
 | gameId       |string| Id of the game. This is optional parameter, which has to be sent by Operator if only the session for specific game should be closed. | Required |
 |  roundId |string| Id of the game round to be canceled (play session id).                                                                               | optional |
-| hash         |string| Hash code of request.                                                                                                                | Required |
+| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
 ### Examples
 
 METHOD
@@ -32,7 +32,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/cancelround?MEMB_ID=<securelogin>&HASH=<TOKEN>
+https://<API URL>/V4/CancelRound
 ```
 
 HEADER
