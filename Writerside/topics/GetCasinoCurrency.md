@@ -33,8 +33,16 @@ HEADER
 ``` http
 Content-Type: application/json
 ```
+### Example of HTTP BODY
 
-## Successful response
+``` json
+{
+    "secureLogin" : "S100",
+    "token" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY",
+}
+```
+
+## Response
 
 ### Response parameters
 

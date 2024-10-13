@@ -14,12 +14,12 @@ Requested get played game API URL will be notified individually, for security re
 | playerId    |string| Id of the player within the Operator system.                | Required |
 | dateplayed  |string| Date, based on the time zone of the user.                   | Required |
 | timeZone    |string| Time zone of the user. Example: GMT, GMT+8, GMT+04:00                                     | Required |
-| hash        |string| Hash code of request.                                       | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 
 ### Example of URL
 
 ``` http
-https://<API URL>/getplayedgame?authToken=<TOKEN>
+https://<API URL>/GetPlayedGame
 ```
 
 ### Example of HTTP BODY
@@ -30,7 +30,7 @@ https://<API URL>/getplayedgame?authToken=<TOKEN>
     "playerId": "421"
     "datePlayed": :2016-12-23"
     "timeZone": "GMT+00:00"
-    "hash": "980d06d3361f1e21a2f1550c6806ef52"
+    "token": "980d06d3361f1e21a2f1550c6806ef52"
 }
 ```
 

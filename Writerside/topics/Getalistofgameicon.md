@@ -44,13 +44,13 @@ Content-Type: application/json
 
 ###  Response parameters
 
-|   Name   |                   | Data Type | Description                                                                           |
-|:--------:|:-----------------:|:---------:|:--------------------------------------------------------------------------------------|
-| IconList |                   |   array   | List of game information.                                                             |
-|          |        id         |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                      |
-|          |       width       |  string   | Name of the game.                                                                     |
-|          |      height       |  string   | Chines name of the game.                                                              |
-|          |     language      |  string   | Chines (Traditional) name of the game.                                                |
+|   Name   |                   | Data Type | Description                              |
+|:--------:|:-----------------:|:---------:|:-----------------------------------------|
+| IconList |                   |   array   | List of game icon info                   |
+|          |        id         |  string   | Icon size consisting of width and height |
+|          |       width       |  string   | width of icon                            |
+|          |      height       |  string   | height of icon                           |
+|          |     language      |  string   | language of icon                         |
 
 
 ### Example of body

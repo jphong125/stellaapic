@@ -17,10 +17,10 @@ Requested cancel round API URL will be notified individually, for security reaso
 | Name         |Data Type| Description                                                                                                                          |  Remark  |
 |:-------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------|:--------:|
 | secureLogin  |string| User name for authentacation in the Casino Game API service                                                                          | Required |
-| externalPlayerId  |string| Id of the player within the Operator system.                                                                                         | Required |
+| PlayerId  |string| Id of the player within the Operator system.                                                                                         | Required |
 | gameId       |string| Id of the game. This is optional parameter, which has to be sent by Operator if only the session for specific game should be closed. | Required |
 |  roundId |string| Id of the game round to be canceled (play session id).                                                                               | optional |
-| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 ### Examples
 
 METHOD
@@ -41,7 +41,19 @@ HEADER
 Content-Type: application/json
 ```
 
-## Successful response
+### Example of HTTP BODY
+
+``` json
+{
+    "secureLogin" : "S100",
+    "playerId" : "123456"
+    "gameId" : "lm_1_pumpkinfarm",
+    "roundId" : "10000000"
+    "token" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY"
+}
+```
+
+## Response
 
 ### Example of body
 

@@ -1,4 +1,4 @@
-# Free Round
+# Free Round (Reserved for future development)
 
 Free Rounds Bonus (FRB) allows the player to play a specified number of free rounds in a game. Free rounds created Free Rounds API may be configured to be played with a certain bet value specified for each game and currency. During Free rounds game play, bets are not deducted from the player's balance, but all wins are collected for the Free Round Bonus in the Lucky Monaco’s system.
 

@@ -42,7 +42,7 @@ Content-Type: application/json
 }
 ```
 
-## Successful response  
+## Response  
 
 ###  Response parameters
 
@@ -117,7 +117,7 @@ Content-Type: application/json
       "dataType": "RNG",
       "gameDescription": "Enjoy the big win from 3x3, \n5-line machine slot in Kelly's Wheel Double. \nNot only that, you can count on a great chance in the bonus game \nwhere two wheels are spinning.",
       "release": true,
-      "releaseDate": "1899-12-30"
+      "releaseDate": "2023-01-11"
     },
 ```
 

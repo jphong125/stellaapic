@@ -62,7 +62,7 @@ https://<API URL>/V4/Bet
 }
 ```
 
-## Response from partner(s)
+## Response from partner
 
 ### Parameters 3
 

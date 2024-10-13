@@ -17,7 +17,7 @@ METHOD
 URL
 
 ``` http
-https://<API URL>/log/slot?partner_id=<securelogin>&token=<TOKEN>
+https://<API URL>/GetSlotLog
 ```
 
 HEADER
@@ -32,7 +32,7 @@ Content-Type: application/json
 |:------|:---------------:|:------------------------------------|-----|
 | start |     number      | starting index of log                          | Required |
 | limit |     number      | Number of logs to obtain (up to 1,000)           | Required |
-| hash  |   string    | Hash code of request. | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 
 ### Example of Request Body
 
@@ -40,7 +40,7 @@ Content-Type: application/json
 {
     "start": 100,
     "limit": 1000
-    "hash" : "ab64cee3-f73b-4631-9abf-b1a09c1f9c36"
+    "token": "980d06d3361f1e21a2f1550c6806ef52"
 }
 ```
 
@@ -51,7 +51,7 @@ Content-Type: application/json
 | Name        |    Data Type    | Description                                   | Remark |
 |:------------|:---------------:|:----------------------------------------------|--------|
 | status      |     string      | OK or Failed                                  |Required |
-| hash        |     string      | Hash code of response.                        |Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 | logs        |      array      | log list                                      |Required |
 | error       |     string      | Failed Code                                   |Required |
 | description |   string       | Description of the error for troubleshooting. |Required |
@@ -75,7 +75,7 @@ Log Detail
 {
     "error": "0",
     "status": "success",
-    "hash" : "ab64cee3-f73b-4631-9abf-b1a09c1f9c36",
+    "token" : "ab64cee3-f73b-4631-9abf-b1a09c1f9c36",
     "logs": [
         [
             100,

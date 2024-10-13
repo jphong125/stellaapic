@@ -8,12 +8,12 @@ Requested get a list of game URL will be notified individually, for security rea
 
 ###  Request parameters
 
-| Name        |Data Type| Description                                                                                                                                                        | Remark |
-|:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
-| id          |string| A unique ID for each request                                                                                                                                              | Required |
-| language    |string| A unique ID for each request                                                                                                                                              | Required |
+| Name        |Data Type| Description                                                            | Remark |
+|:------------|:---:|:-----------------------------------------------------------------------|:---------:|
+| secureLogin |string| User name for authentacation in the Casino Game API service            | Required |
+| token      |string| Token of the player from Authenticate response                         | Required |
+| id          |string| Icon size consisting of width and height (can get Get Casino Icon Info | Required |
+| language    |string| Language of icon                                                       | Required |
 
 ### Example of URL
 METHOD
@@ -48,11 +48,11 @@ Content-Type: application/json
 
 ###  Response parameters
 
-| Name  |                   | Data Type | Description                                                                           |
-|:-----:|:-----------------:|:---------:|:--------------------------------------------------------------------------------------|
-| Icons |                   |   array   | List of game information.                                                             |
-|       |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                      |
-|       |        url        |  string   | Name of the game.                                                                     |
+| Name  |                   | Data Type | Description                                                      |
+|:-----:|:-----------------:|:---------:|:-----------------------------------------------------------------|
+| Icons |                   |   array   | List of game information.                                        |
+|       |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco. |
+|       |        url        |  string   | Url of icon                                                      |
 
 
 ### Example of body

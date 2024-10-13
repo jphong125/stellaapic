@@ -20,7 +20,7 @@ Requested session expired API URL will be notified individually, for security re
 | providerId |string| Lucky Monaco provider id in Operator’s system                                                                                                                                                                                                              | Required |
 | sessionId  |string| Player’s game session id on Lucky Monaco side                                                                                                                                                                                                              | Required |
 | externalPlayerId   |string| Id of the player within the operator’s system. | Required |
-| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 | sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
 
 ### Examples
@@ -47,11 +47,11 @@ Content-Type: application/json
  "providerId": "luckymonaco"
  "sessionId": "6fd2d6f3bb8f4c5a9fadf15d81206af2"
  "externalPlayerId": "123456"
- "hash": "c46d5b113e81d30 6831a06765e12067f"
+ "token" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY"
 }
 ```
 
-## Successful response
+## Response
 
 ### Example of body
 

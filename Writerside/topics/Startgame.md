@@ -50,8 +50,25 @@ HEADER
 ``` html
 Content-Type: application/json
 ```
+### Example of HTTP BODY
 
-## Successful response 
+``` json
+{
+    "secureLogin" : "S100",
+    "uuid" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY",
+    "UserId" : "tester",
+    "UserNickname" : "Tester",
+    "gameId" : "lm_9_roadtomysticoz",
+    "sessionId" : "site_created_session",
+    "language" : "EN",
+    "region" : "ASIA" 
+    "currency" : "USD",
+    "cashierURL" : "",
+    "lobbyURL" : ""
+}
+```
+
+## Response 
 
 Example of successful response from LuckyMonaco API servers. Use URL parameters.
 

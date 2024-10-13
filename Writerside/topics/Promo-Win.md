@@ -1,4 +1,4 @@
-# Promo Win
+# Promo Win (Reserved for future development)
 
 ## Overview
 Using this method the Lucky Monaco system will notify Casino Operator about winning that the player is awarded as a 
@@ -50,7 +50,7 @@ https://<API URL>/V4/PromoWin
 }
 ```
 
-## Response from partner(s)
+## Response from partner
 
 ### Parameters 2
 

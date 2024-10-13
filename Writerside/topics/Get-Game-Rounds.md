@@ -16,12 +16,12 @@ Requested get game round API URL will be notified individually, for security rea
 | timeZone    |string| Time zone of the user. Example: GMT, GMT+8, GMT+04:00                                     | Required |
 | gameId      |string| Symbolic unique identifier of the game.                | Required |
 | hour        |string| A number of hour then rounds were played (optional)                | Required |
-| hash        |string| Hash code of request.                                       | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 
 ### Example of URL
 
 ``` http
-https://<API URL>/getgamerounds?authToken=<TOKEN>
+https://<API URL>/GetGameRounds
 ```
 
 ### Example of HTTP BODY
@@ -34,7 +34,7 @@ https://<API URL>/getgamerounds?authToken=<TOKEN>
     "timeZone": "GMT+00:00"
     "playerId": "Im_2_kellywheeldouble"
     "hour": 10
-    "hash": "980d06d3361f1e21a2f1550c6806ef52"
+    "token": "980d06d3361f1e21a2f1550c6806ef52"
 }
 ```
 

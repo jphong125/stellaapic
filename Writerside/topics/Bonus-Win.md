@@ -1,4 +1,4 @@
-# Bonus Win
+# Bonus Win (Reserved for future development)
 
 ## Overview
 
@@ -51,7 +51,7 @@ https://<API URL>/V4/BonusWin
 }
 ```
 
-## Response from partner(s)
+## Response from partner
 
 ### Parameters 2
 

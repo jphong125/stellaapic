@@ -12,12 +12,12 @@ Requested get round status API URL will be notified individually, for security r
 |:------------|:---:|:------------------------------------------------------------|----------|
 | secureLogin |string| User name for authentication in the Casino Game API service | Required |
 | roundId   |string|  Id of the game round                | Required |
-| hash        |string| Hash code of request.                                       | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 
 ### Example of URL
 
 ``` http
-https://<API URL>/getroundstatus?authToken=<TOKEN>
+https://<API URL>/GetRoundStatus
 ```
 
 ### Example of HTTP BODY
@@ -26,7 +26,7 @@ https://<API URL>/getroundstatus?authToken=<TOKEN>
 {
     "secureLogin": "username"
     "roundId": "5108924498"
-    "hash": "980d06d3361f1e21a2f1550c6806ef52"
+    "token": "980d06d3361f1e21a2f1550c6806ef52"
 }
 ```
 

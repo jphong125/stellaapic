@@ -13,12 +13,12 @@ Requested open history API URL will be notified individually, for security reaso
 | secureLogin |string| User name for authentication in the Casino Game API service | Required |
 | playerId    |string| Id of the player within the Operator system.                | Required |
 | roundId     |string| Unique identifier of the game round.                  | Required |
-| hash        |string| Hash code of request.                                       | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 
 ### Example of URL
 
 ``` http
-https://<API URL>/openhistory?authToken=<TOKEN>
+https://<API URL>/OpenHistory
 ```
 
 ### Example of HTTP BODY
@@ -28,7 +28,7 @@ https://<API URL>/openhistory?authToken=<TOKEN>
     "secureLogin": "username"
     "playerId": "421"
     "roundId": "5108924498"
-    "hash": "980d06d3361f1e21a2f1550c6806ef52"
+    "token": "980d06d3361f1e21a2f1550c6806ef52"
 }
 ```
 

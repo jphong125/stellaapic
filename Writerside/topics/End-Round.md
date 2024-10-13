@@ -45,11 +45,11 @@ https://<API URL>/V4/EndRound
     "providerId": "luckymonaco",
     "userId": "421",
     "roundid" : "5103188801"
-    "hash": "4a5d375ac1311b04fba2ea66d067b8e5"
+    "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
 }
 ```
 
-## Response from partner(s)
+## Response from partner
 
 ### Parameters 2
 

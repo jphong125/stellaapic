@@ -1,4 +1,4 @@
-# Jackpot win
+# Jackpot win (Reserved for future development)
 
 ## Overview
 Using this method a Lucky Monaco system will notify Casino Operator about Jackpot winning. Notification is asynchronous
@@ -51,7 +51,7 @@ https://<API URL>/V4/JackPotWin
 }
 ```
 
-## Response from partner(s)
+## Response from partner
 
 ### Parameters 2
 
