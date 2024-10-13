@@ -37,12 +37,16 @@ https://<API URL>/V4/Balance
 
 ### Parameters 2
 
-|Name|Data Type| Description                                                  | Required |
+|Name|Data Type| Description                                                  | Remark   |
 |:---|:---:|:-------------------------------------------------------------|----------|
 |currency|string| Currency of the player                                       | Required |
 |cash|decimal| Real balance of the player.                                  | Required |
-|bonus|decimal| Bonus balance of the player. (when a FRB has occurred.) | Optional |
 
+### Parameters 3 (Reserved for future development)
+
+|Name|Data Type| Description                                                  | Remark   |
+|:---|:---:|:-------------------------------------------------------------|----------|
+|bonus|decimal| Bonus balance of the player. (when a FRB has occurred.) | Optional |
 
 ### Example of HTTP BODY 2
 

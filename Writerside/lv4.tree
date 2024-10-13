@@ -16,7 +16,6 @@
             <toc-element topic="GetCasinoLanguage.md">
             </toc-element>
             <toc-element topic="GetCasinoCurrency.md"/>
-            <toc-element topic="Get-Betting-Table.md"/>
             <toc-element topic="Close-Session.md"/>
             <toc-element topic="Cancel-Round.md"/>
             <toc-element topic="Health-Check.md">
@@ -34,8 +33,6 @@
             <toc-element topic="Promo-Win.md"/>
             <toc-element topic="End-Round.md"/>
             <toc-element topic="Refund.md"/>
-            <toc-element topic="Get-Balance-Per-Game.md"/>
-            <toc-element topic="Get-Balance-Per-Currency.md"/>
             <toc-element topic="Error-code-for-seamless-Wallet.md"/>
         </toc-element>
         <toc-element topic="Transfer-Wallet-API.md">

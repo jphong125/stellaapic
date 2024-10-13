@@ -12,7 +12,7 @@ Requested bet API URL will be notified individually, for security reasons.
 
 ### Parameters
 
-| Name                | Data Type | Description                                                                                                                            | Required |
+| Name                | Data Type | Description                                                                                                                            | Remark   |
 |:--------------------|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------|----------|
 | uuid                |string| A unique ID for each request                                                                                                           | Required |
 | userId              |  string   | Player's ID, specified by Partner when creating a game session.                                                                        | Required |
@@ -25,12 +25,17 @@ Requested bet API URL will be notified individually, for security reasons.
 |currency|string| Currency of the player                                       | Required |
 | timeStamp           |  string   | Date and time when the transaction is processed on the Lucky Monaco side                                                               | Required |
 | roundDetails        |  string   | Additional information about the currentgame round. (ex. "spin", "buyFreeSpin")                                                            | Required |
+
+| sessionId        |string| Player’s game session id on Lucky Monaco system.                                                                                       | Required |
+
+### Parameters 2 (Reserved for future development)
+
+|Name|Data Type| Description                                                  | Remark   |
+|:---|:---:|:-------------------------------------------------------------|----------|
 | bonusCode           |  string   | Id of the bonus in Casino Operator system.                                                                                             | Optional |
-| language            |  string   | Language on which the game was opened.                                                                                                 | Optional |
 | jackpotContribution |  string   | Amount of the contribution tothe jackpot. If there is a multi-tier jackpot, contain the total amount of contributions to all jackpots. | Optional |
 | jackpotDetails      |  string   | Amounts of the contribution for multi-tierjackpot, separated by tiers.                                                                 | Optional |
 | jackpotId           |  string   | Id of the active jackpot to contribute.                                                                                                | Optional |
-| sessionId        |string| Player’s game session id on Lucky Monaco system.                                                                                       | Required |
 
 
 ### Example of URL
@@ -59,13 +64,18 @@ https://<API URL>/V4/Bet
 
 ## Response from partner(s)
 
-### Parameters 2
+### Parameters 3
 
 | Name         |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Required |
 |:-------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | transactionId|string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
 | cash         |decimal| Currency of the player.                                                                                                                                                                                                                                                                                                                   | Required |
-| bonus        |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
+
+### Parameters 4 (Reserved for future development)
+
+|Name|Data Type| Description                                                  | Remark   |
+|:---|:---:|:-------------------------------------------------------------|----------|
+| bonus        |decimal| Bonus balance of the player.           | Required |
 | usedPromo    |decimal| Amount was used from the bonus balance. | Required |
 
 ### Example of HTTP BODY 2
@@ -75,8 +85,6 @@ https://<API URL>/V4/Bet
  "transactionId": 1482429190474,
  "currency": "USD",
  "cash": 99899.99,
- "bonus": 99.99,
- "usedPromo": 0,
  "error": 0,
  "description": "Success"
  }

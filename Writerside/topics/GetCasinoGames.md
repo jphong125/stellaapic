@@ -12,7 +12,7 @@ Requested get casino game API URL will be notified individually, for security re
 | Name        |Data Type| Description                                                                                                                                                        | Remark |
 |:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
 | secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
-| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 ### Examples
 
 METHOD
@@ -31,6 +31,15 @@ HEADER
 
 ``` http
 Content-Type: application/json
+```
+
+### Example of HTTP BODY
+
+``` json
+{
+    "secureLogin" : "S100",
+    "token" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY"
+}
 ```
 
 ## Successful response  

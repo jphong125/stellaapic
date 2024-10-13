@@ -14,7 +14,7 @@ Requested get casino language URL will be notified individually, for security re
 | Name        |Data Type| Description                                                                                                                                                        | Remark |
 |:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
 | secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
-| uuid        |string| A unique ID for each request                                                                                                                                              | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 ### Examples
 
 METHOD

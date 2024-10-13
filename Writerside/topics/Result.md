@@ -29,9 +29,14 @@ Requested result API URL will be notified individually, for security reasons.
 | providerId        |  string   | Game Provider id.                                                           | Required |
 | timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side    | Required |
 | roundDetails      |  string   | Additional information about the currentgame round.                         | Required |
-| bonusCode         |  string   | Id of the bonus in Casino Operator system.                                  | Optional |              
-| platform          |  string   | The platform type (channel) on which the game is played.                    | Optional |
 | sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
+
+
+### Parameters 2 (Reserved for future development)
+
+|Name|Data Type| Description                                                  | Remark   |
+|:---|:---:|:-------------------------------------------------------------|----------|
+| bonusCode         |  string   | Id of the bonus in Casino Operator system.                                  | Optional |
 | promoWinAmount    |  string   | Prize amount that the player is awarded with during a promotional campaign. | Optional |
 | promoWinReference |  string   | Unique reference of this transaction.                                       | Optional |
 | promoCampaignID   |  string   | Id of the promotional campaign.                                             | Optional |
@@ -63,15 +68,20 @@ https://<API URL>/V4/Result
 
 ## Response from partner(s)
 
-### Parameters 2
+### Parameters 3
 
 | Name          |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Required |
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
 | currency      |string| Currency of the player. | Required |
 | cash          |decimal| Currency of the player.                                                                                                                                                                                                                                                                                                                   | Required |
-| bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
 
+
+### Parameters 4 (Reserved for future development)
+
+|Name|Data Type| Description                                                  | Remark   |
+|:---|:---:|:-------------------------------------------------------------|----------|
+| bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
 
 ### Example of HTTP BODY 2
 

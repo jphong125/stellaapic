@@ -51,4 +51,16 @@
         <description>Created after removal of "Empty MD Topic" from LuckyMonaco V4</description>
         <accepts>Empty-MD-Topic.html</accepts>
     </rule>
+    <rule id="411687e">
+        <description>Created after removal of "[x] Get Betting table" from LuckyMonaco V4</description>
+        <accepts>Get-Betting-Table.html</accepts>
+    </rule>
+    <rule id="1bbe7ba2">
+        <description>Created after removal of "Get Balance Per Game" from LuckyMonaco V4</description>
+        <accepts>Get-Balance-Per-Game.html</accepts>
+    </rule>
+    <rule id="55508cf7">
+        <description>Created after removal of "Get Balance Per Currency" from LuckyMonaco V4</description>
+        <accepts>Get-Balance-Per-Currency.html</accepts>
+    </rule>
 </rules>
