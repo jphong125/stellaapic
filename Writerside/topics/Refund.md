@@ -18,7 +18,7 @@ Requested refund win API URL will be notified individually, for security reasons
 
 | Name         | Data Type | Description                                                                 | Required |
 |:-------------|:---------:|:----------------------------------------------------------------------------|----------|
-| hash         |  string   | Hash code of the request                                                    | Required |
+| uuid       |string| A unique ID for each request                                                                                                                                              | Required |
 | userId       |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
 | reference    |  string   | Unique reference of this transaction.                                       | Required |
 | providerId   |  string   | Game Provider id.                                                           | Required |
@@ -31,11 +31,23 @@ Requested refund win API URL will be notified individually, for security reasons
 | platform     |  string   | The platform type (channel) on which the game is played.                    | Optional |
 | token        |  string   | Token of the player from Authenticate response.                             | Optional |
 
+### Examples
 
-### Example of URL
+METHOD
+
+``` http
+POST
+```
+
+URL
 
 ``` http
 https://<API URL>/V4/Refund
+```
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
@@ -46,7 +58,7 @@ https://<API URL>/V4/Refund
     "gameId": "Im_60_tumblefortune",
     "providerId": "luckymonaco",
     "userId": "421",
-    "hash": "4a5d375ac1311b04fba2ea66d067b8e5"
+    "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
 }
 ```
 
@@ -63,7 +75,7 @@ https://<API URL>/V4/Refund
 
 ``` json
 {
- "transactionId": "1482429190474",
+ "transactionId": "<transactionId>",
  "error": "0",
  "description": "Success"
  }

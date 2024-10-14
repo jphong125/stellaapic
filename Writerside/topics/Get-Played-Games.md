@@ -14,23 +14,37 @@ Requested get played game API URL will be notified individually, for security re
 | playerId    |string| Id of the player within the Operator system.                | Required |
 | dateplayed  |string| Date, based on the time zone of the user.                   | Required |
 | timeZone    |string| Time zone of the user. Example: GMT, GMT+8, GMT+04:00                                     | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 
-### Example of URL
+### Examples
+
+METHOD
+
+``` http
+POST
+```
+
+
+URL
 
 ``` http
 https://<API URL>/GetPlayedGame
+```
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
 
 ``` json
 {
-    "secureLogin": "username"
-    "playerId": "421"
-    "datePlayed": :2016-12-23"
-    "timeZone": "GMT+00:00"
-    "token": "980d06d3361f1e21a2f1550c6806ef52"
+    "secureLogin": "<partnerId>",
+    "playerId": "421",
+    "datePlayed": :2016-12-23",
+    "timeZone": "GMT+00:00",
+    "uuid": "980d06d3361f1e21a2f1550c6806ef52"
 }
 ```
 

@@ -2,8 +2,10 @@
 
 ## Overview
 Using this method the Lucky Monaco system will notify Casino Operator about winning that the player is awarded as a 
-result of a campaign that is finished. Notification is asynchronous and may come to the operator with a short delay after 
-the campaign is over.Operator should handle the transaction in their system and send promowin transactionid back to
+result of a campaign that is finished. 
+Notification is asynchronous and may come to the operator with a short delay after 
+the campaign is over.
+Operator should handle the transaction in their system and send promowin transactionid back to
 the  Lucky Monaco.
 
 Important:The call is idempotent, i.e. sending result again with the same reference number creates only one
@@ -27,11 +29,23 @@ Requested promo win API URL will be notified individually, for security reasons.
 | campaignType |  string   |  Type of the campaign.                         | Required |
 | currency     |  string   |   Player’s currency.                         | Required |
 
+### Examples
+
+METHOD
+
+``` http
+POST
+```
 
 ### Example of URL
 
 ``` http
 https://<API URL>/V4/PromoWin
+```
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
@@ -41,11 +55,11 @@ https://<API URL>/V4/PromoWin
     "campaignId" : "5103188801"
     "reference": "585c1306f89c56f5ecfc2f5d",
     "amount": 500.0,
-    "providerId": "luckymonaco",
+    "providerId": "Luckymonaco",
     "userId": "421",
     "campaignType" : "T"
     "currency": "USD"
-    "hash": "4a5d375ac1311b04fba2ea66d067b8e5"
+    "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
     "timestamp": "1482429190374"
 }
 ```
@@ -66,7 +80,7 @@ https://<API URL>/V4/PromoWin
 
 ``` json
 {
- "transactionId": 1482429190474,
+ "transactionId": "<transactionId>",
  "currency": "USD",
  "cash": 99899.99,
  "bonus": 99.99,

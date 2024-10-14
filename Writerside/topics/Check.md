@@ -17,10 +17,23 @@ Requested balance API URL will be notified individually, for security reasons.
 | sessionId  |string| Player’s game session id on Lucky Monaco system.                       | Required |
 | uuid       |string| A unique ID for each request                                                                                                                                              | Required |
 
-### Example of URL
+### Examples
+
+METHOD
+
+``` http
+POST
+```
+
+URL
 
 ``` http
 https://<API URL>/V4/Check
+```
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY

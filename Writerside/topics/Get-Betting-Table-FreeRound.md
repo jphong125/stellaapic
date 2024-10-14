@@ -15,11 +15,25 @@ Requested get betting table(for free round) API URL will be notified individuall
 | currency    |string| currency | Required |
 | hash        |string| Hash code of request.                                       | Required |
 
-### Example of URL
+### Examples
+
+METHOD
 
 ``` http
-https://<API URL>/api/betting_info.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
+POST
 ```
+
+URL
+
+``` http
+https://<API URL>/api/bettingInfo
+```
+HEADER
+
+``` http
+Content-Type: application/json
+```
+
 ### Example of HTTP BODY
 
 ``` json

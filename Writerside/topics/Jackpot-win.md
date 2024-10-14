@@ -16,7 +16,7 @@ Requested jackpot win API URL will be notified individually, for security reason
 
 | Name       | Data Type | Description                                                                 | Required |
 |:-----------|:---------:|:----------------------------------------------------------------------------|----------|
-| hash       |  string   | Hash code of the request                                                    | Required |
+| uuid       |string| A unique ID for each request           | Required |
 | userId     |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
 | gameId     |  string   | Id of the game.                                                             | Required |
 | roundId    |  string   | Id of the round.                                                            | Required |
@@ -26,13 +26,25 @@ Requested jackpot win API URL will be notified individually, for security reason
 | timestamp  |  string   | Date and time when the transaction is processed on the Lucky Monaco side    | Required |
 | jackpotId  |  string   | Id of the jackpot.                         | Required | 
 | platform   |  string   | The platform type (channel) on which the game is played.                    | Optional |
-| token      |  string   | Token of the player from Authenticate response.                             | Optional |
+| sessionId        |  string   | Player’s game session id on Lucky Monaco system.                         | Optional |
 
+### Examples
 
-### Example of URL
+METHOD
+
+``` http
+POST
+```
+
+URL
 
 ``` http
 https://<API URL>/V4/JackPotWin
+```
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
@@ -45,9 +57,10 @@ https://<API URL>/V4/JackPotWin
     "jackpotId": "568",
     "providerId": "luckymonaco",
     "userId": "421",
-    "roundid" : "5103188801"
-    "hash": "4a5d375ac1311b04fba2ea66d067b8e5"
-    "timestamp": "1482429190374"
+    "roundid" : "5103188801",
+    "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
+    "timestamp": "1482429190374",
+    "sessionid": "<sid>"
 }
 ```
 
@@ -67,7 +80,7 @@ https://<API URL>/V4/JackPotWin
 
 ``` json
 {
- "transactionId": 1482429190474,
+ "transactionId": "<transactiondId>",
  "currency": "USD",
  "cash": 99899.99,
  "bonus": 99.99,

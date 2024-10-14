@@ -13,13 +13,26 @@ Requested balance API URL will be notified individually, for security reasons.
 |:----------------------|:---:|:-------------------------------------------------------------------------|----------|
 | providerid            |string| Game Provider identifier                                                 | Required |
 | userid             |string| Identifier of the user within the Casino Operator’s system.              | Required |
+|currency|string| Currency of the player        | Required |
 | sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
 | uuid        |string| A unique ID for each request                                                                                                                                              | Required |
 
-### Example of URL
+### Examples
+
+METHOD
+
+``` http
+POST
+```
+URL
 
 ``` http
 https://<API URL>/V4/Balance
+```
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
@@ -29,6 +42,7 @@ https://<API URL>/V4/Balance
     "providerid": "<Luckymonaco>",
     "userid": "<User ID>",
     "sessionId": "<sessionId>",
+    "currency": "USD",
     "uuid": "<uuid>"
 }
 ```

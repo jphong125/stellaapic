@@ -12,7 +12,7 @@ looks  like: https://{API service domain}/IntegrationService/v4/http/FreeRoundsB
 
 Free Rounds HTTP service is securely protected, hence please be sure:
 - player’s browser (end) must NOT be used as initiator of requests to the service;
-- proper IPs are supplied to Pragmatic Play for whitelisting
+- proper IPs are supplied to Lucky Monaco for whitelisting
 
 ## Overview
 

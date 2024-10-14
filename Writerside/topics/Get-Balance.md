@@ -11,21 +11,34 @@ Requested get balance API URL will be notified individually, for security reason
 | Name             |Data Type| Description                                                 | Remark   |
 |:-----------------|:---:|:------------------------------------------------------------|----------|
 | secureLogin      |string| User name for authentication in the Casino Game API service | Required |
-| externalPlayerId |string| Id of the player within the Operator system.                | Required |
+| PlayerId |string| Id of the player within the Operator system.                | Required |
 | currency         |    string  | Currency of the player.                                 |      Required |
-| hash             |string| Hash code of request.                                       | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 
-### Example of URL
+### Examples
+
+METHOD
 
 ``` http
-https://<API URL>/user/balance?authToken=<TOKEN>
+POST
+```
+
+URL
+
+``` http
+https://<API URL>/user/getBalance
+```
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
 
 ``` json
 {
-    "externalplayerid": "tester",
+    "playerid": "tester",
     "currency": "USD",
     "hash": "<hash>"
 }

@@ -10,7 +10,7 @@ Requested create free round API URL will be notified individually, for security 
 ### Parameters
 | Name           | Data Type | Description                                                                  | Required |
 |:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
-| hash           |  string   | Hash code of the request                                                     | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 | playerId       |  string   | Player ID in Casino Operator’s system                                        | Required |
 | currency       |  string   | currency                                                                     | Required |
 | betvalues      |  string   | values of bet                                                                | Required |
@@ -20,11 +20,25 @@ Requested create free round API URL will be notified individually, for security 
 | expirationDate |  string   | Date and time when the bonus gets invalid and is unavailable for the player. | Required |
 | gamelist       |  string   | List of the games associated with the bonus                                  | Required |
 
+### Examples
 
-### Example of URL
+METHOD
 
 ``` http
-https://<API URL>/api/create.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
+POST
+```
+
+
+URL
+
+``` http
+https://<API URL>/api/createFreeround
+```
+
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY

@@ -14,10 +14,24 @@ Requested add player round API URL will be notified individually, for security r
 | playerList        |  string   | List of player id to add to the existing Free Round Bonus, comma separated. This data must be sent as a JSON in the body of the request. | Required |
 | bonuscode      |  string   | Bonus id within the Casino Operator’s system.                                                                                            | Required |
 
-### Example of URL
+### Examples
+
+METHOD
 
 ``` http
-https://<API URL>/api/add.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
+POST
+```
+
+
+URL
+
+``` http
+https://<API URL>/api/addPlayer
+```
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY

@@ -54,7 +54,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "secureLogin" : "S100",
+    "secureLogin" : "<partnerId>",
     "uuid" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY",
     "UserId" : "tester",
     "UserNickname" : "Tester",

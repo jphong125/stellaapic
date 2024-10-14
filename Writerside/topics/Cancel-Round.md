@@ -45,11 +45,11 @@ Content-Type: application/json
 
 ``` json
 {
-    "secureLogin" : "S100",
+    "secureLogin" : "<partnerId>",
     "playerId" : "123456"
     "gameId" : "lm_1_pumpkinfarm",
     "roundId" : "10000000"
-    "token" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY"
+    "token" : "<token>"
 }
 ```
 

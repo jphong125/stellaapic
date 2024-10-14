@@ -16,25 +16,39 @@ Requested get game round API URL will be notified individually, for security rea
 | timeZone    |string| Time zone of the user. Example: GMT, GMT+8, GMT+04:00                                     | Required |
 | gameId      |string| Symbolic unique identifier of the game.                | Required |
 | hour        |string| A number of hour then rounds were played (optional)                | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 
-### Example of URL
+### Examples
+
+METHOD
+
+``` http
+POST
+```
+
+URL
 
 ``` http
 https://<API URL>/GetGameRounds
+```
+
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
 
 ``` json
 {
-    "secureLogin": "username"
-    "playerId": "421"
-    "datePlayed": :2016-12-23"
-    "timeZone": "GMT+00:00"
-    "playerId": "Im_2_kellywheeldouble"
-    "hour": 10
-    "token": "980d06d3361f1e21a2f1550c6806ef52"
+    "secureLogin": "<partnerId>",
+    "playerId": "421",
+    "datePlayed": :2016-12-23",
+    "timeZone": "GMT+00:00",
+    "playerId": "Im_2_kellywheeldouble",
+    "hour": 10,
+    "uuid": "980d06d3361f1e21a2f1550c6806ef52"
 }
 ```
 

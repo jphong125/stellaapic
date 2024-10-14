@@ -3,9 +3,8 @@
 This is a simple API for Lucky Monaco gaming platform to connect to player's wallet. API is an HTTP listener, which listens
 application/json POST requests.
 
-In POST requests can be sent either HTTP Header:
+In POST requests can be sent HTTP Header:
 - Content-Type: application/json
-- Content-Type: application/json; charset=UTF-8
 
 For application/json, the body of the HTTP message sent to the Seamless Wallet API is essentially one
 giant query string where name/value pairs are separated by the ampersand (,), and names are separated from values by

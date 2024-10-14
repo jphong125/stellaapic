@@ -34,7 +34,7 @@ https://<game-server-domain>/V4/Check
 ### Example of body (API Service HeathCheck)
 
 ``` json
-http status : 200 OK
+http status : 200 Success
 {
   "error": 0,
   "description": "Success"
@@ -44,7 +44,7 @@ http status : 200 OK
 ### Example of body (Game Server HeathCheck)
 
 ``` json
-http status : 200 OK
+http status : 200 Success
 
 ```
 

@@ -1,7 +1,7 @@
 # Get Cason Icon List
 
 ## Overview
-Using this method Casino Operator will get icons list for the games :
+Using this method Casino Operator will get icons list for the games.
 
 ## API URL
 Requested get a list of game URL will be notified individually, for security reasons.
@@ -38,8 +38,8 @@ Content-Type: application/json
 
 ``` json
 {
-    "secureLogin" : "S100",
-    "token" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY",
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>",
     "id": "300x300_ZH",
     "language" : "ZH-TW"
 }
@@ -95,4 +95,4 @@ Content-Type: application/json
 
 ## Result of URL Link
 
-![Tumble Fortune](https://r2.lmgamelab.com/icons/lm_60_tumblefortune/60_340x340.png)
+![Tumble Fortune](https://r2.lmgamelab.com/icons/lm_60_tumblefortune/60_300x300_CN2.png)

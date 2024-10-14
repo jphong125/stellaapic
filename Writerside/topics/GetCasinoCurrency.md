@@ -37,8 +37,8 @@ Content-Type: application/json
 
 ``` json
 {
-    "secureLogin" : "S100",
-    "token" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY",
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>",
 }
 ```
 

@@ -41,10 +41,10 @@ Content-Type: application/json
 
 ``` json
 {
-    "secureLogin" : "S100",
+    "secureLogin" : "<partnerId>",
     "gameId" : "lm_1_pumpkinfarm",
     "clearHistory" : 0
-    "token" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY"
+    "token" : "<token>"
 }
 ```
 

@@ -37,8 +37,8 @@ Content-Type: application/json
 
 ``` json
 {
-    "secureLogin" : "S100",
-    "token" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY"
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>"
 }
 ```
 
@@ -52,7 +52,7 @@ Content-Type: application/json
 |          |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                      |
 |          |     gameName      |  string   | Name of the game.                                                                     |
 |          |    gameNameZh     |  string   | Chines name of the game.                                                              |
-|          |    gameName-Tw    |  string   | Chines (Traditional) name of the game.                                                |
+|          |   gameNameZh-Tw   |  string   | Chines (Traditional) name of the game.                                                |
 |          |  typeDescription  |  string   | Short description of the game type.                                                   |
 |          |     platform      |  string   | Platform for which the game can be opened.                                            |
 |          | demoGameAvailable |  boolean  | If true, a demo version of the game is available.                                     |
@@ -82,7 +82,7 @@ Content-Type: application/json
       "gameId": "lm_1_pumpkinfarm",
       "gameName": "Pumpkin Farm",
       "gameNameZh": "南瓜农场",
-      "gameName-Tw": "南瓜農場",
+      "gameNameZh-Tw": "南瓜農場",
       "typeDescription": "vs",
       "platform": "MOBILE, PC",
       "demoGameAvailable": true,
@@ -103,7 +103,7 @@ Content-Type: application/json
       "gameId": "lm_2_kellyswheeldouble",
       "gameName": "Kelly's Wheel Double",
       "gameNameZh": "凯利双轮",
-      "gameName-Tw": "凱利雙輪",
+      "gameNameZh-Tw": "凱利雙輪",
       "typeDescription": "vs",
       "platform": "MOBILE, PC",
       "demoGameAvailable": true,

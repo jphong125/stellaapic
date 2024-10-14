@@ -30,11 +30,25 @@ Requested promo win API URL will be notified individually, for security reasons.
 | sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
 | win        |  string   | Win amount in round. Intended to notify Operator about amount won in round | Optional |
 
+### Examples
+
+METHOD
+
+``` http
+POST
+```
+
 
 ### Example of URL
 
 ``` http
 https://<API URL>/V4/EndRound
+```
+
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
@@ -46,6 +60,7 @@ https://<API URL>/V4/EndRound
     "userId": "421",
     "roundid" : "5103188801"
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
+    "sessionid": "<sessionId>"
 }
 ```
 

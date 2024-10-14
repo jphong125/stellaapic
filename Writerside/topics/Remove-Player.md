@@ -9,15 +9,31 @@ Requested remove player API URL will be notified individually, for security reas
 ### Parameters
 | Name           | Data Type | Description                                                                                                                              | Required |
 |:---------------|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------------|----------|
-| hash           |  string   | Hash code of the request                                                                                                                 | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 | secureLogin       |  string   | User name for authentication in the Casino Game API service                                                                              | Required |
 | playerList        |  string   | List of player id to add to the existing Free Round Bonus, comma separated. This data must be sent as a JSON in the body of the request. | Required |
 | bonuscode      |  string   | Bonus id within the Casino Operator’s system.                                                                                            | Required |
 
+### Examples
+
+METHOD
+
+``` http
+POST
+```
+
+
 ### Example of URL
 
 ``` http
-https://<API URL>/api/remove.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
+https://<API URL>/api/removePlayer
+```
+
+
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
@@ -43,5 +59,5 @@ https://<API URL>/api/remove.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
 {
     "error": "0",
     "description": "success"
-
-
+}
+```

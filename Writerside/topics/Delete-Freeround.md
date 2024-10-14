@@ -10,15 +10,28 @@ Requested cancel free round API URL will be notified individually, for security 
 ### Parameters
 | Name           | Data Type | Description                                                                  | Required |
 |:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
-| hash           |  string   | Hash code of the request                                                     | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 | secureLogin       |  string   |User name for authentication in the Casino Game API service                                        | Required |
 | bonuscode      |  string   | Bonus id within the Casino Operator’s system.                                | Required |
 
+### Examples
 
-### Example of URL
+METHOD
 
 ``` http
-https://<API URL>/api/cancel.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
+POST
+```
+
+
+URL
+
+``` http
+https://<API URL>/api/cancelFreeRound
+```
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY

@@ -1,7 +1,7 @@
 # Get Casino Icon Info
 
 ## Overview
-Using this method Casino Operator will get icon info for the games :
+Using this method Casino Operator will get icon info for the games.
 
 ## API URL
 Requested get a list of game URL will be notified individually, for security reasons.
@@ -36,8 +36,8 @@ Content-Type: application/json
 
 ``` json
 {
-    "secureLogin" : "S100",
-    "token" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY"
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>"
 }
 ```
 ## Response

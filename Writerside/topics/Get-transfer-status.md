@@ -14,21 +14,34 @@ Requested get transfer status API URL will be notified individually, for securit
 | Name             |Data Type| Description                                                 | Remark   |
 |:-----------------|:---:|:------------------------------------------------------------|----------|
 | secureLogin      |string| User name for authentication in the Casino Game API service | Required |
-| externalPlayerId |string| Id of the player within the Operator system.                | Required |
-| hash             |string| Hash code of request.                                       | Required |
+| PlayerId |string| Id of the player within the Operator system.                | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
+
+### Examples
+
+METHOD
+
+``` http
+POST
+```
 
 ### Example of URL
 
 ``` http
-https://<API URL>/user/balance/transfer?authToken=<TOKEN>
+https://<API URL>/getTransferStatus
+```
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
 
 ``` json
 {
-    "externalplayerid": "tester",
-    "hash": "<hash>"
+    "playerid": "tester",
+    "uuid": "<uuid>"
 }
 ```
 

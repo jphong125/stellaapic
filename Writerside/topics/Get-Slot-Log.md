@@ -32,7 +32,7 @@ Content-Type: application/json
 |:------|:---------------:|:------------------------------------|-----|
 | start |     number      | starting index of log                          | Required |
 | limit |     number      | Number of logs to obtain (up to 1,000)           | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Example of Request Body
 
@@ -51,9 +51,9 @@ Content-Type: application/json
 | Name        |    Data Type    | Description                                   | Remark |
 |:------------|:---------------:|:----------------------------------------------|--------|
 | status      |     string      | OK or Failed                                  |Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
+| uuid                |  string   | A unique ID for each request                  | Required |
 | logs        |      array      | log list                                      |Required |
-| error       |     string      | Failed Code                                   |Required |
+| error       |     string      | error Code                                    |Required |
 | description |   string       | Description of the error for troubleshooting. |Required |
 
 Log Detail
@@ -75,7 +75,7 @@ Log Detail
 {
     "error": "0",
     "status": "success",
-    "token" : "ab64cee3-f73b-4631-9abf-b1a09c1f9c36",
+    "uuid" : "ab64cee3-f73b-4631-9abf-b1a09c1f9c36",
     "logs": [
         [
             100,

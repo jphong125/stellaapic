@@ -11,14 +11,26 @@ Requested get info API URL will be notified individually, for security reasons.
 | Name             |Data Type| Description                                                 | Remark   |
 |:-----------------|:---:|:------------------------------------------------------------|----------|
 | secureLogin      |string| User name for authentication in the Casino Game API service | Required |
-| hash             |string| Hash code of request.                                       | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 
-### Example of URL
+### Examples
+
+METHOD
 
 ``` http
-https://<API URL>/api/get_info.php?MEMB_ID=<securelogin>&HASH=<TOKEN>
+POST
 ```
 
+URL
+
+``` http
+https://<API URL>/api/getInfo
+```
+HEADER
+
+``` http
+Content-Type: application/json
+```
 
 ## Response from partner
 

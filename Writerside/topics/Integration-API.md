@@ -10,7 +10,9 @@ All responses are in JSON format.
 URL of the HTTP service will be provided by Lucky Monaco for the production and test environments and looks
 like: 
 
-https://API service domain/IntegrationService/v4/http/CasinoGameAPI
+``` http
+https://<API URL>/v4/<SUBJECT>
+```
 
 Integration simple HTTP Service is securely protected, hence please be sure:
 - player’s browser (end) must NOT be used as initiator of requests to the service

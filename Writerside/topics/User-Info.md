@@ -18,7 +18,7 @@ METHOD
 URL
 
 ``` http
-https://<API URL>/user/info?partner_id=<Partner ID>&token=<TOKEN>
+https://<API URL>/userInfo
 ```
 
 HEADER
@@ -32,14 +32,14 @@ Content-Type: application/json
 | Name     | Data Type  | Description                         |Ramark|
 |:---------|:----------:|:------------------------------------|---|
 | secureLogin      |string| User name for authentication in the Casino Game API service | Required |
-| externalPlayerId      |string| Id of the player within the Operator system.                | Required |
-| hash             |string| Hash code of request.                                       | Required |
+| PlayerId      |string| Id of the player within the Operator system.                | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Example of Request Body
 
 ``` json
 {
-    "externalPlayerId ": "tester",
+    "PlayerId ": "tester",
 }
 ```
 
@@ -50,7 +50,7 @@ Content-Type: application/json
 | Name             | Data Type  | Description                                                 | Ramark                          |
 |:-----------------|:----------:|:------------------------------------------------------------|---------------------------------|
 | secureLogin      |   string   | User name for authentication in the Casino Game API service | Required                        |
-| externalPlayerId |   string   | Id of the player within the Operator system.                | Required                        |
+| PlayerId |   string   | Id of the player within the Operator system.                | Required                        |
 | at_create        |   string   | at create (yyyy-MM-dd HH:mm:ss)                             |  Required |
 | at_login         |   string   | at login (yyyy-MM-dd HH:mm:ss)                              |     Required |
 | wallet           | dictionary | wallets                                                     |      Required |
@@ -64,7 +64,7 @@ Content-Type: application/json
 {
     "error": "0",
     "description" : "success",
-    "externalPlayerId" : "test",
+    "PlayerId" : "test",
     "at_create" : "2024-07-02 11:50:12"
     "at_login" : "2024-07-02 12:10:32"
     "wallet" : {

@@ -30,11 +30,23 @@ Requested bonus API URL will be notified individually, for security reasons.
 | roundId    |  string   | Id of the last played round in Free Round Bonus                 | Optional |
 | sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
 
+### Examples
 
-### Example of URL
+METHOD
+
+``` http
+POST
+```
+
+URL
 
 ``` http
 https://<API URL>/V4/BonusWin
+```
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
@@ -44,10 +56,11 @@ https://<API URL>/V4/BonusWin
     "reference": "585c1306f89c56f5ecfc2f5d",
     "gameId": "Im_60_tumblefortune",
     "amount": 1.0,
-    "providerId": "luckymonaco",
+    "providerId": "Luckymonaco",
     "userId": "421",
-    "hash": "4a5d375ac1311b04fba2ea66d067b8e5"
-    "timestamp": "1482429190374"
+    "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
+    "timestamp": "1482429190374",
+    "sessionId": "<sessionId>"
 }
 ```
 
@@ -67,7 +80,7 @@ https://<API URL>/V4/BonusWin
 
 ``` json
 {
- "transactionId": 1482429190474,
+ "transactionId": "transactionId",
  "currency": "USD",
  "cash": 99899.99,
  "bonus": 99.99,

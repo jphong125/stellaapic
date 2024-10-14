@@ -20,8 +20,8 @@
             <toc-element topic="Cancel-Round.md"/>
             <toc-element topic="Health-Check.md">
             </toc-element>
-            <toc-element topic="Startgame.md"/>
             <toc-element topic="Session-Expired.md"/>
+            <toc-element topic="Startgame.md"/>
         </toc-element>
         <toc-element topic="Seamless-Wallet-API.md">
             <toc-element topic="Check.md"/>
@@ -44,6 +44,7 @@
             <toc-element topic="Get-Balance.md"/>
             <toc-element topic="Get-transfer-status.md"/>
             <toc-element topic="Error-Code.md"/>
+            <toc-element topic="Get-Slot-Log.md"/>
         </toc-element>
         <toc-element topic="Free-Round.md">
             <toc-element topic="Get-Info.md"/>
@@ -59,7 +60,6 @@
             <toc-element topic="Get-Game-Rounds.md"/>
             <toc-element topic="Open-Histiory.md"/>
             <toc-element topic="Get-Round-Status.md"/>
-            <toc-element topic="Get-Slot-Log.md"/>
         </toc-element>
     </toc-element>
 </instance-profile>

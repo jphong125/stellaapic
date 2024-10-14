@@ -26,27 +26,42 @@ Requested withdrawl balance API URL will be notified individually, for security 
 | Name                  |Data Type| Description                                                 | Remark   |
 |:----------------------|:---:|:------------------------------------------------------------|----------|
 | secureLogin           |string| User name for authentication in the Casino Game API service | Required |
-| externalPlayerId      |string| Id of the player within the Operator system.                | Required |
+| PlayerId      |string| Id of the player within the Operator system.                | Required |
 | currency              |string| Currency of the player.           | Required |
-| externalTransactionId |string|  Id of the transaction within Casino Operator system.                                    | Required |
+| TransactionId |string|  Id of the transaction within Casino Operator system.                                    | Required |
 | amount                |string|   Amount to be added to player’s balance                                    | Required |
-| hash             |string| Hash code of request.                                       | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
+
+### Examples
+
+METHOD
+
+``` http
+POST
+```
+
 
 ### Example of URL
 
 ``` http
-https://<API URL>/user/refund?authToken=<TOKEN>
+https://<API URL>/refund
+```
+
+HEADER
+
+``` http
+Content-Type: application/json
 ```
 
 ### Example of HTTP BODY
 
 ``` json
 {
-    "externalplayerid": "tester",
-    "externalTransactionId": "EXT12345678",
+    "playerid": "tester",
+    "TransactionId": "EXT12345678",
     "currency": "USD",
     "amount": 1000,
-    "hash": "<hash>"
+    "uuid": "<uuid>"
 }
 ```
 
