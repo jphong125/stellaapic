@@ -6,7 +6,7 @@ ready.
 
 ## API URL
 
-Requested healthcheck API URL will be notified individually, for security reasons.
+Requested health check API URL will be notified individually, for security reasons.
 
 
 ### Examples
@@ -29,9 +29,13 @@ https://<game-server-domain>/V4/Check
 
 
 
-## Successful response
+## response
 
 ### Example of body (API Service HeathCheck)
+| Name  |Data Type| Description                  | Required |
+|:------|:---:|:-----------------------------|----------|
+| error |string| error code                   | Required |
+| description |string| Response status short description. | Optional |
 
 ``` json
 http status : 200 Success

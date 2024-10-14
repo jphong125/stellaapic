@@ -11,10 +11,10 @@ Requested get casino language URL will be notified individually, for security re
 
 ###  Request parameters
 
-| Name        |Data Type| Description                                                                                                                                                        | Remark |
-|:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
+| Name        |Data Type| Description                                                 | Remark |
+|:------------|:---:|:------------------------------------------------------------|:---------:|
+| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
 ### Examples
 
 METHOD
@@ -47,10 +47,12 @@ Content-Type: application/json
 
 ###  Response parameters
 
-|     Name     |                   | Data Type | Description                                                                           |
-|:------------:|:-----------------:|:---------:|:--------------------------------------------------------------------------------------|
-| languageList |                   |   array   | List of language information.                                                         |
-|              |     language      |  string   |  Language code in ISO 639-1 standard                      |
+|     Name     |          | Data Type | Remark                              |
+|:------------:|:--------:|:---------:|:------------------------------------|
+| eroor  |          |        string                                            | code of error  |
+| description |          |string  | Response status short description. |
+| languageList |          |   array   | List of language information.       |
+|              | language |  string   | Language code in ISO 639-1 standard |
 
 
 ### Example of body

@@ -7,7 +7,7 @@ API is an HTTP listener, which listens POST requests coming to an URL with the r
 
 All responses are in JSON format.
 
-URL of the HTTP service will be provided by Lucky Monaco for the production and test environments and looks
+URL of the HTTP service will be provided by Lucky Monaco team member for the Stage and production environments and looks
 like: 
 
 ``` http

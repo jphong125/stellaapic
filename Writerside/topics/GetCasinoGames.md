@@ -5,14 +5,15 @@ Using this method Casino Operator will get the list of casino games available fo
 
 ## API URL
 
-Requested get casino game API URL will be notified individually, for security reasons.
+Requested get casino games API URL will be notified individually, for security reasons.
 
 ###  Request parameters
 
-| Name        |Data Type| Description                                                                                                                                                        | Remark |
-|:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
+| Name        |Data Type| Description                                                 | Remark |
+|:------------|:---:|:------------------------------------------------------------|:---------:|
+| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
+
 ### Examples
 
 METHOD
@@ -46,26 +47,28 @@ Content-Type: application/json
 
 ###  Response parameters
 
-|   Name   |                   | Data Type | Description                                                                           |
+|   Name   |                   | Data Type | Remark                                                                                |
 |:--------:|:-----------------:|:---------:|:--------------------------------------------------------------------------------------|
+| eroor  |                   |                              string                        | code of error                                                                             |
+| description |                   | decimal| Response status short description.                                                                          |
 | gameList |                   |   array   | List of game information.                                                             |
 |          |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                      |
 |          |     gameName      |  string   | Name of the game.                                                                     |
-|          |    gameNameZh     |  string   | Chines name of the game.                                                              |
-|          |   gameNameZh-Tw   |  string   | Chines (Traditional) name of the game.                                                |
+|          |    gameNameZh     |  string   | Chinese name of the game.                                                             |
+|          |   gameNameZh-Tw   |  string   | Chinese (Traditional) name of the game.                                               |
 |          |  typeDescription  |  string   | Short description of the game type.                                                   |
 |          |     platform      |  string   | Platform for which the game can be opened.                                            |
 |          | demoGameAvailable |  boolean  | If true, a demo version of the game is available.                                     |
 |          |    aspectRatio    |  string   | Describes the proportional relationship between the width and the height of the game. |
 |          |   gameIdNumeric   |  number   | Numeric value of gameId                                                               |
 |          |   jurisdictions   |  string   | Jurisdiction of the player                                                            |
-|          |   frbAvailable    |  boolean  | Boolean If true, a free round bonus of the game is available.                         |
+|          |   frbAvailable    |  boolean  | Boolean if true, FREE ROUND bonus feature is available to this particular game.       |
 |          |       lines       |  string   | Number of available pay lines in the game                                             |
 |          |     rowReels      |  string   | Layout of the game                                                                    |
-|          |        rtp        |  string   | Rtp of the game                                                                       |
+|          |        rtp        |  string   | RTP of the game                                                                       |
 |          |     dataType      |  string   | Type of game portfolio                                                                |
 |          |  gameDescription  |  string   | Description of the game                                                               |
-|          |      release      |  boolean  | If true, the game is available.                                                       |
+|          |      release      |  boolean  | If true, the game released and available to use                                       |
 |          |    releaseDate    |  string   | Date of release of the game                                                           |
 
 ### Example of body

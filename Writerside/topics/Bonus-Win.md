@@ -74,7 +74,8 @@ Content-Type: application/json
 | currency      |string| Currency of the player. | Required |
 | cash          |decimal| Currency of the player.                                                                                                                                                                                                                                                                                                                   | Required |
 | bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
-
+| eroor  |  string   | code of error                                                   | Required |
+| description |decimal| Response status short description. | Optional |
 
 ### Example of HTTP BODY 2
 

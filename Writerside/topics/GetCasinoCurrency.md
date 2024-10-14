@@ -9,10 +9,10 @@ Requested get casino currency URL will be notified individually, for security re
 
 ###  Request parameters
 
-| Name        |Data Type| Description                                                                                                                                                        | Remark |
-|:------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
+| Name        |Data Type| Description                                                 | Remark |
+|:------------|:---:|:------------------------------------------------------------|:---------:|
+| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
 
 ### Examples
 
@@ -46,9 +46,11 @@ Content-Type: application/json
 
 ### Response parameters
 
-|     Name      |          | Data Type | Description                         |
-|:-------------:|:--------:|:---------:|:------------------------------------|
-| Currency list |          |   array   | List of Currency information.       |
+|     Name      |          | Data Type | Remark                          |
+|:-------------:|:--------:|:---------:|:--------------------------------|
+| eroor  |          |        string                                          | code of error                          |
+| description |          | string    | Response status short description.                      |
+| Currency list |          |   array   | List of Currency information.   |
 |               | Currency |  string   | Player's ISO 4217 currency code |
 
 

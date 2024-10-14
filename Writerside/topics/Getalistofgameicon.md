@@ -1,10 +1,10 @@
 # Get Casino Icon Info
 
 ## Overview
-Using this method Casino Operator will get icon info for the games.
+Using this method Casino Operator will get casino icon info for the games.
 
 ## API URL
-Requested get a list of game URL will be notified individually, for security reasons.
+Requested get casino icon info URL will be notified individually, for security reasons.
 
 ###  Request parameters
 
@@ -44,8 +44,10 @@ Content-Type: application/json
 
 ###  Response parameters
 
-|   Name   |                   | Data Type | Description                              |
+|   Name   |                   | Data Type | Remark                                   |
 |:--------:|:-----------------:|:---------:|:-----------------------------------------|
+| eroor  |                   |                              string                        | code of error                                                                             |
+| description |                   | decimal| Response status short description.                                                                          |
 | IconList |                   |   array   | List of game icon info                   |
 |          |        id         |  string   | Icon size consisting of width and height |
 |          |       width       |  string   | width of icon                            |

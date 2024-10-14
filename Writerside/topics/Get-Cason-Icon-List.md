@@ -48,11 +48,13 @@ Content-Type: application/json
 
 ###  Response parameters
 
-| Name  |                   | Data Type | Description                                                      |
-|:-----:|:-----------------:|:---------:|:-----------------------------------------------------------------|
-| Icons |                   |   array   | List of game information.                                        |
-|       |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco. |
-|       |        url        |  string   | Url of icon                                                      |
+| Name  |        | Data Type | Description                                                      |
+|:-----:|:------:|:---------:|:-----------------------------------------------------------------|
+| eroor  |        |              string                                    | code of error     |
+| description |        |  string | Response status short description. |
+| Icons |        |   array   | List of game information.                                        |
+|       | gameId |  string   | Symbolic unique identifier of the game provided by Lucky Monaco. |
+|       |  url   |  string   | Url of icon                                                      |
 
 
 ### Example of body

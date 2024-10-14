@@ -6,7 +6,7 @@ Using this method the Lucky Monaco system will notify Casino Operator that playe
 system due to long inactivity or game closing.
 
 The method is optional and is not sent to the Casino Operator by default. In case Casino Operator needs this method to be
-sent, they should ask the Lucky Monaco’s Technical Support for additional configuration
+sent, they should ask the Lucky Monaco’s team member when performing the integration.
 
 
 ## API URL
@@ -52,6 +52,11 @@ Content-Type: application/json
 ```
 
 ## Response
+
+| Name  |Data Type| Description                  | Required |
+|:------|:---:|:-----------------------------|----------|
+| error |string| error code                   | Required |
+| description |string| Response status short description. | Optional |
 
 ### Example of body
 
