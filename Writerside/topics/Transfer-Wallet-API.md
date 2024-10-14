@@ -7,7 +7,7 @@ All responses should be in JSON format and should contain error code and error d
 no error occurs.
 
 URL of the HTTP service will be provided by Lucky Monaco for the production and test environments and looks
-like: https://{API service domain}/IntegrationService/v3/http/CasinoGameAPI
+like: https://{API service domain}/IntegrationService/v4/http/CasinoGameAPI
 
 Transfer HTTP service is securely protected, hence please be sure:
 

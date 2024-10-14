@@ -5,13 +5,13 @@
 Using this method a Lucky Monaco system will send to Casino Operator winning result of all rounds played on Free Round
 Bonus. **Casino Operator will change a player balance in appliance with this request and will return an updated balance.**
 
-Important:The call is idempotent, i.e. sending result again with the same reference number creates only one
+Important : The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
 
 
 ## API URL
 
-Requested bonus API URL will be notified individually, for security reasons.
+Requested bonus win API URL will be notified individually, for security reasons.
 
 ### Parameters
 
@@ -72,7 +72,7 @@ Content-Type: application/json
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
 | currency      |string| Currency of the player. | Required |
-| cash          |decimal| Currency of the player.                                                                                                                                                                                                                                                                                                                   | Required |
+| cash          |decimal| Real balance of the player.                                                                                                                                                                                                                                                                                                        | Required |
 | bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
 | eroor  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |

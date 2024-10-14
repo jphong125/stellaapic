@@ -17,7 +17,7 @@ Requested Create wallet API URL will be notified individually, for security reas
 | PlayerId |string| Id of the player within the Operator system.                | Required |
 | currency         |string| Currency of the player.           | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
-
+| token      |string| Token of the player from Authenticate response              | Required |
 ### Examples
 
 METHOD

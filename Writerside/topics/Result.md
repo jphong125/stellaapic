@@ -28,7 +28,7 @@ Requested result API URL will be notified individually, for security reasons.
 |currency|  string   | Currency of the player                                                   | Required |
 | providerId        |  string   | Game Provider id.                                                        | Required |
 | timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side | Required |
-| roundDetails      |   array   | Additional information about the currentgame round.                      | Required |
+| roundDetails      |   array   | Additional information about the current game round.                     | Required |
 | sessionId        |  string   | Player’s game session id on Lucky Monaco system.                         | Required |
 
 
@@ -89,7 +89,7 @@ Content-Type: application/json
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
 | currency      |string| Currency of the player. | Required |
-| cash          |decimal| Currency of the player.                                                                                                                                                                                                                                                                                                                   | Required |
+| cash          |decimal| Real balance of the player.                                                                                                                                                                                                                                                                                                                    | Required |
 
 
 ### Parameters 4 (Reserved for future development)

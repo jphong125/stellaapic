@@ -1,4 +1,4 @@
-# ReFund (Reserved for future development)
+# Refund (Reserved for future development)
 
 ## Overview
 Lucky Monaco system may use this method to rollback a bet transaction on the Casino Operator side, in order to reverse

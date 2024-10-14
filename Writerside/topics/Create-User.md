@@ -17,6 +17,7 @@ Requested Create User API URL will be notified individually, for security reason
 | PlayerId |string| Id of the player within the Operator system.                | Required |
 | nickname         |string| nickname of the player within the Operator system.           | Optional |
 | uuid                |  string   | A unique ID for each request                                             | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
 
 ### Examples
 

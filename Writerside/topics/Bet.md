@@ -30,12 +30,12 @@ Requested bet API URL will be notified individually, for security reasons.
 
 ### Parameters 2 (Reserved for future development)
 
-|Name|Data Type| Description                                                                                                                            | Remark   |
-|:---|:---:|:---------------------------------------------------------------------------------------------------------------------------------------|----------|
-| bonusCode           |  string   | Id of the bonus (i.e. FREE ROUND) in Casino Operator system.                                                                           | Optional |
-| jackpotContribution |  string   | Amount of the contribution tothe jackpot. If there is a multi-tier jackpot, contain the total amount of contributions to all jackpots. | Optional |
-| jackpotDetails      |  string   | Amounts of the contribution for multi-tierjackpot, separated by tiers.                                                                 | Optional |
-| jackpotId           |  string   | Id of the active jackpot to contribute.                                                                                                | Optional |
+|Name|Data Type| Description                                                                                                                             | Remark   |
+|:---|:---:|:----------------------------------------------------------------------------------------------------------------------------------------|----------|
+| bonusCode           |  string   | Id of the bonus (i.e. FREE ROUND) in Casino Operator system.                                                                            | Optional |
+| jackpotContribution |  string   | Amount of the contribution to the jackpot. If there is a multi-tier jackpot, contain the total amount of contributions to all jackpots. | Optional |
+| jackpotDetails      |  string   | Amounts of the contribution for multi-tier jackpot, separated by tiers.                                                                 | Optional |
+| jackpotId           |  string   | Id of the active jackpot to contribute.                                                                                                 | Optional |
 
 ### Examples
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 | Name         |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Required |
 |:-------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | transactionId|string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
-| cash         |decimal| Currency of the player.                                                                                                                                                                                                                                                                                                                   | Required |
+| cash         |decimal|  Real balance of the player.                                                                                                                                                                                                                                                                                                                  | Required |
 | eroor  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |
 

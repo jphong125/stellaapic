@@ -33,6 +33,8 @@ Content-Type: application/json
 | start |     number      | starting index of log                          | Required |
 | limit |     number      | Number of logs to obtain (up to 1,000)           | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
+| secureLogin      |string| User name for authentication in the Casino Game API service | Required |
 
 ### Example of Request Body
 

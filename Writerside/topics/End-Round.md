@@ -5,9 +5,7 @@ Every time a game round is over, the Lucky Monaco system will call EndRound meth
 game round transactions on their side in real time.
 
 If Operator does not need to finalize transactions in real time it is strongly recommended to disable EndRound
-functionality on the Lucky Monaco side. Instead, Data Feed API can be used for transaction finalization, in order
-to decrease the number of requests to the Operator system and keep traffic between two systems as light as
-possible.
+functionality on the Lucky Monaco side. 
 
 Important: EndRound request may be sent more than once. If the game round is already finalized, Operator
 should  ignore the EndRound request and return the success response.
@@ -15,7 +13,7 @@ should  ignore the EndRound request and return the success response.
 
 ## API URL
 
-Requested promo win API URL will be notified individually, for security reasons.
+Requested end round API URL will be notified individually, for security reasons.
 
 ### Parameters
 
@@ -72,7 +70,7 @@ Content-Type: application/json
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
 | currency      |string| Currency of the player. | Required |
-| cash          |decimal| Currency of the player.                                                                                                                                                                                                                                                                                                                   | Required |
+| cash          |decimal| Real balance of the player.                                                                                                                                                                                                                                                                                                                 | Required |
 | bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
 | eroor  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |

@@ -8,7 +8,7 @@ the campaign is over.
 Operator should handle the transaction in their system and send promowin transactionid back to
 the  Lucky Monaco.
 
-Important:The call is idempotent, i.e. sending result again with the same reference number creates only one
+Important : The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
 
 ## API URL
@@ -72,7 +72,7 @@ Content-Type: application/json
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
 | currency      |string| Currency of the player. | Required |
-| cash          |decimal| Currency of the player.                                                                                                                                                                                                                                                                                                                   | Required |
+| cash          |decimal| Real balance of the player.                                                                                                                                                                                                                                                                                                                    | Required |
 | bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
 | eroor  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |

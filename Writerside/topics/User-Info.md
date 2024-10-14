@@ -34,6 +34,7 @@ Content-Type: application/json
 | secureLogin      |string| User name for authentication in the Casino Game API service | Required |
 | PlayerId      |string| Id of the player within the Operator system.                | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
 
 ### Example of Request Body
 

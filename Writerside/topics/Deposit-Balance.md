@@ -31,7 +31,7 @@ Requested deposit balance API URL will be notified individually, for security re
 | TransactionId |string|  Id of the transaction within Casino Operator system.                                    | Required |
 | amount                |string|   Amount to be added to player’s balance                                    | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
-
+| token      |string| Token of the player from Authenticate response              | Required |
 ### Examples
 
 METHOD
