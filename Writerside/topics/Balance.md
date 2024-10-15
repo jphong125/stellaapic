@@ -5,7 +5,7 @@ A request to check wallet balance
 
 ## API URL
 
-Requested balance API URL will be notified individually, for security reasons. 
+Requested "Balance" API URL will be notified individually, for security reasons. 
 
 ### Parameters
 

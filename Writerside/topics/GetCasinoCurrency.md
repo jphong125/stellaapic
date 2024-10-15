@@ -1,11 +1,11 @@
 # Get Casino Currency
 
 ## Overview
-Using this method Casino Operator will get the game currency from LuckyMonaco to proceed a specific game.
+Using this method Casino Operator will retrieve the currencies that are available in LuckyMonaco games to proceed a specific game.
 
 ## API URL
 
-Requested get casino currency URL will be notified individually, for security reasons.
+Requested "Get Casino Currency" URL will be notified individually, for security reasons.
 
 ###  Request parameters
 
@@ -13,6 +13,8 @@ Requested get casino currency URL will be notified individually, for security re
 |:------------|:---:|:------------------------------------------------------------|:---------:|
 | secureLogin |string| User name for authentication in the Casino Game API service | Required |
 | token      |string| Token of the player from Authenticate response              | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
+
 
 ### Examples
 

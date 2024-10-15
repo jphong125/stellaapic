@@ -1,7 +1,7 @@
 # Get Casino Icon Info
 
 ## Overview
-Using this method Casino Operator will get casino icon info for the games.
+Using this method Casino Operator will get casino icon (i.e. thumbnail) info for the games.
 
 ## API URL
 Requested get casino icon info URL will be notified individually, for security reasons.
@@ -12,6 +12,7 @@ Requested get casino icon info URL will be notified individually, for security r
 |:--------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
 | secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
 | token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Example of URL
 METHOD

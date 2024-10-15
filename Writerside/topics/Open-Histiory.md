@@ -1,7 +1,7 @@
 # Open History
 
 ## Overview
-Using this method Casino Operator can get a link to the page with the game details at the end of the round. The method returns URL that contains round id and a one-time password that the game server will use for validation of the request, for the security reason.
+Using this method Casino Operator can get a link to the page with the game details at the whole round. The method returns URL that contains round id and a one-time password that the game server will use for validation of the request, for the security reason.
 
 ## API URL
 Requested open history API URL will be notified individually, for security reasons.
@@ -14,6 +14,7 @@ Requested open history API URL will be notified individually, for security reaso
 | playerId    |string| Id of the player within the Operator system.                | Required |
 | roundId     |string| Unique identifier of the game round.                  | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
 
 ### Examples
 

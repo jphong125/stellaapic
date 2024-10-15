@@ -12,6 +12,7 @@ Requested get info API URL will be notified individually, for security reasons.
 |:-----------------|:---:|:------------------------------------------------------------|----------|
 | secureLogin      |string| User name for authentication in the Casino Game API service | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
 
 ### Examples
 

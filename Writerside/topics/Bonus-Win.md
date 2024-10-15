@@ -11,7 +11,7 @@ transaction.
 
 ## API URL
 
-Requested bonus win API URL will be notified individually, for security reasons.
+Requested "Bonus win" API URL will be notified individually, for security reasons.
 
 ### Parameters
 

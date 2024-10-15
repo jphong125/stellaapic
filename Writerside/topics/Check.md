@@ -5,7 +5,7 @@ A request to check whether player can bet or not.
 
 ## API URL
 
-Requested balance API URL will be notified individually, for security reasons.
+Requested "Check" API URL will be notified individually, for security reasons.
 
 ### Parameters
 
@@ -52,7 +52,7 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name  |Data Type| Description                  | Required |
+| Name  |Data Type| Description                  | Remark   |
 |:------|:---:|:-----------------------------|----------|
 | error |decimal| error code                   | Required |
 | description |decimal| Response status short description. | Optional |

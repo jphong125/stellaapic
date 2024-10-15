@@ -1,4 +1,4 @@
-# Get Cason Icon List
+# Get Casino Icon List
 
 ## Overview
 Using this method Casino Operator will get icons list for the games.
@@ -14,6 +14,7 @@ Requested get a list of game URL will be notified individually, for security rea
 | token      |string| Token of the player from Authenticate response                         | Required |
 | id          |string| Icon size consisting of width and height (can get Get Casino Icon Info | Required |
 | language    |string| Language of icon                                                       | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Example of URL
 METHOD

@@ -13,7 +13,8 @@ Requested get betting table(for free round) API URL will be notified individuall
 | secureLogin |string| User name for authentication in the Casino Game API service | Required |
 | slot_id     |string| slot id | Required |
 | currency    |string| currency | Required |
-| hash        |string| Hash code of request.                                       | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Examples
 

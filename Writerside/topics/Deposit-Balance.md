@@ -23,15 +23,16 @@ Requested deposit balance API URL will be notified individually, for security re
 
 ### Parameters
 
-| Name                  |Data Type| Description                                                 | Remark   |
-|:----------------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin           |string| User name for authentication in the Casino Game API service | Required |
-| PlayerId              |string| Id of the player within the Operator system.                | Required |
-| currency              |string| Currency of the player.           | Required |
+| Name          |Data Type| Description                                                 | Remark   |
+|:--------------|:---:|:------------------------------------------------------------|----------|
+| secureLogin   |string| User name for authentication in the Casino Game API service | Required |
+| userId       |string| Id of the player within the Operator system.                | Required |
+| currency      |string| Currency of the player.           | Required |
 | TransactionId |string|  Id of the transaction within Casino Operator system.                                    | Required |
-| amount                |string|   Amount to be added to player’s balance                                    | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
+| amount        |string|   Amount to be added to player’s balance                                    | Required |
+| uuid          |  string   | A unique ID for each request                                             | Required |
+| token         |string| Token of the player from Authenticate response              | Required |
+
 ### Examples
 
 METHOD
@@ -54,7 +55,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "playerid": "tester",
+    "userId": "tester",
     "TransactionId": "12345678",
     "currency": "USD",
     "amount": 1000,
@@ -71,7 +72,8 @@ Content-Type: application/json
 | currency      |string| Currency of the player.                           | Required |
 | transactionId |string| Id of the transaction within Lucky Monaco system. | Required |
 | balance       |string| Player’s balance after successful transaction.    | Required |
-
+| eroor  |  string   | code of error                                                   | Required |
+| description |decimal| Response status short description. | Optional |
 
 
 ### Example of HTTP BODY 2

@@ -11,13 +11,14 @@ Requested Create wallet API URL will be notified individually, for security reas
 
 ### Parameters
 
-| Name             |Data Type| Description                                                 | Remark   |
-|:-----------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin      |string| User name for authentication in the Casino Game API service | Required |
-| PlayerId |string| Id of the player within the Operator system.                | Required |
-| currency         |string| Currency of the player.           | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
+| Name        |Data Type| Description                                                 | Remark   |
+|:------------|:---:|:------------------------------------------------------------|----------|
+| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| userId    |string| Id of the player within the Operator system.                | Required |
+| currency    |string| Currency of the player.           | Required |
+| uuid        |  string   | A unique ID for each request                                             | Required |
+| token       |string| Token of the player from Authenticate response              | Required |
+
 ### Examples
 
 METHOD
@@ -41,7 +42,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "playerid": "tester",
+    "userId": "tester",
     "currency": "USD",
     "uuid": "<uuid>"
 }
@@ -53,8 +54,9 @@ Content-Type: application/json
 
 | Name     |Data Type| Description                                      | Required |
 |:---------|:---:|:-------------------------------------------------|---|
-| playerid |string| Id of the player within the Lucky Monaco system. |  Required |
-
+| playerId |string| Id of the player within the Lucky Monaco system. |  Required |
+| eroor  |  string   | code of error                                                   | Required |
+| description |decimal| Response status short description. | Optional |
 
 
 ### Example of HTTP BODY 2

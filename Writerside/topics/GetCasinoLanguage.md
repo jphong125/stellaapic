@@ -7,7 +7,7 @@ Using this method Casino Operator will get the game language from LuckyMonaco to
 
 ## API URL
 
-Requested get casino language URL will be notified individually, for security reasons.
+Requested "Get Casino Language" URL will be notified individually, for security reasons.
 
 ###  Request parameters
 
@@ -15,6 +15,8 @@ Requested get casino language URL will be notified individually, for security re
 |:------------|:---:|:------------------------------------------------------------|:---------:|
 | secureLogin |string| User name for authentication in the Casino Game API service | Required |
 | token      |string| Token of the player from Authenticate response              | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
+
 ### Examples
 
 METHOD

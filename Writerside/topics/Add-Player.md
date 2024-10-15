@@ -7,12 +7,13 @@ Using this method Operator can add players to the existing Free Round Bonus. If 
 Requested add player round API URL will be notified individually, for security reasons.
 
 ### Parameters
-| Name           | Data Type | Description                                                                                                                              | Required |
-|:---------------|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------------|----------|
-| hash           |  string   | Hash code of the request                                                                                                                 | Required |
-| secureLogin       |  string   | User name for authentication in the Casino Game API service                                                                              | Required |
-| playerList        |  string   | List of player id to add to the existing Free Round Bonus, comma separated. This data must be sent as a JSON in the body of the request. | Required |
-| bonuscode      |  string   | Bonus id within the Casino Operator’s system.                                                                                            | Required |
+| Name        | Data Type | Description                                                                                                                              | Required |
+|:------------|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------------|----------|
+| token      |string| Token of the player from Authenticate response              | Required |
+| secureLogin |  string   | User name for authentication in the Casino Game API service                                                                              | Required |
+| userList    |  string   | List of player id to add to the existing Free Round Bonus, comma separated. This data must be sent as a JSON in the body of the request. | Required |
+| bonuscode   |  string   | Bonus id within the Casino Operator’s system.                                                                                            | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Examples
 
@@ -38,7 +39,7 @@ Content-Type: application/json
 
 ``` json
 {
-  "playerList": ["449986","450013","450509","437070"] 
+  "userList": ["449986","450013","450509","437070"] 
 }
 ```
 
@@ -57,5 +58,5 @@ Content-Type: application/json
 {
     "error": "0",
     "description": "success"
-
-
+}
+```

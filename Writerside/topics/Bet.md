@@ -8,7 +8,7 @@ Important: The call is idempotent, i.e. sending bet again only creates one trans
 
 ## API URL
 
-Requested bet API URL will be notified individually, for security reasons.
+Requested "Bet" API URL will be notified individually, for security reasons.
 
 ### Parameters
 
@@ -16,13 +16,13 @@ Requested bet API URL will be notified individually, for security reasons.
 |:-------------|:---------:|:----------------------------------------------------------------------------------|----------|
 | uuid         |string| A unique ID for each request                                                      | Required |
 | userId       |  string   | Player's ID, specified by Operator when creating a game session.                  | Required |
-| gameId       |  string   | Id of the game.                                                                   | Required |
+| gameId       |  string   | ID of the game.                                                                   | Required |
 | gamename     |  string   | name of the game.                                                                 | Required |
-| roundId      |  string   | Id of the round.                                                                  | Required |
+| roundId      |  string   | ID of the round.                                                                  | Required |
 | amount       |  decimal  | Amount of the bet.                                                                | Required |
 | reference    |  string   | Unique reference of this transaction.                                             | Required |
 | sessionId    |string| Player’s game session id on Lucky Monaco system.                                  | Required |
-| providerId   |  string   | Game Provider id.                                                                 | Required |
+| providerId   |  string   | Game Provider ID.                                                                 | Required |
 | currency     |string| Currency of the player                                                            | Required |
 | timeStamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco system        | Required |
 | roundDetails |  string   | Additional information about the current game round. (i.e. "spin", "buyFreeSpin") | Required |
@@ -35,7 +35,7 @@ Requested bet API URL will be notified individually, for security reasons.
 | bonusCode           |  string   | Id of the bonus (i.e. FREE ROUND) in Casino Operator system.                                                                            | Optional |
 | jackpotContribution |  string   | Amount of the contribution to the jackpot. If there is a multi-tier jackpot, contain the total amount of contributions to all jackpots. | Optional |
 | jackpotDetails      |  string   | Amounts of the contribution for multi-tier jackpot, separated by tiers.                                                                 | Optional |
-| jackpotId           |  string   | Id of the active jackpot to contribute.                                                                                                 | Optional |
+| jackpotId           |  string   | ID of the active jackpot to contribute.                                                                                                 | Optional |
 
 ### Examples
 
@@ -79,11 +79,11 @@ Content-Type: application/json
 
 ### Parameters 3
 
-| Name         |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Required |
-|:-------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
-| transactionId|string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
-| cash         |decimal|  Real balance of the player.                                                                                                                                                                                                                                                                                                                  | Required |
-| eroor  |  string   | code of error                                                   | Required |
+| Name         |Data Type| Description                        | Required |
+|:-------------|:---:|:-----------------------------------|-----|
+| transactionId|string| ID of the transaction in wallet.   | Required |
+| cash         |decimal| Real balance of the player.        | Required |
+| eroor  |  string   | code of error                      | Required |
 | description |decimal| Response status short description. | Optional |
 
 ### Parameters 4 (Reserved for future development)
@@ -91,7 +91,6 @@ Content-Type: application/json
 |Name|Data Type| Description                                                  | Remark   |
 |:---|:---:|:-------------------------------------------------------------|----------|
 | bonus        |decimal| Bonus balance of the player.           | Required |
-| usedPromo    |decimal| Amount was used from the bonus balance. | Required |
 
 ### Example of HTTP BODY 2
 

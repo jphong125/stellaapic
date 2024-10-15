@@ -11,12 +11,12 @@ Requested get transfer status API URL will be notified individually, for securit
 
 ### Parameters
 
-| Name             |Data Type| Description                                                 | Remark   |
-|:-----------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin      |string| User name for authentication in the Casino Game API service | Required |
-| PlayerId |string| Id of the player within the Operator system.                | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
+| Name        |Data Type| Description                                                 | Remark   |
+|:------------|:---:|:------------------------------------------------------------|----------|
+| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| userId     |string| Id of the player within the Operator system.                | Required |
+| uuid        |  string   | A unique ID for each request                                             | Required |
+| token       |string| Token of the player from Authenticate response              | Required |
 
 ### Examples
 
@@ -41,7 +41,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "playerid": "tester",
+    "userId": "tester",
     "uuid": "<uuid>"
 }
 ```

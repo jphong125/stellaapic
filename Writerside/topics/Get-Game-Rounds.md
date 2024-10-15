@@ -17,6 +17,7 @@ Requested get game round API URL will be notified individually, for security rea
 | gameId      |string| Symbolic unique identifier of the game.                | Required |
 | hour        |string| A number of hour then rounds were played (optional)                | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
 
 ### Examples
 

@@ -12,24 +12,24 @@ transaction.
 
 ## API URL
 
-Requested result API URL will be notified individually, for security reasons.
+Requested "Result" API URL will be notified individually, for security reasons.
 
 ### Parameters
 
-| Name              | Data Type | Description                                                              | Required |
-|:------------------|:---------:|:-------------------------------------------------------------------------|----------|
-| uuid                |  string   | A unique ID for each request                                             | Required |
-| userId            |  string   | Player's ID, specified by Partner when creating a game session.          | Required |
-| gameId            |  string   | Id of the game.                                                          | Required |
-| gamename     |  string   | name of the game.                                                        | Required |
-| roundId           |  string   | Id of the round.                                                         | Required |
-| amount            |  decimal  | Amount of the bet.                                                       | Required |
-| reference         |  string   | Unique reference of this transaction.                                    | Required |
-|currency|  string   | Currency of the player                                                   | Required |
-| providerId        |  string   | Game Provider id.                                                        | Required |
-| timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side | Required |
-| roundDetails      |   array   | Additional information about the current game round.                     | Required |
-| sessionId        |  string   | Player’s game session id on Lucky Monaco system.                         | Required |
+| Name              | Data Type | Description                                                                               | Required |
+|:------------------|:---------:|:------------------------------------------------------------------------------------------|----------|
+| uuid                |  string   | A unique ID for each request                                                              | Required |
+| userId            |  string   | Player's ID, specified by Partner when creating a game session.                           | Required |
+| gameId            |  string   | Id of the game.                                                                           | Required |
+| gamename     |  string   | name of the game.                                                                         | Required |
+| roundId           |  string   | Id of the round.                                                                          | Required |
+| amount            |  decimal  | Amount of the bet.                                                                        | Required |
+| reference         |  string   | Unique reference of this transaction.                                                     | Required |
+|currency|  string   | Currency of the player                                                                    | Required |
+| providerId        |  string   | Game Provider id.                                                                         | Required |
+| timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side                  | Required |
+| roundDetails      |   array   | Additional information about the current game round. (ie. "spin", "freespin", "minigame") | Required |
+| sessionId        |  string   | Player’s game session id on Lucky Monaco system.                                          | Required |
 
 
 ### Parameters 2 (Reserved for future development)
@@ -90,15 +90,15 @@ Content-Type: application/json
 | transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
 | currency      |string| Currency of the player. | Required |
 | cash          |decimal| Real balance of the player.                                                                                                                                                                                                                                                                                                                    | Required |
-
+| eroor  |  string   | code of error                                                   | Required |
+| description |decimal| Response status short description. | Optional |
 
 ### Parameters 4 (Reserved for future development)
 
 |Name|Data Type| Description                                                  | Remark   |
 |:---|:---:|:-------------------------------------------------------------|----------|
 | bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
-| eroor  |  string   | code of error                                                   | Required |
-| description |decimal| Response status short description. | Optional |
+
 
 ### Example of HTTP BODY 2
 

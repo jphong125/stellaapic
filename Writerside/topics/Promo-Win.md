@@ -13,7 +13,7 @@ transaction.
 
 ## API URL
 
-Requested promo win API URL will be notified individually, for security reasons.
+Requested "Promo win" API URL will be notified individually, for security reasons.
 
 ### Parameters
 

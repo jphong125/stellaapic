@@ -10,8 +10,10 @@ Requested create free round API URL will be notified individually, for security 
 ### Parameters
 | Name           | Data Type | Description                                                                  | Required |
 |:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
-| uuid                |  string   | A unique ID for each request                                             | Required |
-| playerId       |  string   | Player ID in Casino Operator’s system                                        | Required |
+| secureLogin      |string| User name for authentication in the Casino Game API service | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
+| uuid           |  string   | A unique ID for each request                                             | Required |
+| userId         |  string   | Player ID in Casino Operator’s system                                        | Required |
 | currency       |  string   | currency                                                                     | Required |
 | betvalues      |  string   | values of bet                                                                | Required |
 | bonuscode      |  string   | Bonus id within the Casino Operator’s system.                                | Required |
@@ -45,7 +47,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "playerid": "godwish",
+    "userId": "tester",
     "currency": "USD",
     "betvalues": "1",
     "bonuscode": "43f4a26e-6da6-496e-9754-0d6c13a19df7",

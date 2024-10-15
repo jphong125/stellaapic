@@ -14,4 +14,4 @@ the  equals symbol (:). An example of this would be (please see request examples
 
 All responses should be in JSON format (please see response examples for each call below).
 
-URL of the Seamless Wallet API should be provided by Casino Operator for the production and test environments.
+URL of the Seamless Wallet API should be provided by Casino Operator for the production and Stage environments.

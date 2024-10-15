@@ -13,7 +13,7 @@ Requested cancel free round API URL will be notified individually, for security 
 | uuid                |  string   | A unique ID for each request                                             | Required |
 | secureLogin       |  string   |User name for authentication in the Casino Game API service                                        | Required |
 | bonuscode      |  string   | Bonus id within the Casino Operator’s system.                                | Required |
-
+| token      |string| Token of the player from Authenticate response              | Required |
 ### Examples
 
 METHOD

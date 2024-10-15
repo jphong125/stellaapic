@@ -2,8 +2,9 @@
 
 ## Overview
 
-CancelRound method initiates a refund request, which the Lucky Monaco system will send to the Operator’s remote wallet.
-After  successful refund call the game round will be marked as Cancelled in the Lucky Monaco system.
+Notifies the casino Operator that Canceled player’s bet.  <br/>
+This method will be used for cancellation of a bet. <br/>
+(i.e. Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response.)
 
 ## API URL
 
@@ -21,6 +22,7 @@ Requested cancel round API URL will be notified individually, for security reaso
 | gameId       |string| Id of the game. This is optional parameter, which has to be sent by Operator if only the session for specific game should be closed. | Required |
 | uuid         |string| A unique ID for each request                                                    | Required |
 | sessionId        |  string   | Player’s game session id on Lucky Monaco system.                         | Required |
+
 ### Examples
 
 METHOD

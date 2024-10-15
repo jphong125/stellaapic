@@ -8,12 +8,12 @@ Only responses with HTTP Status: 200 should be accepted by operator as valid res
 For each API account, retry frequency for failed "Transfer" or “GetTransferStatus” method requests, should be not more than one call per minute and not longer than 1 hour. (after 1 hour Error reason should be checked in relevant support channel)
 
 ### Error code
-| Name |Data Type| Description                                                   | Remark   |
-|:-----|:---:|:--------------------------------------------------------------|----------|
-| 1    |string| Internal error. Try later please.                             | Required |
-| 2    |string| Incorrect secure LOGIN and secure password combination.       | Required |
-| 6    |string| Game is not found or is not allowed for your system.          | Required |
-| 7    |string| One or several input parameters is not set or set incorrectly | Required |
-| 8    |string| Transaction already exists No action required.                | Required |
-| 17   |string| Player not found Verify request values Verify request values. | Required |
-| 21   |string| Currency code is incorrect or unsupported                     | Required |
+| Name |Data Type| Description                                                                                                                                                                      | Remark   |
+|:-----|:---:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| 1    |string| Internal error. Try later please.                                                                                                                                                | Required |
+| 4    |string| - Incorrect secure LOGIN and secure password combination. <br/> - Bad parameters or invalid parameters (lack of required paramater) in the request, please check post parameters | Required |
+| 6    |string| Game is not found or is not allowed for your system.                                                                                                                             | Required |
+| 7    |string| One or several input parameters is not set or set incorrectly                                                                                                                    | Required |
+| 8    |string| Transaction already exists No action required.                                                                                                                                   | Required |
+| 17   |string| Player not found Verify request values Verify request values.                                                                                                                    | Required |
+| 21   |string| Currency code is incorrect or unsupported                                                                                                                                        | Required |

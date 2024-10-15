@@ -11,17 +11,20 @@ sent, they should ask the Lucky Monaco’s team member when performing the integ
 
 ## API URL
 
-Requested session expired API URL will be notified individually, for security reasons.
+Requested "Session Expired" API URL will be notified individually, for security reasons.
 
 ### Request parameters
 
 | Name       |Data Type| Description                                                                                                                                                                                                                                                |  Remark  |
 |:-----------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| secureLogin  |string| User name for authentication in the Casino Game API service                                                                                                                                                                                                | Required |
 | providerId |string| Lucky Monaco provider id in Operator’s system                                                                                                                                                                                                              | Required |
 | sessionId  |string| Player’s game session id on Lucky Monaco side                                                                                                                                                                                                              | Required |
 | PlayerId   |string| Id of the player within the operator’s system. | Required |
 | token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 | sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                                                                                             | Required |
+| uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Examples
 

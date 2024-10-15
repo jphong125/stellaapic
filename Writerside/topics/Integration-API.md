@@ -11,7 +11,7 @@ URL of the HTTP service will be provided by Lucky Monaco team member for the Sta
 like: 
 
 ``` http
-https://<API URL>/v4/<SUBJECT>
+https://<API URL>/v4/<object>
 ```
 
 Integration simple HTTP Service is securely protected, hence please be sure:

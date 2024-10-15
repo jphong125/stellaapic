@@ -7,13 +7,13 @@ game round transactions on their side in real time.
 If Operator does not need to finalize transactions in real time it is strongly recommended to disable EndRound
 functionality on the Lucky Monaco side. 
 
-Important: EndRound request may be sent more than once. If the game round is already finalized, Operator
+Important: EndRound request may be sent more than once. (When Lucky Monaco do not received response) If the game round is already finalized, Operator
 should  ignore the EndRound request and return the success response.
 
 
 ## API URL
 
-Requested end round API URL will be notified individually, for security reasons.
+Requested "End round" API URL will be notified individually, for security reasons.
 
 ### Parameters
 

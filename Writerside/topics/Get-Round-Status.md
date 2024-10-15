@@ -13,6 +13,7 @@ Requested get round status API URL will be notified individually, for security r
 | secureLogin |string| User name for authentication in the Casino Game API service | Required |
 | roundId   |string|  Id of the game round                | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
+| token      |string| Token of the player from Authenticate response              | Required |
 
 ### Examples
 

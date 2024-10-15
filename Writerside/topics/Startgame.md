@@ -3,17 +3,17 @@
 ## Overview
 In order to connect to servers, creates a game session for users.
 
-After requesting start game with individually notified API URL, API servers will respond accordingly.
+After requesting "Start Game" with individually notified API URL, API servers will respond accordingly.
 
 Redirect a user to received game session URL to entering to LuckyMonaco system.
 
 ## API URL
 
-Requested start game API URL will be notified individually, for security reasons.
+Requested "Start game" API URL will be notified individually, for security reasons.
 
-## Request for a start game 
+## Request for a Start game 
 
-Requesting start game to LuckyMonaco API Servers.
+Requesting "start game" to LuckyMonaco API Servers.
 
 ### Request parameters
 
@@ -30,6 +30,7 @@ Requesting start game to LuckyMonaco API Servers.
 | region       |string| The region where the player is located. (select "Asia" or "Europe")    | Optional |
 | cashierURL   |string| A URL to opening the Operator’s website Cashier page.                  | optional |
 | lobbyURL     |string| A URL to opening the Operator’s website lobby page.                    | optional |
+| ipAddress    |string| IP address of the player.                   | optional |
 
 ### Examples
 

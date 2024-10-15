@@ -8,13 +8,13 @@ Requested get balance API URL will be notified individually, for security reason
 
 ### Parameters
 
-| Name             |Data Type| Description                                                 | Remark   |
-|:-----------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin      |string| User name for authentication in the Casino Game API service | Required |
-| PlayerId |string| Id of the player within the Operator system.                | Required |
-| currency         |    string  | Currency of the player.                                 |      Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
+| Name        |Data Type| Description                                                 | Remark   |
+|:------------|:---:|:------------------------------------------------------------|----------|
+| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| userId   |string| Id of the player within the Operator system.                | Required |
+| currency    |    string  | Currency of the player.                                 |      Required |
+| uuid        |  string   | A unique ID for each request                                             | Required |
+| token       |string| Token of the player from Authenticate response              | Required |
 
 ### Examples
 
@@ -27,7 +27,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/user/getBalance
+https://<API URL>/getBalance
 ```
 HEADER
 
@@ -39,7 +39,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "playerid": "tester",
+    "userId": "tester",
     "currency": "USD",
     "hash": "<hash>"
 }
@@ -52,7 +52,8 @@ Content-Type: application/json
 | Name     |Data Type| Description                                              | Required |
 |:---------|:---:|:---------------------------------------------------------|---|
 | balance |string| Current player’s balance within the Lucky Monaco system. |  Required |
-
+| eroor  |  string   | code of error                                                   | Required |
+| description |decimal| Response status short description. | Optional |
 
 
 ### Example of HTTP BODY 2

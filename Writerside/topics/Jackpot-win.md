@@ -10,7 +10,7 @@ transaction.
 
 ## API URL
 
-Requested jackpot win API URL will be notified individually, for security reasons.
+Requested "Jackpot win" API URL will be notified individually, for security reasons.
 
 ### Parameters
 
