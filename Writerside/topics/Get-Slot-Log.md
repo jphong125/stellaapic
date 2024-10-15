@@ -52,8 +52,7 @@ Content-Type: application/json
 
 | Name        |    Data Type    | Description                                   | Remark |
 |:------------|:---------------:|:----------------------------------------------|--------|
-| status      |     string      | OK or Failed                                  |Required |
-| uuid                |  string   | A unique ID for each request                  | Required |
+| status      |     string      | success or failed                             |Required |
 | logs        |      array      | log list                                      |Required |
 | error       |     string      | error Code                                    |Required |
 | description |   string       | Description of the error for troubleshooting. |Required |
@@ -67,7 +66,7 @@ Log Detail
 |   2   |    Currency    |   string   |Currency code (ISO 4217 3-digit code)<br/>Please check SLOT_SPEC document|
 |   3   | Betting Amount | string |Betting Amount|
 |   4   |   Win Amount   | string|Total Win Amouint|
-|   5   |  Jackpot Type  |   string   |Jackpot Name|
+|   5   | JackpotDetails |   string   |Jackpot Name|
 |   6   | Jackpot Amount | string |Jackopt Win Amount|
 
 
@@ -76,8 +75,7 @@ Log Detail
 ``` json
 {
     "error": "0",
-    "status": "success",
-    "uuid" : "ab64cee3-f73b-4631-9abf-b1a09c1f9c36",
+    "description": "success",
     "logs": [
         [
             100,

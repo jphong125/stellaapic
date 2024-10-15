@@ -11,13 +11,13 @@ Requested Create User API URL will be notified individually, for security reason
 
 ### Parameters
 
-| Name        |Data Type| Description                                                 | Remark   |
-|:------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin |string| User name for authentication in the Casino Game API service | Required |
-| userId     |string| Id of the player within the Operator system.                | Required |
-| nickname    |string| nickname of the player within the Operator system.           | Optional |
-| uuid        |  string   | A unique ID for each request                                             | Required |
-| token       |string| Token of the player from Authenticate response              | Required |
+| Name         |Data Type| Description                                                 | Remark   |
+|:-------------|:---:|:------------------------------------------------------------|----------|
+| secureLogin  |string| User name for authentication in the Casino Game API service | Required |
+| userId       |string| Id of the player within the Operator system.                | Required |
+| userNickname |string| nickname of the player within the Operator system.           | Optional |
+| uuid         |  string   | A unique ID for each request                                             | Required |
+| token        |string| Token of the player from Authenticate response              | Required |
 
 ### Examples
 
@@ -44,7 +44,7 @@ Content-Type: application/json
 ``` json
 {
     "userId": "tester",
-    "nickname": "tester1",
+    "userNickname": "tester1",
     "uuid": "<uuid>"
 }
 ```

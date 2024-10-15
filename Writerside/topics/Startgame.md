@@ -21,8 +21,8 @@ Requesting "start game" to LuckyMonaco API Servers.
 |:-------------|:---:|:-----------------------------------------------------------------------|:--------:|
 | secureLogin  |string| User name for authentication in the Casino Game API service            | Required |
 | uuid         |string| A unique ID for each request                                           | Required |
-| UserId       |string| Unique identifier of the player within the Casino Operator system.     | Required |
-| UserNickname |string| Nickname of the player within the Casino Operator system.              | Optional |
+| userId       |string| Unique identifier of the player within the Casino Operator system.     | Required |
+| userNickname |string| Nickname of the player within the Casino Operator system.              | Optional |
 | gameId       |string| Symbolic unique identifier of the game within the Lucky Monaco system. | Required |
 | sessionId    |string| Player’s game session id on Lucky Monaco system.                       | Required |
 | language     |string| Language to be displayed when the game is opened.                      | Required |

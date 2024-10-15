@@ -23,7 +23,6 @@ Requested "Session Expired" API URL will be notified individually, for security 
 | PlayerId   |string| Id of the player within the operator’s system. | Required |
 | token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
 | sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                                                                                             | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Examples

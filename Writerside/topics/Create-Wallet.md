@@ -52,10 +52,10 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name     |Data Type| Description                                      | Required |
-|:---------|:---:|:-------------------------------------------------|---|
-| playerId |string| Id of the player within the Lucky Monaco system. |  Required |
-| eroor  |  string   | code of error                                                   | Required |
+| Name        |Data Type| Description                                      | Required |
+|:------------|:---:|:-------------------------------------------------|---|
+| playerId    |string| Id of the player within the Lucky Monaco system. |  Required |
+| eroor       |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |
 
 

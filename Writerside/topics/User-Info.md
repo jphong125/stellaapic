@@ -52,8 +52,8 @@ Content-Type: application/json
 |:------------|:----------:|:------------------------------------------------------------|---------------------------------|
 | secureLogin |   string   | User name for authentication in the Casino Game API service | Required                        |
 | playerId    |   string   | Id of the player within the Operator system.                | Required                        |
-| at_create   |   string   | at create (yyyy-MM-dd HH:mm:ss)                             |  Required |
-| at_login    |   string   | at login (yyyy-MM-dd HH:mm:ss)                              |     Required |
+| at_create   |   string   | at create (i.e. 2024-10-15 14:30:00)                        |  Required |
+| at_login    |   string   | at login (i.e. 2024-10-16 10:01:32)                         |     Required |
 | wallet      | dictionary | wallets                                                     |      Required |
 | currency    |    string  | each balance of currency                                    |      Required |
 | error       |   number   | error code                                                  |     Required |
