@@ -59,9 +59,9 @@ Content-Type: application/json
 }
 ```
 
-## Response
+## Response parameters
 
-| Name        | Data Type | Description                                                     | Required |
+| Name        | Data Type | Description                                                     | Remark  |
 |:------------|:---------:|:----------------------------------------------------------------|----------|
 | error       |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |

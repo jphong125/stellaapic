@@ -52,7 +52,7 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name          |Data Type| Description                                                                                                                   | Required |
+| Name          |Data Type| Description                                                                                                                   | Remark  |
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------|---|
 | transactionId |string| Id of the transaction within Lucky Monaco system.                                                                             | Required |
 | status        |string| Status of the transaction.                                                                                                    |  Required |

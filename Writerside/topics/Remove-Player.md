@@ -7,7 +7,7 @@ Using this method Operator can remove players from the existing Free Round Bonus
 Requested remove player API URL will be notified individually, for security reasons.
 
 ### Parameters
-| Name        | Data Type | Description                                                                                                                              | Required |
+| Name        | Data Type | Description                                                                                                                              | Remark  |
 |:------------|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------------|----------|
 | secureLogin      |string| User name for authentication in the Casino Game API service | Required |
 | token      |string| Token of the player from Authenticate response              | Required |
@@ -50,7 +50,7 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name      |Data Type| Description                                                                                                                                                                                                                                                                                                                                          | Required |
+| Name      |Data Type| Description                                                                                                                                                                                                                                                                                                                                          | Remark  |
 |:----------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | error |string| Error code.                                                                                                                                                                                                                                                                                                                                          | Required |
 | description  |string| Description of the error for troubleshooting.                                                                                                                                                                                                                                                                                                        | Required |

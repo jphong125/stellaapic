@@ -55,7 +55,7 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name     |Data Type| Description                                      | Required |
+| Name     |Data Type| Description                                      | Remark  |
 |:---------|:---:|:-------------------------------------------------|---|
 | playerid |string| Id of the player within the Lucky Monaco system. |  Required |
 | eroor  |  string   | code of error                                                   | Required |

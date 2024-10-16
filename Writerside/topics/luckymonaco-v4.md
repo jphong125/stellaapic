@@ -1,6 +1,6 @@
 # About LuckyMonaco V4
 
-Casino Game API supports different types of games: video slots, video poker, etc. 
+Casino Game API supports different types of games : video slots, video poker, etc. 
 and API should not be changed if Casino Operator needs to add more games to their portfolio.
 
 As soon as new game is available, it is added to Game Library with game symbols.
@@ -10,7 +10,7 @@ Casino Operator will use provided symbols for StartGame method during opening sp
 Game Library will be provided to Casino Operator together with integration package or resent when new games are available.
 
 ## Seamless Wallet API
-Operator should provide the Seamless Wallet Integration API on their side. Lucky Monaco will call the methods when players make a bet or get a win and their balance should be updated
+Operator should provide the Seamless Wallet Integration API on their side. Lucky Monaco will call the methods when **players make a bet or get a win and their balance should be updated**
 
 | Name       | Description                                                                                                                                                                                                                                        |  Remark  |
 |:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
@@ -25,7 +25,7 @@ Operator should provide the Seamless Wallet Integration API on their side. Lucky
 | EndRound   | If the Casino Operator requires to finalize the round that is completed in their system with signal received from the Game Provider.                                                                                                               | Optional |
 | Refund         | Refunds player’s balance. This method will be used for cancellation of a bet in the case the game unfinished round. (i.e. Players connection was lost in any cases so the round is remaining unfinished (bet is success, but result is pending)) | Required |
 | Error code | Error codes used in seamless wallet                                                                                                                                                                                                                | Required |
-
+| SessionExpired | Notifies the Casino Operator that player’s game session has expired in Lucky Monaco system due to inactivity or game client closing.                                                                                                             | Optional |
 
 
 ## Transfer Wallet API
@@ -38,12 +38,12 @@ Operator can use this API for game opening and transferring funds to player’s 
 | CreateWallet      | This method allows registering a new player Wallet on Lucky Monaco system.                                                                       | Required |
 | DepositBalance    | This method transfers funds in to player’s balance (i.e. deposit) within Lucky Monaco system                                                     | Required |
 | WithdrawlBalance  | This method transfers funds out of the player’s balance (i.e. withdrawal) within Lucky Monaco system                                             | Required |
-| Userinformation   | This method retrieves information about a specific user on Lucky Monaco system.                                                                  | Optional |
+| Userinfo   | This method retrieves information about a specific user on Lucky Monaco system.                                                                  | Optional |
 | GetBalance        | this method Operator can get the current balance of the player in the Lucky Monaco system.                                                       | Optional |
 | GetTransferstatus | This method returns the status of a particular transaction that transferred the money in or out the player’s balance in the Lucky Monaco system. | Optional |
 | GetSlotLog        | Using this method Casino Operator can get the user's slot log.                                                                                   | Optional |
 | TerminateSession  | Using this method Casino Operator can terminate the current player session and kick him out all games                                            | Optional |
-| Error code | Error codes used in transfer wallet                                                                                                              | Required |
+| Error code        | Error codes used in transfer wallet                                                                                                              | Required |
 
 ## Integration API
 
@@ -59,15 +59,15 @@ Integration API offers generic methods that allow Operators to create a game lob
 | GetCasinoCurrency | Using this method Casino Operator can retrieve the list of about a specific currency of games available for integration.                                                                                                                         | Optional |
 | CloseSession      | This method terminates active game sessions of the player.                                                                                                                                                                                       | Optional |
 | HealthCheck       | Using this method Casino Operator can check if Lucky Monaco provider API service or Game server are live and ready.                                                                                                                              | Optional |
-| SessionExpired | Notifies the Casino Operator that player’s game session has expired in Lucky Monaco system due to inactivity or game client closing.                                                                                                             | Optional |
+
 
 ## Player ID
-Player ID (userId parameter) is unique identifier of the user within Casino Operator system. 
+User ID (userId parameter) is unique identifier of the user within Casino Operator system. 
 
 
-If player is new and its account does not exist in the Lucky Monaco system it will be created automatically on the base of the data sent by Casino Operator server.
+If User is new and its account does not exist in the Lucky Monaco system it will be created automatically on the base of the data sent by Casino Operator server.
 
-If player account already exists in the Lucky Monaco database it will be updated with the response data if necessary.
+If User account already exists in the Lucky Monaco database it will be updated with the response data if necessary.
 
 
 ## Play Session

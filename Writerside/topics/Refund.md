@@ -16,7 +16,7 @@ Requested "Refund" win API URL will be notified individually, for security reaso
 
 ### Parameters
 
-| Name         | Data Type | Description                                                              | Required |
+| Name         | Data Type | Description                                                              | Remark  |
 |:-------------|:---------:|:-------------------------------------------------------------------------|----------|
 | userId       |  string   | Player's ID, specified by Partner when creating a game session.          | Required |
 | reference    |  string   | Unique reference of this transaction.                                    | Required |
@@ -61,9 +61,9 @@ Content-Type: application/json
 }
 ```
 
-## Response from partner
+## Response 
 
-### Parameters 2
+### Response Parameters 
 
 | Name          |Data Type| Description                                                          | Remark   |
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|

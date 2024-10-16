@@ -37,7 +37,7 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name          |Data Type| Description                                                                                                                   | Required |
+| Name          |Data Type| Description                                                                                                                   | Remark  |
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------|---|
 | limit_spin|number| Max possible Freeround Count (1~limit_spin) | Required |
 | slot|array|List of support slot                                                                                                    |  Required |

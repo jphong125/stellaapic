@@ -16,7 +16,7 @@ Requested "Result" API URL will be notified individually, for security reasons.
 
 ### Parameters
 
-| Name              | Data Type | Description                                                                               | Required |
+| Name              | Data Type | Description                                                                               | Remark  |
 |:------------------|:---------:|:------------------------------------------------------------------------------------------|----------|
 | uuid                |  string   | A unique ID for each request                                                              | Required |
 | userId            |  string   | Player's ID, specified by Partner when creating a game session.                           | Required |
@@ -32,7 +32,7 @@ Requested "Result" API URL will be notified individually, for security reasons.
 | sessionId        |  string   | Player’s game session id on Lucky Monaco system.                                          | Required |
 
 
-### Parameters 2 (Reserved for future development)
+### Parameters  (Reserved for future development)
 
 |Name|Data Type| Description                                                  | Remark   |
 |:---|:---:|:-------------------------------------------------------------|----------|
@@ -81,11 +81,11 @@ Content-Type: application/json
 }
 ```
 
-## Response from partner
+## Response 
 
-### Parameters 3
+### Response Parameters 
 
-| Name          |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Required |
+| Name          |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Remark  |
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
 | currency      |string| Currency of the player. | Required |
@@ -93,7 +93,7 @@ Content-Type: application/json
 | eroor  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |
 
-### Parameters 4 (Reserved for future development)
+### Response Parameters  (Reserved for future development)
 
 |Name|Data Type| Description                                                  | Remark   |
 |:---|:---:|:-------------------------------------------------------------|----------|

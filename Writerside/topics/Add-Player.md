@@ -7,7 +7,7 @@ Using this method Operator can add players to the existing Free Round Bonus. If 
 Requested add player round API URL will be notified individually, for security reasons.
 
 ### Parameters
-| Name        | Data Type | Description                                                                                                                              | Required |
+| Name        | Data Type | Description                                                                                                                              | Remark  |
 |:------------|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------------|----------|
 | token      |string| Token of the player from Authenticate response              | Required |
 | secureLogin |  string   | User name for authentication in the Casino Game API service                                                                              | Required |
@@ -47,7 +47,7 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name      |Data Type| Description                                                                                                                                                                                                                                                                                                                                          | Required |
+| Name      |Data Type| Description                                                                                                                                                                                                                                                                                                                                          | Remark  |
 |:----------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | error |string| Error code.                                                                                                                                                                                                                                                                                                                                          | Required |
 | description  |string| Description of the error for troubleshooting.                                                                                                                                                                                                                                                                                                        | Required |

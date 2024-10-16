@@ -51,7 +51,9 @@ Content-Type: application/json
 ```
 
 ## Response 
-|Name|Data Type|Description|Ramrk|
+
+### Response parameters
+|Name|Data Type|Description|Remark |
 |:---|:---:|:---:|---|
 | eroor  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |

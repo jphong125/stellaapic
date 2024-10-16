@@ -75,18 +75,18 @@ Content-Type: application/json
 }
 ```
 
-## Response from partner
+## Response 
 
-### Parameters 3
+### Response Parameters 
 
-| Name         |Data Type| Description                        | Required |
+| Name         |Data Type| Description                        | Remark  |
 |:-------------|:---:|:-----------------------------------|-----|
 | transactionId|string| ID of the transaction in wallet.   | Required |
 | cash         |decimal| Real balance of the player.        | Required |
 | eroor  |  string   | code of error                      | Required |
 | description |decimal| Response status short description. | Optional |
 
-### Parameters 4 (Reserved for future development)
+### Response Parameters  (Reserved for future development)
 
 |Name|Data Type| Description                                                  | Remark   |
 |:---|:---:|:-------------------------------------------------------------|----------|

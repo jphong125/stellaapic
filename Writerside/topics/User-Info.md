@@ -50,7 +50,7 @@ Content-Type: application/json
 
 ### Response Parameters
 
-| Name        | Data Type  | Description                                                 | Ramark                          |
+| Name        | Data Type  | Description                                                 | Remark                          |
 |:------------|:----------:|:------------------------------------------------------------|---------------------------------|
 | secureLogin |   string   | User name for authentication in the Casino Game API service | Required                        |
 | playerId    |   string   | Id of the player within the Operator system.                | Required                        |

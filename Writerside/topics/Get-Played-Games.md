@@ -53,7 +53,7 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name                       | Object      | Data Type | Description                                                                                                                   | Required |
+| Name                       | Object      | Data Type | Description                                                                                                                   |Remark  |
 |:----------------------------|-------------|:---------:|:------------------------------------------------------------------------------------------------------------------------------|---|
 | error |             |string|                                                                                                    | Required |
 | description |             |string| Description of the error for troubleshooting.                                                                                                                                                                                                                                                                                                        | Required |

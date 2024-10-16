@@ -36,13 +36,15 @@ https://<game-server-domain>/V4/Check
 
 
 
-## response
+## response 
 
-### Example of body (API Service HeathCheck)
-| Name  |Data Type| Description                  | Required |
+### Response parameters
+| Name  |Data Type| Description                  | Remark  |
 |:------|:---:|:-----------------------------|----------|
 | error |string| error code                   | Required |
 | description |string| Response status short description. | Optional |
+
+### Example of body (API Service HeathCheck)
 
 ``` json
 http status : 200 Success

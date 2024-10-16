@@ -47,9 +47,9 @@ Content-Type: application/json
 }
 ```
 
-## Response from partner
+## Response 
 
-### Parameters 2
+### Response Parameters 
 
 |Name|Data Type| Description                                                  | Remark   |
 |:---|:---:|:-------------------------------------------------------------|----------|

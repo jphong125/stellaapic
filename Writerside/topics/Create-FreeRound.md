@@ -8,7 +8,7 @@ The Lucky Monaco system will not create a new FR bonus if there is an active FR 
 Requested create free round API URL will be notified individually, for security reasons.
 
 ### Parameters
-| Name           | Data Type | Description                                                                  | Required |
+| Name           | Data Type | Description                                                                  | Remark  |
 |:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
 | secureLogin      |string| User name for authentication in the Casino Game API service | Required |
 | token      |string| Token of the player from Authenticate response              | Required |
@@ -65,7 +65,7 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name      |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Required |
+| Name      |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Remark  |
 |:----------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | bonuscode |string| Bonus id within the Casino Operator’s system.                                                                                                                                                                                                                                                                                                         | Required |
 

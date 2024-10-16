@@ -8,7 +8,7 @@ Using this method Operator can cancel an existing Free Rounds Bonus in the Lucky
 Requested cancel free round API URL will be notified individually, for security reasons.
 
 ### Parameters
-| Name           | Data Type | Description                                                                  | Required |
+| Name           | Data Type | Description                                                                  | Remark  |
 |:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
 | uuid                |  string   | A unique ID for each request                                             | Required |
 | secureLogin       |  string   |User name for authentication in the Casino Game API service                                        | Required |
@@ -46,7 +46,7 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name      |Data Type| Description                                                                                                                                                                                                                                                                                                                                          | Required |
+| Name      |Data Type| Description                                                                                                                                                                                                                                                                                                                                          | Remark  |
 |:----------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | error |string| Error code.                                                                                                                                                                                                                                                                                                                                          | Required |
 | description  |string| Description of the error for troubleshooting.                                                                                                                                                                                                                                                                                                        | Required |

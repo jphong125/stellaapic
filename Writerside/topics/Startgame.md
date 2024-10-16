@@ -74,7 +74,7 @@ Content-Type: application/json
 Example of successful response from LuckyMonaco API servers. Use URL parameters.
 
 ### response parameter
-|Name|Data Type|Description|Ramrk|
+|Name|Data Type|Description|Remark |
 |:---|:---:|:---:|---|
 | eroor  |  string   | code of error                                                   | Required |
 | description |string| Response status short description. | Optional |

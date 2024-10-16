@@ -17,7 +17,7 @@ Requested "End round" API URL will be notified individually, for security reason
 
 ### Parameters
 
-| Name       | Data Type | Description                                                                | Required |
+| Name       | Data Type | Description                                                                | Remark  |
 |:-----------|:---------:|:---------------------------------------------------------------------------|----------|
 | uuid       |string| A unique ID for each request                                                                                                                                              | Required |
 | userId     |  string   | Player's ID, specified by Partner when creating a game session.            | Required |
@@ -62,11 +62,11 @@ Content-Type: application/json
 }
 ```
 
-## Response from partner
+## Response 
 
-### Parameters 2
+### Response Parameters 
 
-| Name          |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Required |
+| Name          |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Remark |
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
 | currency      |string| Currency of the player. | Required |

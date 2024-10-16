@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name            |Data Type| Description                                                                                                                   | Required |
+| Name            |Data Type| Description                                                                                                                   | Remark  |
 |:----------------|:---:|:------------------------------------------------------------------------------------------------------------------------------|---|
 | slot_id         |string| slot id | Required |
 | currency        |string| currency | Required |

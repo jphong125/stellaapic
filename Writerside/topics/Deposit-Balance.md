@@ -69,7 +69,7 @@ Content-Type: application/json
 
 ### Parameters 2
 
-| Name          |Data Type| Description                                       | Required |
+| Name          |Data Type| Description                                       | Remark  |
 |:--------------|:---:|:--------------------------------------------------|---|
 | currency      |string| Currency of the player.                           | Required |
 | transactionId |string| Id of the transaction within Lucky Monaco system. | Required |
