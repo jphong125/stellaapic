@@ -23,6 +23,7 @@ Operator should provide the Seamless Wallet Integration API on their side. Lucky
 | BonusWin   | Notifies the Casino Operator that FREE ROUNDS are over and player’s balance should be increased with bonus amount. (Reserved for future development)                                                                                               | Required |
 | Cancel     | Notifies the casino Operator that Canceled player’s bet. This method will be used for cancellation of a bet. (i.e. Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response.) | Required |
 | EndRound   | If the Casino Operator requires to finalize the round that is completed in their system with signal received from the Game Provider.                                                                                                               | Optional |
+| Refund         | Refunds player’s balance. This method will be used for cancellation of a bet in the case the game unfinished round. (i.e. Players connection was lost in any cases so the round is remaining unfinished (bet is success, but result is pending)) | Required |
 | Error code | Error codes used in seamless wallet                                                                                                                                                                                                                | Required |
 
 
@@ -58,7 +59,6 @@ Integration API offers generic methods that allow Operators to create a game lob
 | GetCasinoCurrency | Using this method Casino Operator can retrieve the list of about a specific currency of games available for integration.                                                                                                                         | Optional |
 | CloseSession      | This method terminates active game sessions of the player.                                                                                                                                                                                       | Optional |
 | HealthCheck       | Using this method Casino Operator can check if Lucky Monaco provider API service or Game server are live and ready.                                                                                                                              | Optional |
-| Refund         | Refunds player’s balance. This method will be used for cancellation of a bet in the case the game unfinished round. (i.e. Players connection was lost in any cases so the round is remaining unfinished (bet is success, but result is pending)) | Required |
 | SessionExpired | Notifies the Casino Operator that player’s game session has expired in Lucky Monaco system due to inactivity or game client closing.                                                                                                             | Optional |
 
 ## Player ID

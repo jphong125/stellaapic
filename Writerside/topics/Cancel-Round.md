@@ -61,11 +61,11 @@ Content-Type: application/json
 
 ## Response
 
-| Name   | Data Type | Description                                                     | Required |
-|:-------|:---------:|:----------------------------------------------------------------|----------|
-| eroor  |  string   | code of error                                                   | Required |
+| Name        | Data Type | Description                                                     | Required |
+|:------------|:---------:|:----------------------------------------------------------------|----------|
+| error       |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |
-| reference    |  string   | Unique reference of this transaction.                                           | Required |
+| reference   |  string   | Unique reference of this transaction.                                           | Required |
 
 ### Example of body
 

@@ -18,7 +18,6 @@ Requested "Refund" win API URL will be notified individually, for security reaso
 
 | Name         | Data Type | Description                                                              | Required |
 |:-------------|:---------:|:-------------------------------------------------------------------------|----------|
-| secureLogin  |string| User name for authentication in the Casino Game API service              | Required |
 | userId       |  string   | Player's ID, specified by Partner when creating a game session.          | Required |
 | reference    |  string   | Unique reference of this transaction.                                    | Required |
 | providerId   |  string   | Game Provider id.                                                        | Required |
@@ -29,7 +28,6 @@ Requested "Refund" win API URL will be notified individually, for security reaso
 | amount       |  decimal  | Amount to be refunded.                                                   | Optional |
 | bonusCode    |  string   | Id of the bonus in Casino Operator system.                               | Optional |              
 | platform     |  string   | The platform type (channel) on which the game is played.                 | Optional |
-| token        |  string   | Token of the player from Authenticate response.                          | Optional |
 | uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Examples

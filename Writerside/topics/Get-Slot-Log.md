@@ -30,19 +30,24 @@ Content-Type: application/json
 
 | Name  |    Data Type    | Description                         |Remark |
 |:------|:---------------:|:------------------------------------|-----|
+| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| userId     |string| Id of the player within the Operator system.                | Required |
 | start |     number      | starting index of log                          | Required |
 | limit |     number      | Number of logs to obtain (up to 1,000)           | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
 | token      |string| Token of the player from Authenticate response              | Required |
-| secureLogin      |string| User name for authentication in the Casino Game API service | Required |
 
 ### Example of Request Body
 
 ``` json
 {
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>",
+    "userId": "tester",
     "start": 100,
     "limit": 1000
     "token": "980d06d3361f1e21a2f1550c6806ef52"
+    "uuid": "<uuid>"
 }
 ```
 
@@ -52,7 +57,6 @@ Content-Type: application/json
 
 | Name        |    Data Type    | Description                                   | Remark |
 |:------------|:---------------:|:----------------------------------------------|--------|
-| status      |     string      | success or failed                             |Required |
 | logs        |      array      | log list                                      |Required |
 | error       |     string      | error Code                                    |Required |
 | description |   string       | Description of the error for troubleshooting. |Required |
@@ -90,7 +94,7 @@ Log Detail
             101,
             "lm_8_treasureofzeus",
             "USD",
-            "0.0",
+            "10.0",
             "0.0",
             "none",
             "0.0"

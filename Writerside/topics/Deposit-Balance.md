@@ -55,6 +55,8 @@ Content-Type: application/json
 
 ``` json
 {
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>"
     "userId": "tester",
     "TransactionId": "12345678",
     "currency": "USD",

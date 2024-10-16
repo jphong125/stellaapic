@@ -55,6 +55,8 @@ Content-Type: application/json
 
 | Name                       | Object      | Data Type | Description                                                                                                                   | Required |
 |:----------------------------|-------------|:---------:|:------------------------------------------------------------------------------------------------------------------------------|---|
+| error |             |string|                                                                                                    | Required |
+| description |             |string| Description of the error for troubleshooting.                                                                                                                                                                                                                                                                                                        | Required |
 | games List of games played |             |   array   | See below GamePlayed type description of the objects in the list.                                                                          | Required |
 |                             | gameId      |  string   | Symbolic unique identifier of the game.                                                                                                   |  Required |
 |                             | gameName    |  string   | Name of the game. |  Required |

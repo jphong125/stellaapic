@@ -40,6 +40,8 @@ Content-Type: application/json
 
 ``` json
 {
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>"
     "userId": "tester",
 }
 ```
@@ -63,6 +65,8 @@ Content-Type: application/json
 
 ``` json
 {
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>"
     "error": "0",
     "description" : "success",
     "userId" : "test",

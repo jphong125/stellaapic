@@ -43,6 +43,8 @@ Content-Type: application/json
 
 ``` json
 {
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>"
     "userId": "tester",
     "userNickname": "tester1",
     "uuid": "<uuid>"
