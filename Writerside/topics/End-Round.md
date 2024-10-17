@@ -11,11 +11,11 @@ Important: EndRound request may be sent more than once. (When Lucky Monaco do no
 should  ignore the EndRound request and return the success response.
 
 
-## API URL
+## Request
 
 Requested "End round" API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 
 | Name       | Data Type | Description                                                                | Remark  |
 |:-----------|:---------:|:---------------------------------------------------------------------------|----------|
@@ -62,7 +62,9 @@ Content-Type: application/json
 }
 ```
 
-## Response 
+## Response
+
+Example of successful response from Partner API servers.
 
 ### Response Parameters 
 
@@ -75,7 +77,7 @@ Content-Type: application/json
 | eroor  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

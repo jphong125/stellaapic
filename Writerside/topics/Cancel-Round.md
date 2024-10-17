@@ -6,7 +6,7 @@ Notifies the casino Operator that Canceled player’s bet.  <br/>
 This method will be used for cancellation of a bet. <br/>
 (i.e. Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response.)
 
-## API URL
+## Request
 
 Requested cancel round API URL will be notified individually, for security reasons.
 
@@ -58,6 +58,9 @@ Content-Type: application/json
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
 }
 ```
+## Response
+
+Example of successful response from Partner API servers.
 
 ## Response parameters
 
@@ -67,7 +70,7 @@ Content-Type: application/json
 | description |decimal| Response status short description. | Optional |
 | reference   |  string   | Unique reference of this transaction.                                           | Required |
 
-### Example of body
+### Example of response BODY
 
 ``` json
 {

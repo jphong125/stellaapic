@@ -7,7 +7,7 @@ After requesting "Start Game" with individually notified API URL, API servers wi
 
 Redirect a user to received game session URL to entering to LuckyMonaco system.
 
-## API URL
+## Request
 
 Requested "Start game" API URL will be notified individually, for security reasons.
 
@@ -15,7 +15,7 @@ Requested "Start game" API URL will be notified individually, for security reaso
 
 Requesting "start game" to LuckyMonaco API Servers.
 
-### Request parameters
+### Request Parameters
 
 | Name         |Data Type| Description                                                            |  Remark  |
 |:-------------|:---:|:-----------------------------------------------------------------------|:--------:|

@@ -10,11 +10,11 @@ campaigns.
 Important:The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
 
-## API URL
+## Request
 
 Requested "Result" API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 
 | Name              | Data Type | Description                                                                               | Remark  |
 |:------------------|:---------:|:------------------------------------------------------------------------------------------|----------|
@@ -81,7 +81,9 @@ Content-Type: application/json
 }
 ```
 
-## Response 
+## Response
+
+Example of successful response from Partner API servers.
 
 ### Response Parameters 
 
@@ -100,7 +102,7 @@ Content-Type: application/json
 | bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
 
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

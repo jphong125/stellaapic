@@ -3,11 +3,11 @@
 ## Overview
 Using this method Casino Operator will retrieve the currencies that are available in LuckyMonaco games to proceed a specific game.
 
-## API URL
+## Request
 
 Requested "Get Casino Currency" URL will be notified individually, for security reasons.
 
-###  Request parameters
+###  Request Parameters
 
 | Name        |Data Type| Description                                                 | Remark |
 |:------------|:---:|:------------------------------------------------------------|:---------:|
@@ -46,6 +46,8 @@ Content-Type: application/json
 
 ## Response
 
+Example of successful response from LuckyMonaco API servers.
+
 ### Response parameters
 
 |     Name      |          | Data Type | Remark                          |
@@ -56,7 +58,7 @@ Content-Type: application/json
 |               | Currency |  string   | Player's ISO 4217 currency code |
 
 
-### Example of body
+### Example of response BODY
 
 ``` json
 {

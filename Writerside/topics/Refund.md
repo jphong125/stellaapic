@@ -10,11 +10,11 @@ When receive a Refund request Operator have to return money back to player’s  
 - Important: If bet transaction is not found then nothing should happen on the Casino Operator side and success (0)
 or specific error code for this situation should be returned.
 
-## API URL
+## Request
 
 Requested "Refund" win API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 
 | Name         | Data Type | Description                                                              | Remark  |
 |:-------------|:---------:|:-------------------------------------------------------------------------|----------|
@@ -61,7 +61,9 @@ Content-Type: application/json
 }
 ```
 
-## Response 
+## Response
+
+Example of successful response from Partner API servers.
 
 ### Response Parameters 
 
@@ -71,7 +73,7 @@ Content-Type: application/json
 | error |string| error code                   | Required |
 | description |string| Response status short description. | Optional |
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

@@ -5,11 +5,11 @@
 Using this method Casino Operator will get the game language from LuckyMonaco to proceed a specific game.
 
 
-## API URL
+## Request
 
 Requested "Get Casino Language" URL will be notified individually, for security reasons.
 
-###  Request parameters
+###  Request Parameters
 
 | Name        |Data Type| Description                                                 | Remark |
 |:------------|:---:|:------------------------------------------------------------|:---------:|
@@ -47,6 +47,8 @@ Content-Type: application/json
 
 ## Response
 
+Example of successful response from LuckyMonaco API servers.
+
 ###  Response parameters
 
 |     Name     |          | Data Type | Remark                              |
@@ -57,7 +59,7 @@ Content-Type: application/json
 |              | language |  string   | Language code in ISO 639-1 standard |
 
 
-### Example of body
+### Example of response BODY
 
 ``` json
 {

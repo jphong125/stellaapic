@@ -3,11 +3,11 @@
 ## Overview
 A request to check wallet balance
 
-## API URL
+## Request
 
 Requested "Balance" API URL will be notified individually, for security reasons. 
 
-### Parameters
+### Request Parameters
 
 | Name                  |Data Type| Description                                                 | Remark   |
 |:----------------------|:---:|:------------------------------------------------------------|----------|
@@ -47,9 +47,11 @@ Content-Type: application/json
 }
 ```
 
-## Response 
+## Response
 
-### Response Parameters 
+Example of successful response from Partner API servers.
+
+### Response Parameter
 
 |Name|Data Type| Description                                                  | Remark   |
 |:---|:---:|:-------------------------------------------------------------|----------|
@@ -58,13 +60,13 @@ Content-Type: application/json
 | eroor  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |
 
-### Parameters 3 (Reserved for future development)
+### Response Parameter (Reserved for future development)
 
 |Name|Data Type| Description                                                  | Remark   |
 |:---|:---:|:-------------------------------------------------------------|----------|
 |bonus|decimal| This is the balance of money that was won from the FREE ROUND feature. | Optional |
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

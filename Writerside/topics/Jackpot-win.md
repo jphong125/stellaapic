@@ -8,11 +8,11 @@ system and send the jackpot win transaction id back to the Lucky Monaco.
 Important: The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
 
-## API URL
+## Request
 
 Requested "Jackpot win" API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 
 | Name       | Data Type | Description                                                                 | Remark  |
 |:-----------|:---------:|:----------------------------------------------------------------------------|----------|
@@ -64,7 +64,9 @@ Content-Type: application/json
 }
 ```
 
-## Response 
+## Response
+
+Example of successful response from Partner API servers.
 
 ### Response Parameters 
 
@@ -77,7 +79,7 @@ Content-Type: application/json
 | eroor  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

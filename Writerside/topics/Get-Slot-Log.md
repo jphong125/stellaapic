@@ -3,7 +3,7 @@
 ## Overview
 Method returns the user's slot log.
 
-## API URL
+## Request
 Requested get round status API URL will be notified individually, for security reasons.
 
 ## Request Example
@@ -51,7 +51,9 @@ Content-Type: application/json
 }
 ```
 
-## Response Example
+## Response
+
+Example of successful response from LuckyMonaco API servers.
 
 ### Response Parameters
 
@@ -74,7 +76,7 @@ Log Detail
 |   6   | Jackpot Amount | string |Jackopt Win Amount|
 
 
-### Success Example
+### Example of response BODY
 
 ``` json
 {

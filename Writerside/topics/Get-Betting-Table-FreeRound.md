@@ -3,10 +3,10 @@
 ## Overview
 Get a list of possible bet amounts for a specific game for a specific currency
 
-## API URL
+## Request
 Requested get betting table(for free round) API URL will be notified individually, for security reasons. 
 
-### Parameters
+### Request Parameters
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
@@ -45,9 +45,11 @@ Content-Type: application/json
 ```
 
 
-## Response from partner
+## Response
 
-### Parameters 2
+Example of successful response from LuckyMonaco API servers.
+
+### Response Parameters
 
 | Name            |Data Type| Description                                                                                                                   | Remark  |
 |:----------------|:---:|:------------------------------------------------------------------------------------------------------------------------------|---|
@@ -57,7 +59,7 @@ Content-Type: application/json
 
 
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

@@ -3,10 +3,10 @@
 ## Overview
 Method returns the current status of a particular game round. Using this method Casino Operator can check game rounds recorded on their side and cancel open bets returning money to the player’s balance.
 
-## API URL
+## Request
 Requested get round status API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
@@ -46,9 +46,11 @@ Content-Type: application/json
 }
 ```
 
-## Response from partner
+## Response
 
-### Parameters 2
+Example of successful response from LuckyMonaco API servers.
+
+### Response Parameters
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
@@ -60,7 +62,7 @@ Content-Type: application/json
 | description         |string| Description of the error for troubleshooting.                                    | Required |
 
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

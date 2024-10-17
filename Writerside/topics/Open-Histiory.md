@@ -3,15 +3,15 @@
 ## Overview
 Using this method Casino Operator can get a link to the page with the game details at the whole round. The method returns URL that contains round id and a one-time password that the game server will use for validation of the request, for the security reason.
 
-## API URL
+## Request
 Requested open history API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
 | secureLogin |string| User name for authentication in the Casino Game API service | Required |
-| playerId    |string| Id of the player within the Operator system.                | Required |
+|  userId     |string| Id of the player within the Operator system.                | Required |
 | roundId     |string| Unique identifier of the game round.                  | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
 | token      |string| Token of the player from Authenticate response              | Required |
@@ -40,15 +40,17 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin": "<partnerId>",
-    "playerId": "421",
+    "userId": "421",
     "roundId": "5108924498",
     "uuid": "980d06d3361f1e21a2f1550c6806ef52"
 }
 ```
 
-## Response from partner
+## Response
 
-### Parameters 2
+Example of successful response from LuckyMonaco API servers.
+
+### Response Parameters
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
 | error       |string| Error code. | Required |
@@ -56,7 +58,7 @@ Content-Type: application/json
 | description |string| Id of the player within the Operator system.                | Required |
 
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

@@ -3,11 +3,11 @@
 ## Overview
 A request to check whether player can bet or not.
 
-## API URL
+## Request
 
 Requested "Check" API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 
 | Name       |Data Type| Description                                                              | Remark   |
 |:-----------|:---:|:-------------------------------------------------------------------------|----------|
@@ -50,7 +50,9 @@ Content-Type: application/json
 
 ## Response 
 
-### Response Parameters 
+Example of successful response from Partner API servers.
+
+### Response Parameter 
 
 | Name  |Data Type| Description                  | Remark   |
 |:------|:---:|:-----------------------------|----------|
@@ -58,7 +60,7 @@ Content-Type: application/json
 | description |decimal| Response status short description. | Optional |
 
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {    

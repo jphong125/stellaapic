@@ -6,11 +6,11 @@ incomplete game rounds can not be finished by another player (usually this is re
 session for specific game Operator may send game id parameter in the request.
 
 
-## API URL
+## Request
 
 Requested "Close Session" API URL will be notified individually, for security reasons.
 
-###  Request parameters
+###  Request Parameters
 
 | Name         |Data Type| Description                                                                                                                                                                                                                                                |  Remark  |
 |:-------------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
@@ -52,13 +52,15 @@ Content-Type: application/json
 
 ## Response 
 
+Example of successful response from LuckyMonaco API servers.
+
 ### Response parameters
 |Name|Data Type|Description|Remark |
 |:---|:---:|:---:|---|
 | eroor  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |
 
-### Example of body
+### Example of response BODY
 
 ``` json
 {

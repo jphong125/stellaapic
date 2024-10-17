@@ -3,10 +3,10 @@
 ## Overview
 Using this method Operator can get the current balance of the player in the Lucky Monaco
 
-## API URL
+## Request
 Requested get balance API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
@@ -47,7 +47,9 @@ Content-Type: application/json
 }
 ```
 
-## Response from partner
+## Response
+
+Example of successful response from LuckyMonaco API servers.
 
 ### Parameters 2
 
@@ -58,7 +60,7 @@ Content-Type: application/json
 | description |decimal| Response status short description. | Optional |
 
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

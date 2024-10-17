@@ -4,10 +4,10 @@
 Using this method, the operator can create a new free round bonus with the Lucky Monaco system. In case of network failure, the operator can send a repeated free round creation request. 
 The Lucky Monaco system will not create a new FR bonus if there is an active FR bonus with the same bonus code.
 
-## API URL
+## Request
 Requested create free round API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 | Name           | Data Type | Description                                                                  | Remark  |
 |:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
 | secureLogin      |string| User name for authentication in the Casino Game API service | Required |
@@ -61,15 +61,17 @@ Content-Type: application/json
 }
 ```
 
-## Response from partner(s)
+## Response
 
-### Parameters 2
+Example of successful response from LuckyMonaco API servers.
+
+### Response Parameters
 
 | Name      |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Remark  |
 |:----------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | bonuscode |string| Bonus id within the Casino Operator’s system.                                                                                                                                                                                                                                                                                                         | Required |
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

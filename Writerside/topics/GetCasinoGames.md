@@ -3,11 +3,11 @@
 ## Overview
 Using this method Casino Operator will get the list of casino games available for the integration.
 
-## API URL
+## Request
 
 Requested get casino games API URL will be notified individually, for security reasons.
 
-###  Request parameters
+###  Request Parameters
 
 | Name        |Data Type| Description                                                 | Remark |
 |:------------|:---:|:------------------------------------------------------------|:---------:|
@@ -46,6 +46,8 @@ Content-Type: application/json
 
 ## Response  
 
+Example of successful response from LuckyMonaco API servers.
+
 ###  Response parameters
 
 |   Name   |                   | Data Type | Remark                                                                                                     |
@@ -72,7 +74,7 @@ Content-Type: application/json
 |          |      release      |  boolean  | If true, the game is released and available to use                                                         |
 |          |    releaseDate    |  string   | Date of release of the game                                                                                |
 
-### Example of body
+### Example of response BODY
 
 ``` json
 {

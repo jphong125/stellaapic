@@ -6,10 +6,10 @@ Lucky Monaco side.
 
 Important: This method will return player’s balance after successful transaction for all transactions 
 
-## API URL
+## Request
 Requested get transfer status API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
@@ -48,7 +48,9 @@ Content-Type: application/json
 }
 ```
 
-## Response from partner
+## Response
+
+Example of successful response from LuckyMonaco API servers.
 
 ### Parameters 2
 
@@ -63,7 +65,7 @@ Content-Type: application/json
 
 
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

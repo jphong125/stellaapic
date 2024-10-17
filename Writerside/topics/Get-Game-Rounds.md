@@ -3,15 +3,15 @@
 ## Overview
 Using this method Casino Operator can get a list of the game rounds played by the player during the certain day and (optionally) the specific hour.
 
-## API URL
+## Request
 Requested get game round API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
 | secureLogin |string| User name for authentication in the Casino Game API service | Required |
-| playerId    |string| Id of the player within the Operator system.                | Required |
+|  userId    |string| Id of the player within the Operator system.                | Required |
 | dateplayed  |string| Date, based on the time zone of the user.                   | Required |
 | timeZone    |string| Time zone of the user. Example: GMT, GMT+8, GMT+04:00                                     | Required |
 | gameId      |string| Symbolic unique identifier of the game.                | Required |
@@ -44,7 +44,7 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin": "<partnerId>",
-    "playerId": "421",
+    "userId": "421",
     "datePlayed": :2016-12-23",
     "timeZone": "GMT+00:00",
     "playerId": "Im_2_kellywheeldouble",
@@ -53,9 +53,11 @@ Content-Type: application/json
 }
 ```
 
-## Response from partner
+## Response
 
-### Parameters 2
+Example of successful response from LuckyMonaco API servers.
+
+### Response Parameters
 
 | Name                       | Object       |  Data Type  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Remark  |
 |:----------------------------|--------------|:-----------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
@@ -80,7 +82,7 @@ Content-Type: application/json
 
 
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

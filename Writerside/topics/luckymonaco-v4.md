@@ -10,7 +10,7 @@ Casino Operator will use provided symbols for StartGame method during opening sp
 Game Library will be provided to Casino Operator together with integration package or resent when new games are available.
 
 ## Seamless Wallet API
-Operator should provide the Seamless Wallet Integration API on their side. Lucky Monaco will call the methods when **players make a bet or get a win and their balance should be updated**
+Operator should provide the Seamless Wallet Integration API on their side. Lucky Monaco will call the methods when **user make a bet or get a win and their balance should be updated**
 
 | Name       | Description                                                                                                                                                                                                                                        |  Remark  |
 |:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|

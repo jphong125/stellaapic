@@ -3,10 +3,10 @@
 ## Overview
 Using this method Casino Operator will get icons list for the games.
 
-## API URL
+## Request
 Requested get a list of game URL will be notified individually, for security reasons.
 
-###  Request parameters
+###  Request Parameters
 
 | Name        |Data Type| Description                                                            | Remark |
 |:------------|:---:|:-----------------------------------------------------------------------|:---------:|
@@ -47,6 +47,8 @@ Content-Type: application/json
 ```
 ## Response
 
+Example of successful response from LuckyMonaco API servers.
+
 ###  Response parameters
 
 | Name  |        | Data Type | Description                                                      |
@@ -58,7 +60,7 @@ Content-Type: application/json
 |       |  url   |  string   | Url of icon                                                      |
 
 
-### Example of body
+### Example of response BODY
 
 ``` json
 {

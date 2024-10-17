@@ -3,10 +3,10 @@
 ## Overview
 You can get information about the free round you can set by making a simple call via URL.
 
-## API URL
+## Request
 Requested get info API URL will be notified individually, for security reasons. 
 
-### Parameters
+### Request Parameters
 
 | Name             |Data Type| Description                                                 | Remark   |
 |:-----------------|:---:|:------------------------------------------------------------|----------|
@@ -33,9 +33,11 @@ HEADER
 Content-Type: application/json
 ```
 
-## Response from partner
+## Response
 
-### Parameters 2
+Example of successful response from LuckyMonaco API servers.
+
+### Response Parameters
 
 | Name          |Data Type| Description                                                                                                                   | Remark  |
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------|---|
@@ -48,7 +50,7 @@ Content-Type: application/json
 
 
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

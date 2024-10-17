@@ -4,7 +4,7 @@
 You can obtain information about a specific user by calling the URL provided by Lucky Monaco.
 By calling the API, you can get the amount held by each wallet.
 
-## API URL
+## Request
 Requested user info API URL will be notified individually, for security reasons.
 
 ## Request Example
@@ -46,14 +46,16 @@ Content-Type: application/json
 }
 ```
 
-## Response Example
+## Response
+
+Example of successful response from LuckyMonaco API servers.
 
 ### Response Parameters
 
 | Name        | Data Type  | Description                                                 | Remark                          |
 |:------------|:----------:|:------------------------------------------------------------|---------------------------------|
 | secureLogin |   string   | User name for authentication in the Casino Game API service | Required                        |
-| playerId    |   string   | Id of the player within the Operator system.                | Required                        |
+| userId     |   string   | Id of the player within the Operator system.                | Required                        |
 | at_create   |   string   | at create (i.e. 2024-10-15 14:30:00)                        |  Required |
 | at_login    |   string   | at login (i.e. 2024-10-16 10:01:32)                         |     Required |
 | wallet      | dictionary | wallets                                                     |      Required |
@@ -61,7 +63,7 @@ Content-Type: application/json
 | error       |   number   | error code                                                  |     Required |
 | descrition  |   string   | Description of the error for troubleshooting.               |     Required |
 
-### Success Example
+### Example of response BODY
 
 ``` json
 {

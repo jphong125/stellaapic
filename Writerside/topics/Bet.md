@@ -6,11 +6,11 @@ funds to cover the bet. **Amount of the bet must be subtracted from player balan
 
 Important: The call is idempotent, i.e. sending bet again only creates one transaction.
 
-## API URL
+## Request
 
 Requested "Bet" API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 
 | Name         | Data Type | Description                                                                       | Remark   |
 |:-------------|:---------:|:----------------------------------------------------------------------------------|----------|
@@ -28,7 +28,7 @@ Requested "Bet" API URL will be notified individually, for security reasons.
 | roundDetails |  string   | Additional information about the current game round. (i.e. "spin", "buyFreeSpin") | Required |
 | sessionId        |string| Player’s game session id on Lucky Monaco system.                                  | Required |
 
-### Parameters 2 (Reserved for future development)
+### Parameters  (Reserved for future development)
 
 |Name|Data Type| Description                                                                                                                             | Remark   |
 |:---|:---:|:----------------------------------------------------------------------------------------------------------------------------------------|----------|
@@ -75,9 +75,11 @@ Content-Type: application/json
 }
 ```
 
-## Response 
+## Response
 
-### Response Parameters 
+Example of successful response from Partner API servers.
+
+### Response Parameters
 
 | Name         |Data Type| Description                        | Remark  |
 |:-------------|:---:|:-----------------------------------|-----|
@@ -92,7 +94,7 @@ Content-Type: application/json
 |:---|:---:|:-------------------------------------------------------------|----------|
 | bonus        |decimal| Bonus balance of the player.           | Required |
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {

@@ -4,10 +4,10 @@
 
 Using this method Operator can cancel an existing Free Rounds Bonus in the Lucky Monaco system. Free Rounds will be canceled in the Lucky Monaco system regardless of whether the player started to play them or not.
 
-## API URL
+## Request
 Requested cancel free round API URL will be notified individually, for security reasons.
 
-### Parameters
+### Request Parameters
 | Name           | Data Type | Description                                                                  | Remark  |
 |:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
 | uuid                |  string   | A unique ID for each request                                             | Required |
@@ -42,16 +42,18 @@ Content-Type: application/json
 }
 ```
 
-## Response from partner(s)
+## Response
 
-### Parameters 2
+Example of successful response from LuckyMonaco API servers.
+
+### Response Parameters
 
 | Name      |Data Type| Description                                                                                                                                                                                                                                                                                                                                          | Remark  |
 |:----------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
 | error |string| Error code.                                                                                                                                                                                                                                                                                                                                          | Required |
 | description  |string| Description of the error for troubleshooting.                                                                                                                                                                                                                                                                                                        | Required |
 
-### Example of HTTP BODY 2
+### Example of response BODY
 
 ``` json
 {
