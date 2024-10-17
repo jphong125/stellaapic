@@ -44,6 +44,7 @@
             <toc-element topic="User-Info.md"/>
             <toc-element topic="Get-Balance.md"/>
             <toc-element topic="Get-transfer-status.md"/>
+            <toc-element topic="Session-Expired((T).md"/>
             <toc-element topic="Error-Code.md"/>
             <toc-element topic="Get-Slot-Log.md"/>
         </toc-element>

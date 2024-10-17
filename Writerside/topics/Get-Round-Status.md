@@ -66,9 +66,9 @@ Example of successful response from LuckyMonaco API servers.
 
 ``` json
 {
-   "error": "0",
+   "error": "0",  
+   "description": "Success"
    “bet”: “10”,
-   "description": "OK",
    “winAmount”: “100”,
    “roundstatus”: “completed”
 

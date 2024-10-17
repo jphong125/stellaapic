@@ -1,4 +1,4 @@
-# Transfer Wallet API (Reserved for future development)
+# Transfer Wallet API 
 
 This is a simple API for game Operator to connect to the Lucky Monaco game system. API is an HTTP listener, which listens
 POST requests coming to an URL with the request mappings below.

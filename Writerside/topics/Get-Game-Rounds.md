@@ -87,7 +87,8 @@ Example of successful response from LuckyMonaco API servers.
 ``` json
 {
     "error": "0",
-    "description": "OK", "rounds":
+    "description": "success", 
+    "rounds":
     [
     {
      "dateTime": "2016-12-23 05:50:35.0", 

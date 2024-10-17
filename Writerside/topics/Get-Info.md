@@ -53,6 +53,8 @@ Example of successful response from LuckyMonaco API servers.
 ### Example of response BODY
 
 ``` json
+    "error": 0,
+    "description": "Success"
 {
     "slot": [
         {

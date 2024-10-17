@@ -38,7 +38,9 @@ Content-Type: application/json
 
 ``` json
 {
-        "bonus_code": "43f4a26e-6da6-496e-9754-0d6c13a19df7"
+    "error": 0,
+    "description": "Success"
+    "bonus_code": "43f4a26e-6da6-496e-9754-0d6c13a19df7"
 }
 ```
 
