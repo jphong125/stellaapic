@@ -58,7 +58,7 @@ Example of successful response from LuckyMonaco API servers.
 | description |string| Id of the player within the Operator system.                | Required |
 
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

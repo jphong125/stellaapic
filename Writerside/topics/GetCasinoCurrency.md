@@ -58,7 +58,7 @@ Example of successful response from LuckyMonaco API servers.
 |               | Currency |  string   | Player's ISO 4217 currency code |
 
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

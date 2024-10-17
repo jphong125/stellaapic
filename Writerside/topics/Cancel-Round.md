@@ -70,7 +70,7 @@ Example of successful response from Partner API servers.
 | description |decimal| Response status short description. | Optional |
 | reference   |  string   | Unique reference of this transaction.                                           | Required |
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

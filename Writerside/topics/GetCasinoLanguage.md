@@ -59,7 +59,7 @@ Example of successful response from LuckyMonaco API servers.
 |              | language |  string   | Language code in ISO 639-1 standard |
 
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

@@ -58,7 +58,7 @@ Example of successful response from LuckyMonaco API servers.
 | error |string| Error code.                                                                                                                                                                                                                                                                                                                                          | Required |
 | description  |string| Description of the error for troubleshooting.                                                                                                                                                                                                                                                                                                        | Required |
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

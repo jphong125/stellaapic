@@ -60,7 +60,7 @@ Example of successful response from LuckyMonaco API servers.
 |       |  url   |  string   | Url of icon                                                      |
 
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

@@ -65,7 +65,7 @@ Example of successful response from **Partner API servers**.
 | error |string| error code                   | Required |
 | description |string| Response status short description. | Optional |
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

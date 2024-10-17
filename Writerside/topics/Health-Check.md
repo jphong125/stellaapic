@@ -46,7 +46,7 @@ Example of successful response from LuckyMonaco API servers.
 | error |string| error code                   | Required |
 | description |string| Response status short description. | Optional |
 
-### Example of response BODY (API Service HeathCheck)
+### Example of Json BODY (API Service HeathCheck)
 
 ``` json
 http status : 200 Success
@@ -56,7 +56,7 @@ http status : 200 Success
 }
 
 ```
-### Example of response BODY (Game Server HeathCheck)
+### Example of Json BODY (Game Server HeathCheck)
 
 ``` json
 http status : 200 Success

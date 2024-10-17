@@ -76,7 +76,7 @@ Log Detail
 |   6   | Jackpot Amount | string |Jackopt Win Amount|
 
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

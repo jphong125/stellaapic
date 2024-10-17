@@ -94,7 +94,7 @@ Example of successful response from Partner API servers.
 |:---|:---:|:-------------------------------------------------------------|----------|
 | bonus        |decimal| Bonus balance of the player.           | Required |
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

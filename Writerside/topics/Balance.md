@@ -66,7 +66,7 @@ Example of successful response from Partner API servers.
 |:---|:---:|:-------------------------------------------------------------|----------|
 |bonus|decimal| This is the balance of money that was won from the FREE ROUND feature. | Optional |
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

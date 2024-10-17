@@ -52,8 +52,8 @@ Example of successful response from LuckyMonaco API servers.
 
 |   Name   |                   | Data Type | Remark                                                                                                     |
 |:--------:|:-----------------:|:---------:|:-----------------------------------------------------------------------------------------------------------|
-| eroor  |                   |                              string                        | code of error                                                                                              |
-| description |                   | decimal| Response status short description.                                                                         |
+| eroor  |                   |  string   | code of error                                                                                              |
+| description |                   |  string   | Response status short description.                                                                         |
 | gameList |                   |   array   | List of game information.                                                                                  |
 |          |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                                           |
 |          |     gameName      |  string   | Name of the game.                                                                                          |
@@ -63,18 +63,18 @@ Example of successful response from LuckyMonaco API servers.
 |          |     platform      |  string   | Platform for which the game can be opened.                                                                 |
 |          | demoGameAvailable |  boolean  | If true, a demo version of the game is available.                                                          |
 |          |    aspectRatio    |  string   | Describes the proportional relationship between the width and the height of the game.                      |
-|          |   gameIdNumeric   |  number   | Numeric value of gameId                                                                                    |
+|          |   gameIdNumeric   |  integer  | Numeric value of gameId                                                                                    |
 |          |   jurisdictions   |  string   | Jurisdiction of the player                                                                                 |
 |          |   frbAvailable    |  boolean  | Boolean if true, FREE ROUND bonus feature is available to this particular game.                            |
 |          |       lines       |  string   | Number of available pay lines in the game                                                                  |
 |          |     rowReels      |  string   | Layout of the game                                                                                         |
 |          |        rtp        |  string   | RTP of the game                                                                                            |
-|          |     dataType      |  string   | Type of game portfolio (i.e. "RNG" : Main portfolil games (video slots, etc), "lc" : Live Casino portfolio |
+|          |     dataType      |  string   | Type of game portfolio (i.e. "RNG" : Main Portfolio games (video slots, etc), "lc" : Live Casino portfolio |
 |          |  gameDescription  |  string   | Description of the game                                                                                    |
 |          |      release      |  boolean  | If true, the game is released and available to use                                                         |
 |          |    releaseDate    |  string   | Date of release of the game                                                                                |
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

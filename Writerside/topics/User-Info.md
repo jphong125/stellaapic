@@ -63,7 +63,7 @@ Example of successful response from LuckyMonaco API servers.
 | error       |   number   | error code                                                  |     Required |
 | descrition  |   string   | Description of the error for troubleshooting.               |     Required |
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

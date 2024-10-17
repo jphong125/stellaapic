@@ -65,7 +65,7 @@ Example of successful response from LuckyMonaco API servers.
 
 
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

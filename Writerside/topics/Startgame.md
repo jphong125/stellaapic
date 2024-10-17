@@ -80,7 +80,7 @@ Example of successful response from LuckyMonaco API servers. Use URL parameters.
 | description |string| Response status short description. | Optional |
 |url|string|used for player redirection.| Required|
 
-### Example of response BODY
+### Example of Json BODY
 
 ``` json
 {

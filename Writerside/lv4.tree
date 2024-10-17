@@ -60,6 +60,7 @@
         <toc-element topic="Game-History-API.md">
             <toc-element topic="Get-Played-Games.md"/>
             <toc-element topic="Get-Game-Rounds.md"/>
+            <toc-element topic="Get-Bet-History.md"/>
             <toc-element topic="Open-Histiory.md"/>
             <toc-element topic="Get-Round-Status.md"/>
         </toc-element>

@@ -44,6 +44,7 @@ Operator can use this API for game opening and transferring funds to player’s 
 | GetSlotLog        | Using this method Casino Operator can get the user's slot log.                                                                                   | Optional |
 | TerminateSession  | Using this method Casino Operator can terminate the current player session and kick him out all games                                            | Optional |
 | Error code        | Error codes used in transfer wallet                                                                                                              | Required |
+| SessionExpired | Notifies the Casino Operator that player’s game session has expired in Lucky Monaco system due to inactivity or game client closing.                                                                                                             | Optional |
 
 ## Integration API
 
