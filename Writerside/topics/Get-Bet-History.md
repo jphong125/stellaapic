@@ -47,7 +47,7 @@ Content-Type: application/json
     "endtime": "2016-12-23 23:59:59",
     "row": "500",
     "gameType": ["RNG", "lc"],
-    "time" : : "1"
+    "time" : : "1",
     "token": "980d06d3361f1e21a2f1550c6806ef52"
 }
 ```
@@ -88,22 +88,22 @@ Example of successful response from LuckyMonaco API servers.
 {
     "error": "0",
     "description": "success", 
-    "total" : 100
-    "page" : 1
+    "total" : 100,
+    "page" : 1,
     "rounds":
     [
     {
      "reportdate": "2024-10-10", 
      "gametime": "2024-10-10 01:11:22",
-     "gameId": "Im_treasureofzeus",  -
-     "gameName": "treasureofzeus",  - 
-     "gameType": "RNG",  -
-     "roundId": "5108924498",   -
-     "currency": "USD",    -
-     "betAmount": "0.1",    -
-     "winAmount": "0.05",   -
-     "valid" : "-0.05"   -
-     "balance": "99711.59",    -
+     "gameId": "Im_treasureofzeus",  
+     "gameName": "treasureofzeus",   
+     "gameType": "RNG",  
+     "roundId": "5108924498",   
+     "currency": "USD",    
+     "betAmount": "0.1",   
+     "winAmount": "0.05",   
+     "valid" : "-0.05",   
+     "balance": "99711.59",   
      "roundDetails": "spin", 
      "userId": "6638030",
      "detailsUrl": "url": "URL where you can check the snapshot"

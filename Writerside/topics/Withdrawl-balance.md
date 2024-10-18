@@ -25,7 +25,7 @@ Requested withdrawl balance API URL will be notified individually, for security 
 
 | Name          |Data Type| Description                                                 | Remark   |
 |:--------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin   |string| User name for authentication in the Casino Game API service | Required |
+| secureLogin   |string| partner name for authentication in the Casino Game API service | Required |
 | userId      |string| Id of the player within the Operator system.                | Required |
 | currency      |string| Currency of the player.           | Required |
 | TransactionId |string|  Id of the transaction within Casino Operator system.                                    | Required |
@@ -59,7 +59,7 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "token" : "<token>"
+    "token" : "<token>",
     "userId": "tester",
     "TransactionId": "EXT12345678",
     "currency": "USD",

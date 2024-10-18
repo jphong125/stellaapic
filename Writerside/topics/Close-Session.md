@@ -16,6 +16,7 @@ Requested "Close Session" API URL will be notified individually, for security re
 |:-------------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
 | secureLogin  |string| User name for authentication in the Casino Game API service                                                                                                                                                                                                | Required |
 | gameId       |string| Id of the game. This is optional parameter,which has to be sent by Operator if only the session for specific game should be closed.                                                                                                                        | optional |
+| userId     |string| Identifier of the user within the Casino Operator’s system.              | Required |
 | clearHistory |string| Specifies whether to clear the history of the round or not. default value is 0.  <br/>May have the following values: <br/>1 – history should be removed, so that the last game round cannot be completed anymore <br/>0 – last game round can be completed | optional |
 | token      |string| Token of the player from Authenticate response                                                                                                                                                                                                             | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
@@ -45,6 +46,7 @@ Content-Type: application/json
 {
     "secureLogin" : "<partnerId>",
     "gameId" : "lm_1_pumpkinfarm",
+    "userId": "tester",
     "clearHistory" : 0,
     "token" : "<token>",
     "uuid": "<uuid>"

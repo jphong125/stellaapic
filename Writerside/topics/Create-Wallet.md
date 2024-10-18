@@ -13,7 +13,7 @@ Requested Create wallet API URL will be notified individually, for security reas
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| secureLogin |string|partner name for authentication in the Casino Game API service | Required |
 | userId    |string| Id of the player within the Operator system.                | Required |
 | currency    |string| Currency of the player.           | Required |
 | uuid        |  string   | A unique ID for each request                                             | Required |
@@ -43,7 +43,7 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "token" : "<token>"
+    "token" : "<token>",
     "userId": "tester",
     "currency": "USD",
     "uuid": "<uuid>"
@@ -69,5 +69,5 @@ Example of successful response from LuckyMonaco API servers.
 {
     "error": "0",
     "description": "success",
-    "userId": "64749175",
+    "userId": "64749175"
 }

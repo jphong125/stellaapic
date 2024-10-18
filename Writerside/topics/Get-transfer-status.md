@@ -13,7 +13,7 @@ Requested get transfer status API URL will be notified individually, for securit
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| secureLogin |string|partner name for authentication in the Casino Game API service | Required |
 | userId     |string| Id of the player within the Operator system.                | Required |
 | uuid        |  string   | A unique ID for each request                                             | Required |
 | token       |string| Token of the player from Authenticate response              | Required |

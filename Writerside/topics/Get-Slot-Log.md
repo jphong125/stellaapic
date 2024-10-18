@@ -30,7 +30,7 @@ Content-Type: application/json
 
 | Name  |    Data Type    | Description                         |Remark |
 |:------|:---------------:|:------------------------------------|-----|
-| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| secureLogin |string| partner name for authentication in the Casino Game API service | Required |
 | userId     |string| Id of the player within the Operator system.                | Required |
 | start |     number      | starting index of log                          | Required |
 | limit |     number      | Number of logs to obtain (up to 1,000)           | Required |

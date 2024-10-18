@@ -45,9 +45,9 @@ Content-Type: application/json
 
 ``` http
 {
- "providerId": "Luckymonaco"
- "sessionId": "6fd2d6f3bb8f4c5a9fadf15d81206af2"
- "userId": "123456"
+ "providerId": "Luckymonaco",
+ "sessionId": "6fd2d6f3bb8f4c5a9fadf15d81206af2",
+ "userId": "123456",
  "uuid" : "<uuid>"
 }
 ```

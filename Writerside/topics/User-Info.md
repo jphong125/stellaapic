@@ -31,7 +31,7 @@ Content-Type: application/json
 
 | Name        | Data Type  | Description                         |Ramark|
 |:------------|:----------:|:------------------------------------|---|
-| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| secureLogin |string| partner name for authentication in the Casino Game API service | Required |
 | userId     |string| Id of the player within the Operator system.                | Required |
 | uuid        |  string   | A unique ID for each request                                             | Required |
 | token       |string| Token of the player from Authenticate response              | Required |
@@ -41,7 +41,7 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "token" : "<token>"
+    "token" : "<token>",
     "userId": "tester",
     "uuid": "<uuid>"
 }
@@ -55,8 +55,6 @@ Example of successful response from LuckyMonaco API servers.
 
 | Name        | Data Type | Description                                                 | Remark                          |
 |:------------|:---------:|:------------------------------------------------------------|---------------------------------|
-| secureLogin |  string   | User name for authentication in the Casino Game API service | Required                        |
-| userId     |  string   | Id of the player within the Operator system.                | Required                        |
 | at_create   | datetime  | at create (i.e. 2024-10-15 14:30:00)                        |  Required |
 | at_login    | datetime  | at login (i.e. 2024-10-16 10:01:32)                         |     Required |
 | wallet      |   array   | wallets                                                     |      Required |
@@ -68,17 +66,15 @@ Example of successful response from LuckyMonaco API servers.
 
 ``` json
 {
-    "secureLogin" : "<partnerId>",
-    "token" : "<token>"
     "error": "0",
     "description" : "success",
     "userId" : "test",
-    "at_create" : "2024-07-02 11:50:12"
-    "at_login" : "2024-07-02 12:10:32"
-    "wallet" : {
+    "at_create" : "2024-07-02 11:50:12",
+    "at_login" : "2024-07-02 12:10:32",
+    "wallet" : [
         "USD" : "100.0",
         "CNY" : "1023"
-    }
+    ]
 }
 ```
 

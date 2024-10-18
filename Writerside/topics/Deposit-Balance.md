@@ -23,15 +23,15 @@ Requested deposit balance API URL will be notified individually, for security re
 
 ### Request Parameters
 
-| Name          |Data Type| Description                                                 | Remark   |
-|:--------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin   |string| User name for authentication in the Casino Game API service | Required |
-| userId       |string| Id of the player within the Operator system.                | Required |
-| currency      |string| Currency of the player.           | Required |
-| TransactionId |string|  Id of the transaction within Casino Operator system.                                    | Required |
-| amount        |string|   Amount to be added to player’s balance                                    | Required |
-| uuid          |  string   | A unique ID for each request                                             | Required |
-| token         |string| Token of the player from Authenticate response              | Required |
+| Name          |Data Type| Description                                                    | Remark   |
+|:--------------|:---:|:---------------------------------------------------------------|----------|
+| secureLogin   |string| partner name for authentication in the Casino Game API service | Required |
+| userId       |string| Id of the player within the Operator system.                   | Required |
+| currency      |string| Currency of the player.                                        | Required |
+| TransactionId |string| Id of the transaction within Casino Operator system.           | Required |
+| amount        |string| Amount to be added to player’s balance                         | Required |
+| uuid          |  string   | A unique ID for each request                                   | Required |
+| token         |string| Token of the player from Authenticate response                 | Required |
 
 ### Examples
 
@@ -56,7 +56,7 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "token" : "<token>"
+    "token" : "<token>",
     "userId": "tester",
     "TransactionId": "12345678",
     "currency": "USD",
