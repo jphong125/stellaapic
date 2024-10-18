@@ -25,7 +25,7 @@ Requested "Bonus win" API URL will be notified individually, for security reason
 | reference  |  string   | Unique reference of this transaction.                                       | Required |
 | providerId |  string   | Game Provider id.                                                           | Required |
 | timestamp  |  string   | Date and time when the transaction is processed on the Lucky Monaco side    | Required |
-| bonusCode  |  string   |  Id of the bonus in Casino Operator system.                   | Optional |
+| bonusCode  |  string   |  Id of the bonus in Casino Operator system.                   | Required |
 | platform   |  string   | The platform type (channel) on which the game is played.                    | Optional |
 | roundId    |  string   | Id of the last played round in Free Round Bonus                 | Optional |
 | sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
@@ -57,6 +57,8 @@ Content-Type: application/json
     "gameId": "Im_60_tumblefortune",
     "amount": 1.0,
     "providerId": "Luckymonaco",
+    "bonescode" : "<bonuscode>,
+    "roundid" : "5103188801",
     "userId": "421",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
     "timestamp": "1482429190374",

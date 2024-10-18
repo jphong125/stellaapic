@@ -11,7 +11,7 @@ Requested get betting table(for free round) API URL will be notified individuall
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
 | secureLogin |string| User name for authentication in the Casino Game API service | Required |
-| slot_id     |string| slot id | Required |
+|gameId    |string| slot id | Required |
 | currency    |string| currency | Required |
 | token      |string| Token of the player from Authenticate response              | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
@@ -39,7 +39,10 @@ Content-Type: application/json
 
 ``` json
 {
-    "slot_id": "lm_1_pumpkinfarm",
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>"
+    "uuid": "<uuid>"
+    "gameId": "lm_1_pumpkinfarm",
     "currency": "USD"
 }
 ```
@@ -53,7 +56,7 @@ Example of successful response from LuckyMonaco API servers.
 
 | Name            |Data Type| Description                                                                                                                   | Remark  |
 |:----------------|:---:|:------------------------------------------------------------------------------------------------------------------------------|---|
-| slot_id         |string| slot id | Required |
+| gameId        |string| slot id | Required |
 | currency        |string| currency | Required |
 | support_betting |string| List of support betting                                       | Required |
 
@@ -65,7 +68,7 @@ Example of successful response from LuckyMonaco API servers.
     "error": 0,
     "description": "Success"
 {
-    "slot": "lm_1_pumpkinfarm",
+    "gameId": "lm_1_pumpkinfarm",
     "currency": "USD",
     "support_betting": [
         "0.1",

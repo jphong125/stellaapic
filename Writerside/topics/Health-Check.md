@@ -33,6 +33,20 @@ https://<API-service-domain>/V4/Check
 ``` http
 https://<game-server-domain>/V4/Check
 ```
+HEADER
+
+``` http
+Content-Type: application/json
+```
+### Example of HTTP BODY
+
+``` json
+{
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>",
+    "uuid": "<uuid>"
+}
+```
 
 
 

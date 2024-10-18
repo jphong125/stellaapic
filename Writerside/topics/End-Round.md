@@ -57,6 +57,7 @@ Content-Type: application/json
     "providerId": "luckymonaco",
     "userId": "421",
     "roundid" : "5103188801"
+    "win" : "15.4"
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
     "sessionid": "<sessionId>"
 }
@@ -81,6 +82,8 @@ Example of successful response from Partner API servers.
 
 ``` json
 {
+ "transactionId": "<transactionId>",
+ "currency" : "USD"
  "cash": 99899.99,
  "bonus": 99.99,
  "error": 0,

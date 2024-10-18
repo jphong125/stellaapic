@@ -20,6 +20,7 @@ Requesting "start game" to LuckyMonaco API Servers.
 | Name         |Data Type| Description                                                            |  Remark  |
 |:-------------|:---:|:-----------------------------------------------------------------------|:--------:|
 | secureLogin  |string| User name for authentication in the Casino Game API service            | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                                                                                             | Required |
 | uuid         |string| A unique ID for each request                                           | Required |
 | userId       |string| Unique identifier of the player within the Casino Operator system.     | Required |
 | userNickname |string| Nickname of the player within the Casino Operator system.              | Optional |
@@ -57,6 +58,7 @@ Content-Type: application/json
 {
     "secureLogin" : "<partnerId>",
     "uuid" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY",
+    "token" : "<token>",
     "UserId" : "tester",
     "UserNickname" : "Tester",
     "gameId" : "lm_9_roadtomysticoz",
@@ -64,8 +66,8 @@ Content-Type: application/json
     "language" : "EN",
     "region" : "ASIA" 
     "currency" : "USD",
-    "cashierURL" : "",
-    "lobbyURL" : ""
+    "cashierURL" : "url",
+    "lobbyURL" : "url"
 }
 ```
 

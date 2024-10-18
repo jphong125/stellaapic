@@ -45,8 +45,9 @@ Content-Type: application/json
 {
     "secureLogin" : "<partnerId>",
     "gameId" : "lm_1_pumpkinfarm",
-    "clearHistory" : 0
-    "token" : "<token>"
+    "clearHistory" : 0,
+    "token" : "<token>",
+    "uuid": "<uuid>"
 }
 ```
 

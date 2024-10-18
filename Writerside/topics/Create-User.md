@@ -57,10 +57,10 @@ Example of successful response from LuckyMonaco API servers.
 
 ### Parameters 2
 
-| Name     |Data Type| Description                                      | Remark  |
-|:---------|:---:|:-------------------------------------------------|---|
-| playerid |string| Id of the player within the Lucky Monaco system. |  Required |
-| eroor  |  string   | code of error                                                   | Required |
+| Name        |Data Type| Description                                      | Remark  |
+|:------------|:---:|:-------------------------------------------------|---|
+| userid      |string| Id of the player within the Lucky Monaco system. |  Required |
+| eroor       |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |
 
 

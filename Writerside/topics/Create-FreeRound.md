@@ -8,19 +8,18 @@ The Lucky Monaco system will not create a new FR bonus if there is an active FR 
 Requested create free round API URL will be notified individually, for security reasons.
 
 ### Request Parameters
-| Name           | Data Type | Description                                                                  | Remark  |
-|:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
-| secureLogin      |string| User name for authentication in the Casino Game API service | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
-| uuid           |  string   | A unique ID for each request                                             | Required |
-| userId         |  string   | Player ID in Casino Operator’s system                                        | Required |
-| currency       |  string   | currency                                                                     | Required |
-| betvalues      |  string   | values of bet                                                                | Required |
-| bonuscode      |  string   | Bonus id within the Casino Operator’s system.                                | Required |
-| rounds         |  string   | Numbers of free round                                                        | Required |
-| startdate      |  decimal  | Date and time when free rounds bonus will start                              | Required |
-| expirationDate |  string   | Date and time when the bonus gets invalid and is unavailable for the player. | Required |
-| gamelist       |  string   | List of the games associated with the bonus                                  | Required |
+| Name           | Data Type | Description                                                                                                                                                                     | Remark  |
+|:---------------|:---------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| secureLogin      |string| User name for authentication in the Casino Game API service                                                                                                                     | Required |
+| token      |string| Token of the player from Authenticate response                                                                                                                                  | Required |
+| uuid           |  string   | A unique ID for each request                                                                                                                                                    | Required |
+| currency       |  string   | currency                                                                                                                                                                        | Required |
+| betvalues      |  string   | values of bet                                                                                                                                                                   | Required |
+| bonuscode      |  string   | Bonus id within the Casino Operator’s system.                                                                                                                                   | Required |
+| rounds         |  string   | Numbers of free round                                                                                                                                                           | Required |
+| startdate      |  decimal  | Date and time when free rounds bonus will start (i.e. Unix epoch time in milliseconds, for example : 1470926696715)                                                             | Required |
+| expirationDate |  string   | Date and time when the bonus gets invalid and is unavailable for the player. (i.e. Unix epoch time in milliseconds, for example : 1470926696715                                 | Required |
+| gamelist       |  string   | List of the games associated with the bonus                                                                                                                                     | Required |
 
 ### Examples
 
@@ -47,7 +46,9 @@ Content-Type: application/json
 
 ``` json
 {
-    "userId": "tester",
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>"
+    "uuid": "<uuid>"
     "currency": "USD",
     "betvalues": "1",
     "bonuscode": "43f4a26e-6da6-496e-9754-0d6c13a19df7",

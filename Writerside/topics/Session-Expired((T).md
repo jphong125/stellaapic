@@ -17,12 +17,9 @@ Requested "Session Expired" API URL will be notified individually, for security 
 
 | Name       |Data Type| Description                                                                                                                                                                                                                                                |  Remark  |
 |:-----------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| secureLogin  |string| User name for authentication in the Casino Game API service                                                                                                                                                                                                | Required |
 | providerId |string| Lucky Monaco provider id in Operator’s system                                                                                                                                                                                                              | Required |
 | sessionId  |string| Player’s game session id on Lucky Monaco side                                                                                                                                                                                                              | Required |
 | userId   |string| Id of the player within the operator’s system. | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
-| sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Examples
@@ -51,7 +48,7 @@ Content-Type: application/json
  "providerId": "Luckymonaco"
  "sessionId": "6fd2d6f3bb8f4c5a9fadf15d81206af2"
  "userId": "123456"
- "token" : "<token>"
+ "uuid" : "<uuid>"
 }
 ```
 ## Response Partner

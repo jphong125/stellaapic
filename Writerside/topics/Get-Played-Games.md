@@ -42,6 +42,7 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin": "<partnerId>",
+    "token" : "<token>",
     "userId": "421",
     "datePlayed": :2016-12-23",
     "timeZone": "GMT+00:00",
@@ -62,9 +63,7 @@ Example of successful response from LuckyMonaco API servers.
 | games List of games played |             |   array   | See below GamePlayed type description of the objects in the list.                                                                          | Required |
 |                             | gameId      |  string   | Symbolic unique identifier of the game.                                                                                                   |  Required |
 |                             | gameName    |  string   | Name of the game. |  Required |
-|                             | balance     |  string   | Player’s balance after successful transaction                                                                                 |  Required |
-|                             | error       |  string   | Error code.                                                                                                                   |  Required |
-|                             | description |  string   | Description of the error for troubleshooting.                                                                                 |  Required |
+
 
 
 

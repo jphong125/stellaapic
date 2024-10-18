@@ -32,6 +32,15 @@ HEADER
 ``` http
 Content-Type: application/json
 ```
+### Example of HTTP BODY
+
+``` json
+{
+    "secureLogin" : "<partnerId>",
+    "token" : "<token>"
+    "uuid": "<uuid>"
+}
+```
 
 ## Response
 
@@ -43,9 +52,9 @@ Example of successful response from LuckyMonaco API servers.
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------|---|
 | limit_spin|number| Max possible Freeround Count (1~limit_spin) | Required |
 | slot|array|List of support slot                                                                                                    |  Required |
-| slot.No|string|slot no |  Required |
-| slot.Name|string|slot name                                                                              |  Required |
-|slot.ID|string|slot game id                                                                                                           |  Required |
+| gameIdNumeric|string|slot no |  Required |
+| gameName|string|slot name                                                                              |  Required |
+|gameId|string|slot game id                                                                                                           |  Required |
 | currency|array|List of support currency                                                                               |  Required |
 
 
@@ -58,14 +67,14 @@ Example of successful response from LuckyMonaco API servers.
 {
     "slot": [
         {
-            "No": "1",
-            "Name": "Pumpkin Farm",
-            "ID": "lm_1_pumpkinfarm"
+            "gameIdNumeric": "1",
+            "gameName": "Pumpkin Farm",
+            "gameId": "lm_1_pumpkinfarm"
         },
         {
-            "No": "2",
-            "Name": "Kelly's Wheel Double",
-            "ID": "lm_2_kellyswheeldouble"
+            "gameIdNumeric": "2",
+            "gameName": "Kelly's Wheel Double",
+            "gameId": "lm_2_kellyswheeldouble"
         },...
     ],
     "currency": [

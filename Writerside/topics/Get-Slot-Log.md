@@ -42,7 +42,6 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "token" : "<token>",
     "userId": "tester",
     "start": 100,
     "limit": 1000
@@ -65,15 +64,15 @@ Example of successful response from LuckyMonaco API servers.
 
 Log Detail
 
-| Index |      Name      |    Data Type  |  Description  |
-|:-----:|:--------------:|:-------------:|:-------------:|
-|   0   |     Index      |    number     |Log Index|
-|   1   |     gameId     |  string   |Symbolic unique identifier of the game. |
-|   2   |    Currency    |   string   |Currency code (ISO 4217 3-digit code)<br/>Please check SLOT_SPEC document|
-|   3   | Betting Amount | string |Betting Amount|
-|   4   |   Win Amount   | string|Total Win Amouint|
-|   5   | JackpotDetails |   string   |Jackpot Name|
-|   6   | Jackpot Amount | string |Jackopt Win Amount|
+| Index |     Name      |    Data Type  |  Description  |
+|:-----:|:-------------:|:-------------:|:-------------:|
+|   0   |     index     |    number     |Log Index|
+|   1   |    gameId     |  string   |Symbolic unique identifier of the game. |
+|   2   |   currency    |   string   |Currency code (ISO 4217 3-digit code)<br/>Please check SLOT_SPEC document|
+|   3   | bettingAmount | string |Betting Amount|
+|   4   |   winAmount   | string|Total Win Amouint|
+|   5   |  jackpotType  |   string   |Jackpot Name|
+|   6   | jackpotAmount | string |Jackopt Win Amount|
 
 
 ### Example of Json BODY

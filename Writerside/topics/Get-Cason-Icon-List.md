@@ -8,13 +8,13 @@ Requested get a list of game URL will be notified individually, for security rea
 
 ###  Request Parameters
 
-| Name        |Data Type| Description                                                            | Remark |
-|:------------|:---:|:-----------------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentacation in the Casino Game API service            | Required |
-| token      |string| Token of the player from Authenticate response                         | Required |
-| id          |string| Icon size consisting of width and height (can get Get Casino Icon Info | Required |
-| language    |string| Language of icon                                                       | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
+| Name        |Data Type| Description                                                             | Remark |
+|:------------|:---:|:------------------------------------------------------------------------|:---------:|
+| secureLogin |string| User name for authentacation in the Casino Game API service             | Required |
+| token      |string| Token of the player from Authenticate response                          | Required |
+| id          |string| Icon size consisting of width and height (can get Get Casino Icon Info) | Required |
+| language    |string| Language of icon                                                        | Required |
+| uuid                |  string   | A unique ID for each request                                            | Required |
 
 ### Example of URL
 METHOD
@@ -42,7 +42,8 @@ Content-Type: application/json
     "secureLogin" : "<partnerId>",
     "token" : "<token>",
     "id": "300x300_ZH",
-    "language" : "ZH-TW"
+    "language" : "ZH-TW",
+    "uuid": "<uuid>"
 }
 ```
 ## Response
@@ -93,7 +94,7 @@ Example of successful response from LuckyMonaco API servers.
 
       "game_id": "lm_49_blazingwild",
       "url": "https://r2.lmgamelab.com/icons/lm_49_blazingwild/49_300x300_CN2.png"
-    },
+    },,,,
 ```
 
 

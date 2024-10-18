@@ -43,6 +43,7 @@ Content-Type: application/json
     "secureLogin" : "<partnerId>",
     "token" : "<token>"
     "userId": "tester",
+    "uuid": "<uuid>"
 }
 ```
 
@@ -52,16 +53,16 @@ Example of successful response from LuckyMonaco API servers.
 
 ### Response Parameters
 
-| Name        | Data Type  | Description                                                 | Remark                          |
-|:------------|:----------:|:------------------------------------------------------------|---------------------------------|
-| secureLogin |   string   | User name for authentication in the Casino Game API service | Required                        |
-| userId     |   string   | Id of the player within the Operator system.                | Required                        |
-| at_create   |   string   | at create (i.e. 2024-10-15 14:30:00)                        |  Required |
-| at_login    |   string   | at login (i.e. 2024-10-16 10:01:32)                         |     Required |
-| wallet      | dictionary | wallets                                                     |      Required |
-| currency    |    string  | each balance of currency                                    |      Required |
-| error       |   number   | error code                                                  |     Required |
-| descrition  |   string   | Description of the error for troubleshooting.               |     Required |
+| Name        | Data Type | Description                                                 | Remark                          |
+|:------------|:---------:|:------------------------------------------------------------|---------------------------------|
+| secureLogin |  string   | User name for authentication in the Casino Game API service | Required                        |
+| userId     |  string   | Id of the player within the Operator system.                | Required                        |
+| at_create   | datetime  | at create (i.e. 2024-10-15 14:30:00)                        |  Required |
+| at_login    | datetime  | at login (i.e. 2024-10-16 10:01:32)                         |     Required |
+| wallet      |   array   | wallets                                                     |      Required |
+| currency    |  string   | each balance of currency                                    |      Required |
+| error       |  string   | error code                                                  |     Required |
+| descrition  |  string   | Description of the error for troubleshooting.               |     Required |
 
 ### Example of Json BODY
 

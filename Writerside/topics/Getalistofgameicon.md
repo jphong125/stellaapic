@@ -38,7 +38,8 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "token" : "<token>"
+    "token" : "<token>",
+    "uuid": "<uuid>"
 }
 ```
 ## Response
@@ -47,15 +48,15 @@ Example of successful response from LuckyMonaco API servers.
 
 ###  Response parameters
 
-|   Name   |                   | Data Type | Remark                                   |
-|:--------:|:-----------------:|:---------:|:-----------------------------------------|
-| eroor  |                   |                              string                        | code of error                                                                             |
+|    Name     |                   | Data Type | Remark                                   |
+|:-----------:|:-----------------:|:---------:|:-----------------------------------------|
+|    eroor    |                   |                              string                        | code of error                                                                             |
 | description |                   | string| Response status short description.                                                                          |
-| IconList |                   |   array   | List of game icon info                   |
-|          |        id         |  string   | Icon size consisting of width and height |
-|          |       width       |  string   | width of icon                            |
-|          |      height       |  string   | height of icon                           |
-|          |     language      |  string   | language of icon                         |
+|  iconList   |                   |   array   | List of game icon info                   |
+|             |        id         |  string   | Icon size consisting of width and height |
+|             |       width       |  string   | width of icon                            |
+|             |      height       |  string   | height of icon                           |
+|             |     language      |  string   | language of icon                         |
 
 
 ### Example of Json BODY
@@ -80,5 +81,5 @@ Example of successful response from LuckyMonaco API servers.
       "width": 170,
       "height": 170,
       "language": "[\"EN\",\"ZH\"]"
-    },
+    },,,,
 ```

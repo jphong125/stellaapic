@@ -42,7 +42,7 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "token" : "<token>"
+    "token" : "<token>",
     "userId": "tester",
     "uuid": "<uuid>"
 }
@@ -57,9 +57,9 @@ Example of successful response from LuckyMonaco API servers.
 | Name          |Data Type| Description                                                                                                                   | Remark  |
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------|---|
 | transactionId |string| Id of the transaction within Lucky Monaco system.                                                                             | Required |
-| status        |string| Status of the transaction.                                                                                                    |  Required |
 | amount        |string| Amount added to player’s balance (positive value) or subtracted from player’s balance (negative value), in player’s currency. |  Required |
 | balance       |string| Player’s balance after successful transaction                                                                                 |  Required |
+| currency    |    string  | Currency of the player.                                 |      Required |
 | error         |string| Error code.                                                                                                                   |  Required |
 | description         |string| Description of the error for troubleshooting.                                                                                 |  Required |
 
@@ -73,6 +73,6 @@ Example of successful response from LuckyMonaco API servers.
     "description": "success",
     "transctionid": "ab4cee3-f73b-4631-9abf-b1a09c",
     "currency": "USD",
-    "amount" : 1000
-    "balance": 1000,
+    "amount" : 1000,
+    "balance": 1000
 }

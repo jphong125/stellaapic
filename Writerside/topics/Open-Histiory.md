@@ -42,7 +42,8 @@ Content-Type: application/json
     "secureLogin": "<partnerId>",
     "userId": "421",
     "roundId": "5108924498",
-    "uuid": "980d06d3361f1e21a2f1550c6806ef52"
+    "uuid": "980d06d3361f1e21a2f1550c6806ef52",
+    "token": "token"
 }
 ```
 
@@ -51,11 +52,11 @@ Content-Type: application/json
 Example of successful response from LuckyMonaco API servers.
 
 ### Response Parameters
-| Name        |Data Type| Description                                                 | Remark   |
-|:------------|:---:|:------------------------------------------------------------|----------|
-| error       |string| Error code. | Required |
-| historyUrl  |string| URL for opening the game screen page. | Required |
-| description |string| Id of the player within the Operator system.                | Required |
+| Name        |Data Type| Description                                  | Remark   |
+|:------------|:---:|:---------------------------------------------|----------|
+| error       |string| Error code.                                  | Required |
+| historyUrl  |string| URL for opening the game screen shot page.   | Required |
+| description |string| Id of the player within the Operator system. | Required |
 
 
 ### Example of Json BODY

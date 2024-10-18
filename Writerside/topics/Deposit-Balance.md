@@ -87,5 +87,6 @@ Example of successful response from LuckyMonaco API servers.
     "error": "0",
     "description": "success",
     "transactionId": "1908759",
+    "currency": "USD",
     "balance": 1000
 }
