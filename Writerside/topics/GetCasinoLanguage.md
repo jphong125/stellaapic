@@ -13,8 +13,8 @@ Requested "Get Casino Language" URL will be notified individually, for security 
 
 | Name        |Data Type| Description                                                 | Remark |
 |:------------|:---:|:------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentication in the Casino Game API service | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
+| secureLogin |string| Partner name for authentication in the Casino Game API service | Required |
+| token      |string| Token of the Partner from Authenticate response              | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Examples
@@ -52,12 +52,12 @@ Example of successful response from LuckyMonaco API servers.
 
 ###  Response parameters
 
-|     Name     |          | Data Type | Remark                              |
-|:------------:|:--------:|:---------:|:------------------------------------|
-| eroor  |          |        string                                            | code of error  |
-| description |          |string  | Response status short description. |
-| languageList |          |   array   | List of language information.       |
-|              | language |  string   | Language code in ISO 639-1 standard |
+|     Name     |          | Data Type | Remark                               |
+|:------------:|:--------:|:---------:|:-------------------------------------|
+| eroor  |          |        string                                            | code of error                        |
+| description |          |string  | Response status short description.   |
+| languageList |          |   array   | List of language information.        |
+|              | language |  string   | Language code in ISO 639-1 standard. |
 
 
 ### Example of Json BODY

@@ -2,12 +2,12 @@
 
 ## Overview
 Lucky Monaco system may use this method to rollback a bet transaction on the Casino Operator side, in order to reverse
-the transaction and adjust player’s balance. 
+the transaction and adjust player’s balance. <br/> 
 When receive a Refund request Operator have to return money back to player’s  balance.
 
-- Important: The call is idempotent, i.e. sending refund for existing bet again only creates one transaction.
+- Important : The call is idempotent, i.e. sending refund for existing bet again only creates one transaction.
 
-- Important: If bet transaction is not found then nothing should happen on the Casino Operator side and success (0)
+- Important : If bet transaction is not found then nothing should happen on the Casino Operator side and success (0)
 or specific error code for this situation should be returned.
 
 ## Request
@@ -16,19 +16,19 @@ Requested "Refund" win API URL will be notified individually, for security reaso
 
 ### Request Parameters
 
-| Name         | Data Type | Description                                                              | Remark  |
-|:-------------|:---------:|:-------------------------------------------------------------------------|----------|
-| userId       |  string   | Player's ID, specified by Partner when creating a game session.          | Required |
-| reference    |  string   | Unique reference of this transaction.                                    | Required |
-| providerId   |  string   | Game Provider id.                                                        | Required |
-| gameId       |  string   | Id of the game.                                                          | Optional |
-| roundId      |  string   | Id of the round.                                                         | Optional |
-| timestamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco side | Optional |
-| roundDetails |  string   | Additional information about the current game round.                     | Optional |
-| amount       |  decimal  | Amount to be refunded.                                                   | Optional |
-| bonusCode    |  string   | Id of the bonus in Casino Operator system.                               | Optional |              
-| platform     |  string   | The platform type (channel) on which the game is played.                 | Optional |
-| uuid                |  string   | A unique ID for each request                                             | Required |
+| Name         | Data Type | Description                                                               | Remark  |
+|:-------------|:---------:|:--------------------------------------------------------------------------|----------|
+| userId       |  string   | Player's ID, specified by Partner when creating a game session.           | Required |
+| reference    |  string   | Unique reference of this transaction.                                     | Required |
+| providerId   |  string   | Game Provider id.                                                         | Required |
+| gameId       |  string   | Id of the game.                                                           | Optional |
+| roundId      |  string   | Id of the round.                                                          | Optional |
+| timestamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco side. | Optional |
+| roundDetails |  string   | Additional information about the current game round.                      | Optional |
+| amount       |  decimal  | Amount to be refunded.                                                    | Optional |
+| bonusCode    |  string   | Id of the bonus in Casino Operator system.                                | Optional |              
+| platform     |  string   | The platform type (channel) on which the game is played.                  | Optional |
+| uuid                |  string   | A unique ID for each request.                                             | Required |
 
 ### Examples
 
@@ -71,10 +71,10 @@ Example of successful response from Partner API servers.
 
 ### Response Parameters 
 
-| Name          |Data Type| Description                                                          | Remark   |
-|:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| transactionId|string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
-| error |string| error code                   | Required |
+| Name          |Data Type| Description                        | Remark   |
+|:--------------|:---:|:-----------------------------------|----------|
+| transactionId|string| Id of the transaction in wallet.   | Required |
+| error |string| error code.                        | Required |
 | description |string| Response status short description. | Optional |
 
 ### Example of Json BODY

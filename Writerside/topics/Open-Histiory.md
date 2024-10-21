@@ -8,13 +8,13 @@ Requested open history API URL will be notified individually, for security reaso
 
 ### Request Parameters
 
-| Name        |Data Type| Description                                                 | Remark   |
-|:------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin |string| User name for authentication in the Casino Game API service | Required |
-|  userId     |string| Id of the player within the Operator system.                | Required |
-| roundId     |string| Unique identifier of the game round.                  | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
+| Name        |Data Type| Description                                                    | Remark   |
+|:------------|:---:|:---------------------------------------------------------------|----------|
+| secureLogin |string| Partner name for authentication in the Casino Game API service | Required |
+|  userId     |string| Id of the user within the Operator system.                     | Required |
+| roundId     |string| Unique identifier of the game round.                           | Required |
+| uuid                |  string   | A unique ID for each request                                   | Required |
+| token      |string| Token of the Partner from Authenticate response                 | Required |
 
 ### Examples
 

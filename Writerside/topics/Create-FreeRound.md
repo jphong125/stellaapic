@@ -1,7 +1,7 @@
 # Create FreeRound
 
 ## Overview
-Using this method, the operator can create a new free round bonus with the Lucky Monaco system. In case of network failure, the operator can send a repeated free round creation request. 
+Using this method, the operator can create a new free round bonus with the Lucky Monaco system.<br/> In case of network failure, the operator can send a repeated free round creation request.<br/> 
 The Lucky Monaco system will not create a new FR bonus if there is an active FR bonus with the same bonus code.
 
 ## Request
@@ -10,8 +10,8 @@ Requested create free round API URL will be notified individually, for security 
 ### Request Parameters
 | Name           | Data Type | Description                                                                                                                                                                     | Remark  |
 |:---------------|:---------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| secureLogin      |string| User name for authentication in the Casino Game API service                                                                                                                     | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                  | Required |
+| secureLogin      |string| Partner name for authentication in the Casino Game API service                                                                                                                     | Required |
+| token      |string| Token of the Partner from Authenticate response                                                                                                                                  | Required |
 | uuid           |  string   | A unique ID for each request                                                                                                                                                    | Required |
 | currency       |  string   | currency                                                                                                                                                                        | Required |
 | betvalues      |  string   | values of bet                                                                                                                                                                   | Required |
@@ -47,8 +47,8 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "token" : "<token>"
-    "uuid": "<uuid>"
+    "token" : "<token>",
+    "uuid": "<uuid>",
     "currency": "USD",
     "betvalues": "1",
     "bonuscode": "43f4a26e-6da6-496e-9754-0d6c13a19df7",
@@ -77,7 +77,7 @@ Example of successful response from LuckyMonaco API servers.
 ``` json
 {
     "error": 0,
-    "description": "Success"
+    "description": "Success",
     "bonuscode": "43f4a26e-6da6-496e-9754-0d6c13a19df7"
  }
 

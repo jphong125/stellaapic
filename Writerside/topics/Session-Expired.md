@@ -15,12 +15,12 @@ Requested "Session Expired" API URL will be notified individually, for security 
 
 ### Request parameters
 
-| Name       |Data Type| Description                                                                                                                                                                                                                                                |  Remark  |
-|:-----------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| providerId |string| Lucky Monaco provider id in Operator’s system                                                                                                                                                                                                              | Required |
-| sessionId  |string| Player’s game session id on Lucky Monaco side                                                                                                                                                                                                              | Required |
-| userId   |string| Id of the player within the operator’s system. | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
+| Name       |Data Type| Description                                   |  Remark  |
+|:-----------|:---:|:----------------------------------------------|:--------:|
+| providerId |string| Lucky Monaco provider id in Operator’s system | Required |
+| sessionId  |string| User’s game session id on Lucky Monaco side   | Required |
+| userId   |string| Id of the User within the operator’s system.  | Required |
+| uuid                |  string   | A unique ID for each request                  | Required |
 
 ### Examples
 
@@ -45,9 +45,9 @@ Content-Type: application/json
 
 ``` http
 {
- "providerId": "Luckymonaco"
- "sessionId": "6fd2d6f3bb8f4c5a9fadf15d81206af2"
- "userId": "123456"
+ "providerId": "Luckymonaco",
+ "sessionId": "6fd2d6f3bb8f4c5a9fadf15d81206af2",
+ "userId": "123456",
  "token" : "<token>"
 }
 ```
@@ -57,9 +57,9 @@ Example of successful response from Partner API servers.
 
 ## Response parameters
 
-| Name  |Data Type| Description                  |Remark  |
-|:------|:---:|:-----------------------------|----------|
-| error |string| error code                   | Required |
+| Name  |Data Type| Description                        |Remark  |
+|:------|:---:|:-----------------------------------|----------|
+| error |string| error code.                        | Required |
 | description |string| Response status short description. | Optional |
 
 ### Example of Json BODY

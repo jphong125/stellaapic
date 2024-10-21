@@ -10,8 +10,8 @@ Requested get casino icon info URL will be notified individually, for security r
 
 | Name          |Data Type| Description                                                                                                                                                        | Remark |
 |:--------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentacation in the Casino Game API service                                                                                                        | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                            | Required |
+| secureLogin |string| Partner name for authentacation in the Casino Game API service                                                                                                        | Required |
+| token      |string| Token of the Partner from Authenticate response                                                                                                                                            | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Example of URL
@@ -48,15 +48,15 @@ Example of successful response from LuckyMonaco API servers.
 
 ###  Response parameters
 
-|    Name     |                   | Data Type | Remark                                   |
-|:-----------:|:-----------------:|:---------:|:-----------------------------------------|
-|    eroor    |                   |                              string                        | code of error                                                                             |
-| description |                   | string| Response status short description.                                                                          |
-|  iconList   |                   |   array   | List of game icon info                   |
-|             |        id         |  string   | Icon size consisting of width and height |
-|             |       width       |  string   | width of icon                            |
-|             |      height       |  string   | height of icon                           |
-|             |     language      |  string   | language of icon                         |
+|    Name     |                   | Data Type | Remark                                    |
+|:-----------:|:-----------------:|:---------:|:------------------------------------------|
+|    eroor    |                   |        string             | code of error.                            |
+| description |                   | string| Response status short description.        |
+|  iconList   |                   |   array   | List of game icon info.                   |
+|             |        id         |  string   | Icon size consisting of width and height. |
+|             |       width       |  string   | width of icon.                            |
+|             |      height       |  string   | height of icon.                           |
+|             |     language      |  string   | language of icon.                         |
 
 
 ### Example of Json BODY
@@ -67,7 +67,6 @@ Example of successful response from LuckyMonaco API servers.
   "error": 0,
   "description": "Success",
   "IconList": [
-
     {
 
       "id": "150x150",

@@ -1,13 +1,13 @@
 # Result
 
 ## Overview
-Using this method the Lucky Monaco system will send to Casino Operator the winning result of a bet. **The Casino Operator
+Using this method the Lucky Monaco system will send to Casino Operator the winning result of a bet.<br/> **The Casino Operator
 will change the balance of the player in accordance with this request and return the updated balance.**
 
 Result request may contain a prize that the player is awarded with during the game round, if there is an active promotional 
 campaigns.
 
-Important:The call is idempotent, i.e. sending result again with the same reference number creates only one
+Important : The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
 
 ## Request
@@ -19,17 +19,17 @@ Requested "Result" API URL will be notified individually, for security reasons.
 | Name              | Data Type | Description                                                                               | Remark  |
 |:------------------|:---------:|:------------------------------------------------------------------------------------------|----------|
 | uuid                |  string   | A unique ID for each request                                                              | Required |
-| userId            |  string   | Player's ID, specified by Partner when creating a game session.                           | Required |
+| userId            |  string   | User's ID, specified by Partner when creating a game session.                             | Required |
 | gameId            |  string   | Id of the game.                                                                           | Required |
-| gamename     |  string   | name of the game.                                                                         | Required |
+| gamename     |  string   | Name of the game.                                                                         | Required |
 | roundId           |  string   | Id of the round.                                                                          | Required |
 | amount            |  decimal  | Amount of the bet.                                                                        | Required |
 | reference         |  string   | Unique reference of this transaction.                                                     | Required |
-|currency|  string   | Currency of the player                                                                    | Required |
+|currency|  string   | Currency of the User.                                                                     | Required |
 | providerId        |  string   | Game Provider id.                                                                         | Required |
-| timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side                  | Required |
+| timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side.                 | Required |
 | roundDetails      |   array   | Additional information about the current game round. (ie. "spin", "freespin", "minigame") | Required |
-| sessionId        |  string   | Player’s game session id on Lucky Monaco system.                                          | Required |
+| sessionId        |  string   | User’s game session id on Lucky Monaco system.                                            | Required |
 
 
 ### Parameters  (Reserved for future development)
@@ -68,14 +68,14 @@ Content-Type: application/json
 {
     "providerId": "luckymonaco",
     "userId": "421",
-    "sessionId": "<sessionId>"
+    "sessionId": "<sessionId>",
     "currency": "USD",
     "amount": 10.0,
     "roundDetails": "spin",
-    "roundid" : "5103188801"
+    "roundid" : "5103188801",
     "reference": "585c1306f89c56f5ecfc2f5d",
     "gameId": "Im_60_tumblefortune",
-    "gamename" : "tumblefortune"
+    "gamename" : "tumblefortune",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
     "timestamp": "1482429190374"
 }
@@ -87,19 +87,19 @@ Example of successful response from Partner API servers.
 
 ### Response Parameters 
 
-| Name          |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Remark  |
-|:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
-| transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
-| currency      |string| Currency of the player. | Required |
-| cash          |decimal| Real balance of the player.                                                                                                                                                                                                                                                                                                                    | Required |
-| eroor  |  string   | code of error                                                   | Required |
+| Name          |Data Type| Description                        | Remark  |
+|:--------------|:---:|:-----------------------------------|-----|
+| transactionId |string| Id of the transaction in wallet.   | Required |
+| currency      |string| Currency of the User.              | Required |
+| cash          |decimal| Real balance of the User.          | Required |
+| eroor  |  string   | code of error                      | Required |
 | description |decimal| Response status short description. | Optional |
 
 ### Response Parameters  (Reserved for future development)
 
-|Name|Data Type| Description                                                  | Remark   |
-|:---|:---:|:-------------------------------------------------------------|----------|
-| bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
+|Name|Data Type| Description                | Remark   |
+|:---|:---:|:---------------------------|----------|
+| bonus         |decimal| Bonus balance of the User. | Required |
 
 
 ### Example of Json BODY

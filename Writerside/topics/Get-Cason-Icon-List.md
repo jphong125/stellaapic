@@ -8,13 +8,13 @@ Requested get a list of game URL will be notified individually, for security rea
 
 ###  Request Parameters
 
-| Name        |Data Type| Description                                                             | Remark |
-|:------------|:---:|:------------------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentacation in the Casino Game API service             | Required |
-| token      |string| Token of the player from Authenticate response                          | Required |
-| id          |string| Icon size consisting of width and height (can get Get Casino Icon Info) | Required |
-| language    |string| Language of icon                                                        | Required |
-| uuid                |  string   | A unique ID for each request                                            | Required |
+| Name        |Data Type| Description                                                              | Remark |
+|:------------|:---:|:-------------------------------------------------------------------------|:---------:|
+| secureLogin |string| Partner name for authentacation in the Casino Game API service.          | Required |
+| token      |string| Token of the Partner from Authenticate response.                          | Required |
+| id          |string| Icon size consisting of width and height. (can get Get Casino Icon Info) | Required |
+| language    |string| Language of icon.                                                        | Required |
+| uuid                |  string   | A unique ID for each request.                                            | Required |
 
 ### Example of URL
 METHOD
@@ -52,13 +52,13 @@ Example of successful response from LuckyMonaco API servers.
 
 ###  Response parameters
 
-| Name  |        | Data Type | Description                                                      |
-|:-----:|:------:|:---------:|:-----------------------------------------------------------------|
-| eroor  |        |              string                                    | code of error     |
-| description |        |  string | Response status short description. |
-| Icons |        |   array   | List of game information.                                        |
-|       | gameId |  string   | Symbolic unique identifier of the game provided by Lucky Monaco. |
-|       |  url   |  string   | Url of icon                                                      |
+|    Name     |        | Data Type | Description                                                      |
+|:-----------:|:------:|:---------:|:-----------------------------------------------------------------|
+|    eroor    |        |              string                                    | code of error.                                                   |
+| description |        |  string | Response status short description.                               |
+|    icons    |        |   array   | List of game information.                                        |
+|             | gameId |  string   | Symbolic unique identifier of the game provided by Lucky Monaco. |
+|             |  url   |  string   | Url of icon.                                                     |
 
 
 ### Example of Json BODY

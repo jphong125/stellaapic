@@ -19,19 +19,19 @@ Requesting "start game" to LuckyMonaco API Servers.
 
 | Name         |Data Type| Description                                                            |  Remark  |
 |:-------------|:---:|:-----------------------------------------------------------------------|:--------:|
-| secureLogin  |string| User name for authentication in the Casino Game API service            | Required |
-| token      |string| Token of the player from Authenticate response                                                                                                                                                                                                             | Required |
-| uuid         |string| A unique ID for each request                                           | Required |
+| secureLogin  |string| Partner name for authentication in the Casino Game API service.        | Required |
+| token      |string| Token of the Partner from Authenticate response.                       | Required |
+| uuid         |string| A unique ID for each request.                                          | Required |
 | userId       |string| Unique identifier of the player within the Casino Operator system.     | Required |
 | userNickname |string| Nickname of the player within the Casino Operator system.              | Optional |
 | gameId       |string| Symbolic unique identifier of the game within the Lucky Monaco system. | Required |
-| sessionId    |string| Player’s game session id on Lucky Monaco system.                       | Required |
+| sessionId    |string| User’s game session id on Lucky Monaco system.                         | Required |
 | language     |string| Language to be displayed when the game is opened.                      | Required |
 | currency     |string| Currency to be used for playing game.                                  | Required |
 | region       |string| The region where the player is located. (select "Asia" or "Europe")    | Optional |
 | cashierURL   |string| A URL to opening the Operator’s website Cashier page.                  | optional |
 | lobbyURL     |string| A URL to opening the Operator’s website lobby page.                    | optional |
-| ipAddress    |string| IP address of the player.                   | optional |
+| ipAddress    |string| IP address of the player.                                              | optional |
 
 ### Examples
 
@@ -76,11 +76,11 @@ Content-Type: application/json
 Example of successful response from LuckyMonaco API servers. Use URL parameters.
 
 ### response parameter
-|Name|Data Type|Description|Remark |
-|:---|:---:|:---:|---|
-| eroor  |  string   | code of error                                                   | Required |
+|Name|Data Type|            Description             |Remark |
+|:---|:---:|:----------------------------------:|---|
+| eroor  |  string   |           code of error.           | Required |
 | description |string| Response status short description. | Optional |
-|url|string|used for player redirection.| Required|
+|url|string|    used for player redirection.    | Required|
 
 ### Example of Json BODY
 

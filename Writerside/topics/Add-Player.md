@@ -1,19 +1,19 @@
 # Add Player
 
 ## Overview
-Using this method Operator can add players to the existing Free Round Bonus. If player’s account does not exist in the Lucky Monaco system yet, it will be registered automatically.
+Using this method Operator can add players to the existing Free Round Bonus. <br/>If player’s account does not exist in the Lucky Monaco system yet, it will be registered automatically.
 
 ## Request
 Requested add player round API URL will be notified individually, for security reasons.
 
 ### Request Parameters
-| Name        | Data Type | Description                                                                                                                              | Remark  |
-|:------------|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------------|----------|
-| token      |string| Token of the player from Authenticate response              | Required |
-| secureLogin |  string   | User name for authentication in the Casino Game API service                                                                              | Required |
-| userList    |  string   | List of player id to add to the existing Free Round Bonus, comma separated. This data must be sent as a JSON in the body of the request. | Required |
-| bonuscode   |  string   | Bonus id within the Casino Operator’s system.                                                                                            | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
+| Name        | Data Type | Description                                                                                                                            | Remark  |
+|:------------|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------|----------|
+| token      |string| Token of the Partner from Authenticate response                                                                                        | Required |
+| secureLogin |  string   | Partner name for authentication in the Casino Game API service                                                                         | Required |
+| userList    |  string   | List of user id to add to the existing Free Round Bonus, comma separated. This data must be sent as a JSON in the body of the request. | Required |
+| bonuscode   |  string   | Bonus id within the Casino Operator’s system.                                                                                          | Required |
+| uuid                |  string   | A unique ID for each request                                                                                                           | Required |
 
 ### Examples
 
@@ -40,8 +40,8 @@ Content-Type: application/json
 ``` json
 {
   "secureLogin" : "<partnerId>",
-  "token" : "<token>"
-  "uuid": "<uuid>"
+  "token" : "<token>",
+  "uuid": "<uuid>",
   "userList": ["449986","450013","450509","437070"],
   "bonuscode": "43f4a26e-6da6-496e-9754-0d6c13a19df7" 
 }

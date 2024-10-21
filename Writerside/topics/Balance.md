@@ -1,7 +1,7 @@
 # Balance
 
 ## Overview
-A request to check wallet balance
+A request to check wallet balance.
 
 ## Request
 
@@ -11,10 +11,10 @@ Requested "Balance" API URL will be notified individually, for security reasons.
 
 | Name                  |Data Type| Description                                                 | Remark   |
 |:----------------------|:---:|:------------------------------------------------------------|----------|
-| providerid            |string| Game Provider identifier of the Operator's system           | Required |
+| providerid            |string| Game Provider identifier of the Operator's system.          | Required |
 | userid             |string| Identifier of the user within the Casino Operator’s system. | Required |
-|currency|string| Currency of the player                                      | Required |
-| sessionId        |string| Player’s game session id on Lucky Monaco system.            | Required |
+|currency|string| Currency of the player.                                     | Required |
+| sessionId        |string| User’s game session id on Lucky Monaco system.              | Required |
 | uuid        |string| A unique ID for each request                                | Required |
 
 ### Examples
@@ -53,12 +53,12 @@ Example of successful response from Partner API servers.
 
 ### Response Parameter
 
-|Name|Data Type| Description                                                  | Remark   |
-|:---|:---:|:-------------------------------------------------------------|----------|
-|currency|string| Currency of the player                                       | Required |
-|cash|decimal| Money balance that was deposited with real money.                                | Required |
-| eroor  |  string   | code of error                                                   | Required |
-| description |decimal| Response status short description. | Optional |
+|Name|Data Type| Description                                       | Remark   |
+|:---|:---:|:--------------------------------------------------|----------|
+|currency|string| Currency of the user.                             | Required |
+|cash|decimal| Money balance that was deposited with real money. | Required |
+| eroor  |  string   | code of error.                                    | Required |
+| description |decimal| Response status short description.                | Optional |
 
 ### Response Parameter (Reserved for future development)
 

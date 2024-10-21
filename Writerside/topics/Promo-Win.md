@@ -2,9 +2,9 @@
 
 ## Overview
 Using this method the Lucky Monaco system will notify Casino Operator about winning that the player is awarded as a 
-result of a campaign that is finished. 
+result of a campaign that is finished.<br/> 
 Notification is asynchronous and may come to the operator with a short delay after 
-the campaign is over.
+the campaign is over. <br/>
 Operator should handle the transaction in their system and send promowin transactionid back to
 the  Lucky Monaco.
 
@@ -17,17 +17,17 @@ Requested "Promo win" API URL will be notified individually, for security reason
 
 ### Request Parameters
 
-| Name         | Data Type | Description                                                                 | Remark  |
-|:-------------|:---------:|:----------------------------------------------------------------------------|----------|
-| uuid         |string| A unique ID for each request                                                                                                                                              | Required |
-| userId       |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
-| amount       |  decimal  |  Prize amount that the player is awarded with.                                                         | Required |
-| reference    |  string   | Unique reference of this transaction.                                       | Required |
-| providerId   |  string   | Game Provider id.                                                           | Required |
-| timestamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco side    | Required |
-| campaignId   |  string   | Id of the campaign.                         | Required | 
-| campaignType |  string   |  Type of the campaign.                         | Required |
-| currency     |  string   |   Player’s currency.                         | Required |
+| Name         | Data Type | Description                                                              | Remark  |
+|:-------------|:---------:|:-------------------------------------------------------------------------|----------|
+| uuid         |string| A unique ID for each request.                                            | Required |
+| userId       |  string   | user's ID, specified by Partner when creating a game session.            | Required |
+| amount       |  decimal  | Prize amount that the player is awarded with.                            | Required |
+| reference    |  string   | Unique reference of this transaction.                                    | Required |
+| providerId   |  string   | Game Provider id.                                                        | Required |
+| timestamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco side | Required |
+| campaignId   |  string   | Id of the campaign.                                                      | Required | 
+| campaignType |  string   | Type of the campaign.                                                    | Required |
+| currency     |  string   | User’s currency.                                                         | Required |
 
 ### Examples
 

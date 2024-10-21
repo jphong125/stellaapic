@@ -1,11 +1,11 @@
 # Jackpot win (Reserved for future development)
 
 ## Overview
-Using this method a Lucky Monaco system will notify Casino Operator about Jackpot winning. Notification is asynchronous
-and may come to the operator with a short delay after game round is over. Operator should handle the transaction in their
+Using this method a Lucky Monaco system will notify Casino Operator about Jackpot winning. <br/>Notification is asynchronous
+and may come to the operator with a short delay after game round is over. <br/>Operator should handle the transaction in their
 system and send the jackpot win transaction id back to the Lucky Monaco.
 
-Important: The call is idempotent, i.e. sending result again with the same reference number creates only one
+Important : The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
 
 ## Request
@@ -14,19 +14,19 @@ Requested "Jackpot win" API URL will be notified individually, for security reas
 
 ### Request Parameters
 
-| Name       | Data Type | Description                                                                 | Remark  |
-|:-----------|:---------:|:----------------------------------------------------------------------------|----------|
-| uuid       |string| A unique ID for each request           | Required |
-| userId     |  string   | Player's ID, specified by Partner when creating a game session.             | Required |
-| gameId     |  string   | Id of the game.                                                             | Required |
-| roundId    |  string   | Id of the round.                                                            | Required |
-| amount     |  decimal  | Amount of the bet.                                                          | Required |
-| reference  |  string   | Unique reference of this transaction.                                       | Required |
-| providerId |  string   | Game Provider id.                                                           | Required |
-| timestamp  |  string   | Date and time when the transaction is processed on the Lucky Monaco side    | Required |
-| jackpotId  |  string   | Id of the jackpot.                         | Required | 
-| platform   |  string   | The platform type (channel) on which the game is played.                    | Optional |
-| sessionId        |  string   | Player’s game session id on Lucky Monaco system.                         | Optional |
+| Name       | Data Type | Description                                                               | Remark  |
+|:-----------|:---------:|:--------------------------------------------------------------------------|----------|
+| uuid       |string| A unique ID for each request.                                             | Required |
+| userId     |  string   | User's ID, specified by Partner when creating a game session.             | Required |
+| gameId     |  string   | Id of the game.                                                           | Required |
+| roundId    |  string   | Id of the round.                                                          | Required |
+| amount     |  decimal  | Amount of the bet.                                                        | Required |
+| reference  |  string   | Unique reference of this transaction.                                     | Required |
+| providerId |  string   | Game Provider id.                                                         | Required |
+| timestamp  |  string   | Date and time when the transaction is processed on the Lucky Monaco side. | Required |
+| jackpotId  |  string   | Id of the jackpot.                                                        | Required | 
+| platform   |  string   | The platform type (channel) on which the game is played.                  | Optional |
+| sessionId        |  string   | User’s game session id on Lucky Monaco system.                            | Optional |
 
 ### Examples
 
@@ -70,13 +70,13 @@ Example of successful response from Partner API servers.
 
 ### Response Parameters 
 
-| Name          |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Remark  |
-|:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
-| transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
-| currency      |string| Currency of the player. | Required |
-| cash          |decimal| Real balance of the player.                                                                                                                                                                                                                                                                                                                   | Required |
-| bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
-| eroor  |  string   | code of error                                                   | Required |
+| Name          |Data Type| Description                        | Remark  |
+|:--------------|:---:|:-----------------------------------|-----|
+| transactionId |string| Id of the transaction in wallet.   | Required |
+| currency      |string| Currency of the player.            | Required |
+| cash          |decimal| Real balance of the player.        | Required |
+| bonus         |decimal| Bonus balance of the player.       | Required |
+| eroor  |  string   | code of error.                     | Required |
 | description |decimal| Response status short description. | Optional |
 
 ### Example of Json BODY

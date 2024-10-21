@@ -11,7 +11,7 @@ Important: In cases where transfer call fails due to :
 ∙ error: 1 (description: “internal error”) in response
 
 Operator should send idempotent retry calls (with the same externalTransactionId).
-Recommended actions are specified in Error codes
+Recommended actions are specified in Error codes.
 
 Important: The call is idempotent, i.e. sending it again only creates one transaction.
 
@@ -26,12 +26,12 @@ Requested deposit balance API URL will be notified individually, for security re
 | Name          |Data Type| Description                                                    | Remark   |
 |:--------------|:---:|:---------------------------------------------------------------|----------|
 | secureLogin   |string| partner name for authentication in the Casino Game API service | Required |
-| userId       |string| Id of the player within the Operator system.                   | Required |
-| currency      |string| Currency of the player.                                        | Required |
+| userId       |string| Id of the user within the Operator system.                     | Required |
+| currency      |string| Currency of the user.                                          | Required |
 | TransactionId |string| Id of the transaction within Casino Operator system.           | Required |
 | amount        |string| Amount to be added to player’s balance                         | Required |
 | uuid          |  string   | A unique ID for each request                                   | Required |
-| token         |string| Token of the player from Authenticate response                 | Required |
+| token         |string| Token of the Partner from Authenticate response                 | Required |
 
 ### Examples
 
@@ -73,11 +73,11 @@ Example of successful response from LuckyMonaco API servers.
 
 | Name          |Data Type| Description                                       | Remark  |
 |:--------------|:---:|:--------------------------------------------------|---|
-| currency      |string| Currency of the player.                           | Required |
+| currency      |string| Currency of the User.                             | Required |
 | transactionId |string| Id of the transaction within Lucky Monaco system. | Required |
-| balance       |string| Player’s balance after successful transaction.    | Required |
-| eroor  |  string   | code of error                                                   | Required |
-| description |decimal| Response status short description. | Optional |
+| balance       |string| User’s balance after successful transaction.      | Required |
+| eroor  |  string   | code of error.                                    | Required |
+| description |decimal| Response status short description.                | Optional |
 
 
 ### Example of Json BODY

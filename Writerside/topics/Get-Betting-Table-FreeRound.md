@@ -1,7 +1,7 @@
 # Get Betting Table (FreeRound)
 
 ## Overview
-Get a list of possible bet amounts for a specific game for a specific currency
+Get a list of possible bet amounts for a specific game for a specific currency.
 
 ## Request
 Requested get betting table(for free round) API URL will be notified individually, for security reasons. 
@@ -10,10 +10,10 @@ Requested get betting table(for free round) API URL will be notified individuall
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin |string| User name for authentication in the Casino Game API service | Required |
+| secureLogin |string| Partner name for authentication in the Casino Game API service | Required |
 |gameId    |string| slot id | Required |
 | currency    |string| currency | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
+| token      |string| Token of the Partner from Authenticate response              | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
 
 ### Examples
@@ -66,7 +66,7 @@ Example of successful response from LuckyMonaco API servers.
 
 ``` json
     "error": 0,
-    "description": "Success"
+    "description": "Success",
 {
     "gameId": "lm_1_pumpkinfarm",
     "currency": "USD",

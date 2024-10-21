@@ -8,14 +8,14 @@ Requested "Get Played Game" API URL will be notified individually, for security 
 
 ### Request Parameters
 
-| Name        |Data Type| Description                                                 | Remark   |
-|:------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin |string| User name for authentication in the Casino Game API service | Required |
-|  userId    |string| Id of the player within the Operator system.                | Required |
-| dateplayed  |string| Date, based on the time zone of the user.                   | Required |
-| timeZone    |string| Time zone of the user. Example: GMT, GMT+8, GMT+04:00                                     | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
+| Name        |Data Type| Description                                                    | Remark   |
+|:------------|:---:|:---------------------------------------------------------------|----------|
+| secureLogin |string| Partner name for authentication in the Casino Game API service | Required |
+|  userId    |string| Id of the user within the Operator system.                     | Required |
+| dateplayed  |string| Date, based on the time zone of the user.                      | Required |
+| timeZone    |string| Time zone of the user. Example: GMT, GMT+8, GMT+04:00          | Required |
+| uuid                |  string   | A unique ID for each request                                   | Required |
+| token      |string| Token of the Partner from Authenticate response                 | Required |
 
 ### Examples
 

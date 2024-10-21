@@ -11,8 +11,8 @@ Requested "Get Casino Currency" URL will be notified individually, for security 
 
 | Name        |Data Type| Description                                                 | Remark |
 |:------------|:---:|:------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentication in the Casino Game API service | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
+| secureLogin |string| Partner name for authentication in the Casino Game API service | Required |
+| token      |string| Token of the Partner from Authenticate response              | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
 
 

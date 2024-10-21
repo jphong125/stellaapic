@@ -2,7 +2,7 @@
 
 ## Overview
 
-Using this method Operator can cancel an existing Free Rounds Bonus in the Lucky Monaco system. Free Rounds will be canceled in the Lucky Monaco system regardless of whether the player started to play them or not.
+Using this method Operator can cancel an existing Free Rounds Bonus in the Lucky Monaco system.<br/> Free Rounds will be canceled in the Lucky Monaco system regardless of whether the player started to play them or not.
 
 ## Request
 Requested cancel free round API URL will be notified individually, for security reasons.
@@ -11,9 +11,9 @@ Requested cancel free round API URL will be notified individually, for security 
 | Name           | Data Type | Description                                                                  | Remark  |
 |:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
 | uuid                |  string   | A unique ID for each request                                             | Required |
-| secureLogin       |  string   |User name for authentication in the Casino Game API service                                        | Required |
+| secureLogin       |  string   |Partner name for authentication in the Casino Game API service                                        | Required |
 | bonuscode      |  string   | Bonus id within the Casino Operator’s system.                                | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
+| token      |string| Token of the Partner from Authenticate response              | Required |
 ### Examples
 
 METHOD
@@ -39,8 +39,8 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "token" : "<token>"
-    "uuid": "<uuid>"
+    "token" : "<token>",
+    "uuid": "<uuid>",
     "bonus_code": "43f4a26e-6da6-496e-9754-0d6c13a19df7"
 }
 ```

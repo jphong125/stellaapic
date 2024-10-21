@@ -1,20 +1,20 @@
 # Get Balance
 
 ## Overview
-Using this method Operator can get the current balance of the player in the Lucky Monaco
+Using this method Operator can get the current balance of the player in the Lucky Monaco.
 
 ## Request
 Requested get balance API URL will be notified individually, for security reasons.
 
 ### Request Parameters
 
-| Name        |Data Type| Description                                                 | Remark   |
-|:------------|:---:|:------------------------------------------------------------|----------|
+| Name        |Data Type| Description                                                    | Remark   |
+|:------------|:---:|:---------------------------------------------------------------|----------|
 | secureLogin |string| partner name for authentication in the Casino Game API service | Required |
-| userId   |string| Id of the player within the Operator system.                | Required |
-| currency    |    string  | Currency of the player.                                 |      Required |
-| uuid        |  string   | A unique ID for each request                                             | Required |
-| token       |string| Token of the player from Authenticate response              | Required |
+| userId   |string| Id of the user within the Operator system.                     | Required |
+| currency    |    string  | Currency of the user.                                          |      Required |
+| uuid        |  string   | A unique ID for each request                                   | Required |
+| token       |string| Token of the Partner from Authenticate response                 | Required |
 
 ### Examples
 
@@ -53,11 +53,11 @@ Example of successful response from LuckyMonaco API servers.
 
 ### Parameters 2
 
-| Name     |Data Type| Description                                              | Remark  |
-|:---------|:---:|:---------------------------------------------------------|---|
-| balance |string| Current player’s balance within the Lucky Monaco system. |  Required |
-| eroor  |  string   | code of error                                                   | Required |
-| description |decimal| Response status short description. | Optional |
+| Name     |Data Type| Description                                            | Remark  |
+|:---------|:---:|:-------------------------------------------------------|---|
+| balance |string| Current user’s balance within the Lucky Monaco system. |  Required |
+| eroor  |  string   | code of error.                                         | Required |
+| description |decimal| Response status short description.                     | Optional |
 
 
 ### Example of Json BODY

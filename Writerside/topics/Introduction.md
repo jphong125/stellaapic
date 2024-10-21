@@ -14,15 +14,15 @@ Game Opening with logged in player for inviting into LuckyMonaco, and you can st
 
 ## Defines
 
-* LuckyMonaco : Where the players are playing and progressing the game
-* Partner(s) : Business partners (i.e. Platform providers, Aggregator or Operators)
+* LuckyMonaco : Where the players are playing and progressing the game.
+* Partner(s) : Business partners. (i.e. Platform providers, Aggregator or Operators)
 
 ## The Flow
 
 Users will be redirected to corresponding game session after getting a game session from API servers when entering to the game. (i.e. Start game)
 
-* IF you are a seamless system, please refer to Seamless Integration
-* If you are a transfer system, please refer to Transfer Integration
+* IF you are a seamless system, please refer to Seamless Integration.
+* If you are a transfer system, please refer to Transfer Integration.
 
 ## API call basic specifications
 

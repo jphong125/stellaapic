@@ -2,7 +2,7 @@
 
 ## Overview
 Using this method Lucky Monaco system will check the player balance on Casino Operator side to ensure they still have the
-funds to cover the bet. **Amount of the bet must be subtracted from player balance in Casino Operator system.**
+funds to cover the bet.<br/> **Amount of the bet must be subtracted from player balance in Casino Operator system.**
 
 Important: The call is idempotent, i.e. sending bet again only creates one transaction.
 
@@ -15,18 +15,18 @@ Requested "Bet" API URL will be notified individually, for security reasons.
 | Name         | Data Type | Description                                                                       | Remark   |
 |:-------------|:---------:|:----------------------------------------------------------------------------------|----------|
 | uuid         |string| A unique ID for each request                                                      | Required |
-| userId       |  string   | Player's ID, specified by Operator when creating a game session.                  | Required |
+| userId       |  string   | User's ID, specified by Operator when creating a game session.                    | Required |
 | gameId       |  string   | ID of the game.                                                                   | Required |
 | gamename     |  string   | name of the game.                                                                 | Required |
 | roundId      |  string   | ID of the round.                                                                  | Required |
 | amount       |  decimal  | Amount of the bet.                                                                | Required |
 | reference    |  string   | Unique reference of this transaction.                                             | Required |
-| sessionId    |string| Player’s game session id on Lucky Monaco system.                                  | Required |
+| sessionId    |string| User’s game session id on Lucky Monaco system.                                    | Required |
 | providerId   |  string   | Game Provider ID.                                                                 | Required |
-| currency     |string| Currency of the player                                                            | Required |
-| timeStamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco system        | Required |
+| currency     |string| Currency of the User                                                              | Required |
+| timeStamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco system.       | Required |
 | roundDetails |  string   | Additional information about the current game round. (i.e. "spin", "buyFreeSpin") | Required |
-| sessionId        |string| Player’s game session id on Lucky Monaco system.                                  | Required |
+| sessionId        |string| User’s game session id on Lucky Monaco system.                                    | Required |
 
 ### Parameters  (Reserved for future development)
 
@@ -63,7 +63,7 @@ Content-Type: application/json
     "providerId": "luckymonaco",
     "userId": "421",
     "sessionId": "<sessionId>"
-    "currency": "USD"
+    "currency": "USD",
     "amount": 100, 
     "roundDetails": "spin",
     "reference": "585c1306f89c56f5ecfc2f5d",
@@ -85,14 +85,14 @@ Example of successful response from Partner API servers.
 |:-------------|:---:|:-----------------------------------|-----|
 | transactionId|string| ID of the transaction in wallet.   | Required |
 | cash         |decimal| Real balance of the player.        | Required |
-| eroor  |  string   | code of error                      | Required |
+| eroor  |  string   | code of error.                     | Required |
 | description |decimal| Response status short description. | Optional |
 
 ### Response Parameters  (Reserved for future development)
 
-|Name|Data Type| Description                                                  | Remark   |
-|:---|:---:|:-------------------------------------------------------------|----------|
-| bonus        |decimal| Bonus balance of the player.           | Required |
+|Name|Data Type| Description                | Remark   |
+|:---|:---:|:---------------------------|----------|
+| bonus        |decimal| Bonus balance of the User. | Required |
 
 ### Example of Json BODY
 

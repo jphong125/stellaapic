@@ -19,13 +19,13 @@ Requested "End round" API URL will be notified individually, for security reason
 
 | Name       | Data Type | Description                                                                | Remark  |
 |:-----------|:---------:|:---------------------------------------------------------------------------|----------|
-| uuid       |string| A unique ID for each request                                                                                                                                              | Required |
-| userId     |  string   | Player's ID, specified by Partner when creating a game session.            | Required |
+| uuid       |string| A unique ID for each request.                                              | Required |
+| userId     |  string   | User's ID, specified by Partner when creating a game session.              | Required |
 | gameId     |  string   | Id of the game.                                                            | Required |
 | roundId    |  string   | Id of the round.                                                           | Required |
 | providerId |  string   | Game Provider id.                                                          | Required | 
 | platform   |  string   | The platform type (channel) on which the game is played.                   | Optional |
-| sessionId        |string| Player’s game session id on Lucky Monaco system.                       | Required |
+| sessionId        |string| User’s game session id on Lucky Monaco system.                             | Required |
 | win        |  string   | Win amount in round. Intended to notify Operator about amount won in round | Optional |
 
 ### Examples
@@ -57,8 +57,8 @@ Content-Type: application/json
     "providerId": "luckymonaco",
     "userId": "421",
     "roundid" : "5103188801"
-    "win" : "15.4"
-    "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
+    "win" : "15.4",
+    "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
     "sessionid": "<sessionId>"
 }
 ```
@@ -69,13 +69,13 @@ Example of successful response from Partner API servers.
 
 ### Response Parameters 
 
-| Name          |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Remark |
-|:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
-| transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
-| currency      |string| Currency of the player. | Required |
-| cash          |decimal| Real balance of the player.                                                                                                                                                                                                                                                                                                                 | Required |
-| bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
-| eroor  |  string   | code of error                                                   | Required |
+| Name          |Data Type| Description                        | Remark |
+|:--------------|:---:|:-----------------------------------|-----|
+| transactionId |string| Id of the transaction in wallet.   | Required |
+| currency      |string| Currency of the User.              | Required |
+| cash          |decimal| Real balance of the User.          | Required |
+| bonus         |decimal| Bonus balance of the User.         | Required |
+| eroor  |  string   | code of error                      | Required |
 | description |decimal| Response status short description. | Optional |
 
 ### Example of Json BODY
@@ -83,7 +83,7 @@ Example of successful response from Partner API servers.
 ``` json
 {
  "transactionId": "<transactionId>",
- "currency" : "USD"
+ "currency" : "USD",
  "cash": 99899.99,
  "bonus": 99.99,
  "error": 0,

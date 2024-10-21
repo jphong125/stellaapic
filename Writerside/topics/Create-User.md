@@ -14,10 +14,10 @@ Requested Create User API URL will be notified individually, for security reason
 | Name         |Data Type| Description                                                    | Remark   |
 |:-------------|:---:|:---------------------------------------------------------------|----------|
 | secureLogin  |string| partner name for authentication in the Casino Game API service | Required |
-| userId       |string| Id of the player within the Operator system.                   | Required |
-| userNickname |string| nickname of the player within the Operator system.             | Optional |
+| userId       |string| Id of the User within the Operator system.                     | Required |
+| userNickname |string| nickname of the User within the Operator system.               | Optional |
 | uuid         |  string   | A unique ID for each request                                   | Required |
-| token        |string| Token of the player from Authenticate response                 | Required |
+| token        |string| Token of the Partner from Authenticate response                 | Required |
 
 ### Examples
 
@@ -57,11 +57,11 @@ Example of successful response from LuckyMonaco API servers.
 
 ### Parameters 2
 
-| Name        |Data Type| Description                                      | Remark  |
-|:------------|:---:|:-------------------------------------------------|---|
-| userid      |string| Id of the player within the Lucky Monaco system. |  Required |
-| eroor       |  string   | code of error                                                   | Required |
-| description |decimal| Response status short description. | Optional |
+| Name        |Data Type| Description                                    | Remark  |
+|:------------|:---:|:-----------------------------------------------|---|
+| userid      |string| Id of the User within the Lucky Monaco system. |  Required |
+| eroor       |  string   | code of error.                                 | Required |
+| description |decimal| Response status short description.             | Optional |
 
 
 ### Example of Json BODY

@@ -10,9 +10,9 @@ Requested get info API URL will be notified individually, for security reasons.
 
 | Name             |Data Type| Description                                                 | Remark   |
 |:-----------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin      |string| User name for authentication in the Casino Game API service | Required |
+| secureLogin      |string| Partner name for authentication in the Casino Game API service | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
+| token      |string| Token of the Partner from Authenticate response              | Required |
 
 ### Examples
 
@@ -37,7 +37,7 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "token" : "<token>"
+    "token" : "<token>",
     "uuid": "<uuid>"
 }
 ```

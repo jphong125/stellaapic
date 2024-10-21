@@ -9,11 +9,11 @@ Requested get casino games API URL will be notified individually, for security r
 
 ###  Request Parameters
 
-| Name        |Data Type| Description                                                 | Remark |
-|:------------|:---:|:------------------------------------------------------------|:---------:|
-| secureLogin |string| User name for authentication in the Casino Game API service | Required |
-| token      |string| Token of the player from Authenticate response              | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
+| Name        |Data Type| Description                                                     | Remark |
+|:------------|:---:|:----------------------------------------------------------------|:---------:|
+| secureLogin |string| Partner name for authentication in the Casino Game API service. | Required |
+| token      |string| Token of the Partner from Authenticate response.                | Required |
+| uuid                |  string   | A unique ID for each request.                                   | Required |
 
 ### Examples
 
@@ -51,29 +51,29 @@ Example of successful response from LuckyMonaco API servers.
 
 ###  Response parameters
 
-|   Name   |                   | Data Type | Remark                                                                                                     |
-|:--------:|:-----------------:|:---------:|:-----------------------------------------------------------------------------------------------------------|
-| eroor  |                   |  string   | code of error                                                                                              |
-| description |                   |  string   | Response status short description.                                                                         |
-| gameList |                   |   array   | List of game information.                                                                                  |
-|          |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                                           |
-|          |     gameName      |  string   | Name of the game.                                                                                          |
-|          |    gameNameZh     |  string   | Chinese name of the game.                                                                                  |
-|          |   gameNameZh-Tw   |  string   | Chinese (Traditional) name of the game.                                                                    |
-|          |  typeDescription  |  string   | Short description of the game type. (i.e. "vs" : video slot, "vp" : video poker                            |
-|          |     platform      |  string   | Platform for which the game can be opened.                                                                 |
-|          | demoGameAvailable |  boolean  | If true, a demo version of the game is available.                                                          |
-|          |    aspectRatio    |  string   | Describes the proportional relationship between the width and the height of the game.                      |
-|          |   gameIdNumeric   |  integer  | Numeric value of gameId                                                                                    |
-|          |   jurisdictions   |  string   | Jurisdiction of the player                                                                                 |
-|          |   frbAvailable    |  boolean  | Boolean if true, FREE ROUND bonus feature is available to this particular game.                            |
-|          |       lines       |  string   | Number of available pay lines in the game                                                                  |
-|          |     rowReels      |  string   | Layout of the game                                                                                         |
-|          |        rtp        |  string   | RTP of the game                                                                                            |
-|          |     dataType      |  string   | Type of game portfolio (i.e. "RNG" : Main Portfolio games (video slots, etc), "lc" : Live Casino portfolio |
-|          |  gameDescription  |  string   | Description of the game                                                                                    |
-|          |      release      |  boolean  | If true, the game is released and available to use                                                         |
-|          |    releaseDate    |  string   | Date of release of the game                                                                                |
+|   Name   |                   | Data Type | Remark                                                                                                      |
+|:--------:|:-----------------:|:---------:|:------------------------------------------------------------------------------------------------------------|
+| eroor  |                   |  string   | code of error.                                                                                              |
+| description |                   |  string   | Response status short description.                                                                          |
+| gameList |                   |   array   | List of game information.                                                                                   |
+|          |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                                            |
+|          |     gameName      |  string   | Name of the game.                                                                                           |
+|          |    gameNameZh     |  string   | Chinese name of the game.                                                                                   |
+|          |   gameNameZh-Tw   |  string   | Chinese (Traditional) name of the game.                                                                     |
+|          |  typeDescription  |  string   | Short description of the game type. (i.e. "vs" : video slot, "vp" : video poker)                            |
+|          |     platform      |  string   | Platform for which the game can be opened.                                                                  |
+|          | demoGameAvailable |  boolean  | If true, a demo version of the game is available.                                                           |
+|          |    aspectRatio    |  string   | Describes the proportional relationship between the width and the height of the game.                       |
+|          |   gameIdNumeric   |  integer  | Numeric value of gameId.                                                                                    |
+|          |   jurisdictions   |  string   | Jurisdiction of the player.                                                                                 |
+|          |   frbAvailable    |  boolean  | Boolean if true, FREE ROUND bonus feature is available to this particular game.                             |
+|          |       lines       |  string   | Number of available pay lines in the game.                                                                  |
+|          |     rowReels      |  string   | Layout of the game.                                                                                         |
+|          |        rtp        |  string   | RTP of the game.                                                                                            |
+|          |     dataType      |  string   | Type of game portfolio. (i.e. "RNG" : Main Portfolio games (video slots, etc), "lc" : Live Casino portfolio |
+|          |  gameDescription  |  string   | Description of the game.                                                                                    |
+|          |      release      |  boolean  | If true, the game is released and available to use.                                                         |
+|          |    releaseDate    |  string   | Date of release of the game.                                                                                |
 
 ### Example of Json BODY
 
