@@ -1,4 +1,4 @@
-# Get transfer status
+# Get Transfer Info
 
 ## Overview
 This method returns the status of a particular transaction that transferred the money in or out the player’s balance on the

@@ -9,6 +9,7 @@ When receive a Refund request Operator have to return money back to player’s  
 
 - Important : If bet transaction is not found then nothing should happen on the Casino Operator side and success (0)
 or specific error code for this situation should be returned.
+- Important : **It is automatically executed when the operator executes "cancel round"**.
 
 ## Request
 

@@ -1,4 +1,4 @@
-# Cancel
+# Cancel Bet
 
 ## Overview
 

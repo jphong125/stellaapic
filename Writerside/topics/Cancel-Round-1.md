@@ -1,8 +1,10 @@
 # Cancel Round by Operator
 
 ## Overview
-CancelRound method initiates a refund request, which the Lucky monaco system will send to the Operator’s remote wallet. <br/>After  successful refund call the game round will be marked as Cancelled in the Lucky Monaco system.
-This method Operator can use any time they want to close player’s round forcefully, due to a retention policy on the Operator’s system or according to requirements for regulated markets.
+CancelRound method initiates a refund request, which the Lucky monaco system will send to the Operator’s remote wallet. <br/>After  successful refund call the game round will be marked as Cancelled in the Lucky Monaco system.<br/>
+This method Operator can use any time they want to close player’s round forcefully
+- due to a retention policy on the Operator’s system or according to requirements for regulated markets.
+- If the operator wants to cancel a bet in an incomplete round.
 
 
 ## Request
