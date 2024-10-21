@@ -47,7 +47,7 @@ Content-Type: application/json
 }
 ```
 
-## Response
+##  Response
 
 Example of successful response from LuckyMonaco API servers.
 

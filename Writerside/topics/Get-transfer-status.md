@@ -52,7 +52,7 @@ Content-Type: application/json
 
 Example of successful response from LuckyMonaco API servers.
 
-### Parameters 2
+###  Response Parameters 
 
 | Name          |Data Type| Description                                                                                                             | Remark  |
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------|---|
