@@ -30,7 +30,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/createwallet
+https://<API URL>/transfer/CreateWallet
 ```
 HEADER
 
@@ -58,8 +58,8 @@ Example of successful response from LuckyMonaco API servers.
 
 | Name        |Data Type| Description                                      |Remark  |
 |:------------|:---:|:-------------------------------------------------|---|
-| userId    |string| Id of the player within the Lucky Monaco system. |  Required |
-| eroor       |  string   | code of error.                                   | Required |
+| userId      |string| Id of the player within the Lucky Monaco system. |  Required |
+| error       |  string   | code of error.                                   | Required |
 | description |decimal| Response status short description.               | Optional |
 
 
@@ -67,7 +67,7 @@ Example of successful response from LuckyMonaco API servers.
 
 ``` json
 {
-    "error": "0",
+    "error": 0,
     "description": "success",
-    "userId": "64749175"
+    "userId": "tester"
 }

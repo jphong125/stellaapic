@@ -26,9 +26,9 @@ Requested withdrawl balance API URL will be notified individually, for security 
 | Name          |Data Type| Description                                                    | Remark   |
 |:--------------|:---:|:---------------------------------------------------------------|----------|
 | secureLogin   |string| partner name for authentication in the Casino Game API service | Required |
-| userId      |string| Id of the player within the Operator system.                   | Required |
+| userId        |string| Id of the player within the Operator system.                   | Required |
 | currency      |string| Currency of the user.                                          | Required |
-| TransactionId |string| Id of the transaction within Casino Operator system.           | Required |
+| transactionId |string| Id of the transaction within Casino Operator system.           | Required |
 | amount        |string| Amount to be added to user’s balance                           | Required |
 | uuid          |  string   | A unique ID for each request                                   | Required |
 | token         |string| Token of the Partner from Authenticate response                 | Required |
@@ -45,7 +45,7 @@ POST
 ### Example of URL
 
 ``` http
-https://<API URL>/refund
+https://<API URL>/tranfer/WithdrawlBalance
 ```
 
 HEADER
@@ -61,9 +61,9 @@ Content-Type: application/json
     "secureLogin" : "<partnerId>",
     "token" : "<token>",
     "userId": "tester",
-    "TransactionId": "EXT12345678",
+    "transactionId": "EXT12345678",
     "currency": "USD",
-    "amount": 1000,
+    "amount": "1000",
     "uuid": "<uuid>"
 }
 ```
@@ -87,9 +87,9 @@ Example of successful response from LuckyMonaco API servers.
 
 ``` json
 {
-    "error": "0",
+    "error": 0,
     "description": "success",
     "transactionId": "1908759",
     "currency": "USD",
-    "balance": 0
+    "balance": "0"
 }

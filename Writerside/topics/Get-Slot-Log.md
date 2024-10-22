@@ -79,7 +79,7 @@ Log Detail
 
 ``` json
 {
-    "error": "0",
+    "error": 0,
     "description": "success",
     "logs": [
         [

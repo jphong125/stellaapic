@@ -1,10 +1,10 @@
 # Cancel Round by Operator
 
 ## Overview
-CancelRound method initiates a refund request, which the Lucky monaco system will send to the Operator’s remote wallet. <br/>After  successful refund call the game round will be marked as Cancelled in the Lucky Monaco system.<br/>
+Using this method Casino Operator Cancels in progress game round   <br/>After  successful cancel call the game round will be marked as Cancelled in the Lucky Monaco system.<br/>
 This method Operator can use any time they want to close player’s round forcefully
 - due to a retention policy on the Operator’s system or according to requirements for regulated markets.
-- If the operator wants to cancel a bet in an **only incomplete round**. (Can't cancel complete round)
+- **This circumstance only applies to the bet which has not been completed by any reasons.** Cancel Round cannot be executed on the round that has been completed.
 
 
 ## Request
@@ -63,13 +63,19 @@ Example of successful response from LuckyMonaco API servers.
 |:---|:---:|:---:|---|
 | eroor  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |
+| currency     |string| Currency of the User                                                              | Required |
+| amount       |  decimal  | Amount to be refunded.                                                    | Required |
+| transactionId|string| Id of the transaction in wallet.   | Required |
 
 ### Example of Json BODY
 
 ``` json
 {
   "error": 0,
-  "description": "Success"
+  "description": "Success",
+  "currency": "USD"
+  "amount": 100,
+  "transactionId" : "<bet transactionId> 
 }
 ```
 

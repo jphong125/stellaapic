@@ -29,7 +29,7 @@ POST
 ### Example of URL
 
 ``` http
-https://<API URL>/getTransferStatus
+https://<API URL>/transfer/GetTransferInfo
 ```
 HEADER
 
@@ -69,10 +69,10 @@ Example of successful response from LuckyMonaco API servers.
 
 ``` json
 {
-    "error": "0",
+    "error": 0,
     "description": "success",
     "transctionid": "ab4cee3-f73b-4631-9abf-b1a09c",
     "currency": "USD",
-    "amount" : 1000,
-    "balance": 1000
+    "amount" : "1000",
+    "balance": "1000"
 }

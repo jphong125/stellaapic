@@ -27,7 +27,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/getBalance
+https://<API URL>/transfer/GetBalance
 ```
 HEADER
 
@@ -53,10 +53,10 @@ Example of successful response from LuckyMonaco API servers.
 
 ###  Response Parameters 
 
-| Name     |Data Type| Description                                            | Remark  |
-|:---------|:---:|:-------------------------------------------------------|---|
-| balance |string| Current user’s balance within the Lucky Monaco system. |  Required |
-| eroor  |  string   | code of error.                                         | Required |
+| Name        |Data Type| Description                                            | Remark  |
+|:------------|:---:|:-------------------------------------------------------|---|
+| balance     |string| Current user’s balance within the Lucky Monaco system. |  Required |
+| error       |  string   | code of error.                                         | Required |
 | description |decimal| Response status short description.                     | Optional |
 
 
@@ -64,7 +64,7 @@ Example of successful response from LuckyMonaco API servers.
 
 ``` json
 {
-    "error": "0",
+    "error": 0,
     "description": "success",
-    "balance": 1000
+    "balance": "1000"
 }

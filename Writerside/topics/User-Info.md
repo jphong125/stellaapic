@@ -18,7 +18,7 @@ METHOD
 URL
 
 ``` http
-https://<API URL>/userInfo
+https://<API URL>/transfer/UserInfo
 ```
 
 HEADER
@@ -53,27 +53,31 @@ Example of successful response from LuckyMonaco API servers.
 
 ### Response Parameters
 
-| Name        | Data Type | Description                                   | Remark                          |
-|:------------|:---------:|:----------------------------------------------|---------------------------------|
-| at_create   | datetime  | at create (i.e. 2024-10-15 14:30:00)          |  Required |
-| at_login    | datetime  | at login (i.e. 2024-10-16 10:01:32)           |     Required |
-| wallet      |   array   | wallets                                       |      Required |
-| currency    |  string   | each balance of currency.                     |      Required |
-| error       |  string   | error code                                    |     Required |
-| descrition  |  string   | Description of the error for troubleshooting. |     Required |
+| Name           | Data Type | Description                                   | Remark                          |
+|:---------------|:---------:|:----------------------------------------------|---------------------------------|
+| userId       |string| Id of the User within the Operator system.                     | Required |
+| userNickname |string| nickname of the User within the Operator system.               | Optional |
+| dateTimeCreate | datetime  | at create (i.e. 2024-10-15 14:30:00)          |  Required |
+| dateTimeLogin  | datetime  | at login (i.e. 2024-10-16 10:01:32)           |     Required |
+| wallet         |   array   | wallets                                       |      Required |
+| currency       |  string   | each balance of currency.                     |      Required |
+| error          |  string   | error code                                    |     Required |
+| descrition     |  string   | Description of the error for troubleshooting. |     Required |
 
 ### Example of Json BODY
 
 ``` json
 {
-    "error": "0",
+    "error": 0,
     "description" : "success",
     "userId" : "test",
-    "at_create" : "2024-07-02 11:50:12",
-    "at_login" : "2024-07-02 12:10:32",
-    "wallet" : [
+    "userNickname" : "tester"
+    "dateTimeCreate" : "2024-07-02 11:50:12",
+    "DateTimeLogin" : "2024-07-02 12:10:32",
+    "wallet" : {
         "USD" : "100.0",
         "CNY" : "1023"
+        }
     ]
 }
 ```

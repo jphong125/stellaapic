@@ -30,7 +30,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/createuser
+https://<API URL>/transfer/CreateUser
 ```
 
 HEADER
@@ -59,8 +59,8 @@ Example of successful response from LuckyMonaco API servers.
 
 | Name        |Data Type| Description                                    | Remark  |
 |:------------|:---:|:-----------------------------------------------|---|
-| userid      |string| Id of the User within the Lucky Monaco system. |  Required |
-| eroor       |  string   | code of error.                                 | Required |
+| userId      |string| Id of the User within the Operator system. |  Required |
+| error       |  string   | code of error.                                 | Required |
 | description |decimal| Response status short description.             | Optional |
 
 
@@ -68,7 +68,7 @@ Example of successful response from LuckyMonaco API servers.
 
 ``` json
 {
-    "error": "0",
+    "error": 0,
     "description": "success",
-    "userId": "64749175"
+    "userId": "tester"
 }

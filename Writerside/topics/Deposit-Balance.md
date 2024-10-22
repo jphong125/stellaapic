@@ -43,7 +43,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/charge
+https://<API URL>/transfer/DepositBalance
 ```
 HEADER
 
@@ -76,17 +76,17 @@ Example of successful response from LuckyMonaco API servers.
 | currency      |string| Currency of the User.                             | Required |
 | transactionId |string| Id of the transaction within Lucky Monaco system. | Required |
 | balance       |string| User’s balance after successful transaction.      | Required |
-| eroor  |  string   | code of error.                                    | Required |
-| description |decimal| Response status short description.                | Optional |
+| error         |  string   | code of error.                                    | Required |
+| description   |decimal| Response status short description.                | Optional |
 
 
 ### Example of Json BODY
 
 ``` json
 {
-    "error": "0",
+    "error": 0,
     "description": "success",
     "transactionId": "1908759",
     "currency": "USD",
-    "balance": 1000
+    "balance": "1000"
 }
