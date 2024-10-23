@@ -60,7 +60,7 @@ Content-Type: application/json
     "userId": "tester",
     "TransactionId": "12345678",
     "currency": "USD",
-    "amount": 1000,
+    "amount": "1000",
     "uuid": "<uuid>"
 }
 ```

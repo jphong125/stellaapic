@@ -54,7 +54,7 @@ Content-Type: application/json
 {
     "campaignId" : "5103188801"
     "reference": "585c1306f89c56f5ecfc2f5d",
-    "amount": 500.0,
+    "amount": "500.0",
     "providerId": "Luckymonaco",
     "userId": "421",
     "campaignType" : "T"
@@ -85,8 +85,8 @@ Example of successful response from Partner API servers.
 {
  "transactionId": "<transactionId>",
  "currency": "USD",
- "cash": 99899.99,
- "bonus": 99.99,
+ "cash": "99899.99",
+ "bonus": "99.99",
  "error": 0,
  "description": "Success"
  }

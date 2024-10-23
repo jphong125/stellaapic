@@ -1,18 +1,21 @@
-# Result
+# Auto Closing
 
 ## Overview
-Using this method the Lucky Monaco system will send to Casino Operator the winning result of a bet.<br/> **The Casino Operator
+Using this method the Lucky Monaco system will send to Casino Operator for closing the pending winning result of a bet.<br/> **The Casino Operator
 will change the balance of the player in accordance with this request and return the updated balance.**
 
-Result request may contain a prize that the player is awarded with during the game round, if there is an active promotional 
+Result request may contain a prize that the player is awarded with during the game round, if there is an active promotional
 campaigns.
 
 Important : The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
 
+Important : This is executed when the game is abnormally disconnected, the user does not check the results of the game within **24 hours**, and fails to end the round.<br/> This status is marked as CompleteInProcess. <br/>
+CompleteInProcess : game round is marked as Completed in the db, Result or EndRound requests is in asynchronous transaction queue and the system tries to send it to Operator
+
 ## Request
 
-Requested "Result" API URL will be notified individually, for security reasons.
+Requested "Result" API URL will be notified individually, for security reasons. (Using same requested "result")
 
 ### Request Parameters
 
@@ -29,7 +32,6 @@ Requested "Result" API URL will be notified individually, for security reasons.
 | providerId        |  string   | Game Provider id.                                                                         | Required |
 | timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side.                 | Required |
 | roundDetails      |   array   | Additional information about the current game round. (ie. "spin", "freespin", "minigame") | Required |
-| sessionId        |  string   | User’s game session id on Lucky Monaco system.                                            | Required |
 
 
 ### Parameters  (Reserved for future development)
@@ -68,9 +70,8 @@ Content-Type: application/json
 {
     "providerId": "luckymonaco",
     "userId": "421",
-    "sessionId": "<sessionId>",
     "currency": "USD",
-    "amount": "10.0",
+    "amount": 10.0,
     "roundDetails": "spin",
     "roundid" : "5103188801",
     "reference": "585c1306f89c56f5ecfc2f5d",
@@ -85,7 +86,7 @@ Content-Type: application/json
 
 Example of successful response from Partner API servers.
 
-### Response Parameters 
+### Response Parameters
 
 | Name          |Data Type| Description                        | Remark  |
 |:--------------|:---:|:-----------------------------------|-----|
@@ -108,7 +109,7 @@ Example of successful response from Partner API servers.
 {
  "transactionId": "<transactionId>",
  "currency": "USD",
- "cash": "99899.99",
+ "cash": 99899.99,
  "error": 0,
  "description": "Success"
  }

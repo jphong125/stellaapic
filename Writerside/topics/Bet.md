@@ -62,9 +62,9 @@ Content-Type: application/json
 {
     "providerId": "luckymonaco",
     "userId": "421",
-    "sessionId": "<sessionId>"
+    "sessionId": "<sessionId>",
     "currency": "USD",
-    "amount": 100, 
+    "amount": "100", 
     "roundDetails": "spin",
     "reference": "585c1306f89c56f5ecfc2f5d",
     "gameId": "Im_60_tumblefortune",  
@@ -100,7 +100,7 @@ Example of successful response from Partner API servers.
 {
  "transactionId": "<transactionId>",
  "currency": "USD",
- "cash": 99899.99,
+ "cash": "99899.99",
  "error": 0,
  "description": "Success"
  }

@@ -61,7 +61,7 @@ Content-Type: application/json
     "userId": "421",
     "roundid" : "5103188801",
     "roundDetails": "spin",
-    "amount": 10.0,
+    "amount": "10.0",
     "timestamp": "1482429190374",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
 }

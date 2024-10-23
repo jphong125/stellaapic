@@ -85,8 +85,8 @@ Example of successful response from Partner API servers.
 {
  "transactionId": "<transactiondId>",
  "currency": "USD",
- "cash": 99899.99,
- "bonus": 99.99,
+ "cash": "99899.99",
+ "bonus": "99.99",
  "error": 0,
  "description": "Success"
  }

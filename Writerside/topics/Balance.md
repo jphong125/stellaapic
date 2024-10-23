@@ -71,7 +71,7 @@ Example of successful response from Partner API servers.
 ``` json
 {
     "currency": "USD",
-    "cash": 99999.99,
+    "cash": "99999.99",
     "error": 0,
     "description":"Success"
 }

@@ -55,7 +55,7 @@ Content-Type: application/json
 {
     "reference": "585c1306f89c56f5ecfc2f5d",
     "gameId": "Im_60_tumblefortune",
-    "amount": 1.0,
+    "amount": "1.0",
     "providerId": "Luckymonaco",
     "bonescode" : "<bonuscode>,
     "roundid" : "5103188801",
@@ -87,8 +87,8 @@ Example of successful response from Partner API servers.
 {
  "transactionId": "transactionId",
  "currency": "USD",
- "cash": 99899.99,
- "bonus": 99.99,
+ "cash": "99899.99",
+ "bonus": "99.99",
  "error": 0,
  "description": "Success"
  }
