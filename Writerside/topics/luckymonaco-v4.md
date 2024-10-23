@@ -12,56 +12,71 @@ Game Library will be provided to Casino Operator together with integration packa
 ## Seamless Wallet API
 Operator should provide the Seamless Wallet Integration API on their side. <br/>Lucky Monaco will call the methods when **user make a bet or get a win and their balance should be updated**
 
-| Name       | Description                                                                                                                                                                                                                                        |  Remark  |
-|:-----------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| Check      | check whether player can bet or not.                                                                                                                                                                                                               | Required |
-| Balance    | Returns the balance of a player.                                                                                                                                                                                                                   | Required | 
-| Bet        | Checks if the player has enough funds and subtracts money from player’s balance. Returns the value of updated balance.                                                                                                                             | Required |
-| Result     | Adds winning amount to player’s balance. Returns the value of updated balance.                                                                                                                                                                     | Required |
-| BonusWin   | Notifies the Casino Operator that FREE ROUNDS are over and player’s balance should be increased with bonus amount. (Reserved for future development)                                                                                               | Required |
-| JackpotWin | Using this method a Lucky Monaco system will notify Casino Operator about Jackpot winning. (Reserved for future development)                                                                                                                       | Required |
-| PromoWin   | Notifies the Casino Operator that TOURNAMENT CAMPAIGN is over and player’s cash balance should be increased with amount in promoWin. (Reserved for future development)                                                                             | Required |
-| Cancel     | Notifies the casino Operator that Canceled player’s bet. This method will be used for cancellation of a bet. (i.e. Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response.) | Required |
-| EndRound   | If the Casino Operator requires to finalize the round that is completed in their system with signal received from the Game Provider.                                                                                                               | Optional |
-| Error code | Error codes used in seamless wallet.                                                                                                                                                                                                               | Required |
+| Name           | Description                                                                                                                                                                                                                                        |  Remark  |
+|:---------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| Check          | check whether player can bet or not.                                                                                                                                                                                                               | Required |
+| Balance        | Returns the balance of a player.                                                                                                                                                                                                                   | Required | 
+| Bet            | Checks if the player has enough funds and subtracts money from player’s balance. Returns the value of updated balance.                                                                                                                             | Required |
+| Result         | Adds winning amount to player’s balance. Returns the value of updated balance.                                                                                                                                                                     | Required |
+| AutoClosing    | Using this method the Lucky Monaco system will send to Casino Operator for closing the pending winning result of a bet.                                | Required |
+| BonusWin       | Notifies the Casino Operator that FREE ROUNDS are over and player’s balance should be increased with bonus amount. (Reserved for future development)                                                                                               | Required |
+| JackpotWin     | Using this method a Lucky Monaco system will notify Casino Operator about Jackpot winning. (Reserved for future development)                                                                                                                       | Required |
+| PromoWin       | Notifies the Casino Operator that TOURNAMENT CAMPAIGN is over and player’s cash balance should be increased with amount in promoWin. (Reserved for future development)                                                                             | Required |
+| EndRound       | If the Casino Operator requires to finalize the round that is completed in their system with signal received from the Game Provider.                                                                                                               | Optional |
 | SessionExpired | Notifies the Casino Operator that player’s game session has expired in Lucky Monaco system due to inactivity or game client closing.                                                                                                               | Optional |
+| Cancel Bet     | Notifies the casino Operator that Canceled player’s bet. This method will be used for cancellation of a bet. (i.e. Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response.) | Optional |
+| Refund         | Lucky Monaco system may use this method to rollback a bet transaction on the Casino Operator side, in order to reverse the transaction and adjust player’s balance.                                                                                | Required |
+| Error code     | Error codes used in seamless wallet.                                                                                                                                                                                                               | Required |
+
 
 
 ## Transfer Wallet API
 
 Operator can use this API for game opening and transferring funds to player’s balance in the Lucky Monaco system.
 
-| Name              | Description                                                                                                                                      |  Remark  |
-|:------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| CreateUser        | This method allows registering a new player on Lucky Monaco system.                                                                              | Required | 
-| CreateWallet      | This method allows registering a new player Wallet on Lucky Monaco system.                                                                       | Required |
-| DepositBalance    | This method transfers funds in to player’s balance (i.e. deposit) within Lucky Monaco system.                                                    | Required |
-| WithdrawlBalance  | This method transfers funds out of the player’s balance (i.e. withdrawal) within Lucky Monaco system.                                            | Required |
-| Userinfo   | This method retrieves information about a specific user on Lucky Monaco system.                                                                  | Optional |
-| GetBalance        | this method Operator can get the current balance of the player in the Lucky Monaco system.                                                       | Optional |
-| GetTransferstatus | This method returns the status of a particular transaction that transferred the money in or out the player’s balance in the Lucky Monaco system. | Optional |
-| GetSlotLog        | Using this method Casino Operator can get the user's slot log.                                                                                   | Optional |
-| TerminateSession  | Using this method Casino Operator can terminate the current player session and kick him out all games.                                           | Optional |
-| Error code        | Error codes used in transfer wallet.                                                                                                             | Required |
-| SessionExpired | Notifies the Casino Operator that player’s game session has expired in Lucky Monaco system due to inactivity or game client closing.             | Optional |
+| Name             | Description                                                                                                                                      |  Remark  |
+|:-----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| CreateUser       | This method allows registering a new player on Lucky Monaco system.                                                                              | Required | 
+| CreateWallet     | This method allows registering a new player Wallet on Lucky Monaco system.                                                                       | Required |
+| DepositBalance   | This method transfers funds in to player’s balance (i.e. deposit) within Lucky Monaco system.                                                    | Required |
+| WithdrawlBalance | This method transfers funds out of the player’s balance (i.e. withdrawal) within Lucky Monaco system.                                            | Required |
+| Userinfo         | This method retrieves information about a specific user on Lucky Monaco system.                                                                  | Optional |
+| GetBalance       | this method Operator can get the current balance of the player in the Lucky Monaco system.                                                       | Optional |
+| GetTransferInfo  | This method returns the status of a particular transaction that transferred the money in or out the player’s balance in the Lucky Monaco system. | Optional |
+| TerminateSession | Using this method Casino Operator can terminate the current player session and kick him out all games.                                           | Optional |
+| SessionExpired   | Notifies the Casino Operator that player’s game session has expired in Lucky Monaco system due to inactivity or game client closing.             | Optional |
+| GetSlotLog       | Using this method Casino Operator can get the user's slot log.                                                                                   | Optional |
+| Error code       | Error codes used in transfer wallet.                                                                                                             | Required |  
 
 ## Integration API
 
 Integration API offers generic methods that allow Operators to create a game lobby, get statistics and close player sessions forcefully.
 
-| Name              | Description                                                                                                                                                                                                                                      |  Remark  |
-|:------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| Start Game        | Using this method Casino Operator can start game.                                                                                                                                                                                                | required |
-| GetCasinoGames    | Using this method Casino Operator can retrieve the list of available games to utilize on their system. Once the new game is released it will be updated to this list. May be used for automatic building games lobby at casino website.          | Optional |
-| GetCasinoIconInfo | Using this method Casino Operator can retrieve the icon info of games available for integration.May be used for automatic building games lobby at casino website.                                                                                | Optional |
-| GetCasinoIconList | Using this method Casino Operator can retrieve the icon list of games available for integration.May be used for automatic building games lobby at casino website.                                                                                | Optional |
-| GetCasinoLanguage | Using this method Casino Operator can retrieve the list of language of games available for integration.                                                                                                                                          | Optional |
-| GetCasinoCurrency | Using this method Casino Operator can retrieve the list of about a specific currency of games available for integration.                                                                                                                         | Optional |
-| CloseSession      | This method terminates active game sessions of the player.                                                                                                                                                                                       | Optional |
-| HealthCheck       | Using this method Casino Operator can check if Lucky Monaco provider API service or Game server are live and ready.                                                                                                                              | Optional |
-| Refund         | Refunds player’s balance. This method will be used for cancellation of a bet in the case the game unfinished round. (i.e. Players connection was lost in any cases so the round is remaining unfinished (bet is success, but result is pending)) | Required |
+| Name              | Description                                                                                                                                                                                                                             |  Remark  |
+|:------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| GetCasinoGames    | Using this method Casino Operator can retrieve the list of available games to utilize on their system. Once the new game is released it will be updated to this list. May be used for automatic building games lobby at casino website. | Optional |
+| GetCasinoIconInfo | Using this method Casino Operator can retrieve the icon info of games available for integration.May be used for automatic building games lobby at casino website.                                                                       | Optional |
+| GetCasinoIconList | Using this method Casino Operator can retrieve the icon list of games available for integration.May be used for automatic building games lobby at casino website.                                                                       | Optional |
+| GetCasinoLanguage | Using this method Casino Operator can retrieve the list of language of games available for integration.                                                                                                                                 | Optional |
+| GetCasinoCurrency | Using this method Casino Operator can retrieve the list of about a specific currency of games available for integration.                                                                                                                | Optional |
+| CloseSession      | This method terminates active game sessions of the player.                                                                                                                                                                              | Optional |
+| CancelRound       | Using this method Casino Operator Cancels in progress game round.                                                                                                                                                                       | Optional |
+| HealthCheck       | Using this method Casino Operator can check if Lucky Monaco provider API service or Game server are live and ready.                                                                                                                     | Optional |
+| Start Game        | Using this method Casino Operator can start game.                                                                                                                                                                                       | required |
 
-## Player ID
+## Game History API
+History API provides game rounds played by the player, with their details. Operator can get a list of games played, game rounds that the player has played during a particular day and hour, and the screen of the game at the end of the game round.
+
+| Name           | Description                                                                                                                                                                                                                             |  Remark  |
+|:---------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| GetPlayedGames | Using this method Casino Operator can get a list of the games played by the player during the day. | Optional |
+| GetGameRounds  | Using this method Casino Operator can get a list of the game rounds played by the player during the certain day and (optionally) the specific hour.             | Optional |
+| GetBetHistory  | Using this method Casino Operator can get a list of the game rounds played by the Partner during the certain day and (optionally) the specific hour.                        | Optional |
+| GetRoundStatus | Using this method returns the current status of a particular game round.            | Optional |
+| OpenHistory    | Using this method Casino Operator can get a link to the page with the game details at the whole round.                                                                                                                | Optional |
+
+
+## User ID
 User ID (userId parameter) is unique identifier of the user within Casino Operator system. 
 
 
