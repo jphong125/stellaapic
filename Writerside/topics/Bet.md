@@ -17,7 +17,7 @@ Requested "Bet" API URL will be notified individually, for security reasons.
 | uuid         |string| A unique ID for each request                                                      | Required |
 | userId       |  string   | User's ID, specified by Operator when creating a game session.                    | Required |
 | gameId       |  string   | ID of the game.                                                                   | Required |
-| gamename     |  string   | name of the game.                                                                 | Required |
+| gameName     |  string   | name of the game.                                                                 | Required |
 | roundId      |  string   | ID of the round.                                                                  | Required |
 | amount       |  decimal  | Amount of the bet.                                                                | Required |
 | reference    |  string   | Unique reference of this transaction.                                             | Required |
@@ -26,7 +26,7 @@ Requested "Bet" API URL will be notified individually, for security reasons.
 | currency     |string| Currency of the User                                                              | Required |
 | timeStamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco system.       | Required |
 | roundDetails |  string   | Additional information about the current game round. (i.e. "spin", "buyFreeSpin") | Required |
-| sessionId        |string| User’s game session id on Lucky Monaco system.                                    | Required |
+| sessionId    |string| User’s game session id on Lucky Monaco system.                                    | Required |
 
 ### Parameters  (Reserved for future development)
 
@@ -68,7 +68,7 @@ Content-Type: application/json
     "roundDetails": "spin",
     "reference": "585c1306f89c56f5ecfc2f5d",
     "gameId": "Im_60_tumblefortune",  
-    "gamename": "tumblefortune",
+    "gameName": "tumblefortune",
     "roundId" : "5103188801",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
     "timeStamp": "1482429190374"

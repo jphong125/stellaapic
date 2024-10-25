@@ -9,13 +9,13 @@ Requested "Balance" API URL will be notified individually, for security reasons.
 
 ### Request Parameters
 
-| Name                  |Data Type| Description                                                 | Remark   |
-|:----------------------|:---:|:------------------------------------------------------------|----------|
-| providerid            |string| Game Provider identifier of the Operator's system.          | Required |
-| userid             |string| Identifier of the user within the Casino Operator’s system. | Required |
-|currency|string| Currency of the player.                                     | Required |
-| sessionId        |string| User’s game session id on Lucky Monaco system.              | Required |
-| uuid        |string| A unique ID for each request                                | Required |
+| Name       |Data Type| Description                                                 | Remark   |
+|:-----------|:---:|:------------------------------------------------------------|----------|
+| providerid |string| Game Provider identifier of the Operator's system.          | Required |
+| userId     |string| Identifier of the user within the Casino Operator’s system. | Required |
+| currency   |string| Currency of the player.                                     | Required |
+| sessionId  |string| User’s game session id on Lucky Monaco system.              | Required |
+| uuid       |string| A unique ID for each request                                | Required |
 
 ### Examples
 
@@ -40,7 +40,7 @@ Content-Type: application/json
 ``` json
 {
     "providerid": "<Luckymonaco>",
-    "userid": "<User ID>",
+    "userId": "<User ID>",
     "sessionId": "<sessionId>",
     "currency": "USD",
     "uuid": "<uuid>"

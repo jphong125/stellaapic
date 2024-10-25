@@ -12,16 +12,16 @@ Requested cancel round API URL will be notified individually, for security reaso
 
 ###  Request parameters
 
-| Name         |Data Type| Description                                                                                                                          |  Remark  |
-|:-------------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| userId       |  string   | User's ID, specified by Partner when creating a game session.                                                                        | Required |
-| providerId   |  string   | Game Provider id.                                                                                                                    | Required |
-| gamename     |  string   | Name of the game.                                                                                                                    | Required |
-| currency     |string| Currency of the User.                                                                                                                | Required |
-| reference    |  string   | Unique reference of this transaction.                                                                                                | Required |
-| gameId       |string| Id of the game. This is optional parameter, which has to be sent by Operator if only the session for specific game should be closed. | Required |
-| uuid         |string| A unique ID for each request.                                                                                                        | Required |
-| sessionId        |  string   | User’s game session id on Lucky Monaco system.                                                                                       | Required |
+| Name       |Data Type| Description                                                                                                                          |  Remark  |
+|:-----------|:---:|:-------------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| userId     |  string   | User's ID, specified by Partner when creating a game session.                                                                        | Required |
+| providerId |  string   | Game Provider id.                                                                                                                    | Required |
+| gameName   |  string   | Name of the game.                                                                                                                    | Required |
+| currency   |string| Currency of the User.                                                                                                                | Required |
+| reference  |  string   | Unique reference of this transaction.                                                                                                | Required |
+| gameId     |string| Id of the game. This is optional parameter, which has to be sent by Operator if only the session for specific game should be closed. | Required |
+| uuid       |string| A unique ID for each request.                                                                                                        | Required |
+| sessionId  |  string   | User’s game session id on Lucky Monaco system.                                                                                       | Required |
 
 ### Examples
 

@@ -27,7 +27,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/OpenHistory
+https://<API URL>/history/OpenHistory
 ```
 HEADER
 
@@ -64,8 +64,7 @@ Example of successful response from LuckyMonaco API servers.
 ``` json
 {
    "error": "0",
-   "description": "OK",
-   "url":
-   "https://{game_server_domain}/gameHistoryDetailForApi.do?otp=9KngwmdYVw6YLViPVIjU9eEMFslzlALnwtoZygNWTMB7SqAApl8ERLysn7Xp26p0&playSessionId=5108924498"
+   "description": "Success",
+   "url":"http://192.168.0.225:5500/?token=84375e07-38c4-443d-9acd-d9e927d1e393"
 }
 ```

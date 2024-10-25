@@ -38,13 +38,13 @@ Content-Type: application/json
 
 ## Successful response for getting Game List ( response )
 
-|         Name          |  |Data Type| Description                                                                                         |
-|:---------------------:|:---:|:-------:|:----------------------------------------------------------------------------------------------------|
-| [Gametype](define.md) | | string  | Types of game (I.e. slot or table game)                                                             |
-|       Gamelist        | |  array  | List of game information                                                                            |
-|                       | [gameid](define.md)| string  | "Gameid" is a unique ID for each games, you can find from separately provided "SLOT_SPEC" document. |
-|                       |gamename | string  | Game Title(English)                                                                                 |
-|                       |icon_url | string  | URL for gaming icons                                                                                |
+|         Name          |                     |Data Type| Description                                                                                         |
+|:---------------------:|:-------------------:|:-------:|:----------------------------------------------------------------------------------------------------|
+| [Gametype](define.md) |                     | string  | Types of game (I.e. slot or table game)                                                             |
+|       Gamelist        |                     |  array  | List of game information                                                                            |
+|                       | [gameid](define.md) | string  | "Gameid" is a unique ID for each games, you can find from separately provided "SLOT_SPEC" document. |
+|                       |      gameName       | string  | Game Title(English)                                                                                 |
+|                       |      icon_url       | string  | URL for gaming icons                                                                                |
 
 ### Example of body
 
@@ -54,7 +54,7 @@ Content-Type: application/json
     "gamelist" : [
         {
             "gameid": "lm_8_treasureofzeus",
-            "gamename": "Treasure of Zeus",
+            "gameName": "Treasure of Zeus",
             "icon_url": "https://cdn.lmgamelab/Images/8.png"
         }
     ],

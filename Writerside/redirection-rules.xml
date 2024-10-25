@@ -63,4 +63,24 @@
         <description>Created after removal of "Get Balance Per Currency" from LuckyMonaco V4</description>
         <accepts>Get-Balance-Per-Currency.html</accepts>
     </rule>
+    <rule id="6837caa3">
+        <description>Created after removal of "Get Slot Log" from LuckyMonaco V4</description>
+        <accepts>Get-Slot-Log.html</accepts>
+    </rule>
+    <rule id="4c78ef6d">
+        <description>Created after removal of "Get Bet History" from LuckyMonaco V4</description>
+        <accepts>Get-Bet-History.html</accepts>
+    </rule>
+    <rule id="4eb7ac87">
+        <description>Created after removal of "Error code for seamless Wallet" from LuckyMonaco V4</description>
+        <accepts>Error-code-for-seamless-Wallet.html</accepts>
+    </rule>
+    <rule id="44c03f2a">
+        <description>Created after removal of "Error code for Transfer Wallet" from LuckyMonaco V4</description>
+        <accepts>Error-Code.html</accepts>
+    </rule>
+    <rule id="5e4df113">
+        <description>Created after removal of "Error code for Freeround" from LuckyMonaco V4</description>
+        <accepts>Error-code-for-Freeround.html</accepts>
+    </rule>
 </rules>

@@ -13,7 +13,7 @@ Reporting betting results of Spin/Free Spins.
 | currency              |  string   | Currency code (ISO 4217 3-digit code)<br/>Please check SLOT_SPEC document |
 | [gametype](define.md) |  string   | Types of game (e.g. slot,table game)                                      |
 | [gameid](define.md)   |  string   | "gameid" is a unique ID for each games, please check SLOT_SPEC document   |
-| gamename              |  string   | Game Title(English)                                                       |
+| gameName              |  string   | Game Title(English)                                                       |
 | bonus                 |  string   | Freeround Code(optional feature)                                          |
 | transaction           |  object   | Object containing transaction details.                                    |
 | transaction.id        |  string   | A refrence purposed Id for RoundID.                                       |
@@ -36,7 +36,7 @@ https://<Partner website(Domain)/<Bet, specified by partner>?authToken=<TOKEN>
     "currency": "USD",
     "gametype": "<Game Type>",
     "gameid": "<Game ID>",
-    "gamename": "<Game Title>",
+    "gameName": "<Game Title>",
     "roundid" : "<round ID>"
     "transaction": {
         "id": "<transaction ID>",

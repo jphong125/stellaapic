@@ -58,7 +58,7 @@ after this win message.
 | currency                               |string| Currency code (ISO 4217 3-digit code)<br/>Please check SLOT_SPEC document                                                                                                                                                                                                                                                                |
 | [gametype](define.md)                  |string| Types of game (e.g. slot,table game)                                                                                                                                                                                                                                                                                                     |
 | [gameid](define.md)                    |string| "gameid" is a unique ID for each games, please check SLOT_SPEC document                                                                                                                                                                                                                                                                  |
-| gamename                               |string| Game Title(English)                                                                                                                                                                                                                                                                                                                      |
+| gameName                               |string| Game Title(English)                                                                                                                                                                                                                                                                                                                      |
 | bonus                                  |string| Freeround Code(optional feature) <br/> Free Round is a promotional tool to grant spinning to player for "free of charge".<br/>Usage and policy for the Free Round must be consulted with Lucky Monaco team. <br/>IMPORTANT : PLEASE NOT THAT, FREE ROUND IS CURRENTLY NOT SUPPORED IN TRANSFER WALLET TYPE.                              |
 | transaction                            |object| Object containing transaction details.                                                                                                                                                                                                                                                                                                   |
 | transaction.id                         |string| A refrence purposed Id for RoundID. same transactionID can be used MULTIOLE TIMES (I.E NOT UNIQUE) during the operations.<br/>- In case multiple Wins exist ins game playing, same TransactionID will be shared. This DOESN't mean the duplication.<br/>- In this case, DO NOT ignore second or third API requests with same TransionID. |
@@ -83,7 +83,7 @@ https://<Partner website(Domain)/<Win, specified by partner>?authToken=<TOKEN>
     "currency": "USD",
     "gametype": "<Game Type>",
     "gameid": "<Game ID>",
-    "gamename": "<Game Title>",
+    "gameName": "<Game Title>",
     "roundid" : "<roundid>",
     "transaction": {
         "id": "<transaction ID>",
@@ -102,7 +102,7 @@ https://<Partner website(Domain)/<Win, specified by partner>?authToken=<TOKEN>
     "currency": "USD",
     "gametype": "<Game Type>",
     "gameid": "<Game ID>",
-    "gamename": "<Game Title>",
+    "gameName": "<Game Title>",
     "roundid" : "<roundid>"
     "transaction": {
         "id": "<transaction ID>",

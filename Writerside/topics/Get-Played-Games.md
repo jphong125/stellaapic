@@ -29,7 +29,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/GetPlayedGame
+https://<API URL>/history/GetPlayedGame
 ```
 HEADER
 
@@ -71,14 +71,39 @@ Example of successful response from LuckyMonaco API servers.
 
 ``` json
 {
-    "error": "0",
-    "description": "OK",
-    "games": [
-                {
-                 "gameId": "Im_14_childofsuccess",
-                 "gameName": "Child of success" },
-                {
-                 "gameId": "Im_60_tumblefortune",
-                 "gameName": "tumblefortune" }
-]
-}
+
+  "error": 0,
+  "description": "Success",
+  "games": [
+
+    {
+
+      "gameId": "lm_34_giantslamp",
+      "gameName": "Giant's Lamp"
+    },
+    {
+
+      "gameId": "lm_42_medusaqueen",
+      "gameName": "Medusa Queen"
+    },
+    {
+
+      "gameId": "lm_14_childofsuccess",
+      "gameName": "Child of Success"
+    },
+    {
+
+      "gameId": "lm_52_cleopatratumble",
+      "gameName": "Cleopatra Tumble"
+    },
+    {
+
+      "gameId": "lm_53_jellyjelly",
+      "gameName": "Jelly Jelly"
+    },
+    {
+
+      "gameId": "lm_3_killerwhale",
+      "gameName": "Killer Whale"
+    }
+```

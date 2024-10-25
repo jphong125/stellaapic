@@ -7,11 +7,11 @@ A request to check whether player can bet or not.
 
 ### Parameters
 
-|Name|Data Type|Description|
-|:---|:---:|:---:|
-|sid|string|Player's session ID, specified by Partner when creating a game session.|
-|userid|string|Player's ID, specified by Partner when creating a game session.|
-|uuid|string|A unique ID for each request|
+| Name   |Data Type|Description|
+|:-------|:---:|:---:|
+| sid    |string|Player's session ID, specified by Partner when creating a game session.|
+| userId |string|Player's ID, specified by Partner when creating a game session.|
+| uuid   |string|A unique ID for each request|
 
 ### Example of URL
 
@@ -24,7 +24,7 @@ https://<Partner website(Domain)>/<Check, specified by Partner>?authToken=<TOKEN
 ``` json
 {
     "sid": "<Session ID>",
-    "userid": "<User ID>",
+    "userId": "<User ID>",
     "uuid": "<Unique request ID>"
 }
 ```

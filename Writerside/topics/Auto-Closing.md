@@ -19,19 +19,19 @@ Requested "Result" API URL will be notified individually, for security reasons. 
 
 ### Request Parameters
 
-| Name              | Data Type | Description                                                                               | Remark  |
-|:------------------|:---------:|:------------------------------------------------------------------------------------------|----------|
-| uuid                |  string   | A unique ID for each request                                                              | Required |
-| userId            |  string   | User's ID, specified by Partner when creating a game session.                             | Required |
-| gameId            |  string   | Id of the game.                                                                           | Required |
-| gamename     |  string   | Name of the game.                                                                         | Required |
-| roundId           |  string   | Id of the round.                                                                          | Required |
-| amount            |  decimal  | Amount of the bet.                                                                        | Required |
-| reference         |  string   | Unique reference of this transaction.                                                     | Required |
-|currency|  string   | Currency of the User.                                                                     | Required |
-| providerId        |  string   | Game Provider id.                                                                         | Required |
-| timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side.                 | Required |
-| roundDetails      |   array   | Additional information about the current game round. (ie. "spin", "freespin", "minigame") | Required |
+| Name         | Data Type | Description                                                                               | Remark  |
+|:-------------|:---------:|:------------------------------------------------------------------------------------------|----------|
+| uuid         |  string   | A unique ID for each request                                                              | Required |
+| userId       |  string   | User's ID, specified by Partner when creating a game session.                             | Required |
+| gameId       |  string   | Id of the game.                                                                           | Required |
+| gameName     |  string   | Name of the game.                                                                         | Required |
+| roundId      |  string   | Id of the round.                                                                          | Required |
+| amount       |  decimal  | Amount of the bet.                                                                        | Required |
+| reference    |  string   | Unique reference of this transaction.                                                     | Required |
+| currency     |  string   | Currency of the User.                                                                     | Required |
+| providerId   |  string   | Game Provider id.                                                                         | Required |
+| timestamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco side.                 | Required |
+| roundDetails |   array   | Additional information about the current game round. (ie. "spin", "freespin", "minigame") | Required |
 
 
 ### Parameters  (Reserved for future development)
@@ -76,7 +76,7 @@ Content-Type: application/json
     "roundid" : "5103188801",
     "reference": "585c1306f89c56f5ecfc2f5d",
     "gameId": "Im_60_tumblefortune",
-    "gamename" : "tumblefortune",
+    "gameName" : "tumblefortune",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
     "timestamp": "1482429190374"
 }

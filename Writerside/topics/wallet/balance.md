@@ -9,7 +9,7 @@ A request to check wallet balance
 | Name                  |Data Type|Description|
 |:----------------------|:---:|:---|
 | sid                   |string|Player's session ID, specified by Partner when creating a game session.|
-| userid                |string|Player's ID, specified by Partner when creating a game session.|
+| userId                |string|Player's ID, specified by Partner when creating a game session.|
 | currency              |string|Currency code (ISO 4217 3-digit code)<br/>Please check SLOT_SPEC document |
 | [gametype](define.md) |string|Types of game (I.e. slot,table game)|
 | [gameid](define.md)   |string|"gameid" is a unique ID for each games, please check SLOT_SPEC document|
@@ -26,7 +26,7 @@ https://<Partner website(Domain)>/<Balance specified by partner>?authToken=<TOKE
 ``` json
 {
     "sid": "<Session ID>",
-    "userid": "<User ID>",
+    "userId": "<User ID>",
     "currency": "USD",
     "gametype": "slot",
     "gameid": "<Game ID>",

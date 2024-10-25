@@ -6,16 +6,16 @@ Transaction will be cancelled when an error occurs during an API integration.
 
 ### Parameters
 
-| Name         | Data Type | Description                                                                     | Remark   |
-|:-------------|:---------:|:--------------------------------------------------------------------------------|----------|
-| uuid         |string| A unique ID for each request                                                    | Required |
-| userId       |  string   | Player's ID, specified by Partner when creating a game session.                 | Required |
-| gameId       |  string   | Id of the game.                                                                 | Required |
-| gamename     |  string   | name of the game.                                                               | Required |
-| reference    |  string   | Unique reference of this transaction.                                           | Required |
-| providerId   |  string   | Game Provider id.                                                               | Required |
-| currency     |string| Currency of the player                                                          | Required |
-| sessionId        |string| Player’s game session id on Lucky Monaco system.                                 | Required |            
+| Name       | Data Type | Description                                                                     | Remark   |
+|:-----------|:---------:|:--------------------------------------------------------------------------------|----------|
+| uuid       |string| A unique ID for each request                                                    | Required |
+| userId     |  string   | Player's ID, specified by Partner when creating a game session.                 | Required |
+| gameId     |  string   | Id of the game.                                                                 | Required |
+| gameName   |  string   | name of the game.                                                               | Required |
+| reference  |  string   | Unique reference of this transaction.                                           | Required |
+| providerId |  string   | Game Provider id.                                                               | Required |
+| currency   |string| Currency of the player                                                          | Required |
+| sessionId  |string| Player’s game session id on Lucky Monaco system.                                 | Required |            
 
 ### Example of URL
 
@@ -32,7 +32,7 @@ https://<API URL>/Cancel
     "userId": "<User ID>",
     "currency" : "USD"
     "gameId": "Im_tumblefortune",
-    "gamename": "tumblefortune",
+    "gameName": "tumblefortune",
     "reference": "585c1306f89c56f5ecfc2f5d",
     "uuid": "<Unique Request ID>"
 }
