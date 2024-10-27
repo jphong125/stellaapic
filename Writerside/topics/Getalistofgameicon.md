@@ -50,7 +50,7 @@ Example of successful response from LuckyMonaco API servers.
 
 |    Name     |                   | Data Type | Remark                                    |
 |:-----------:|:-----------------:|:---------:|:------------------------------------------|
-|    eroor    |                   |        string             | code of error.                            |
+|    error    |                   |        string             | code of error.                            |
 | description |                   | string| Response status short description.        |
 |  iconList   |                   |   array   | List of game icon info.                   |
 |             |        id         |  string   | Icon size consisting of width and height. |

@@ -76,7 +76,7 @@ Example of successful response from Partner API servers.
 | currency      |string| Currency of the player. | Required |
 | cash          |decimal| Real balance of the player.                                                                                                                                                                                                                                                                                                                    | Required |
 | bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
-| eroor  |  string   | code of error                                                   | Required |
+| error  |  string   | code of error                                                   | Required |
 | description |decimal| Response status short description. | Optional |
 
 ### Example of Json BODY

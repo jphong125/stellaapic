@@ -26,6 +26,7 @@ Requested "End round" API URL will be notified individually, for security reason
 | providerId |  string   | Game Provider id.                                                          | Required | 
 | platform   |  string   | The platform type (channel) on which the game is played.                   | Optional |
 | sessionId        |string| User’s game session id on Lucky Monaco system.                             | Required |
+| currency     |  string   | Currency of the User.                                                                     | Required |
 | win        |  string   | Win amount in round. Intended to notify Operator about amount won in round | Optional |
 
 ### Examples
@@ -57,6 +58,7 @@ Content-Type: application/json
     "providerId": "luckymonaco",
     "userId": "421",
     "roundid" : "5103188801"
+    "currency" : "USD",
     "win" : "15.4",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
     "sessionid": "<sessionId>"
@@ -75,7 +77,7 @@ Example of successful response from Partner API servers.
 | currency      |string| Currency of the User.              | Required |
 | cash          |decimal| Real balance of the User.          | Required |
 | bonus         |decimal| Bonus balance of the User.         | Required |
-| eroor  |  string   | code of error                      | Required |
+| error  |  string   | code of error                      | Required |
 | description |decimal| Response status short description. | Optional |
 
 ### Example of Json BODY

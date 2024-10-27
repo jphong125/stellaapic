@@ -78,7 +78,7 @@ Example of successful response from LuckyMonaco API servers. Use URL parameters.
 ### response parameter
 |Name|Data Type|            Description             |Remark |
 |:---|:---:|:----------------------------------:|---|
-| eroor  |  string   |           code of error.           | Required |
+| error  |  string   |           code of error.           | Required |
 | description |string| Response status short description. | Optional |
 |url|string|    used for player redirection.    | Required|
 

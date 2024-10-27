@@ -79,7 +79,7 @@ Example of successful response from LuckyMonaco API servers.
 | currency      |string| Currency of the player.                           | Required |
 | transactionId |string| Id of the transaction within Lucky Monaco system. | Required |
 | balance       |string| User’s balance after successful transaction.      | Required |
-| eroor  |  string   | code of error.                                    | Required |
+| error  |  string   | code of error.                                    | Required |
 | description |decimal| Response status short description.                | Optional |
 
 

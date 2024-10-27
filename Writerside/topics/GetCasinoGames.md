@@ -53,7 +53,7 @@ Example of successful response from LuckyMonaco API servers.
 
 |   Name   |                   | Data Type | Remark                                                                                                      |
 |:--------:|:-----------------:|:---------:|:------------------------------------------------------------------------------------------------------------|
-| eroor  |                   |  string   | code of error.                                                                                              |
+| error  |                   |  string   | code of error.                                                                                              |
 | description |                   |  string   | Response status short description.                                                                          |
 | gameList |                   |   array   | List of game information.                                                                                   |
 |          |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                                            |
