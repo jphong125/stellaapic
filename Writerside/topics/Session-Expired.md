@@ -48,7 +48,7 @@ Content-Type: application/json
  "providerId": "Luckymonaco",
  "sessionId": "6fd2d6f3bb8f4c5a9fadf15d81206af2",
  "userId": "123456",
- "token" : "<token>"
+ "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
 }
 ```
 ## Response
