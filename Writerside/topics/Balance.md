@@ -57,7 +57,7 @@ Example of successful response from Partner API servers.
 |:---|:---:|:--------------------------------------------------|----------|
 |currency|string| Currency of the user.                             | Required |
 |cash|decimal| Money balance that was deposited with real money. | Required |
-| eroor  |  string   | code of error.                                    | Required |
+| error  |  string   | code of error.                                    | Required |
 | description |decimal| Response status short description.                | Optional |
 
 ### Response Parameter (Reserved for future development)

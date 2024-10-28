@@ -92,7 +92,7 @@ Example of successful response from Partner API servers.
 | transactionId |string| Id of the transaction in wallet.   | Required |
 | currency      |string| Currency of the User.              | Required |
 | cash          |decimal| Real balance of the User.          | Required |
-| eroor  |  string   | code of error                      | Required |
+| error  |  string   | code of error                      | Required |
 | description |decimal| Response status short description. | Optional |
 
 ### Response Parameters  (Reserved for future development)

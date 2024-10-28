@@ -54,7 +54,7 @@ Example of successful response from LuckyMonaco API servers.
 
 |     Name     |          | Data Type | Remark                               |
 |:------------:|:--------:|:---------:|:-------------------------------------|
-| eroor  |          |        string                                            | code of error                        |
+| error  |          |        string                                            | code of error                        |
 | description |          |string  | Response status short description.   |
 | languageList |          |   array   | List of language information.        |
 |              | language |  string   | Language code in ISO 639-1 standard. |

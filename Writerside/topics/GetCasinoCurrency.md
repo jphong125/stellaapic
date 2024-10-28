@@ -53,7 +53,7 @@ Example of successful response from LuckyMonaco API servers.
 
 |     Name      |          | Data Type | Remark                          |
 |:-------------:|:--------:|:---------:|:--------------------------------|
-| eroor  |          |        string                                          | code of error                          |
+| error  |          |        string                                          | code of error                          |
 | description |          | string    | Response status short description.                      |
 | Currency list |          |   array   | List of Currency information.   |
 |               | Currency |  string   | Player's ISO 4217 currency code |
