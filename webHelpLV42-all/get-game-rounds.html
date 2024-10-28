@@ -1,5 +1,5 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-10-23T17:08:40.725739"><title>Get Game Rounds | LuckyMonaco V4</title><script type="application/json" id="virtual-toc-data">[{"id":"overview","level":0,"title":"Overview","anchor":"#overview"},{"id":"request","level":0,"title":"Request","anchor":"#request"},{"id":"response","level":0,"title":"Response","anchor":"#response"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Get Game Rounds | LuckyMonaco V4"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="LuckyMonaco V4 Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/get-game-rounds.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Get Game Rounds | LuckyMonaco V4"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-10-25T18:41:01.968279"><title>Get Game Rounds | LuckyMonaco V4</title><script type="application/json" id="virtual-toc-data">[{"id":"overview","level":0,"title":"Overview","anchor":"#overview"},{"id":"request","level":0,"title":"Request","anchor":"#request"},{"id":"response","level":0,"title":"Response","anchor":"#response"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Get Game Rounds | LuckyMonaco V4"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="LuckyMonaco V4 Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/get-game-rounds.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Get Game Rounds | LuckyMonaco V4"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
     "@context": "http://schema.org",
     "@type": "WebPage",
     "@id": "writerside-documentation/get-game-rounds.html#webpage",
@@ -13,56 +13,137 @@
     "@id": "writerside-documentation/#website",
     "url": "writerside-documentation/",
     "name": "LuckyMonaco V4 Help"
-}</script><!-- End Schema.org --></head><body data-id="Get-Game-Rounds" data-main-title="Get Game Rounds" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="luckymonaco-v4.md|About LuckyMonaco V4///Game-History-API.md|Game History API"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>LuckyMonaco V4  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Get-Game-Rounds" id="Get-Game-Rounds.md">Get Game Rounds</h1><section class="chapter"><h2 id="overview" data-toc="overview">Overview</h2><p id="-aijx54_6">Using this method Casino Operator can get a list of the game rounds played by the player during the certain day and (optionally) the specific hour.</p></section><section class="chapter"><h2 id="request" data-toc="request">Request</h2><p id="-aijx54_7">Requested get game round API URL will be notified individually, for security reasons.</p><section class="chapter"><h3 id="request-parameters" data-toc="request-parameters">Request Parameters</h3><div class="table-wrapper"><table class="wide" id="-aijx54_11"><thead><tr class="ijRowHead" id="-aijx54_12"><th id="-aijx54_21"><p>Name</p></th><th id="-aijx54_22"><p>Data Type</p></th><th id="-aijx54_23"><p>Description</p></th><th id="-aijx54_24"><p>Remark</p></th></tr></thead><tbody><tr id="-aijx54_13"><td id="-aijx54_25"><p>secureLogin</p></td><td id="-aijx54_26"><p>string</p></td><td id="-aijx54_27"><p>Partner name for authentication in the Casino Game API service</p></td><td id="-aijx54_28"><p>Required</p></td></tr><tr id="-aijx54_14"><td id="-aijx54_29"><p>userId</p></td><td id="-aijx54_30"><p>string</p></td><td id="-aijx54_31"><p>Id of the user within the Operator system.</p></td><td id="-aijx54_32"><p>Required</p></td></tr><tr id="-aijx54_15"><td id="-aijx54_33"><p>dateplayed</p></td><td id="-aijx54_34"><p>string</p></td><td id="-aijx54_35"><p>Date, based on the time zone of the user.</p></td><td id="-aijx54_36"><p>Required</p></td></tr><tr id="-aijx54_16"><td id="-aijx54_37"><p>timeZone</p></td><td id="-aijx54_38"><p>string</p></td><td id="-aijx54_39"><p>Time zone of the user. Example: GMT, GMT+8, GMT+04:00</p></td><td id="-aijx54_40"><p>Required</p></td></tr><tr id="-aijx54_17"><td id="-aijx54_41"><p>gameId</p></td><td id="-aijx54_42"><p>string</p></td><td id="-aijx54_43"><p>Symbolic unique identifier of the game.</p></td><td id="-aijx54_44"><p>Required</p></td></tr><tr id="-aijx54_18"><td id="-aijx54_45"><p>hour</p></td><td id="-aijx54_46"><p>string</p></td><td id="-aijx54_47"><p>A number of hour then rounds were played (optional)</p></td><td id="-aijx54_48"><p>Required</p></td></tr><tr id="-aijx54_19"><td id="-aijx54_49"><p>uuid</p></td><td id="-aijx54_50"><p>string</p></td><td id="-aijx54_51"><p>A unique ID for each request</p></td><td id="-aijx54_52"><p>Required</p></td></tr><tr id="-aijx54_20"><td id="-aijx54_53"><p>token</p></td><td id="-aijx54_54"><p>string</p></td><td id="-aijx54_55"><p>Token of the Partner from Authenticate response</p></td><td id="-aijx54_56"><p>Required</p></td></tr></tbody></table></div></section><section class="chapter"><h3 id="examples" data-toc="examples">Examples</h3><p id="-aijx54_57">METHOD</p><div class="code-block" data-lang="http">
+}</script><!-- End Schema.org --></head><body data-id="Get-Game-Rounds" data-main-title="Get Game Rounds" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="luckymonaco-v4.md|About LuckyMonaco V4///Game-History-API.md|Game History API"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>LuckyMonaco V4  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Get-Game-Rounds" id="Get-Game-Rounds.md">Get Game Rounds</h1><section class="chapter"><h2 id="overview" data-toc="overview">Overview</h2><p id="-aijx54_6">Using this method Casino Operator can get a list of the game rounds played by the player or operator during the certain day. If you do not specify an option value, all play data for the partner's specified search time will be displayed. The option values are userId and gameId, and the two option values are &quot;and&quot; conditions. Therefore, you can adjust the option values according to your partner's needs to see the desired results.</p></section><section class="chapter"><h2 id="request" data-toc="request">Request</h2><p id="-aijx54_7">Requested get game round API URL will be notified individually, for security reasons.</p><section class="chapter"><h3 id="request-parameters" data-toc="request-parameters">Request Parameters</h3><div class="table-wrapper"><table class="wide" id="-aijx54_11"><thead><tr class="ijRowHead" id="-aijx54_12"><th id="-aijx54_23"><p>Name</p></th><th id="-aijx54_24"><p>Data Type</p></th><th id="-aijx54_25"><p>Description</p></th><th id="-aijx54_26"><p>Remark</p></th></tr></thead><tbody><tr id="-aijx54_13"><td id="-aijx54_27"><p>secureLogin</p></td><td id="-aijx54_28"><p>string</p></td><td id="-aijx54_29"><p>Partner name for authentication in the Casino Game API service</p></td><td id="-aijx54_30"><p>Required</p></td></tr><tr id="-aijx54_14"><td id="-aijx54_31"><p>userId</p></td><td id="-aijx54_32"><p>string</p></td><td id="-aijx54_33"><p>Id of the user within the Operator system.</p></td><td id="-aijx54_34"><p>Optional</p></td></tr><tr id="-aijx54_15"><td id="-aijx54_35"><p>gameId</p></td><td id="-aijx54_36"><p>string</p></td><td id="-aijx54_37"><p>ID of the game.</p></td><td id="-aijx54_38"><p>Optional</p></td></tr><tr id="-aijx54_16"><td id="-aijx54_39"><p>dateStart</p></td><td id="-aijx54_40"><p>string</p></td><td id="-aijx54_41"><p>Date to start, based on the time zone of the user.</p></td><td id="-aijx54_42"><p>Required</p></td></tr><tr id="-aijx54_17"><td id="-aijx54_43"><p>dateEnd</p></td><td id="-aijx54_44"><p>string</p></td><td id="-aijx54_45"><p>Date to end, based on the time zone of the user.</p></td><td id="-aijx54_46"><p>Required</p></td></tr><tr id="-aijx54_18"><td id="-aijx54_47"><p>timeZone</p></td><td id="-aijx54_48"><p>string</p></td><td id="-aijx54_49"><p>Time zone of the user. Example: GMT, GMT+8, GMT+04:00</p></td><td id="-aijx54_50"><p>Required</p></td></tr><tr id="-aijx54_19"><td id="-aijx54_51"><p>page</p></td><td id="-aijx54_52"><p>string</p></td><td id="-aijx54_53"><p>Page number (default value 1)</p></td><td id="-aijx54_54"><p>Required</p></td></tr><tr id="-aijx54_20"><td id="-aijx54_55"><p>limit</p></td><td id="-aijx54_56"><p>string</p></td><td id="-aijx54_57"><p>row per page (max 1000)</p></td><td id="-aijx54_58"><p>Required</p></td></tr><tr id="-aijx54_21"><td id="-aijx54_59"><p>uuid</p></td><td id="-aijx54_60"><p>string</p></td><td id="-aijx54_61"><p>A unique ID for each request</p></td><td id="-aijx54_62"><p>Required</p></td></tr><tr id="-aijx54_22"><td id="-aijx54_63"><p>token</p></td><td id="-aijx54_64"><p>string</p></td><td id="-aijx54_65"><p>Token of the Partner from Authenticate response</p></td><td id="-aijx54_66"><p>Required</p></td></tr></tbody></table></div></section><section class="chapter"><h3 id="examples" data-toc="examples">Examples</h3><p id="-aijx54_67">METHOD</p><div class="code-block" data-lang="http">
 POST
-</div><p id="-aijx54_59">URL</p><div class="code-block" data-lang="http">
-https://&lt;API URL&gt;/GetGameRounds
-</div><p id="-aijx54_61">HEADER</p><div class="code-block" data-lang="http">
+</div><p id="-aijx54_69">URL</p><div class="code-block" data-lang="http">
+https://&lt;API URL&gt;/history/GetGameRounds
+</div><p id="-aijx54_71">HEADER</p><div class="code-block" data-lang="http">
 Content-Type: application/json
 </div></section><section class="chapter"><h3 id="example-of-http-body" data-toc="example-of-http-body">Example of HTTP BODY</h3><div class="code-block" data-lang="json">
+
 {
-    &quot;secureLogin&quot;: &quot;&lt;partnerId&gt;&quot;,
-    &quot;token&quot; : &quot;&lt;token&gt;&quot;,
-    &quot;userId&quot;: &quot;421&quot;,
-    &quot;datePlayed&quot;: :2016-12-23&quot;,
-    &quot;timeZone&quot;: &quot;GMT+00:00&quot;,
-    &quot;userId&quot;: &quot;Im_2_kellywheeldouble&quot;,
-    &quot;hour&quot;: 10,
+    &quot;secureLogin&quot; : &quot;S100&quot;,
+    &quot;token&quot; : &quot;fSYFZMScpZ01FhR26r59GexREh1xHgEY&quot;,
+    &quot;userId&quot;: &quot;hwa10&quot;,
+    &quot;gameId&quot;: &quot;lm_13_wildkelly&quot;,
+    &quot;dateStart&quot;: &quot;2024-10-21 00:00:01&quot;,
+    &quot;dateEnd&quot;: &quot;2024-10-24 23:00:00&quot;,
+    &quot;timeZone&quot;: &quot;GMT+09:00&quot;,
+    &quot;page&quot; : 1,
+    &quot;limit&quot; : 10,
     &quot;uuid&quot;: &quot;980d06d3361f1e21a2f1550c6806ef52&quot;
 }
-</div></section></section><section class="chapter"><h2 id="response" data-toc="response">Response</h2><p id="-aijx54_64">Example of successful response from LuckyMonaco API servers.</p><section class="chapter"><h3 id="response-parameters" data-toc="response-parameters">Response Parameters</h3><div class="table-wrapper"><table class="wide" id="-aijx54_67"><thead><tr class="ijRowHead" id="-aijx54_68"><th id="-aijx54_83"><p>Name</p></th><th id="-aijx54_84"><p>Object</p></th><th id="-aijx54_85"><p>Data Type</p></th><th id="-aijx54_86"><p>Description</p></th><th id="-aijx54_87"><p>Remark</p></th></tr></thead><tbody><tr id="-aijx54_69"><td id="-aijx54_88"><p>error</p></td><td id="-aijx54_89"></td><td id="-aijx54_90"><p>string</p></td><td id="-aijx54_91"><p>Error code</p></td><td id="-aijx54_92"><p>Required</p></td></tr><tr id="-aijx54_70"><td id="-aijx54_93"><p>description</p></td><td id="-aijx54_94"></td><td id="-aijx54_95"><p>string</p></td><td id="-aijx54_96"><p>Description of the error for troubleshooting.</p></td><td id="-aijx54_97"><p>Required</p></td></tr><tr id="-aijx54_71"><td id="-aijx54_98"><p>rounds List of game rounds played</p></td><td id="-aijx54_99"></td><td id="-aijx54_100"><p>string</p></td><td id="-aijx54_101"><p>See below GamePlayed type description of the objects in the list.</p></td><td id="-aijx54_102"><p>Required</p></td></tr><tr id="-aijx54_72"><td id="-aijx54_103"></td><td id="-aijx54_104"><p>dateTime</p></td><td id="-aijx54_105"><p>datetime</p></td><td id="-aijx54_106"><p>Date and time when the round was played, based on time zone of the user. The value is returned in Lucky Monaco&rsquo;s server time zone (UTC/GMT+0).</p></td><td id="-aijx54_107"><p>Required</p></td></tr><tr id="-aijx54_73"><td id="-aijx54_108"></td><td id="-aijx54_109"><p>gameId</p></td><td id="-aijx54_110"><p>string</p></td><td id="-aijx54_111"><p>Symbolic unique identifier of the game.</p></td><td id="-aijx54_112"><p>Required</p></td></tr><tr id="-aijx54_74"><td id="-aijx54_113"></td><td id="-aijx54_114"><p>gameName</p></td><td id="-aijx54_115"><p>string</p></td><td id="-aijx54_116"><p>Name of the game.</p></td><td id="-aijx54_117"><p>Required</p></td></tr><tr id="-aijx54_75"><td id="-aijx54_118"></td><td id="-aijx54_119"><p>roundId</p></td><td id="-aijx54_120"><p>string</p></td><td id="-aijx54_121"><p>Unique identifier of the game round.</p></td><td id="-aijx54_122"><p>Required</p></td></tr><tr id="-aijx54_76"><td id="-aijx54_123"></td><td id="-aijx54_124"><p>currency</p></td><td id="-aijx54_125"><p>string</p></td><td id="-aijx54_126"><p>User&rsquo;s currency.</p></td><td id="-aijx54_127"><p>Required</p></td></tr><tr id="-aijx54_77"><td id="-aijx54_128"></td><td id="-aijx54_129"><p>betAmount</p></td><td id="-aijx54_130"><p>string</p></td><td id="-aijx54_131"><p>Bet amount.</p></td><td id="-aijx54_132"><p>Required</p></td></tr><tr id="-aijx54_78"><td id="-aijx54_133"></td><td id="-aijx54_134"><p>winAmount</p></td><td id="-aijx54_135"><p>string</p></td><td id="-aijx54_136"><p>Win amount.</p></td><td id="-aijx54_137"><p>Required</p></td></tr><tr id="-aijx54_79"><td id="-aijx54_138"></td><td id="-aijx54_139"><p>balance</p></td><td id="-aijx54_140"><p>string</p></td><td id="-aijx54_141"><p>User&rsquo;s balance after successful transaction</p></td><td id="-aijx54_142"><p>Required</p></td></tr><tr id="-aijx54_80"><td id="-aijx54_143"></td><td id="-aijx54_144"><p>roundDatails</p></td><td id="-aijx54_145"><p>string</p></td><td id="-aijx54_146"><p>Additional information about the game round, such as &ldquo;Free spin&rdquo;, &ldquo;Bonus&rdquo;, etc.</p></td><td id="-aijx54_147"><p>Optional</p></td></tr><tr id="-aijx54_81"><td id="-aijx54_148"></td><td id="-aijx54_149"><p>uerId</p></td><td id="-aijx54_150"><p>string</p></td><td id="-aijx54_151"><p>Unique id for player on the Lucky Monaco side.</p></td><td id="-aijx54_152"><p>Required</p></td></tr><tr id="-aijx54_82"><td id="-aijx54_153"></td><td id="-aijx54_154"><p>detailsUrl</p></td><td id="-aijx54_155"><p>string</p></td><td id="-aijx54_156"><p>This parameter is not currently used and should be ignored by operators</p></td><td id="-aijx54_157"><p>Required</p></td></tr></tbody></table></div></section><section class="chapter"><h3 id="example-of-json-body" data-toc="example-of-json-body">Example of Json BODY</h3><div class="code-block" data-lang="json">
+</div></section></section><section class="chapter"><h2 id="response" data-toc="response">Response</h2><p id="-aijx54_74">Example of successful response from LuckyMonaco API servers.</p><section class="chapter"><h3 id="response-parameters" data-toc="response-parameters">Response Parameters</h3><div class="table-wrapper"><table class="wide" id="-aijx54_77"><thead><tr class="ijRowHead" id="-aijx54_78"><th id="-aijx54_94"><p>Name</p></th><th id="-aijx54_95"><p>Object</p></th><th id="-aijx54_96"><p>Data Type</p></th><th id="-aijx54_97"><p>Description</p></th><th id="-aijx54_98"><p>Remark</p></th></tr></thead><tbody><tr id="-aijx54_79"><td id="-aijx54_99"><p>error</p></td><td id="-aijx54_100"></td><td id="-aijx54_101"><p>string</p></td><td id="-aijx54_102"><p>Error code</p></td><td id="-aijx54_103"><p>Required</p></td></tr><tr id="-aijx54_80"><td id="-aijx54_104"><p>description</p></td><td id="-aijx54_105"></td><td id="-aijx54_106"><p>string</p></td><td id="-aijx54_107"><p>Description of the error for troubleshooting.</p></td><td id="-aijx54_108"><p>Required</p></td></tr><tr id="-aijx54_81"><td id="-aijx54_109"><p>total round</p></td><td id="-aijx54_110"></td><td id="-aijx54_111"><p>string</p></td><td id="-aijx54_112"><p>Total rounds searched</p></td><td id="-aijx54_113"><p>Required</p></td></tr><tr id="-aijx54_82"><td id="-aijx54_114"><p>rounds List of game rounds played</p></td><td id="-aijx54_115"></td><td id="-aijx54_116"><p>string</p></td><td id="-aijx54_117"><p>See below GamePlayed type description of the objects in the list.</p></td><td id="-aijx54_118"><p>Required</p></td></tr><tr id="-aijx54_83"><td id="-aijx54_119"></td><td id="-aijx54_120"><p>dateTime</p></td><td id="-aijx54_121"><p>datetime</p></td><td id="-aijx54_122"><p>Date and time when the round was played, based on time zone of the user. The value is returned in Lucky Monaco&rsquo;s server time zone (UTC/GMT+0).</p></td><td id="-aijx54_123"><p>Required</p></td></tr><tr id="-aijx54_84"><td id="-aijx54_124"></td><td id="-aijx54_125"><p>gameId</p></td><td id="-aijx54_126"><p>string</p></td><td id="-aijx54_127"><p>Symbolic unique identifier of the game.</p></td><td id="-aijx54_128"><p>Required</p></td></tr><tr id="-aijx54_85"><td id="-aijx54_129"></td><td id="-aijx54_130"><p>gameName</p></td><td id="-aijx54_131"><p>string</p></td><td id="-aijx54_132"><p>Name of the game.</p></td><td id="-aijx54_133"><p>Required</p></td></tr><tr id="-aijx54_86"><td id="-aijx54_134"></td><td id="-aijx54_135"><p>roundId</p></td><td id="-aijx54_136"><p>string</p></td><td id="-aijx54_137"><p>Unique identifier of the game round.</p></td><td id="-aijx54_138"><p>Required</p></td></tr><tr id="-aijx54_87"><td id="-aijx54_139"></td><td id="-aijx54_140"><p>currency</p></td><td id="-aijx54_141"><p>string</p></td><td id="-aijx54_142"><p>User&rsquo;s currency.</p></td><td id="-aijx54_143"><p>Required</p></td></tr><tr id="-aijx54_88"><td id="-aijx54_144"></td><td id="-aijx54_145"><p>betAmount</p></td><td id="-aijx54_146"><p>string</p></td><td id="-aijx54_147"><p>Bet amount.</p></td><td id="-aijx54_148"><p>Required</p></td></tr><tr id="-aijx54_89"><td id="-aijx54_149"></td><td id="-aijx54_150"><p>winAmount</p></td><td id="-aijx54_151"><p>string</p></td><td id="-aijx54_152"><p>Win amount.</p></td><td id="-aijx54_153"><p>Required</p></td></tr><tr id="-aijx54_90"><td id="-aijx54_154"></td><td id="-aijx54_155"><p>balance</p></td><td id="-aijx54_156"><p>string</p></td><td id="-aijx54_157"><p>User&rsquo;s balance after successful transaction</p></td><td id="-aijx54_158"><p>Required</p></td></tr><tr id="-aijx54_91"><td id="-aijx54_159"></td><td id="-aijx54_160"><p>uerId</p></td><td id="-aijx54_161"><p>string</p></td><td id="-aijx54_162"><p>Unique id for player on the Lucky Monaco side.</p></td><td id="-aijx54_163"><p>Required</p></td></tr><tr id="-aijx54_92"><td id="-aijx54_164"></td><td id="-aijx54_165"><p>roundDetails</p></td><td id="-aijx54_166"><p>array</p></td><td id="-aijx54_167"><p>Additional information about the current game round. </p><br><p><span class="control" id="-aijx54_170">If the result is 0, the result value is not displayed.</span></p><br><p> <span class="control" id="-aijx54_172">If there are multiple wins, the win type and amount for each are displayed.</span></p><br><p> &quot;bet&quot; : &quot;type of bet&quot; (i.e. &quot;spin&quot; or &quot;BuyFreeSpin&quot;) </p><br><p> &quot;type of result&quot; (i.e. &quot;winspin&quot;, &quot;minigame&quot;, &quot;freespin&quot;) : &quot;win amount&quot; (i.e &quot;10.0&quot;)</p></td><td id="-aijx54_168"><p>Required</p></td></tr><tr id="-aijx54_93"><td id="-aijx54_175"></td><td id="-aijx54_176"><p>roundStatus</p></td><td id="-aijx54_177"><p>string</p></td><td id="-aijx54_178"><p>Status of the game round </p><br><p> o InProgress &ndash; game round was started but not finished yet by the user </p><br><p> o Completed &ndash; game round has been completed by the user</p><br><p> o Cancelled &ndash; game round has been closed automatically by the game round finalization process</p><br><p> o CompleteInProcess &ndash; game round is marked as Completed in the db; BetResult or EndRound requests is in asynchronous transaction queue and the system tries to send it to Operator</p><br><p> o CancelInProcess &ndash; game round is marked as Cancelled in the db; Refund is in asynchronous queue and being sent to Operator.</p></td><td id="-aijx54_179"><p>Required</p></td></tr></tbody></table></div></section><section class="chapter"><h3 id="example-of-json-body" data-toc="example-of-json-body">Example of Json BODY</h3><div class="code-block" data-lang="json">
 {
-    &quot;error&quot;: &quot;0&quot;,
-    &quot;description&quot;: &quot;success&quot;, 
-    &quot;rounds&quot;:
-    [
+
+  &quot;error&quot;: 0,
+  &quot;description&quot;: &quot;Success&quot;,
+  &quot;totalRounds&quot;: 5,
+  &quot;rounds&quot;: [
+
     {
-     &quot;dateTime&quot;: &quot;2016-12-23 05:50:35.0&quot;, 
-     &quot;gameId&quot;: &quot;Im_treasureofzeus&quot;,
-     &quot;gameName&quot;: &quot;treasureofzeus&quot;, 
-     &quot;roundId&quot;: &quot;5108924498&quot;,
-     &quot;currency&quot;: &quot;USD&quot;,
-     &quot;betAmount&quot;: &quot;0.1&quot;,
-     &quot;winAmount&quot;: &quot;0.05&quot;,
-     &quot;balance&quot;: &quot;99711.59&quot;,
-     &quot;roundDetails&quot;: &quot;spin&quot;, 
-     &quot;uerId&quot;: 6638030,
-     &quot;detailsUrl&quot;: &quot;url&quot;: &quot;URL where you can check the snapshot&quot;
-}
-,…,
-{
-     &quot;dateTime&quot;: &quot;2016-12-23 05:54:28.0&quot;, 
-     &quot;gameId&quot;: &quot;Im_treasureofzeus&quot;,
-     &quot;gameName&quot;: &quot;treasureofzeus&quot;,
-     &quot;roundId&quot;: &quot;5108946371&quot;,
-     &quot;currency&quot;: &quot;USD&quot;,
-     &quot;betAmount&quot;: &quot;2.5&quot;,
-     &quot;winAmount&quot;: &quot;0.0&quot;,
-     &quot;balance&quot;: &quot;99710.04&quot;,
-     &quot;roundDetails&quot;: null,
-     &quot;userId&quot;: 6638030,
-     &quot;detailsUrl&quot;: &quot;url&quot;: &quot;URL where you can check the snapshot&quot;
+
+      &quot;dateTime&quot;: &quot;2024-10-24 02:59:20&quot;,
+      &quot;gameId&quot;: &quot;lm_13_wildkelly&quot;,
+      &quot;gameName&quot;: &quot;WILD Kelly&quot;,
+      &quot;roundId&quot;: 1602530,
+      &quot;userId&quot;: &quot;hwa10&quot;,
+      &quot;currency&quot;: &quot;USD&quot;,
+      &quot;betAmount&quot;: &quot;7.2&quot;,
+      &quot;winAmount&quot;: &quot;0&quot;,
+      &quot;balance&quot;: &quot;0.16&quot;,
+      &quot;roundStatus&quot;: &quot;Completed&quot;,
+      &quot;roundDetails&quot;: {
+
+        &quot;spin&quot;: &quot;BuyFreeSpin&quot;
       }
-]
+    },
+    {
+
+      &quot;dateTime&quot;: &quot;2024-10-24 02:59:06&quot;,
+      &quot;gameId&quot;: &quot;lm_13_wildkelly&quot;,
+      &quot;gameName&quot;: &quot;WILD Kelly&quot;,
+      &quot;roundId&quot;: 1602529,
+      &quot;userId&quot;: &quot;hwa10&quot;,
+      &quot;currency&quot;: &quot;USD&quot;,
+      &quot;betAmount&quot;: &quot;0.09&quot;,
+      &quot;winAmount&quot;: &quot;0.15&quot;,
+      &quot;balance&quot;: &quot;7.36&quot;,
+      &quot;roundStatus&quot;: &quot;Completed&quot;,
+      &quot;roundDetails&quot;: {
+
+        &quot;spin&quot;: &quot;Spin&quot;,
+        &quot;winSpin&quot;: &quot;0.15&quot;
+      }
+    },
+    {
+
+      &quot;dateTime&quot;: &quot;2024-10-24 02:58:54&quot;,
+      &quot;gameId&quot;: &quot;lm_13_wildkelly&quot;,
+      &quot;gameName&quot;: &quot;WILD Kelly&quot;,
+      &quot;roundId&quot;: 1602527,
+      &quot;userId&quot;: &quot;hwa10&quot;,
+      &quot;currency&quot;: &quot;USD&quot;,
+      &quot;betAmount&quot;: &quot;0.9&quot;,
+      &quot;winAmount&quot;: &quot;0&quot;,
+      &quot;balance&quot;: &quot;7.3&quot;,
+      &quot;roundStatus&quot;: &quot;Completed&quot;,
+      &quot;roundDetails&quot;: {
+
+        &quot;spin&quot;: &quot;Spin&quot;
+      }
+    },
+    {
+
+      &quot;dateTime&quot;: &quot;2024-10-24 02:58:40&quot;,
+      &quot;gameId&quot;: &quot;lm_13_wildkelly&quot;,
+      &quot;gameName&quot;: &quot;WILD Kelly&quot;,
+      &quot;roundId&quot;: 1602526,
+      &quot;userId&quot;: &quot;hwa10&quot;,
+      &quot;currency&quot;: &quot;USD&quot;,
+      &quot;betAmount&quot;: &quot;0.9&quot;,
+      &quot;winAmount&quot;: &quot;0&quot;,
+      &quot;balance&quot;: &quot;8.2&quot;,
+      &quot;roundStatus&quot;: &quot;Completed&quot;,
+      &quot;roundDetails&quot;: {
+
+        &quot;spin&quot;: &quot;Spin&quot;
+      }
+    },
+    {
+
+      &quot;dateTime&quot;: &quot;2024-10-24 02:58:21&quot;,
+      &quot;gameId&quot;: &quot;lm_13_wildkelly&quot;,
+      &quot;gameName&quot;: &quot;WILD Kelly&quot;,
+      &quot;roundId&quot;: 1602525,
+      &quot;userId&quot;: &quot;hwa10&quot;,
+      &quot;currency&quot;: &quot;USD&quot;,
+      &quot;betAmount&quot;: &quot;0.9&quot;,
+      &quot;winAmount&quot;: &quot;0&quot;,
+      &quot;balance&quot;: &quot;9.1&quot;,
+      &quot;roundStatus&quot;: &quot;Completed&quot;,
+      &quot;roundDetails&quot;: {
+
+        &quot;spin&quot;: &quot;Spin&quot;
+      }
+    },
+    {
+
+      &quot;dateTime&quot;: &quot;2024-10-24 02:58:40&quot;,
+      &quot;gameId&quot;: &quot;lm_13_wildkelly&quot;,
+      &quot;gameName&quot;: &quot;WILD Kelly&quot;,
+      &quot;roundId&quot;: 1602526,
+      &quot;userId&quot;: &quot;hwa10&quot;,
+      &quot;currency&quot;: &quot;USD&quot;,
+      &quot;betAmount&quot;: &quot;0.9&quot;,
+      &quot;winAmount&quot;: &quot;0&quot;,
+      &quot;balance&quot;: &quot;8.2&quot;,
+      &quot;roundStatus&quot;: &quot;Completed&quot;,
+      &quot;roundDetails&quot;: {
+
+        &quot;spin&quot;: &quot;Spin&quot;
+      }
+    },
+  ]
 }
-</div></section></section><div class="last-modified">Last modified: 23 10월 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="get-played-games.html" class="navigation-links__prev">Get Played Games</a><a href="get-bet-history.html" class="navigation-links__next">Get Bet History</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.js"></script></body></html>
+</div></section></section><div class="last-modified">Last modified: 25 10월 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="get-played-games.html" class="navigation-links__prev">Get Played Games</a><a href="get-round-status.html" class="navigation-links__next">Get Round Status</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.js"></script></body></html>
