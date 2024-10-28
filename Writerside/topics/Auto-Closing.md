@@ -4,6 +4,8 @@
 Using this method the Lucky Monaco system will send to Casino Operator for closing the pending winning result of a bet.<br/> **The Casino Operator
 will change the balance of the player in accordance with this request and return the updated balance.**
 
+**This method does not require a separate API construction.** It is sent to the result API. The reason for displaying it separately is to explain the process of how to terminate an incomplete round.
+
 Result request may contain a prize that the player is awarded with during the game round, if there is an active promotional
 campaigns.
 

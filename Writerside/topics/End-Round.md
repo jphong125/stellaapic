@@ -23,8 +23,7 @@ Requested "End round" API URL will be notified individually, for security reason
 | userId     |  string   | User's ID, specified by Partner when creating a game session.              | Required |
 | gameId     |  string   | Id of the game.                                                            | Required |
 | roundId    |  string   | Id of the round.                                                           | Required |
-| providerId |  string   | Game Provider id.                                                          | Required | 
-| platform   |  string   | The platform type (channel) on which the game is played.                   | Optional |
+| providerId |  string   | Game Provider id.                                                          | Required |
 | sessionId        |string| User’s game session id on Lucky Monaco system.                             | Required |
 | currency     |  string   | Currency of the User.                                                                     | Required |
 | win        |  string   | Win amount in round. Intended to notify Operator about amount won in round | Optional |

@@ -21,7 +21,6 @@ Requested cancel round API URL will be notified individually, for security reaso
 | reference  |  string   | Unique reference of this transaction.                                                                                                | Required |
 | gameId     |string| Id of the game. This is optional parameter, which has to be sent by Operator if only the session for specific game should be closed. | Required |
 | uuid       |string| A unique ID for each request.                                                                                                        | Required |
-| sessionId  |  string   | User’s game session id on Lucky Monaco system.                                                                                       | Required |
 
 ### Examples
 
@@ -50,7 +49,6 @@ Content-Type: application/json
 {
     "providerId": "LuckyMonaco",
     "userId": "123456",
-    "sessionId": "<sessionId>",
     "currency": "USD",
     "gameId": "Im_60_tumblefortune",
     "gameName" : "tumblefortune",
@@ -68,7 +66,7 @@ Example of successful response from Partner API servers.
 |:------------|:---------:|:--------------------------------------|----------|
 | error       |  string   | code of error.                        | Required |
 | description |decimal| Response status short description.    | Optional |
-| reference   |  string   | Unique reference of this transaction. | Required |
+| transactionId|string| Id of the transaction in wallet.   | Required |
 
 ### Example of Json BODY
 
@@ -76,7 +74,7 @@ Example of successful response from Partner API servers.
 {
   "error": 0,
   "description": "Success",
-  "reference": "585c1306f89c56f5ecfc2f5d"
+  "transactionId": "585c1306f89c56f5ecfc2f5d"
 }
 ```
 

@@ -1,4 +1,4 @@
-# Session Expired
+# Session Expired (Reserved for future development)
 
 ## Overview
 
