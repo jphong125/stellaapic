@@ -1,7 +1,7 @@
 # Deposit Balance
 
 ## Overview
-**This method transfers funds in to player’s balance (i.e. deposit) within
+**This method transfers funds into player’s balance (i.e. deposit) within
 Lucky Monaco system.** 
 
 Important: In cases where transfer call fails due to : 

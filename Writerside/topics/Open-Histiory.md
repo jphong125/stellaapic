@@ -1,7 +1,7 @@
 # Open History
 
 ## Overview
-Using this method Casino Operator can get a link to the page with the game details at the whole round. The method returns URL that contains round id and a one-time password that the game server will use for validation of the request, for the security reason.
+Using this method Casino Operator can get a link to the snapshot page with the game details at the whole round. The method returns URL that contains round id and a one-time password that the game server will use for validation of the request, for the security reason.
 
 ## Request
 Requested open history API URL will be notified individually, for security reasons.
@@ -55,7 +55,7 @@ Example of successful response from LuckyMonaco API servers.
 | Name        |Data Type| Description                                  | Remark   |
 |:------------|:---:|:---------------------------------------------|----------|
 | error       |string| Error code.                                  | Required |
-| historyUrl  |string| URL for opening the game screen shot page.   | Required |
+| historyUrl  |string| URL for opening the snapshot page.           | Required |
 | description |string| Id of the player within the Operator system. | Required |
 
 
