@@ -17,7 +17,7 @@ Requested "Session Expired" API URL will be notified individually, for security 
 
 | Name       |Data Type| Description                                   |  Remark  |
 |:-----------|:---:|:----------------------------------------------|:--------:|
-| providerId |string| Lucky Monaco provider id in Operator’s system | Required |
+| providerId |string| Game Provider identifier.                                   | Required |
 | sessionId  |string| User’s game session id on Lucky Monaco side   | Required |
 | userId   |string| Id of the User within the operator’s system.  | Required |
 | uuid                |  string   | A unique ID for each request                  | Required |

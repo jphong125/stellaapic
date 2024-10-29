@@ -10,7 +10,7 @@ Requested get balance API URL will be notified individually, for security reason
 
 | Name        |Data Type| Description                                                    | Remark   |
 |:------------|:---:|:---------------------------------------------------------------|----------|
-| secureLogin |string| partner name for authentication in the Casino Game API service | Required |
+| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
 | userId   |string| Id of the user within the Operator system.                     | Required |
 | currency    |    string  | Currency of the user.                                          |      Required |
 | uuid        |  string   | A unique ID for each request                                   | Required |

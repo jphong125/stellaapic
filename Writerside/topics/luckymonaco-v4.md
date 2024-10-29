@@ -26,8 +26,6 @@ Operator should provide the Seamless Wallet Integration API on their side. <br/>
 | SessionExpired | Notifies the Casino Operator that player’s game session has expired in Lucky Monaco system due to inactivity or game client closing.                                                                                                               | Optional |
 | Cancel Bet     | Notifies the casino Operator that Canceled player’s bet. This method will be used for cancellation of a bet. (i.e. Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response.) | Optional |
 | Refund         | Lucky Monaco system may use this method to rollback a bet transaction on the Casino Operator side, in order to reverse the transaction and adjust player’s balance.                                                                                | Required |
-| Error code     | Error codes used in seamless wallet.                                                                                                                                                                                                               | Required |
-
 
 
 ## Transfer Wallet API
@@ -45,8 +43,7 @@ Operator can use this API for game opening and transferring funds to player’s 
 | GetTransferInfo  | This method returns the status of a particular transaction that transferred the money in or out the player’s balance in the Lucky Monaco system. | Optional |
 | TerminateSession | Using this method Casino Operator can terminate the current player session and kick him out all games.                                           | Optional |
 | SessionExpired   | Notifies the Casino Operator that player’s game session has expired in Lucky Monaco system due to inactivity or game client closing.             | Optional |
-| GetSlotLog       | Using this method Casino Operator can get the user's slot log.                                                                                   | Optional |
-| Error code       | Error codes used in transfer wallet.                                                                                                             | Required |  
+  
 
 ## Integration API
 
@@ -71,9 +68,11 @@ History API provides game rounds played by the player, with their details. Opera
 |:---------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
 | GetPlayedGames | Using this method Casino Operator can get a list of the games played by the player during the day. | Optional |
 | GetGameRounds  | Using this method Casino Operator can get a list of the game rounds played by the player during the certain day and (optionally) the specific hour.             | Optional |
-| GetBetHistory  | Using this method Casino Operator can get a list of the game rounds played by the Partner during the certain day and (optionally) the specific hour.                        | Optional |
 | GetRoundStatus | Using this method returns the current status of a particular game round.            | Optional |
 | OpenHistory    | Using this method Casino Operator can get a link to the page with the game details at the whole round.                                                                                                                | Optional |
+
+## Error Code
+The error codes that should be returned by Casino Operator in the response to API calls.
 
 
 ## User ID
@@ -84,6 +83,9 @@ If User is new and its account does not exist in the Lucky Monaco system it will
 
 If User account already exists in the Lucky Monaco database it will be updated with the response data if necessary.
 
+## Partner Name (Id)
+Partner Name (Id) (secureLogin parameter) is unique identifier of the Partner within Casino Operator system. <br/>
+Partner ID and Token will be issued by LuckyMonaco team member.
 
 ## Play Session
 Play session is a game round in which bet and wins are combined together.

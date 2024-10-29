@@ -13,7 +13,7 @@ Requested get transfer status API URL will be notified individually, for securit
 
 | Name        |Data Type| Description                                                    | Remark   |
 |:------------|:---:|:---------------------------------------------------------------|----------|
-| secureLogin |string| partner name for authentication in the Casino Game API service | Required |
+| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
 | userId     |string| Id of the User within the Operator system.                     | Required |
 | uuid        |  string   | A unique ID for each request                                   | Required |
 | token       |string| Token of the Partner from Authenticate response                 | Required |
@@ -56,7 +56,7 @@ Example of successful response from LuckyMonaco API servers.
 
 | Name          |Data Type| Description                                                                                                             | Remark  |
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------|---|
-| transactionId |string| Id of the transaction within Lucky Monaco system.                                                                       | Required |
+| TransactionId |string| Id of the transaction within Casino Operator system.           | Required |
 | amount        |string| Amount added to user’s balance (positive value) or subtracted from user’s balance (negative value), in user’s currency. |  Required |
 | balance       |string| user’s balance after successful transaction                                                                             |  Required |
 | currency    |    string  | Currency of the user.                                                                                                   |      Required |

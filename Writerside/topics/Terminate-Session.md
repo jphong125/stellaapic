@@ -12,7 +12,7 @@ Requested "Terminate Session" API URL will be notified individually, for securit
 
 | Name         |Data Type| Description                                                                                                                                                                                                                                                |  Remark  |
 |:-------------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| secureLogin  |string| Partner name for authentication in the Casino Game API service                                                                                                                                                                                                | Required |
+| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
 | userId     |string| Identifier of the user within the Casino Operator’s system.              | Required |
 | token      |string| Token of the Partner from Authenticate response                                                                                                                                                                                                             | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
