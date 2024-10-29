@@ -10,7 +10,7 @@ Requested get info API URL will be notified individually, for security reasons.
 
 | Name             |Data Type| Description                                                 | Remark   |
 |:-----------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin      |string| Partner name for authentication in the Casino Game API service | Required |
+| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
 

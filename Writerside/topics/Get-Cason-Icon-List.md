@@ -10,7 +10,7 @@ Requested get a list of game URL will be notified individually, for security rea
 
 | Name        |Data Type| Description                                                              | Remark |
 |:------------|:---:|:-------------------------------------------------------------------------|:---------:|
-| secureLogin |string| Partner name for authentacation in the Casino Game API service.          | Required |
+| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
 | token      |string| Token of the Partner from Authenticate response.                          | Required |
 | id          |string| Icon size consisting of width and height. (can get Get Casino Icon Info) | Required |
 | language    |string| Language of icon.                                                        | Required |

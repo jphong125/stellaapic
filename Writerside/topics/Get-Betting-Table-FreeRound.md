@@ -10,7 +10,7 @@ Requested get betting table(for free round) API URL will be notified individuall
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin |string| Partner name for authentication in the Casino Game API service | Required |
+| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
 |gameId    |string| slot id | Required |
 | currency    |string| currency | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |

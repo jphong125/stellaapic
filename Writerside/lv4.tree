@@ -61,6 +61,7 @@
             <toc-element topic="Get-Round-Status.md"/>
             <toc-element topic="Open-Histiory.md"/>
         </toc-element>
+        <toc-element topic="Data-Type.md"/>
         <toc-element topic="Error-Code-1.md"/>
     </toc-element>
 </instance-profile>

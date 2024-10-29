@@ -83,8 +83,8 @@ If User is new and its account does not exist in the Lucky Monaco system it will
 
 If User account already exists in the Lucky Monaco database it will be updated with the response data if necessary.
 
-## Partner Name (Id)
-Partner Name (Id) (secureLogin parameter) is unique identifier of the Partner within Casino Operator system. <br/>
+## Partner Id
+Partner Id (secureLogin parameter) is unique identifier of the Partner within Casino Operator system. <br/>
 Partner ID and Token will be issued by LuckyMonaco team member.
 
 ## Play Session

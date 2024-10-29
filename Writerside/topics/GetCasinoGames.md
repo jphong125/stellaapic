@@ -9,10 +9,10 @@ Requested get casino games API URL will be notified individually, for security r
 
 ###  Request Parameters
 
-| Name        |Data Type| Description                                                     | Remark |
-|:------------|:---:|:----------------------------------------------------------------|:---------:|
-| secureLogin |string| Partner name for authentication in the Casino Game API service. | Required |
-| token      |string| Token of the Partner from Authenticate response.                | Required |
+| Name        | Data Type | Description                                                     | Remark |
+|:------------|:---------:|:----------------------------------------------------------------|:---------:|
+| secureLogin  |  string   | partner Id for authentication in the Casino Game API service | Required |
+| token      |  string   | Token of the Partner from Authenticate response.                | Required |
 | uuid                |  string   | A unique ID for each request.                                   | Required |
 
 ### Examples
