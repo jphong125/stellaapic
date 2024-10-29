@@ -45,7 +45,6 @@
             <toc-element topic="User-Info.md"/>
             <toc-element topic="Get-Balance.md"/>
             <toc-element topic="Get-transfer-status.md"/>
-            <toc-element topic="Terminate-Session.md"/>
             <toc-element topic="Session-Expired((T).md"/>
         </toc-element>
         <toc-element topic="Free-Round.md">

@@ -83,4 +83,8 @@
         <description>Created after removal of "Error code for Freeround" from LuckyMonaco V4</description>
         <accepts>Error-code-for-Freeround.html</accepts>
     </rule>
+    <rule id="42edfd5">
+        <description>Created after removal of "Terminate Session" from LuckyMonaco V4</description>
+        <accepts>Terminate-Session.html</accepts>
+    </rule>
 </rules>
