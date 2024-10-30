@@ -41,7 +41,6 @@ Operator can use this API for game opening and transferring funds to player’s 
 | Userinfo         | This method retrieves information about a specific user on Lucky Monaco system.                                                                  | Optional |
 | GetBalance       | this method Operator can get the current balance of the player in the Lucky Monaco system.                                                       | Optional |
 | GetTransferInfo  | This method returns the status of a particular transaction that transferred the money in or out the player’s balance in the Lucky Monaco system. | Optional |
-| TerminateSession | Using this method Casino Operator can terminate the current player session and kick him out all games.                                           | Optional |
 | SessionExpired   | Notifies the Casino Operator that player’s game session has expired in Lucky Monaco system due to inactivity or game client closing.             | Optional |
   
 

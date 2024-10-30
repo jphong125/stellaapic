@@ -48,14 +48,14 @@ Example of successful response from LuckyMonaco API servers.
 
 ### Response Parameters
 
-| Name          |Data Type| Description                                                                                                                   | Remark  |
-|:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------|---|
-| limit_spin|number| Max possible Freeround Count (1~limit_spin) | Required |
-| slot|array|List of support slot                                                                                                    |  Required |
-| gameIdNumeric|string|slot no |  Required |
-| gameName|string|slot name                                                                              |  Required |
-|gameId|string|slot game id                                                                                                           |  Required |
-| currency|array|List of support currency                                                                               |  Required |
+| Name          | Data Type | Description                                                                                                                   | Remark  |
+|:--------------|:---------:|:------------------------------------------------------------------------------------------------------------------------------|---|
+| limit_spin| interger  | Max possible Freeround Count (1~limit_spin) | Required |
+| slot|   array   |List of support slot                                                                                                    |  Required |
+| gameIdNumeric|  string   |slot no |  Required |
+| gameName|  string   |slot name                                                                              |  Required |
+|gameId|  string   |slot game id                                                                                                           |  Required |
+| currency|   array   |List of support currency                                                                               |  Required |
 
 
 

@@ -55,7 +55,7 @@ Example of successful response from LuckyMonaco API servers.
 | Name        |Data Type| Description                                  | Remark   |
 |:------------|:---:|:---------------------------------------------|----------|
 | error       |string| Error code.                                  | Required |
-| historyUrl  |string| URL for opening the snapshot page.           | Required |
+| url         |string| URL for opening the snapshot page.           | Required |
 | description |string| Id of the player within the Operator system. | Required |
 
 

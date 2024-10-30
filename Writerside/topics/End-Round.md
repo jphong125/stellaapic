@@ -19,14 +19,14 @@ Requested "End round" API URL will be notified individually, for security reason
 
 | Name       | Data Type | Description                                                                | Remark  |
 |:-----------|:---------:|:---------------------------------------------------------------------------|----------|
-| uuid       |string| A unique ID for each request.                                              | Required |
+| uuid       |  string   | A unique ID for each request.                                              | Required |
 | userId     |  string   | User's ID, specified by Partner when creating a game session.              | Required |
 | gameId     |  string   | Id of the game.                                                            | Required |
 | roundId    |  string   | Id of the round.                                                           | Required |
 | providerId |  string   | Game Provider id.                                                          | Required |
-| sessionId        |string| User’s game session id on Lucky Monaco system.                             | Required |
+| sessionId        |  string   | User’s game session id on Lucky Monaco system.                             | Required |
 | currency     |  string   | Currency of the User.                                                                     | Required |
-| win        |  string   | Win amount in round. Intended to notify Operator about amount won in round | Optional |
+| win        |  decimal  | Win amount in round. Intended to notify Operator about amount won in round | Optional |
 
 ### Examples
 
@@ -77,7 +77,7 @@ Example of successful response from Partner API servers.
 | cash          |decimal| Real balance of the User.          | Required |
 | bonus         |decimal| Bonus balance of the User.         | Required |
 | error  |  string   | code of error                      | Required |
-| description |decimal| Response status short description. | Optional |
+| description |string| Response status short description. | Optional |
 
 ### Example of Json BODY
 

@@ -80,7 +80,7 @@ Example of successful response from LuckyMonaco API servers.
 | TransactionId |string| Id of the transaction within Casino Operator system.           | Required |
 | balance       |string| User’s balance after successful transaction.      | Required |
 | error  |  string   | code of error.                                    | Required |
-| description |decimal| Response status short description.                | Optional |
+| description |string| Response status short description.                | Optional |
 
 
 ### Example of Json BODY

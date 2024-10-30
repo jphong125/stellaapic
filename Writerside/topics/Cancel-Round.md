@@ -65,7 +65,7 @@ Example of successful response from Partner API servers.
 | Name        | Data Type | Description                           | Remark  |
 |:------------|:---------:|:--------------------------------------|----------|
 | error       |  string   | code of error.                        | Required |
-| description |decimal| Response status short description.    | Optional |
+| description |string| Response status short description.    | Optional |
 | transactionId|string| Id of the transaction in wallet.   | Required |
 
 ### Example of Json BODY

@@ -62,7 +62,7 @@ Example of successful response from LuckyMonaco API servers.
 |Name|Data Type|Description|Remark |
 |:---|:---:|:---:|---|
 | error  |  string   | code of error                                                   | Required |
-| description |decimal| Response status short description. | Optional |
+| description |string| Response status short description. | Optional |
 | currency     |string| Currency of the User                                                              | Required |
 | amount       |  decimal  | Amount to be refunded.                                                    | Required |
 | transactionId|string| Id of the transaction in wallet.   | Required |

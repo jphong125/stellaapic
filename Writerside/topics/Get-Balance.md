@@ -57,7 +57,7 @@ Example of successful response from LuckyMonaco API servers.
 |:------------|:---:|:-------------------------------------------------------|---|
 | balance     |string| Current user’s balance within the Lucky Monaco system. |  Required |
 | error       |  string   | code of error.                                         | Required |
-| description |decimal| Response status short description.                     | Optional |
+| description |string| Response status short description.                     | Optional |
 
 
 ### Example of Json BODY

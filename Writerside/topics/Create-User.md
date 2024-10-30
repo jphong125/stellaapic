@@ -61,7 +61,7 @@ Example of successful response from LuckyMonaco API servers.
 |:------------|:---:|:-----------------------------------------------|---|
 | userId      |string| Id of the User within the Operator system. |  Required |
 | error       |  string   | code of error.                                 | Required |
-| description |decimal| Response status short description.             | Optional |
+| description |string| Response status short description.             | Optional |
 
 
 ### Example of Json BODY

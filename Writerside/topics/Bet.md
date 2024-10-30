@@ -86,7 +86,7 @@ Example of successful response from Partner API servers.
 | transactionId|string| ID of the transaction in wallet.   | Required |
 | cash         |decimal| Real balance of the player.        | Required |
 | error  |  string   | code of error.                     | Required |
-| description |decimal| Response status short description. | Optional |
+| description |string| Response status short description. | Optional |
 
 ### Response Parameters  (Reserved for future development)
 

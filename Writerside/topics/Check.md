@@ -54,10 +54,10 @@ Example of successful response from Partner API servers.
 
 ### Response Parameter 
 
-| Name  |Data Type| Description                        | Remark   |
-|:------|:---:|:-----------------------------------|----------|
-| error |decimal| error code.                        | Required |
-| description |decimal| Response status short description. | Optional |
+| Name  | Data Type | Description                        | Remark   |
+|:------|:---------:|:-----------------------------------|----------|
+| error | interger  | error code.                        | Required |
+| description |  string   | Response status short description. | Optional |
 
 
 ### Example of Json BODY
