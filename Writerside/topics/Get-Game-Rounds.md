@@ -13,7 +13,7 @@ Requested get game round API URL will be notified individually, for security rea
 
 | Name        |Data Type| Description                                                    | Remark |
 |:------------|:---:|:---------------------------------------------------------------|--------|
-| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
+| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
 | userId      |string| Id of the user within the Operator system.                     | Optional |
 | gameId      |  string   | ID of the game.                                                | Optional       |
 | dateStart   |string| Date to start, based on the time zone of the user.             | Required |

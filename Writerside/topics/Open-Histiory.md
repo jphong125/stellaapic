@@ -10,7 +10,7 @@ Requested open history API URL will be notified individually, for security reaso
 
 | Name        |Data Type| Description                                                    | Remark   |
 |:------------|:---:|:---------------------------------------------------------------|----------|
-| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
+| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
 |  userId     |string| Id of the user within the Operator system.                     | Required |
 | roundId     |string| Unique identifier of the game round.                           | Required |
 | uuid                |  string   | A unique ID for each request                                   | Required |

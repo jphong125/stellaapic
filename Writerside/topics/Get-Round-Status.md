@@ -10,7 +10,7 @@ Requested get round status API URL will be notified individually, for security r
 
 | Name        |Data Type| Description                                                 | Remark   |
 |:------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
+| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
 | roundId   |string|  Id of the game round                | Required |
 | uuid                |  string   | A unique ID for each request                                             | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |

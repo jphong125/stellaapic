@@ -15,7 +15,7 @@ Requested "Cancel Round" API URL will be notified individually, for security rea
 
 | Name        |Data Type| Description                                                                                                                         |  Remark  |
 |:------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
+| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
 | gameId      |string| Id of the game. This is optional parameter,which has to be sent by Operator if only the session for specific game should be closed. | optional |
 | userId      |string| Identifier of the user within the Casino Operator’s system.                                                                         | Required |
 | roundId     |string| Id of round                                                                                                                         | Required |
