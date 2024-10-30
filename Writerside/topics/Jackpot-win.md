@@ -1,4 +1,4 @@
-# Jackpot win (Reserved for future development)
+# Jackpot Win (Reserved for future development)
 
 ## Overview
 Using this method a Lucky Monaco system will notify Casino Operator about Jackpot winning. <br/>Notification is asynchronous
