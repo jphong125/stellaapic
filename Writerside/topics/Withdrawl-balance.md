@@ -25,7 +25,7 @@ Requested withdrawl balance API URL will be notified individually, for security 
 
 | Name          |Data Type| Description                                                    | Remark   |
 |:--------------|:---:|:---------------------------------------------------------------|----------|
-| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
+| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
 | userId        |string| Id of the player within the Operator system.                   | Required |
 | currency      |string| Currency of the user.                                          | Required |
 | transactionId |string| Id of the transaction within Casino Operator system.           | Required |

@@ -1,7 +1,7 @@
 # Get Round Status
 
 ## Overview
-Using this method returns the current status of a particular game round. <br/> Using this method Casino Operator can check game rounds recorded on their side and cancel open bets returning money to the player’s balance.
+Using this method returns the current status of a particular game round. <br/> Using this method Casino Operator can check game rounds recorded on their side and cancel open bets returning money to the player’s balance. <br/> This is used when a bet is successful but the result is not generated in the game DB for any reason. 
 
 ## Request
 Requested get round status API URL will be notified individually, for security reasons.

@@ -31,7 +31,7 @@ Content-Type: application/json
 
 | Name        | Data Type  | Description                                                     |Ramark|
 |:------------|:----------:|:----------------------------------------------------------------|---|
-| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
+| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
 | userId     |string| Id of the user within the Operator system.                      | Required |
 | uuid        |  string   | A unique ID for each request                                    | Required |
 | token       |string| Token of the Partner from Authenticate response                  | Required |

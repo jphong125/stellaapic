@@ -13,7 +13,7 @@ Requested Create User API URL will be notified individually, for security reason
 
 | Name         |Data Type| Description                                                  | Remark   |
 |:-------------|:---:|:-------------------------------------------------------------|----------|
-| secureLogin  |string| partner Id for authentication in the Casino Game API service | Required |
+| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
 | userId       |string| Id of the User within the Operator system.                   | Required |
 | userNickname |string| nickname of the User within the Operator system.             | Optional |
 | uuid         |  string   | A unique ID for each request                                 | Required |
