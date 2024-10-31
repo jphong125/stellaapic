@@ -92,7 +92,6 @@ Example of successful response from Partner API servers.
 
 | Name          |Data Type| Description                        | Remark  |
 |:--------------|:---:|:-----------------------------------|-----|
-| transactionId |string| Id of the transaction in wallet.   | Required |
 | currency      |string| Currency of the User.              | Required |
 | cash          |decimal| Real balance of the User.          | Required |
 | error  |  string   | code of error                      | Required |
@@ -109,7 +108,6 @@ Example of successful response from Partner API servers.
 
 ``` json
 {
- "transactionId": "<transactionId>",
  "currency": "USD",
  "cash": 99899.99,
  "error": 0,
