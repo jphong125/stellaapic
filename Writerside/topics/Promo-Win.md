@@ -17,17 +17,17 @@ Requested "Promo win" API URL will be notified individually, for security reason
 
 ### Request Parameters
 
-| Name         | Data Type | Description                                                              | Remark  |
-|:-------------|:---------:|:-------------------------------------------------------------------------|----------|
-| uuid         |string| A unique ID for each request.                                            | Required |
-| userId       |  string   | user's ID, specified by Partner when creating a game session.            | Required |
-| amount       |  decimal  | Prize amount that the player is awarded with.                            | Required |
-| reference    |  string   | Unique reference of this transaction.                                    | Required |
-| providerId   |  string   | Game Provider id.                                                        | Required |
-| timestamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco side | Required |
-| campaignId   |  string   | Id of the campaign.                                                      | Required | 
-| campaignType |  string   | Type of the campaign.                                                    | Required |
-| currency     |  string   | User’s currency.                                                         | Required |
+| Name              | Data Type | Description                                                              | Remark  |
+|:------------------|:---------:|:-------------------------------------------------------------------------|----------|
+| uuid              |string| A unique ID for each request.                                            | Required |
+| userId            |  string   | user's ID, specified by Partner when creating a game session.            | Required |
+| amount            |  decimal  | Prize amount that the player is awarded with.                            | Required |
+| reference         |  string   | Unique reference of this transaction.                                    | Required |
+| providerId        |  string   | Game Provider id.                                                        | Required |
+| timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side | Required |
+| promoCampaignId   |  string   | Id of the campaign.                                                      | Required | 
+| promoCampaignType |  string   | Type of the campaign.                                                    | Required |
+| currency          |  string   | User’s currency.                                                         | Required |
 
 ### Examples
 
@@ -57,7 +57,7 @@ Content-Type: application/json
     "amount": "500.0",
     "providerId": "Luckymonaco",
     "userId": "421",
-    "campaignType" : "T"
+    "promoCampaignType" : "T"
     "currency": "USD"
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
     "timestamp": "1482429190374"
@@ -70,14 +70,14 @@ Example of successful response from Partner API servers.
 
 ### Response Parameters 
 
-| Name          |Data Type| Description                                                                                                                                                                                                                                                                                                                               | Remark  |
-|:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
-| transactionId |string| Id of the transaction in wallet.                                                                                                                                                                                                                                                                                                          | Required |
-| currency      |string| Currency of the player. | Required |
-| cash          |decimal| Real balance of the player.                                                                                                                                                                                                                                                                                                                    | Required |
-| bonus         |decimal| Bonus balance of the player.                                                                                                                                                                                                                                                                                                               | Required |
-| error  |  string   | code of error                                                   | Required |
-| description |string| Response status short description. | Optional |
+| Name          |Data Type| Description                                          | Remark  |
+|:--------------|:---:|:-----------------------------------------------------|-----|
+| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
+| currency      |string| Currency of the player.                              | Required |
+| cash          |decimal| Real balance of the player.                          | Required |
+| bonus         |decimal| Bonus balance of the player.                         | Required |
+| error  |  string   | Code of error                                        | Required |
+| description |string| Response status short description.                   | Optional |
 
 ### Example of Json BODY
 

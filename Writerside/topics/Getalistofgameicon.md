@@ -50,13 +50,13 @@ Example of successful response from LuckyMonaco API servers.
 
 |    Name     |                   | Data Type | Remark                                    |
 |:-----------:|:-----------------:|:---------:|:------------------------------------------|
-|    error    |                   |        string             | code of error.                            |
+|    error    |                   |        string             | Code of error.                            |
 | description |                   | string| Response status short description.        |
 |  iconList   |                   |   array   | List of game icon info.                   |
 |             |        id         |  string   | Icon size consisting of width and height. |
-|             |       width       |  string   | width of icon.                            |
-|             |      height       |  string   | height of icon.                           |
-|             |     language      |  string   | language of icon.                         |
+|             |       width       |  string   | Width of icon.                            |
+|             |      height       |  string   | Height of icon.                           |
+|             |     language      |  string   | Language of icon.                         |
 
 
 ### Example of Json BODY

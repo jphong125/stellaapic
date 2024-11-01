@@ -11,18 +11,18 @@ Requested get game round API URL will be notified individually, for security rea
 
 ### Request Parameters
 
-| Name        |Data Type| Description                                                    | Remark |
-|:------------|:---:|:---------------------------------------------------------------|--------|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
-| userId      |string| Id of the user within the Operator system.                     | Optional |
-| gameId      |  string   | ID of the game.                                                | Optional       |
-| dateStart   |string| Date to start, based on the time zone of the user.             | Required |
-| dateEnd     |string| Date to end, based on the time zone of the user.               | Required |
-| timeZone    |string| Time zone of the user. Example: GMT, GMT+8, GMT+04:00          | Required |
-| page        |string| Page number (default value 1)                                  | Required |
-| limit       |string| row per page (max 1000)                                        | Required |
-| uuid        |  string   | A unique ID for each request                                   | Required |
-| token       |string| Token of the Partner from Authenticate response                | Required |
+| Name        |Data Type| Description                                                  | Remark |
+|:------------|:---:|:-------------------------------------------------------------|--------|
+| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| userId      |string| Id of the user within the Operator system.                   | Optional |
+| gameId      |  string   | ID of the game.                                              | Optional       |
+| dateStart   |string| Date to start, based on the time zone of the user.           | Required |
+| dateEnd     |string| Date to end, based on the time zone of the user.             | Required |
+| timeZone    |string| Time zone of the user. Example: GMT, GMT+8, GMT+04:00        | Required |
+| page        |string| Page number (default value 1)                                | Required |
+| limit       |string| Row per page (max 1000)                                      | Required |
+| uuid        |  string   | A unique ID for each request                                 | Required |
+| token       |string| Token of the Partner from Authenticate response              | Required |
 
 ### Examples
 

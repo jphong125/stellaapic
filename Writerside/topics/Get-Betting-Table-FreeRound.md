@@ -8,13 +8,13 @@ Requested get betting table(for free round) API URL will be notified individuall
 
 ### Request Parameters
 
-| Name        |Data Type| Description                                                 | Remark   |
-|:------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
-|gameId    |string| slot id | Required |
-| currency    |string| currency | Required |
+| Name        |Data Type| Description                                                  | Remark   |
+|:------------|:---:|:-------------------------------------------------------------|----------|
+| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+|gameId    |string| Slot id                                                      | Required |
+| currency    |string| Currency                                                     | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
+| uuid                |  string   | A unique ID for each request                                 | Required |
 
 ### Examples
 
@@ -54,11 +54,11 @@ Example of successful response from LuckyMonaco API servers.
 
 ### Response Parameters
 
-| Name            |Data Type| Description                                                                                                                   | Remark  |
-|:----------------|:---:|:------------------------------------------------------------------------------------------------------------------------------|---|
-| gameId        |string| slot id | Required |
-| currency        |string| currency | Required |
-| support_betting |string| List of support betting                                       | Required |
+| Name            |Data Type| Description             | Remark  |
+|:----------------|:---:|:------------------------|---|
+| gameId        |string| Slot id                 | Required |
+| currency        |string| Currency                | Required |
+| support_betting |string| List of support betting | Required |
 
 
 

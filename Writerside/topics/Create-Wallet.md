@@ -59,7 +59,7 @@ Example of successful response from LuckyMonaco API servers.
 | Name        |Data Type| Description                                      |Remark  |
 |:------------|:---:|:-------------------------------------------------|---|
 | userId      |string| Id of the player within the Lucky Monaco system. |  Required |
-| error       |  string   | code of error.                                   | Required |
+| error       |  string   | Code of error.                                   | Required |
 | description |string| Response status short description.               | Optional |
 
 

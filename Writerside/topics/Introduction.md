@@ -2,7 +2,7 @@
 
 ## Important
 
-* Partner ID (used for securelogin) and Token will be issued by LuckyMonaco team member.
+* Partner ID (used for secureLogin) and Token will be issued by LuckyMonaco team member.
 * When you need to add sub-brand, you will be needed an additional PartnerID to do so.
 * Please refer to the provided SLOT_SPEC document for integration.
 

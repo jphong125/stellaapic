@@ -19,7 +19,7 @@ Requesting "start game" to LuckyMonaco API Servers.
 
 | Name         |Data Type| Description                                                            |  Remark  |
 |:-------------|:---:|:-----------------------------------------------------------------------|:--------:|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service           | Required |
 | token      |string| Token of the Partner from Authenticate response.                       | Required |
 | uuid         |string| A unique ID for each request.                                          | Required |
 | userId       |string| Unique identifier of the player within the Casino Operator system.     | Required |
@@ -78,9 +78,9 @@ Example of successful response from LuckyMonaco API servers. Use URL parameters.
 ### response parameter
 |Name|Data Type|            Description             |Remark |
 |:---|:---:|:----------------------------------:|---|
-| error  |  string   |           code of error.           | Required |
+| error  |  string   |           Code of error.           | Required |
 | description |string| Response status short description. | Optional |
-|url|string|    used for player redirection.    | Required|
+|url|string|    Used for player redirection.    | Required|
 
 ### Example of Json BODY
 

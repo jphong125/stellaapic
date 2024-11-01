@@ -8,11 +8,11 @@ Using this method Operator can cancel an existing Free Rounds Bonus in the Lucky
 Requested cancel free round API URL will be notified individually, for security reasons.
 
 ### Request Parameters
-| Name           | Data Type | Description                                                                  | Remark  |
-|:---------------|:---------:|:-----------------------------------------------------------------------------|----------|
-| uuid                |  string   | A unique ID for each request                                             | Required |
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
-| bonuscode      |  string   | Bonus id within the Casino Operator’s system.                                | Required |
+| Name           | Data Type | Description                                                  | Remark  |
+|:---------------|:---------:|:-------------------------------------------------------------|----------|
+| uuid                |  string   | A unique ID for each request                                 | Required |
+| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| bonuscode      |  string   | Bonus id within the Casino Operator’s system.                | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
 ### Examples
 

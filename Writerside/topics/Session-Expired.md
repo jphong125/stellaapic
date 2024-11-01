@@ -59,7 +59,7 @@ Example of successful response from Partner API servers.
 
 | Name  |Data Type| Description                        |Remark  |
 |:------|:---:|:-----------------------------------|----------|
-| error |string| error code.                        | Required |
+| error |string| Error code.                        | Required |
 | description |string| Response status short description. | Optional |
 
 ### Example of Json BODY

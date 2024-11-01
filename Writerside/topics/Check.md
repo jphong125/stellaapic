@@ -56,7 +56,7 @@ Example of successful response from Partner API servers.
 
 | Name  | Data Type | Description                        | Remark   |
 |:------|:---------:|:-----------------------------------|----------|
-| error | interger  | error code.                        | Required |
+| error | interger  | Error code.                        | Required |
 | description |  string   | Response status short description. | Optional |
 
 

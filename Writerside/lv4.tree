@@ -9,6 +9,7 @@
     <toc-element topic="luckymonaco-v4.md">
         <toc-element topic="Introduction.md">
         </toc-element>
+        <toc-element topic="Data-Type.md"/>
         <toc-element topic="Integration-API.md">
             <toc-element topic="GetCasinoGames.md"/>
             <toc-element topic="Getalistofgameicon.md"/>
@@ -61,7 +62,6 @@
             <toc-element topic="Get-Round-Status.md"/>
             <toc-element topic="Open-Histiory.md"/>
         </toc-element>
-        <toc-element topic="Data-Type.md"/>
         <toc-element topic="Error-Code-1.md"/>
     </toc-element>
 </instance-profile>

@@ -23,15 +23,15 @@ Requested withdrawl balance API URL will be notified individually, for security 
 
 ### Request Parameters
 
-| Name          |Data Type| Description                                                    | Remark   |
-|:--------------|:---:|:---------------------------------------------------------------|----------|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
-| userId        |string| Id of the player within the Operator system.                   | Required |
-| currency      |string| Currency of the user.                                          | Required |
-| transactionId |string| Id of the transaction within Casino Operator system.           | Required |
-| amount        |string| Amount to be added to user’s balance                           | Required |
-| uuid          |  string   | A unique ID for each request                                   | Required |
-| token         |string| Token of the Partner from Authenticate response                 | Required |
+| Name          |Data Type| Description                                                  | Remark   |
+|:--------------|:---:|:-------------------------------------------------------------|----------|
+| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| userId        |string| Id of the player within the Operator system.                 | Required |
+| currency      |string| Currency of the user.                                        | Required |
+| transactionId |string| Id of the transaction within Casino Operator system.         | Required |
+| amount        |string| Amount to be added to user’s balance                         | Required |
+| uuid          |  string   | A unique ID for each request                                 | Required |
+| token         |string| Token of the Partner from Authenticate response              | Required |
 
 ### Examples
 

@@ -71,13 +71,13 @@ Example of successful response from LuckyMonaco API servers.
 
 ###  Response Parameters 
 
-| Name          |Data Type| Description                                       | Remark  |
-|:--------------|:---:|:--------------------------------------------------|---|
-| currency      |string| Currency of the User.                             | Required |
-| TransactionId |string| Id of the transaction within Casino Operator system.           | Required |
-| balance       |string| User’s balance after successful transaction.      | Required |
-| error         |  string   | code of error.                                    | Required |
-| description   |string| Response status short description.                | Optional |
+| Name          |Data Type| Description                                          | Remark  |
+|:--------------|:---:|:-----------------------------------------------------|---|
+| currency      |string| Currency of the User.                                | Required |
+| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
+| balance       |string| User’s balance after successful transaction.         | Required |
+| error         |  string   | Code of error.                                       | Required |
+| description   |string| Response status short description.                   | Optional |
 
 
 ### Example of Json BODY

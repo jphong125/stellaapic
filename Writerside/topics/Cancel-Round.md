@@ -62,11 +62,11 @@ Example of successful response from Partner API servers.
 
 ## Response parameters
 
-| Name        | Data Type | Description                           | Remark  |
-|:------------|:---------:|:--------------------------------------|----------|
-| error       |  string   | code of error.                        | Required |
-| description |string| Response status short description.    | Optional |
-| transactionId|string| Id of the transaction in wallet.   | Required |
+| Name        | Data Type | Description                                          | Remark  |
+|:------------|:---------:|:-----------------------------------------------------|----------|
+| error       |  string   | Code of error.                                       | Required |
+| description |string| Response status short description.                   | Optional |
+| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
 
 ### Example of Json BODY
 

@@ -8,13 +8,13 @@ Requested get balance API URL will be notified individually, for security reason
 
 ### Request Parameters
 
-| Name        |Data Type| Description                                                    | Remark   |
-|:------------|:---:|:---------------------------------------------------------------|----------|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
-| userId   |string| Id of the user within the Operator system.                     | Required |
-| currency    |    string  | Currency of the user.                                          |      Required |
-| uuid        |  string   | A unique ID for each request                                   | Required |
-| token       |string| Token of the Partner from Authenticate response                 | Required |
+| Name        |Data Type| Description                                                  | Remark   |
+|:------------|:---:|:-------------------------------------------------------------|----------|
+| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| userId   |string| Id of the user within the Operator system.                   | Required |
+| currency    |    string  | Currency of the user.                                        |      Required |
+| uuid        |  string   | A unique ID for each request                                 | Required |
+| token       |string| Token of the Partner from Authenticate response              | Required |
 
 ### Examples
 
@@ -56,7 +56,7 @@ Example of successful response from LuckyMonaco API servers.
 | Name        |Data Type| Description                                            | Remark  |
 |:------------|:---:|:-------------------------------------------------------|---|
 | balance     |string| Current user’s balance within the Lucky Monaco system. |  Required |
-| error       |  string   | code of error.                                         | Required |
+| error       |  string   | Code of error.                                         | Required |
 | description |string| Response status short description.                     | Optional |
 
 

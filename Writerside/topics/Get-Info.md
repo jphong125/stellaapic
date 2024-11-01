@@ -8,10 +8,10 @@ Requested get info API URL will be notified individually, for security reasons.
 
 ### Request Parameters
 
-| Name             |Data Type| Description                                                 | Remark   |
-|:-----------------|:---:|:------------------------------------------------------------|----------|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
+| Name             |Data Type| Description                                                  | Remark   |
+|:-----------------|:---:|:-------------------------------------------------------------|----------|
+| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| uuid                |  string   | A unique ID for each request                                 | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
 
 ### Examples
@@ -48,14 +48,14 @@ Example of successful response from LuckyMonaco API servers.
 
 ### Response Parameters
 
-| Name          | Data Type | Description                                                                                                                   | Remark  |
-|:--------------|:---------:|:------------------------------------------------------------------------------------------------------------------------------|---|
+| Name          | Data Type | Description                                 | Remark  |
+|:--------------|:---------:|:--------------------------------------------|---|
 | limit_spin| interger  | Max possible Freeround Count (1~limit_spin) | Required |
-| slot|   array   |List of support slot                                                                                                    |  Required |
-| gameIdNumeric|  string   |slot no |  Required |
-| gameName|  string   |slot name                                                                              |  Required |
-|gameId|  string   |slot game id                                                                                                           |  Required |
-| currency|   array   |List of support currency                                                                               |  Required |
+| slot|   array   | List of support slot                        |  Required |
+| gameIdNumeric|  string   | Slot no                                     |  Required |
+| gameName|  string   | Slot name                                   |  Required |
+|gameId|  string   | Slot game id                                |  Required |
+| currency|   array   | List of support currency                    |  Required |
 
 
 

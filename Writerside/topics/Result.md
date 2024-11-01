@@ -34,10 +34,10 @@ Requested "Result" API URL will be notified individually, for security reasons.
 
 ### Parameters  (Reserved for future development)
 
-|Name|Data Type| Description                                                  | Remark   |
-|:---|:---:|:-------------------------------------------------------------|----------|
+| Name              |Data Type| Description                                                  | Remark   |
+|:------------------|:---:|:-------------------------------------------------------------|----------|
 | bonusCode         |  string   | Id of the bonus in Casino Operator system.                                  | Optional |
-| promoWinAmount    |  string   | Prize amount that the player is awarded with during a promotional campaign. | Optional |
+| amount            |  string   | Prize amount that the player is awarded with during a promotional campaign. | Optional |
 | promoWinReference |  string   | Unique reference of this transaction.                                       | Optional |
 | promoCampaignID   |  string   | Id of the promotional campaign.                                             | Optional |
 | promoCampaignType |  string   | Type of the promotional campaign.                                             | Optional |
@@ -89,7 +89,7 @@ Example of successful response from Partner API servers.
 
 | Name          |Data Type| Description                        | Remark  |
 |:--------------|:---:|:-----------------------------------|-----|
-| transactionId |string| Id of the transaction in wallet.   | Required |
+| TransactionId |string| Id of the transaction within Casino Operator system.           | Required |
 | currency      |string| Currency of the User.              | Required |
 | cash          |decimal| Real balance of the User.          | Required |
 | error  |  string   | code of error                      | Required |

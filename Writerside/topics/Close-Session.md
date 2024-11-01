@@ -58,9 +58,9 @@ Content-Type: application/json
 Example of successful response from LuckyMonaco API servers.
 
 ### Response parameters
-|Name|Data Type|Description|Remark |
-|:---|:---:|:---:|---|
-| error  |  string   | code of error                                                   | Required |
+|Name|Data Type|            Description             |Remark |
+|:---|:---:|:----------------------------------:|---|
+| error  |  string   |           Code of error            | Required |
 | description |decimal| Response status short description. | Optional |
 
 ### Example of Json BODY

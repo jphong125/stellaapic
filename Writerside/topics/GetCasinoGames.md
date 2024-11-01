@@ -9,11 +9,11 @@ Requested get casino games API URL will be notified individually, for security r
 
 ###  Request Parameters
 
-| Name        | Data Type | Description                                                     | Remark |
-|:------------|:---------:|:----------------------------------------------------------------|:---------:|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
-| token      |  string   | Token of the Partner from Authenticate response.                | Required |
-| uuid                |  string   | A unique ID for each request.                                   | Required |
+| Name        | Data Type | Description                                                  | Remark |
+|:------------|:---------:|:-------------------------------------------------------------|:---------:|
+| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| token      |  string   | Token of the Partner from Authenticate response.             | Required |
+| uuid                |  string   | A unique ID for each request.                                | Required |
 
 ### Examples
 
@@ -53,7 +53,7 @@ Example of successful response from LuckyMonaco API servers.
 
 |   Name   |                   | Data Type | Remark                                                                                                      |
 |:--------:|:-----------------:|:---------:|:------------------------------------------------------------------------------------------------------------|
-| error  |                   |  string   | code of error.                                                                                              |
+| error  |                   |  string   | Code of error.                                                                                              |
 | description |                   |  string   | Response status short description.                                                                          |
 | gameList |                   |   array   | List of game information.                                                                                   |
 |          |      gameId       |  string   | Symbolic unique identifier of the game provided by Lucky Monaco.                                            |

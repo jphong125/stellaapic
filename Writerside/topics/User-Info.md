@@ -29,12 +29,12 @@ Content-Type: application/json
 
 ### Request Parameters
 
-| Name        | Data Type  | Description                                                     |Ramark|
-|:------------|:----------:|:----------------------------------------------------------------|---|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
-| userId     |string| Id of the user within the Operator system.                      | Required |
-| uuid        |  string   | A unique ID for each request                                    | Required |
-| token       |string| Token of the Partner from Authenticate response                  | Required |
+| Name        | Data Type  | Description                                                  |Ramark|
+|:------------|:----------:|:-------------------------------------------------------------|---|
+| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| userId     |string| Id of the user within the Operator system.                   | Required |
+| uuid        |  string   | A unique ID for each request                                 | Required |
+| token       |string| Token of the Partner from Authenticate response              | Required |
 
 ### Example of Request Body
 
@@ -53,16 +53,16 @@ Example of successful response from LuckyMonaco API servers.
 
 ### Response Parameters
 
-| Name           | Data Type | Description                                   | Remark                          |
-|:---------------|:---------:|:----------------------------------------------|---------------------------------|
-| userId       |string| Id of the User within the Operator system.                     | Required |
-| userNickname |string| nickname of the User within the Operator system.               | Optional |
-| dateTimeCreate | datetime  | at create (i.e. 2024-10-15 14:30:00)          |  Required |
-| dateTimeLogin  | datetime  | at login (i.e. 2024-10-16 10:01:32)           |     Required |
-| wallet         |   array   | wallets                                       |      Required |
-| currency       |  string   | each balance of currency.                     |      Required |
-| error          |  string   | error code                                    |     Required |
-| descrition     |  string   | Description of the error for troubleshooting. |     Required |
+| Name           | Data Type | Description                                      | Remark                          |
+|:---------------|:---------:|:-------------------------------------------------|---------------------------------|
+| userId       |string| Id of the User within the Operator system.       | Required |
+| userNickname |string| Nickname of the User within the Operator system. | Optional |
+| dateTimeCreate | datetime  | At create (i.e. YYYY-MM-DD 14:30:00)             |  Required |
+| dateTimeLogin  | datetime  | At login (i.e. YYYY-MM-DD 10:01:32)              |     Required |
+| wallet         |   array   | Wallets                                          |      Required |
+| currency       |  string   | Each balance of currency.                        |      Required |
+| error          |  string   | Error code                                       |     Required |
+| descrition     |  string   | Description of the error for troubleshooting.    |     Required |
 
 ### Example of Json BODY
 

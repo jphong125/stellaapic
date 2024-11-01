@@ -59,13 +59,13 @@ Content-Type: application/json
 Example of successful response from LuckyMonaco API servers.
 
 ### Response parameters
-|Name|Data Type|Description|Remark |
-|:---|:---:|:---:|---|
-| error  |  string   | code of error                                                   | Required |
-| description |string| Response status short description. | Optional |
-| currency     |string| Currency of the User                                                              | Required |
-| amount       |  decimal  | Amount to be refunded.                                                    | Required |
-| transactionId|string| Id of the transaction in wallet.   | Required |
+|Name|Data Type|                     Description                      |Remark |
+|:---|:---:|:----------------------------------------------------:|---|
+| error  |  string   |                    Code of error                     | Required |
+| description |string|          Response status short description.          | Optional |
+| currency     |string|                 Currency of the User                 | Required |
+| amount       |  decimal  |                Amount to be refunded.                | Required |
+| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
 
 ### Example of Json BODY
 

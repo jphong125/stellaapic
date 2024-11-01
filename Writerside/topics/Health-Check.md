@@ -10,11 +10,11 @@ Requested "Health Check" API URL will be notified individually, for security rea
 
 ### Request Parameters
 
-| Name       |Data Type| Description                                                                                                                                                                                                                                                |  Remark  |
-|:-----------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
-| token      |string| Token of the Partner from Authenticate response                                                                                                                                                                                                             | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
+| Name       |Data Type| Description                                                  |  Remark  |
+|:-----------|:---:|:-------------------------------------------------------------|:--------:|
+| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| token      |string| Token of the Partner from Authenticate response              | Required |
+| uuid                |  string   | A unique ID for each request                                 | Required |
 
 ### Examples
 
@@ -55,9 +55,9 @@ Content-Type: application/json
 Example of successful response from LuckyMonaco API servers.
 
 ### Response parameters
-| Name  |Data Type| Description                  | Remark  |
-|:------|:---:|:-----------------------------|----------|
-| error |string| error code                   | Required |
+| Name  |Data Type| Description                        | Remark  |
+|:------|:---:|:-----------------------------------|----------|
+| error |string| Error code                         | Required |
 | description |string| Response status short description. | Optional |
 
 ### Example of Json BODY (API Service HeathCheck)

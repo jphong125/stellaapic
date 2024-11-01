@@ -11,11 +11,11 @@ Requested "Get Casino Language" URL will be notified individually, for security 
 
 ###  Request Parameters
 
-| Name        |Data Type| Description                                                 | Remark |
-|:------------|:---:|:------------------------------------------------------------|:---------:|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
+| Name        |Data Type| Description                                                  | Remark |
+|:------------|:---:|:-------------------------------------------------------------|:---------:|
+| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
-| uuid                |  string   | A unique ID for each request                                             | Required |
+| uuid                |  string   | A unique ID for each request                                 | Required |
 
 ### Examples
 
@@ -54,7 +54,7 @@ Example of successful response from LuckyMonaco API servers.
 
 |     Name     |          | Data Type | Remark                               |
 |:------------:|:--------:|:---------:|:-------------------------------------|
-| error  |          |        string                                            | code of error                        |
+| error  |          |        string                                            | Code of error                        |
 | description |          |string  | Response status short description.   |
 | languageList |          |   array   | List of language information.        |
 |              | language |  string   | Language code in ISO 639-1 standard. |
@@ -70,8 +70,7 @@ Example of successful response from LuckyMonaco API servers.
   "LanguageList": [
 
     "EN",
-    "JA",
-    "KO"
+    "JA"
   ]
 }
 ```
