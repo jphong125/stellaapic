@@ -33,7 +33,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/Cancleround
+https://<API URL>/V4/CancelRound
 ```
 
 HEADER
