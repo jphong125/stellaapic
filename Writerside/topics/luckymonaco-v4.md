@@ -1,4 +1,4 @@
-# About LuckyMonaco V4
+# About LuckyMonaco V4.01
 
 Casino Game API supports different types of games : video slots, video poker, etc. <br/>
 and API should not be changed if Casino Operator needs to add more games to their portfolio.
