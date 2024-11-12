@@ -73,7 +73,7 @@ Example of successful response from Partner API servers.
 
 | Name          |Data Type| Description                        | Remark   |
 |:--------------|:---:|:-----------------------------------|----------|
-| TransactionId |string| Id of the transaction within Casino Operator system.           | Required |
+| transactionId |string| Id of the transaction within Casino Operator system. | Required |
 | error |string| error code.                        | Required |
 | description |string| Response status short description. | Optional |
 

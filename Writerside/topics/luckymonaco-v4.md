@@ -48,17 +48,17 @@ Operator can use this API for game opening and transferring funds to player’s 
 
 Integration API offers generic methods that allow Operators to create a game lobby, get statistics and close player sessions forcefully.
 
-| Name              | Description                                                                                                                                                                                                                             |  Remark  |
-|:------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| GetCasinoGames    | Using this method Casino Operator can retrieve the list of available games to utilize on their system. Once the new game is released it will be updated to this list. May be used for automatic building games lobby at casino website. | Optional |
-| GetCasinoIconInfo | Using this method Casino Operator can retrieve the icon info of games available for integration.May be used for automatic building games lobby at casino website.                                                                       | Optional |
-| GetCasinoIconList | Using this method Casino Operator can retrieve the icon list of games available for integration.May be used for automatic building games lobby at casino website.                                                                       | Optional |
-| GetCasinoLanguage | Using this method Casino Operator can retrieve the list of language of games available for integration.                                                                                                                                 | Optional |
-| GetCasinoCurrency | Using this method Casino Operator can retrieve the list of about a specific currency of games available for integration.                                                                                                                | Optional |
-| CloseSession      | This method terminates active game sessions of the player.                                                                                                                                                                              | Optional |
-| CancelRound       | Using this method Casino Operator Cancels in progress game round.                                                                                                                                                                       | Optional |
-| HealthCheck       | Using this method Casino Operator can check if Lucky Monaco provider API service or Game server are live and ready.                                                                                                                     | Optional |
-| Start Game        | Using this method Casino Operator can start game.                                                                                                                                                                                       | required |
+| Name                    | Description                                                                                                                                                                                                                             |  Remark  |
+|:------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| GetCasinoGames          | Using this method Casino Operator can retrieve the list of available games to utilize on their system. Once the new game is released it will be updated to this list. May be used for automatic building games lobby at casino website. | Optional |
+| GetCasinoIconInfo       | Using this method Casino Operator can retrieve the icon info of games available for integration.May be used for automatic building games lobby at casino website.                                                                       | Optional |
+| GetCasinoIconList       | Using this method Casino Operator can retrieve the icon list of games available for integration.May be used for automatic building games lobby at casino website.                                                                       | Optional |
+| GetCasinoLanguage       | Using this method Casino Operator can retrieve the list of language of games available for integration.                                                                                                                                 | Optional |
+| GetCasinoCurrency       | Using this method Casino Operator can retrieve the list of about a specific currency of games available for integration.                                                                                                                | Optional |
+| CloseSession            | This method terminates active game sessions of the player.                                                                                                                                                                              | Optional |
+| CancelRound by Operator | Using this method Casino Operator Cancels in progress game round.                                                                                                                                                                       | Optional |
+| HealthCheck             | Using this method Casino Operator can check if Lucky Monaco provider API service or Game server are live and ready.                                                                                                                     | Optional |
+| Start Game              | Using this method Casino Operator can start game.                                                                                                                                                                                       | required |
 
 ## Game History API
 History API provides game rounds played by the player, with their details. Operator can get a list of games played, game rounds that the player has played during a particular day and hour, and the screen of the game at the end of the game round.
@@ -94,4 +94,6 @@ Each round can contain several bets, win and refunds of the bets.
 ## Transaction Reference
 Transaction Reference is unique transaction id within Lucky Monaco system.
 
-Transaction Reference used for bets and wins has to be different.
+Transaction Reference used for bets and wins has to be different. <br/>
+
+The transactionId sent by the operator must also be different between the bet and the result.

@@ -75,7 +75,7 @@ Content-Type: application/json
     "currency": "USD",
     "amount": 10.0,
     "roundDetails": "spin",
-    "roundid" : "5103188801",
+    "roundId" : "5103188801",
     "reference": "585c1306f89c56f5ecfc2f5d",
     "gameId": "Im_60_tumblefortune",
     "gameName" : "tumblefortune",

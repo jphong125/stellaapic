@@ -41,7 +41,7 @@ Content-Type: application/json
     "secureLogin" : "<partnerId>",
     "token" : "<token>",
     "uuid": "<uuid>",
-    "bonus_code": "43f4a26e-6da6-496e-9754-0d6c13a19df7"
+    "bonuscode": "43f4a26e-6da6-496e-9754-0d6c13a19df7"
 }
 ```
 

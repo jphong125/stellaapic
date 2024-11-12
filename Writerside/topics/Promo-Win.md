@@ -72,7 +72,7 @@ Example of successful response from Partner API servers.
 
 | Name          |Data Type| Description                                          | Remark  |
 |:--------------|:---:|:-----------------------------------------------------|-----|
-| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
+| transactionId |string| Id of the transaction within Casino Operator system. | Required |
 | currency      |string| Currency of the player.                              | Required |
 | cash          |decimal| Real balance of the player.                          | Required |
 | bonus         |decimal| Bonus balance of the player.                         | Required |

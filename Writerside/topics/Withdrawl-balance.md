@@ -77,7 +77,7 @@ Example of successful response from LuckyMonaco API servers.
 | Name          |Data Type| Description                                       | Remark  |
 |:--------------|:---:|:--------------------------------------------------|---|
 | currency      |string| Currency of the player.                           | Required |
-| TransactionId |string| Id of the transaction within Casino Operator system.           | Required |
+| transactionId |string| Id of the transaction within Casino Operator system. | Required |
 | balance       |string| User’s balance after successful transaction.      | Required |
 | error  |  string   | code of error.                                    | Required |
 | description |string| Response status short description.                | Optional |

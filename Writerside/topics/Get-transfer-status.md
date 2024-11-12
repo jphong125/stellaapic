@@ -56,7 +56,7 @@ Example of successful response from LuckyMonaco API servers.
 
 | Name          |Data Type| Description                                                                                                             | Remark  |
 |:--------------|:---:|:------------------------------------------------------------------------------------------------------------------------|---|
-| TransactionId |string| Id of the transaction within Casino Operator system.           | Required |
+| transactionId |string| Id of the transaction within Casino Operator system. | Required |
 | amount        |string| Amount added to user’s balance (positive value) or subtracted from user’s balance (negative value), in user’s currency. |  Required |
 | balance       |string| user’s balance after successful transaction                                                                             |  Required |
 | currency    |    string  | Currency of the user.                                                                                                   |      Required |
@@ -71,7 +71,7 @@ Example of successful response from LuckyMonaco API servers.
 {
     "error": 0,
     "description": "success",
-    "transctionid": "ab4cee3-f73b-4631-9abf-b1a09c",
+    "transctionId": "ab4cee3-f73b-4631-9abf-b1a09c",
     "currency": "USD",
     "amount" : "1000",
     "balance": "1000"

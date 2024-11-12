@@ -28,7 +28,7 @@ Requested deposit balance API URL will be notified individually, for security re
 | secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
 | userId       |string| Id of the user within the Operator system.                     | Required |
 | currency      |string| Currency of the user.                                          | Required |
-| TransactionId |string| Id of the transaction within Casino Operator system.           | Required |
+| transactionId |string| Id of the transaction within Casino Operator system. | Required |
 | amount        |string| Amount to be added to player’s balance                         | Required |
 | uuid          |  string   | A unique ID for each request                                   | Required |
 | token         |string| Token of the Partner from Authenticate response                 | Required |
@@ -58,7 +58,7 @@ Content-Type: application/json
     "secureLogin" : "<partnerId>",
     "token" : "<token>",
     "userId": "tester",
-    "TransactionId": "12345678",
+    "transactionId": "12345678",
     "currency": "USD",
     "amount": "1000",
     "uuid": "<uuid>"
@@ -74,7 +74,7 @@ Example of successful response from LuckyMonaco API servers.
 | Name          |Data Type| Description                                          | Remark  |
 |:--------------|:---:|:-----------------------------------------------------|---|
 | currency      |string| Currency of the User.                                | Required |
-| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
+| transactionId |string| Id of the transaction within Casino Operator system. | Required |
 | balance       |string| User’s balance after successful transaction.         | Required |
 | error         |  string   | Code of error.                                       | Required |
 | description   |string| Response status short description.                   | Optional |

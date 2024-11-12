@@ -81,12 +81,12 @@ Example of successful response from Partner API servers.
 
 ### Response Parameters
 
-| Name         |Data Type| Description                                          | Remark  |
-|:-------------|:---:|:-----------------------------------------------------|-----|
-| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
-| cash         |decimal| Real balance of the player.                          | Required |
-| error  |  string   | Code of error.                                       | Required |
-| description |string| Response status short description.                   | Optional |
+| Name          |Data Type| Description                                          | Remark  |
+|:--------------|:---:|:-----------------------------------------------------|-----|
+| transactionId |string| Id of the transaction within Casino Operator system. | Required |
+| cash          |decimal| Real balance of the player.                          | Required |
+| error         |  string   | Code of error.                                       | Required |
+| description   |string| Response status short description.                   | Optional |
 
 ### Response Parameters  (Reserved for future development)
 

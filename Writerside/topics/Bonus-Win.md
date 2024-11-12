@@ -58,7 +58,7 @@ Content-Type: application/json
     "amount": "1.0",
     "providerId": "Luckymonaco",
     "bonescode" : "<bonuscode>,
-    "roundid" : "5103188801",
+    "roundId" : "5103188801",
     "userId": "421",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
     "timestamp": "1482429190374",
@@ -74,7 +74,7 @@ Example of successful response from Partner API servers.
 
 | Name          |Data Type| Description                                          | Remark  |
 |:--------------|:---:|:-----------------------------------------------------|-----|
-| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
+| transactionId |string| Id of the transaction within Casino Operator system. | Required |
 | currency      |string| Currency of the player.                              | Required |
 | cash          |decimal| Real balance of the player.                          | Required |
 | bonus         |decimal| Bonus balance of the player.                         | Required |

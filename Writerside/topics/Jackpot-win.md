@@ -57,10 +57,10 @@ Content-Type: application/json
     "jackpotId": "568",
     "providerId": "luckymonaco",
     "userId": "421",
-    "roundid" : "5103188801",
+    "roundId" : "5103188801",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
     "timestamp": "1482429190374",
-    "sessionid": "<sid>"
+    "sessionId": "<sid>"
 }
 ```
 
@@ -72,7 +72,7 @@ Example of successful response from Partner API servers.
 
 | Name          |Data Type| Description                                          | Remark  |
 |:--------------|:---:|:-----------------------------------------------------|-----|
-| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
+| transactionId |string| Id of the transaction within Casino Operator system. | Required |
 | currency      |string| Currency of the player.                              | Required |
 | cash          |decimal| Real balance of the player.                          | Required |
 | bonus         |decimal| Bonus balance of the player.                         | Required |

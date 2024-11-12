@@ -68,7 +68,7 @@ Example of successful response from Partner API servers.
 |:------------|:---------:|:-----------------------------------------------------|----------|
 | error       |  string   | Code of error.                                       | Required |
 | description |string| Response status short description.                   | Optional |
-| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
+| transactionId |string| Id of the transaction within Casino Operator system. | Required |
 
 ### Example of Json BODY
 

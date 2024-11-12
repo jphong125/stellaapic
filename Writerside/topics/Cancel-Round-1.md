@@ -65,7 +65,7 @@ Example of successful response from LuckyMonaco API servers.
 | description |string|          Response status short description.          | Optional |
 | currency     |string|                 Currency of the User                 | Required |
 | amount       |  decimal  |                Amount to be refunded.                | Required |
-| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
+| transactionId |string| Id of the transaction within Casino Operator system. | Required |
 
 ### Example of Json BODY
 

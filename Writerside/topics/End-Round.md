@@ -60,7 +60,7 @@ Content-Type: application/json
     "currency" : "USD",
     "win" : "15.4",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
-    "sessionid": "<sessionId>"
+    "sessionId": "<sessionId>"
 }
 ```
 
@@ -72,7 +72,6 @@ Example of successful response from Partner API servers.
 
 | Name          |Data Type| Description                                          | Remark |
 |:--------------|:---:|:-----------------------------------------------------|-----|
-| TransactionId |string| Id of the transaction within Casino Operator system. | Required |
 | currency      |string| Currency of the User.                                | Required |
 | cash          |decimal| Real balance of the User.                            | Required |
 | bonus         |decimal| Bonus balance of the User.                           | Required |
@@ -83,7 +82,6 @@ Example of successful response from Partner API servers.
 
 ``` json
 {
- "transactionId": "<transactionId>",
  "currency" : "USD",
  "cash": "99899.99",
  "bonus": "99.99",
