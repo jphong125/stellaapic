@@ -3,8 +3,9 @@
 ## Overview
 Using this method Casino Operator terminates active game sessions of the player. <br/>Operator has the option to remove player’s history, so that the 
 incomplete game rounds can not be finished by another player (usually this is relevant for terminals).<br/>To close only game 
-session for specific game Operator may send game id parameter in the request.
+session for specific game Operator may send game id parameter in the request. 
 
+Impotant : In principle, incomplete rounds are completed by the user reconnecting or auto-closing. We recommend that you set **the option(0) to complete to deal with malicious users.** We recommend that you cancel only when the user complains with clear evidence.
 
 ## Request
 
