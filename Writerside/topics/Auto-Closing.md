@@ -12,7 +12,7 @@ campaigns.
 Important : The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
 
-Important : This is executed when the game is abnormally disconnected, the user does not check the results of the game within **24 hours**, and fails to end the round.<br/> This status is marked as CompleteInProcess. <br/>
+Important : This is executed when the game is abnormally disconnected, the user does not check the results of the game within **2 hours**, and fails to end the round.<br/> This status is marked as CompleteInProcess. <br/>
 CompleteInProcess : game round is marked as Completed in the db, Result or EndRound requests is in asynchronous transaction queue and the system tries to send it to Operator
 
 ## Request
