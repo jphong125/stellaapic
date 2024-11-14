@@ -11,17 +11,16 @@ If a free spin is entered during a regular spin, the free spin will have a separ
 1. Multiple Win values (win) within the round (Transaction ID) are all referred as Win, each of them are not referred with exclusive names.
 
 2. Each win value is distinguished by uuid.
-3. When sending the final win, send "is_end_round": "ok" at the bottom of the message to indicate that this round is over.
-    - "is_end_round" is not sent for other wins.
+3. When sending each win, send "is_end_round": "ok" at the bottom of the message to indicate that this transaction is over.
+    - "is_end_round" sent for each wins.
 
 4. If a free spin is entered after a regular spin, an additional TransactionID is received for the free spin.
     - In this case, when the free spin ends, the "is_end_round": "ok" message for the previous regular spin win is sent first, and then a separate message of "is_end_round": "ok" for the free spin is sent.
 
 **Summary**
 1. One Transaction ID may have multiple Wins and receive Win message multiple times with the different uuid.
-2. If "is_end_round": "ok" is not included in the Win message, an additional Win message is sent.
-3. The end of the round can be processed after receiving "is_end_round": "ok".
-4. Free spins are managed through a separate TransactionID and "is_end_round": "ok" from the regular spins.
+2. If "is_end_round": "ok" is included in the Win message, add balance user.
+3. Free spins are managed through a separate TransactionID and "is_end_round": "ok" from the regular spins.
 
 
 **Note**
@@ -32,9 +31,8 @@ If a free spin is entered during a regular spin, the free spin will have a separ
 
 3. win : Win amount of each Spin win or Bonus win, freespin
 
-4. is_end_round : If this line is present, this is the final win message.
-If this line is absent, additional win messages will be received
-after this win message.
+4. is_end_round : If this line is present, this is the win message.
+
  
 ``` json
 "transaction": {

@@ -18,7 +18,7 @@ Requested get game round API URL will be notified individually, for security rea
 | gameId      |  string   | ID of the game.                                              | Optional       |
 | dateStart   |string| Date to start, based on the time zone of the user.           | Required |
 | dateEnd     |string| Date to end, based on the time zone of the user.             | Required |
-| timeZone    |string| Time zone of the user. Example: GMT, GMT+8, GMT+04:00        | Required |
+| timeZone    |string| Time zone of the user. Example: UTC, UTC+8, UTC+04:00        | Required |
 | page        |string| Page number (default value 1)                                | Required |
 | limit       |string| Row per page (max 1000)                                      | Required |
 | uuid        |  string   | A unique ID for each request                                 | Required |

@@ -13,7 +13,7 @@ Requested "Get Played Game" API URL will be notified individually, for security 
 | secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
 |  userId    |string| Id of the user within the Operator system.                   | Required |
 | dateplayed  |string| Date, based on the time zone of the user.                    | Required |
-| timeZone    |string| Time zone of the user. Example: GMT, GMT+8, GMT+04:00        | Required |
+| timeZone    |string| Time zone of the user. Example: UTC, UTC+8, UTC+04:00        | Required |
 | uuid                |  string   | A unique ID for each request                                 | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
 
@@ -45,7 +45,7 @@ Content-Type: application/json
     "token" : "<token>",
     "userId": "421",
     "datePlayed": :2016-12-23",
-    "timeZone": "GMT+00:00",
+    "timeZone": "UTC+00:00",
     "uuid": "980d06d3361f1e21a2f1550c6806ef52"
 }
 ```

@@ -68,6 +68,8 @@ Example of successful response from Partner API servers.
 |:------------|:---------:|:-----------------------------------------------------|----------|
 | error       |  string   | Code of error.                                       | Required |
 | description |string| Response status short description.                   | Optional |
+| currency   |string| Currency of the User.                                                                                                                | Required |
+| cash          |decimal| Real balance of the User.          | Required |
 | transactionId |string| Id of the transaction within Casino Operator system. | Required |
 
 ### Example of Json BODY
@@ -76,6 +78,8 @@ Example of successful response from Partner API servers.
 {
   "error": 0,
   "description": "Success",
+  "currency": "USD",
+  "cash": "99899.99",
   "transactionId": "585c1306f89c56f5ecfc2f5d"
 }
 ```
