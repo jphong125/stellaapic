@@ -5,7 +5,7 @@ Using this method the Lucky Monaco system will send to Casino Operator the winni
 will change the balance of the player in accordance with this request and return the updated balance.**
 
 Result request may contain a prize that the player is awarded with during the game round, if there is an active promotional 
-campaigns.
+campaigns. <br>   Players connection was lost in any cases so lucky monaco will do retransmission 10 times, then do not receive any result response. 
 
 Important : The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.

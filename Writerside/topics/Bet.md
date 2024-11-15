@@ -2,7 +2,7 @@
 
 ## Overview
 Using this method Lucky Monaco system will check the player balance on Casino Operator side to ensure they still have the
-funds to cover the bet.<br/> **Amount of the bet must be subtracted from player balance in Casino Operator system.**
+funds to cover the bet.<br/> **Amount of the bet must be subtracted from player balance in Casino Operator system.** <br/>  Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response. Lucky Monaco will request a cancel bet. 
 
 Important: The call is idempotent, i.e. sending bet again only creates one transaction.
 
