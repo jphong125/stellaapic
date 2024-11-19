@@ -1,4 +1,4 @@
-# Start game
+# Start Game
 
 ## Overview
 In order to connect to servers, creates a game session for users.
