@@ -20,8 +20,9 @@
             <toc-element topic="Close-Session.md"/>
             <toc-element topic="Cancel-Round-1.md"/>
             <toc-element topic="Health-Check.md"/>
-            <toc-element topic="Start-Demo.md"/>
-            <toc-element topic="Startgame.md"/>
+            <toc-element topic="Startgame.md">
+                <toc-element topic="Start-Demo.md"/>
+            </toc-element>
         </toc-element>
         <toc-element topic="Seamless-Wallet-API.md">
             <toc-element topic="Check.md"/>

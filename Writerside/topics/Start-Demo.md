@@ -9,11 +9,11 @@ Redirect a user to received demo game session URL to entering to LuckyMonaco sys
 
 ## Request
 
-Requested "Start demo" API URL will be notified individually, for security reasons.
+Requested "Start Demo" API URL will be notified individually, for security reasons.
 
-## Request for a Start game
+## Request for a Start Demo game
 
-Requesting "start demo" to LuckyMonaco API Servers.
+Requesting "Start Demo" to LuckyMonaco API Servers.
 
 ### Request Parameters
 
@@ -22,6 +22,7 @@ Requesting "start demo" to LuckyMonaco API Servers.
 | secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service           | Required |
 | token      |string| Token of the Partner from Authenticate response.                       | Required |
 | gameId       |string| Symbolic unique identifier of the game within the Lucky Monaco system. | Required |
+| uuid         |string| A unique ID for each request.                                          | Required |
 
 ### Examples
 
@@ -48,7 +49,8 @@ Content-Type: application/json
 {
     "secureLogin" : "<partnerId>",
     "token" : "<token>",
-    "gameId" : "lm_9_roadtomysticoz"
+    "gameId" : "lm_9_roadtomysticoz",
+    "uuid" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY"
 }
 ```
 
