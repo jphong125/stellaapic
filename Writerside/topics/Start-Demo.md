@@ -1,4 +1,4 @@
-# Start Demo
+# Start Demo Game
 
 ## Overview
 In order to connect to servers, creates a demo game session for users.
