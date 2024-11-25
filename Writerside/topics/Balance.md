@@ -27,7 +27,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/Balance
+https://<API URL>/v4/Balance
 ```
 HEADER
 

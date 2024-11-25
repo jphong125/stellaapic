@@ -28,7 +28,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/Check
+https://<API URL>/v4/Check
 ```
 HEADER
 
@@ -42,7 +42,7 @@ Content-Type: application/json
 {
     "providerId": "<Luckymonaco>",
     "userId": "<UserID>",
-    "currency" : "<USD>,
+    "currency" : "<USD>",
     "sessionId": "<sessionId>",
     "uuid": "<uuid>"
 }

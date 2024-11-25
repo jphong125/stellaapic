@@ -27,11 +27,11 @@ POST
 URL
 
 ``` http
-https://<API-service-domain>/V4/Check
+https://<API-service-domain>/v4/Check
 ```
 
 ``` http
-https://<game-server-domain>/V4/Check
+https://<game-server-domain>/v4/Check
 ```
 HEADER
 

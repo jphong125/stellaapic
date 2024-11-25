@@ -35,7 +35,7 @@ POST
 URL
 
 ``` html
-https://<API URL>/api/V4/StartDemo
+https://<API URL>/api/v4/StartDemo
 ```
 
 HEADER

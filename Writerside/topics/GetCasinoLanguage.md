@@ -28,7 +28,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/GetCasinoLanguage
+https://<API URL>/v4/GetCasinoLanguage
 ```
 
 HEADER

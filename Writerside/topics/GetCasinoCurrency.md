@@ -27,7 +27,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/GetCasinoCurrency
+https://<API URL>/v4/GetCasinoCurrency
 ```
 
 HEADER

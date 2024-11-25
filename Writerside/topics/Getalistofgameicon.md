@@ -24,7 +24,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/GetCasinoIconInfo
+https://<API URL>/v4/GetCasinoIconInfo
 ```
 
 HEADER
