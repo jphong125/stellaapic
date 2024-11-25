@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="lv4"
-                  name="LuckyMonaco V4.01"
+                  name="LuckyMonaco V4.02"
                   start-page="luckymonaco-v4.md" is-library="true">
 
     <toc-element topic="luckymonaco-v4.md">
