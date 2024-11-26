@@ -42,7 +42,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/Cancel
+https://<API URL>/v4/Cancel
 ```
 HEADER
 

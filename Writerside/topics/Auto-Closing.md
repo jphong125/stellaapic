@@ -58,7 +58,7 @@ POST
 ### Example of URL
 
 ``` http
-https://<API URL>/V4/Result
+https://<API URL>/v4/Result
 ```
 HEADER
 

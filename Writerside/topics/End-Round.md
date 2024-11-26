@@ -40,7 +40,7 @@ POST
 ### Example of URL
 
 ``` http
-https://<API URL>/V4/EndRound
+https://<API URL>/v4/EndRound
 ```
 
 HEADER

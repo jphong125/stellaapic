@@ -39,7 +39,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/JackPotWin
+https://<API URL>/v4/JackPotWin
 ```
 HEADER
 

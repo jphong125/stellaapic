@@ -33,7 +33,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/SessionExpired
+https://<API URL>/v4/SessionExpired
 ```
 
 HEADER

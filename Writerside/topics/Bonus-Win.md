@@ -41,7 +41,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/V4/BonusWin
+https://<API URL>/v4/BonusWin
 ```
 HEADER
 
