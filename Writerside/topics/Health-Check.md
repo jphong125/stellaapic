@@ -1,8 +1,7 @@
 # Health Check
 
 ## Overview
-HealthCheck method can be used by operators to check if Lucky Monaco provider API service or Game server are live and
-ready.
+HealthCheck method can be used by operators to check if Lucky Monaco provider API service.
 
 ## Request
 
@@ -27,12 +26,10 @@ POST
 URL
 
 ``` http
-https://<API-service-domain>/v4/Check
+https://<API URL>/v4/HealthCheck
 ```
 
-``` http
-https://<game-server-domain>/v4/Check
-```
+
 HEADER
 
 ``` http
@@ -63,17 +60,11 @@ Example of successful response from LuckyMonaco API servers.
 ### Example of Json BODY (API Service HeathCheck)
 
 ``` json
-http status : 200 Success
+
 {
   "error": 0,
   "description": "Success"
 }
-
-```
-### Example of Json BODY (Game Server HeathCheck)
-
-``` json
-http status : 200 Success
 
 ```
 

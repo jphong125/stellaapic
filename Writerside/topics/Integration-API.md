@@ -17,3 +17,12 @@ https://<API URL>/v4/<object>
 Integration simple HTTP Service is securely protected, hence please be sure :
 - player’s browser (end) must NOT be used as initiator of requests to the service.
 - proper IPs are supplied to Lucky Monaco for whitelisting.
+
+## Follow these steps
+1. Run "Get Casino Game" to get the list of games
+2. Run "Get Casino Icon Info" to get the information about the icon size and language provided. (If you need icons in other sizes, please contact the Lucky Monaco team.)
+3. Run "Get Casino Icon List" to get links to the corresponding game icons in the size and language you want.
+4. Run "Get Casino Language" to see which languages are supported.
+5. Run "Get Casino Currency" to see which currencies are supported.
+6. Run "Health Check" to check if the API server is ready.
+7. After completing the above steps, please enter the supported language and currency in "Start Game".

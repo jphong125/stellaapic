@@ -68,9 +68,29 @@ Example of successful response from LuckyMonaco API servers.
   "error": 0,
   "description": "Success",
   "LanguageList": [
-
+    "DA",
+    "DE",
+    "EL",
     "EN",
-    "JA"
+    "ES",
+    "ET",
+    "FI",
+    "FR",
+    "IT",
+    "JA",
+    "KO",
+    "LT",
+    "LV",
+    "NO",
+    "PT",
+    "RO",
+    "RU",
+    "SV",
+    "TH",
+    "TR",
+    "UK",
+    "UZ",
+    "ZH"
   ]
 }
 ```
