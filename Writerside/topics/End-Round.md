@@ -54,9 +54,9 @@ Content-Type: application/json
 ``` json
 {
     "gameId": "Im_60_tumblefortune",
-    "providerId": "luckymonaco",
+    "providerId": "Luckymonaco",
     "userId": "421",
-    "roundid" : "5103188801"
+    "roundid" : "5103188801",
     "currency" : "USD",
     "win" : "15.4",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",

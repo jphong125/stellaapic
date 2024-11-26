@@ -60,7 +60,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "providerId": "luckymonaco",
+    "providerId": "Luckymonaco",
     "userId": "421",
     "sessionId": "<sessionId>",
     "currency": "USD",
