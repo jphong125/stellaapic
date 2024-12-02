@@ -44,7 +44,7 @@ POST
 URL
 
 ``` html
-https://<API URL>/api/v4/StartGame
+https://<API URL>/v4/StartGame
 ```
 
 HEADER
