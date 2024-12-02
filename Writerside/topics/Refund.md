@@ -27,6 +27,7 @@ Requested "Refund" win API URL will be notified individually, for security reaso
 | providerId |  string   | Game Provider id.                                                                                                                    | Required |
 | gameName   |  string   | Name of the game.                                                                                                                    | Required |
 | currency   |string| Currency of the User.                                                                                                                | Required |
+| sessionId    |string| User’s game session id on Lucky Monaco system.                                    | Required |
 | reference  |  string   | Unique reference of this transaction.                                                                                                | Required |
 | gameId     |string| Id of the game. This is optional parameter, which has to be sent by Operator if only the session for specific game should be closed. | Required |
 | uuid       |string| A unique ID for each request.                                                                                                        | Required |
@@ -58,7 +59,8 @@ Content-Type: application/json
  "userId": "123456",
  "currency": "USD",
  "gameId": "Im_60_tumblefortune",
- "gameName" : "tumblefortune",
+ "gameName" : "tumblefortune", 
+ "sessionId": "<sessionId>",
  "reference": "585c1306f89c56f5ecfc2f5d",
  "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
 }
