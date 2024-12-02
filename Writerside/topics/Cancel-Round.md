@@ -4,7 +4,8 @@
 
 Notifies the casino Operator that Canceled player’s bet.  <br/>
 This method will be used for cancellation of a bet. <br/>
-(i.e. Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response.)
+(i.e. Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response.) </br>
+Important : The sessionId of the cancel request is the same as the sessionId of the bet. Therefore, the cancel request must be accepted even if the player creates a new session.
 
 ## Request
 
