@@ -1,11 +1,11 @@
 # Result
 
 ## Overview
-Using this method the Lucky Monaco system will send to Casino Operator the winning result of a bet.<br/> **The Casino Operator
-will change the balance of the player in accordance with this request and return the updated balance.**
+Using this method the Lucky Monaco system will send to Casino Operator the winning result of a bet. <br /> **The Casino Operator
+will change the balance of the player in accordance with this request and return the updated balance.** <br />
 
 Result request may contain a prize that the player is awarded with during the game round, if there is an active promotional 
-campaigns. <br>   Players connection was lost in any cases so lucky monaco will do retransmission 10 times, then do not receive any result response. 
+campaigns. <br />   Players connection was lost in any cases so lucky monaco will do retransmission 10 times, then do not receive any result response. <br /> 
 
 Important : The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
@@ -114,3 +114,5 @@ Example of successful response from Partner API servers.
  }
 
 ```
+
+

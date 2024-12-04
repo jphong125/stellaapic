@@ -2,14 +2,16 @@
 
 ## Overview
 
-Notifies the casino Operator that Canceled player’s bet.  <br/>
-This method will be used for cancellation of a bet. <br/>
-(i.e. Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response.) </br>
+Notifies the casino Operator that Canceled player’s bet.  <br />
+This method will be used for cancellation of a bet. <br />
+(i.e. Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response.) <br />
 Important : The sessionId of the cancel request is the same as the sessionId of the bet. Therefore, the cancel request must be accepted even if the player creates a new session.
+
 
 ## Request
 
 Requested cancel round API URL will be notified individually, for security reasons.
+
 
 ###  Request parameters
 
@@ -24,6 +26,7 @@ Requested cancel round API URL will be notified individually, for security reaso
 | roundId    |  string   | Id of the round.                                                           | Required |
 | gameId     |string| Id of the game. This is optional parameter, which has to be sent by Operator if only the session for specific game should be closed. | Required |
 | uuid       |string| A unique ID for each request.                                                                                                        | Required |
+
 
 ### Examples
 
