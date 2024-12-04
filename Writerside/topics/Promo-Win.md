@@ -17,17 +17,20 @@ Requested "Promo win" API URL will be notified individually, for security reason
 
 ### Request Parameters
 
-| Name              | Data Type | Description                                                              | Remark  |
-|:------------------|:---------:|:-------------------------------------------------------------------------|----------|
-| uuid              |string| A unique ID for each request.                                            | Required |
-| userId            |  string   | user's ID, specified by Partner when creating a game session.            | Required |
-| amount            |  decimal  | Prize amount that the player is awarded with.                            | Required |
-| reference         |  string   | Unique reference of this transaction.                                    | Required |
-| providerId        |  string   | Game Provider id.                                                        | Required |
-| timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side | Required |
-| promoCampaignId   |  string   | Id of the campaign.                                                      | Required | 
-| promoCampaignType |  string   | Type of the campaign.                                                    | Required |
-| currency          |  string   | User’s currency.                                                         | Required |
+| Name              | Data Type | Description                                                                                                     | Remark   |
+|:------------------|:---------:|:----------------------------------------------------------------------------------------------------------------|----------|
+| uuid              |string| A unique ID for each request.                                                                                   | Required |
+| userId            |  string   | user's ID, specified by Partner when creating a game session.                                                   | Required |
+| amount            |  decimal  | Prize amount that the player is awarded with.                                                                   | Required |
+| reference         |  string   | Unique reference of this transaction.                                                                           | Required |
+| providerId        |  string   | Game Provider id.                                                                                               | Required |
+| timestamp         |  string   | Date and time when the transaction is processed on the Lucky Monaco side                                        | Required |
+| promoCampaignId   |  string   | Id of the campaign.                                                                                             | Required | 
+| promoCampaignType |  string   | Type of the campaign.                                                                                           | Required |
+| gameId            |  string   | Id of the game.                                                                                                 | Required |
+| roundId           |  string   | Id of the round. Id of the round (the last round in Tournaments achievement which leads to changing the scores) | Optional |
+| currency          |  string   | User’s currency.                                                                                                | Required |
+| dataType          |  string   | Portfolio type of promo campaign                                                                                | Optional |
 
 ### Examples
 
