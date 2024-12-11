@@ -3,7 +3,7 @@
 ## Overview
 Below table contains the error codes that should be returned by Casino Operator in the response to API calls.
 
-**When an error occurs, 3 retransmissions are sent except for error code 1 and code 999. If all 3 retransmissions result in an error, the bet is canceled.**
+**When an error occurs, 3 retransmissions are sent except for error code 15 and code 999. If all 3 retransmissions result in an error, the bet is canceled.**
 
 ### Error code
 | Name |Data Type| Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Remark   |
