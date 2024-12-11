@@ -26,7 +26,6 @@ Requested "Bet" API URL will be notified individually, for security reasons.
 | currency     |string| Currency of the User                                                              | Required |
 | timeStamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco system.       | Required |
 | roundDetails |  string   | Additional information about the current game round. (i.e. "spin", "buyFreeSpin") | Required |
-| sessionId    |string| User’s game session id on Lucky Monaco system.                                    | Required |
 
 ### Parameters  (Reserved for future development)
 
