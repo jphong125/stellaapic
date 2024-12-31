@@ -87,4 +87,8 @@
         <description>Created after removal of "Terminate Session" from LuckyMonaco V4</description>
         <accepts>Terminate-Session.html</accepts>
     </rule>
+    <rule id="9b5d5db">
+        <description>Created after removal of "Bonus Win" from LuckyMonaco V4.02</description>
+        <accepts>Empty-MD-Topic.html</accepts>
+    </rule>
 </rules>

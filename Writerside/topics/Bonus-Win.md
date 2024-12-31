@@ -1,34 +1,36 @@
 # Bonus Win (Reserved for future development)
 
 ## Overview
+Using this method a Lucky Monaco system will send to Casino Operator winning result of all rounds played on Free Rounds Bonus. Casino Operator will change a player balance in appliance with this request and will return an updated balance.
 
-Using this method a Lucky Monaco system will send to Casino Operator winning result of all rounds played on Free Round
-Bonus.<br/> **Casino Operator will change a player balance in appliance with this request and will return an updated balance.**
+Important: The call is idempotent, i.e. sending result again with the same reference number creates only one transaction. For retries actual player's balance should be returned
 
-Important : The call is idempotent, i.e. sending result again with the same reference number creates only one
-transaction.
-
+Important: The call is asynchronous and is not linked to the end of the game round.
 
 ## Request
 
-Requested "Bonus win" API URL will be notified individually, for security reasons.
+Requested "BonusWin" API URL will be notified individually, for security reasons.
 
 ### Request Parameters
 
-| Name       | Data Type | Description                                                               | Remark  |
-|:-----------|:---------:|:--------------------------------------------------------------------------|----------|
-| uuid       |string| A unique ID for each request.                                             | Required |
-| userId     |  string   | User's ID, specified by Partner when creating a game session.             | Required |
-| gameId     |  string   | Id of the game.                                                           | Required |
-| roundId    |  string   | Id of the round.                                                          | Required |
-| amount     |  decimal  | Amount of the bet.                                                        | Required |
-| reference  |  string   | Unique reference of this transaction.                                     | Required |
-| providerId |  string   | Game Provider id.                                                         | Required |
-| timestamp  |  string   | Date and time when the transaction is processed on the Lucky Monaco side. | Required |
-| bonusCode  |  string   | Id of the bonus in Casino Operator system.                                | Required |
-| platform   |  string   | The platform type (channel) on which the game is played.                  | Optional |
-| roundId    |  string   | Id of the last played round in Free Round Bonus                           | Optional |
-| sessionId        |string| User’s game session id on Lucky Monaco system.                            | Required |
+| Name         | Data Type | Description                                                                               | Remark   |
+|:-------------|:---------:|:------------------------------------------------------------------------------------------|----------|
+| uuid         |  string   | A unique ID for each request                                                              | Required |
+| userId       |  string   | User's ID, specified by Partner when creating a game session.                             | Required |
+| amount       |  decimal  | Amount of the bet.                                                                        | Required |
+| reference    |  string   | Unique reference of this transaction.                                                     | Required |
+| providerId   |  string   | Game Provider id.                                                                         | Required |
+| timestamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco side.                 | Required |
+| bonusCode    |  string   | Id of the bonus in Casino Operator system.                                                | Required |
+| roundId      |  string   | Id of the round.                                                                          | Optional |
+| gameId       |  string   | Id of the game.                                                                           | Optional |
+| sessionId    |  string   | User’s game session id on Lucky Monaco system.                                            | Optional |
+| requestId    |  string   | Unique identifier of FSB credit request (for specific player).                            | Optional |
+| remainAmount |  string   | Number of remaining FSB.                                                                  | Optional |
+| gameName     |  string   | Name of the game.                                                                         | Optional |
+| currency     |  string   | Currency of the User.                                                                     | Optional |
+| roundDetails |   array   | Additional information about the current game round. (ie. "spin", "freespin", "minigame") | Optional |
+
 
 ### Examples
 
@@ -57,7 +59,7 @@ Content-Type: application/json
     "gameId": "Im_60_tumblefortune",
     "amount": "1.0",
     "providerId": "Luckymonaco",
-    "bonescode" : "<bonuscode>,
+    "bonescode" : "<bonuscode>",
     "roundId" : "5103188801",
     "userId": "421",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
