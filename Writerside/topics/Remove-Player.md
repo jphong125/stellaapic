@@ -27,7 +27,7 @@ POST
 ### Example of URL
 
 ``` http
-https://<API URL>/api/removePlayer
+https://<API URL>/freeround/removePlayer
 ```
 
 

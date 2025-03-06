@@ -26,7 +26,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/api/cancelFreeRound
+https://<API URL>/freeround/cancelFreeRound
 ```
 HEADER
 

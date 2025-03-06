@@ -27,7 +27,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/api/addPlayer
+https://<API URL>/freeround/addPlayer
 ```
 HEADER
 

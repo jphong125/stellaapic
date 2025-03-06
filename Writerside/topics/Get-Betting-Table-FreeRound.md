@@ -27,7 +27,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/api/bettingInfo
+https://<API URL>/freeround/bettingInfo
 ```
 HEADER
 

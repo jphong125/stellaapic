@@ -25,7 +25,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/api/getInfo
+https://<API URL>/freeround/getInfo
 ```
 HEADER
 

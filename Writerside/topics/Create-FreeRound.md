@@ -35,7 +35,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/api/createFreeround
+https://<API URL>/freeround/createFreeround
 ```
 
 HEADER
