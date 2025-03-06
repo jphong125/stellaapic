@@ -59,6 +59,11 @@
             <toc-element topic="Add-Player.md"/>
             <toc-element topic="Remove-Player.md"/>
         </toc-element>
+        <toc-element topic="Data-feed-and-reports.md">
+            <toc-element topic="Active-Jaclpots.md"/>
+            <toc-element topic="Jackpot-Winners.md"/>
+            <toc-element topic="Jackpot-Winnings.md"/>
+        </toc-element>
         <toc-element topic="Game-History-API.md">
             <toc-element topic="Get-Played-Games.md"/>
             <toc-element topic="Get-Game-Rounds.md"/>

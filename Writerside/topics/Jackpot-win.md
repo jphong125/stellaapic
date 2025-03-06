@@ -1,7 +1,7 @@
 # Jackpot Win (Reserved for future development)
 
 ## Overview
-Using this method a Pragmatic Play system will notify Casino Operator about Jackpot winning. Operator should handle the transaction in their system and send the jackpot win transaction id back to the Lucky Monaco.
+Using this method a Lucky Monaco system will notify Casino Operator about Jackpot winning. Operator should handle the transaction in their system and send the jackpot win transaction id back to the Lucky Monaco.
 
 Important: The call is idempotent, i.e. sending result again with the same reference number creates only one transaction. For retries actual player's balance should be returned.
 
@@ -30,6 +30,7 @@ Requested "Jackpot win" API URL will be notified individually, for security reas
 | platform         |  string   | The platform type (channel) on which the game is played.                                                                                                                                                                                                                                                                                                                                                                                                   | Optional |
 | sessionId        |  string   | User’s game session id on Lucky Monaco system.                                                                                                                                                                                                                                                                                                                                                                                                             | Optional |
 | balanceBeforeWin |  string   | balanceBeforeWin is calculated either by won tier only or by all JP tiers	Optional depending on the option selected. <br/>  Options list: <br/> -calculation by tier <br/> balanceBeforeWin = winning amount of the won tier (including progressive and community wins) <br/> -Calculation by JP <br/> balanceBeforeWin = sum of balances of all tiers (except WON) + winning amount of the won tier (including progressive and community wins, except JP baby) | Optional |
+| balanceAfterWin  |  string   | balanceAfterWin is calculated either by won tier only or by all JP tiers depending on the option selected. <br/>  Options list: <br/> -calculation by tier <br/> balanceAfterWin = seed of the new instance of the won tier <br/> -Calculation by JP <br/> balanceAfterWin = sum of balances of all tiers (except WON) + seed of the new instance of the won tier (except JP baby) | Optional |
 | instanceId       |  string   | Instance id of the won tier. The first instance starts from the "1" identifier.<br/> If several brands or operators participate in the same jackpot, instance is incremented globally per jackpot, not individually per brand or operator.                                                                                                                                                                                                                       | Optional |
 
 ### Examples

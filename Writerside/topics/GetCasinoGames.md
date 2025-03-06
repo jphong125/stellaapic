@@ -70,6 +70,7 @@ Example of successful response from LuckyMonaco API servers.
 |          |       lines       |  string   | Number of available pay lines in the game.                                                                  |
 |          |     rowReels      |  string   | Layout of the game.                                                                                         |
 |          |        rtp        |  string   | RTP of the game.                                                                                            |
+|          |     features      |  string   | List of supported features. (i.e "BUY" : buy bonus (freespin), "HOLDANDWIN" : hold and win                  |
 |          |     dataType      |  string   | Type of game portfolio. (i.e. "RNG" : Main Portfolio games (video slots, etc), "lc" : Live Casino portfolio |
 |          |  gameDescription  |  string   | Description of the game.                                                                                    |
 |          |      release      |  boolean  | If true, the game is released and available to use.                                                         |
