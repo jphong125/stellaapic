@@ -31,7 +31,7 @@ Requested "Result" API URL will be notified individually, for security reasons.
 | timestamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco side.                 | Required |
 | roundDetails |   array   | Additional information about the current game round. (ie. "spin", "freespin", "minigame") | Required |
 | sessionId    |  string   | User’s game session id on Lucky Monaco system.                                            | Required |
-| bonusCode         |  string   | Id of the bonus in Casino Operator system.                                  | Required |
+| bonusCode         |  string   | Id of the bonus in Casino Operator system.                                  | Optional |
 
 ### Parameters  (Reserved for future development)
 

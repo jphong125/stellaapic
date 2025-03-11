@@ -20,6 +20,7 @@ Requested "Bet" API URL will be notified individually, for security reasons.
 | gameName     |  string   | name of the game.                                                                 | Required |
 | roundId      |  string   | ID of the round.                                                                  | Required |
 | amount       |  decimal  | Amount of the bet.                                                                | Required |
+| bonusCode           |  string   | Id of the bonus (i.e. FREE ROUND) in Casino Operator system.                                                                            | Optional |
 | reference    |  string   | Unique reference of this transaction.                                             | Required |
 | sessionId    |string| User’s game session id on Lucky Monaco system.                                    | Required |
 | providerId   |  string   | Game Provider ID.                                                                 | Required |
@@ -31,7 +32,6 @@ Requested "Bet" API URL will be notified individually, for security reasons.
 
 |Name|Data Type| Description                                                                                                                             | Remark   |
 |:---|:---:|:----------------------------------------------------------------------------------------------------------------------------------------|----------|
-| bonusCode           |  string   | Id of the bonus (i.e. FREE ROUND) in Casino Operator system.                                                                            | Optional |
 | jackpotContribution |  string   | Amount of the contribution to the jackpot. If there is a multi-tier jackpot, contain the total amount of contributions to all jackpots. | Optional |
 | jackpotDetails      |  string   | Amounts of the contribution for multi-tier jackpot, separated by tiers.                                                                 | Optional |
 | jackpotId           |  string   | ID of the active jackpot to contribute.                                                                                                 | Optional |
@@ -86,11 +86,6 @@ Example of successful response from Partner API servers.
 | cash          |decimal| Real balance of the player.                          | Required |
 | error         |  string   | Code of error.                                       | Required |
 | description   |string| Response status short description.                   | Optional |
-
-### Response Parameters  (Reserved for future development)
-
-|Name|Data Type| Description                | Remark   |
-|:---|:---:|:---------------------------|----------|
 | bonus        |decimal| Bonus balance of the User. | Required |
 
 ### Example of Json BODY

@@ -1,4 +1,4 @@
-# Refund (Reserved for future development)
+# Refund 
 
 ## Overview
 Lucky Monaco system may use this method to rollback a bet transaction on the Casino Operator side, in order to reverse
@@ -43,7 +43,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/v4/Cancel
+https://<API URL>/v4/Refund
 ```
 HEADER
 
