@@ -5,7 +5,8 @@ Using this method the Lucky Monaco system will send to Casino Operator the winni
 will change the balance of the player in accordance with this request and return the updated balance.** <br />
 
 Result request may contain a prize that the player is awarded with during the game round, if there is an active promotional 
-campaigns. <br />   Players connection was lost in any cases so lucky monaco will do retransmission 10 times, then do not receive any result response. <br /> 
+campaigns or Free Round (FRB). <br /> **If the result parameter value contains a bonusCode, it is a Free Round Result.** The Casino Operator
+will change the balance of the player in accordance with this request and return the updated balance. If applicable, Also increase **balance in bonus parameters** (optional for statistics use). <br/> Players connection was lost in any cases so lucky monaco will do retransmission 10 times, then do not receive any result response. <br /> 
 
 Important : The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
@@ -30,14 +31,12 @@ Requested "Result" API URL will be notified individually, for security reasons.
 | timestamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco side.                 | Required |
 | roundDetails |   array   | Additional information about the current game round. (ie. "spin", "freespin", "minigame") | Required |
 | sessionId    |  string   | User’s game session id on Lucky Monaco system.                                            | Required |
-
+| bonusCode         |  string   | Id of the bonus in Casino Operator system.                                  | Required |
 
 ### Parameters  (Reserved for future development)
 
 | Name              |Data Type| Description                                                  | Remark   |
 |:------------------|:---:|:-------------------------------------------------------------|----------|
-| bonusCode         |  string   | Id of the bonus in Casino Operator system.                                  | Optional |
-| amount            |  string   | Prize amount that the player is awarded with during a promotional campaign. | Optional |
 | promoWinReference |  string   | Unique reference of this transaction.                                       | Optional |
 | promoCampaignID   |  string   | Id of the promotional campaign.                                             | Optional |
 | promoCampaignType |  string   | Type of the promotional campaign.                                             | Optional |
@@ -94,13 +93,7 @@ Example of successful response from Partner API servers.
 | cash          |decimal| Real balance of the User.          | Required |
 | error  |  string   | code of error                      | Required |
 | description |string| Response status short description. | Optional |
-
-### Response Parameters  (Reserved for future development)
-
-|Name|Data Type| Description                | Remark   |
-|:---|:---:|:---------------------------|----------|
-| bonus         |decimal| Bonus balance of the User. | Required |
-
+| bonus         |decimal| Bonus balance of the User. | Optional |
 
 ### Example of Json BODY
 

@@ -1,4 +1,4 @@
-# Get Betting Table (FreeRound)
+# Get Betting Table 
 
 ## Overview
 Get a list of possible bet amounts for a specific game for a specific currency.

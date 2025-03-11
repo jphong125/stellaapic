@@ -91,4 +91,9 @@
         <description>Created after removal of "Bonus Win" from LuckyMonaco V4.02</description>
         <accepts>Empty-MD-Topic.html</accepts>
     </rule>
+    <rule id="8daad3e">
+        <description>Created after removal of "Bonus Win (Reserved for future development)" from LuckyMonaco V4.02
+        </description>
+        <accepts>Bonus-Win.html</accepts>
+    </rule>
 </rules>

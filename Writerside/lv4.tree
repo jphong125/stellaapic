@@ -35,8 +35,6 @@
             <toc-element topic="Cancel-Round.md">
                 <toc-element topic="Refund.md"/>
             </toc-element>
-            <toc-element topic="Bonus-Win.md">
-            </toc-element>
             <toc-element topic="Jackpot-win.md"/>
             <toc-element topic="Promo-Win.md"/>
             <toc-element topic="Session-Expired.md"/>
