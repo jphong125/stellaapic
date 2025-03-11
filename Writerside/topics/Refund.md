@@ -29,6 +29,7 @@ Requested "Refund" win API URL will be notified individually, for security reaso
 | currency   |string| Currency of the User.                                                                                                                | Required |
 | sessionId    |string| User’s game session id on Lucky Monaco system.                                    | Required |
 | reference  |  string   | Unique reference of this transaction.                                                                                                | Required |
+| bonusCode           |  string   | Id of the bonus (i.e. FREE ROUND) in Casino Operator system.                                                                            | Optional |
 | gameId     |string| Id of the game. This is optional parameter, which has to be sent by Operator if only the session for specific game should be closed. | Required |
 | uuid       |string| A unique ID for each request.                                                                                                        | Required |
 
