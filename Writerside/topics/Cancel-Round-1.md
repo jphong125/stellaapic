@@ -63,8 +63,6 @@ Example of successful response from LuckyMonaco API servers.
 |:---|:---:|:----------------------------------------------------:|---|
 | error  |  string   |                    Code of error                     | Required |
 | description |string|          Response status short description.          | Optional |
-| currency     |string|                 Currency of the User                 | Required |
-| amount       |  decimal  |                Amount to be refunded.                | Required |
 | roundId     |string| Id of round to be refunded                                                                                                          | Required |
 
 ### Example of Json BODY
@@ -73,8 +71,6 @@ Example of successful response from LuckyMonaco API servers.
 {
   "error": 0,
   "description": "Success",
-  "currency": "USD",
-  "amount": 100,
   "roundId" : "123456" 
 }
 ```

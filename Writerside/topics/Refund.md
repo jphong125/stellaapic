@@ -1,18 +1,16 @@
 # Refund 
 
 ## Overview
-Lucky Monaco system may use this method to rollback a bet transaction on the Casino Operator side, in order to reverse
+Lucky Monaco system may use this method to rollback a round on the Casino Operator side, in order to reverse
 the transaction and adjust player’s balance. <br/> 
-When receive a Cancel request Operator have to return money back to player’s  balance.
-
-**This method does not require a separate API construction.** It is sent to the Cancel API. The reason for displaying it separately is to explain the process of how to terminate an incomplete round.
+When receive a refund request Operator have to return money back to player’s  balance.
 
 - Important : The call is idempotent, i.e. sending refund for existing bet again only creates one transaction.
 
 - Important : If bet transaction is not found then nothing should happen on the Casino Operator side and success (0)
 or specific error code for this situation should be returned.
 - Important : **It is automatically executed when the operator executes "cancel round"**.
-- Important : By any reason, if the relevant response is not received from OP side for 90days after the bet was successful in the Lucky Monaco system, then the Lucky Monaco system will automatically initiate a refund process.
+
 
 
 ## Request
