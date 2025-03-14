@@ -3,9 +3,9 @@
 ## Overview
 Using this method Casino Operator Cancels in progress game round   <br/>After  successful cancel call the game round will be marked as Cancelled in the Lucky Monaco system.<br/>
 This method Operator can use any time they want to close player’s round forcefully
-- due to a retention policy on the Operator’s system or according to requirements for regulated markets.
-- **This circumstance only applies to the bet which has not been completed by any reasons.** Cancel Round cannot be executed on the round that has been completed.
-- Impotant : In principle, incomplete rounds are completed by the user reconnecting or auto-closing. To deal with malicious users, we recommend canceling only when a user complains with **clear evidence.**
+- Due to a retention policy on the Operator’s system or according to requirements for regulated markets.
+- **This circumstance only applies to the bet which has been completed.**
+- Impotant : In principle, this method due to a retention policy on the Operator’s system or according to requirements for regulated markets, 
 
 ## Request
 
