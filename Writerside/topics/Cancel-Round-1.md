@@ -5,7 +5,7 @@ Using this method Casino Operator Cancels in progress game round   <br/>After  s
 This method Operator can use any time they want to close player’s round forcefully
 - Due to a retention policy on the Operator’s system or according to requirements for regulated markets.
 - **This circumstance only applies to the bet which has been completed.**
-- Impotant : In principle, this method due to a retention policy on the Operator’s system or according to requirements for regulated markets, 
+- Impotant : In principle, this method due to a retention policy on the Operator’s system or according to requirements for regulated markets. **If you have integrated with the Seamless Wallet method, you must respond to the Refund API call.** 
 
 ## Request
 
@@ -15,11 +15,10 @@ Requested "Cancel Round" API URL will be notified individually, for security rea
 
 | Name        |Data Type| Description                                                                                                                         |  Remark  |
 |:------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service                                                                        | Required |
 | gameId      |string| Id of the game. This is optional parameter,which has to be sent by Operator if only the session for specific game should be closed. | optional |
 | userId      |string| Identifier of the user within the Casino Operator’s system.                                                                         | Required |
-| sessionId    |  string   | User’s game session id on Lucky Monaco system.                                            | Required |
-| roundId     |string| Id of round                                                                                                                         | Required |
+| roundId     |string| Id of round to be refunded                                                                                                          | Required |
 | token       |string| Token of the Partner from Authenticate response                                                                                     | Required |
 | uuid        |  string   | A unique ID for each request                                                                                                        | Required |
 
@@ -49,7 +48,6 @@ Content-Type: application/json
     "secureLogin" : "<partnerId>",
     "gameId" : "lm_1_pumpkinfarm",
     "userId": "tester",
-    "sessionId": "<sessionId>",
     "roundId" : "123456",
     "token" : "<token>",
     "uuid": "<uuid>"
@@ -67,7 +65,7 @@ Example of successful response from LuckyMonaco API servers.
 | description |string|          Response status short description.          | Optional |
 | currency     |string|                 Currency of the User                 | Required |
 | amount       |  decimal  |                Amount to be refunded.                | Required |
-| transactionId |string| Id of the transaction within Casino Operator system. | Required |
+| roundId     |string| Id of round to be refunded                                                                                                          | Required |
 
 ### Example of Json BODY
 
@@ -75,9 +73,9 @@ Example of successful response from LuckyMonaco API servers.
 {
   "error": 0,
   "description": "Success",
-  "currency": "USD"
+  "currency": "USD",
   "amount": 100,
-  "transactionId" : "<bet transactionId> 
+  "roundId" : "123456" 
 }
 ```
 

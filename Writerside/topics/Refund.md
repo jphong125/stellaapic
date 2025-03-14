@@ -27,9 +27,9 @@ Requested "Refund" win API URL will be notified individually, for security reaso
 | providerId |  string   | Game Provider id.                                                                                                                    | Required |
 | gameName   |  string   | Name of the game.                                                                                                                    | Required |
 | currency   |string| Currency of the User.                                                                                                                | Required |
-| sessionId    |string| User’s game session id on Lucky Monaco system.                                    | Required |
+| roundId     |string| Id of round to be refunded                                                                                                           | Required |
 | reference  |  string   | Unique reference of this transaction.                                                                                                | Required |
-| bonusCode           |  string   | Id of the bonus (i.e. FREE ROUND) in Casino Operator system.                                                                            | Optional |
+| bonusCode           |  string   | Id of the bonus (i.e. FREE ROUND) in Casino Operator system.                                                                         | Optional |
 | gameId     |string| Id of the game. This is optional parameter, which has to be sent by Operator if only the session for specific game should be closed. | Required |
 | uuid       |string| A unique ID for each request.                                                                                                        | Required |
 
@@ -61,7 +61,7 @@ Content-Type: application/json
  "currency": "USD",
  "gameId": "Im_60_tumblefortune",
  "gameName" : "tumblefortune", 
- "sessionId": "<sessionId>",
+ "roundId": "<roundId>",
  "reference": "585c1306f89c56f5ecfc2f5d",
  "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"
 }
