@@ -96,4 +96,9 @@
         </description>
         <accepts>Bonus-Win.html</accepts>
     </rule>
+    <rule id="aaefb6">
+        <description>Created after removal of "Jackpot Win (Reserved for future development)" from LuckyMonaco V4.02
+        </description>
+        <accepts>Jackpot-win.html</accepts>
+    </rule>
 </rules>
