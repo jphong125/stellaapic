@@ -74,7 +74,7 @@ Example of successful response from Partner API servers.
 |:--------------|:---:|:-----------------------------------------------------|-----|
 | currency      |string| Currency of the User.                                | Required |
 | cash          |decimal| Real balance of the User.                            | Required |
-| bonus         |decimal| Bonus balance of the User.                           | Required |
+| bonus         |decimal| Bonus balance of the User.                           | Optional |
 | error  |  string   | Code of error                                        | Required |
 | description |string| Response status short description.                   | Optional |
 
