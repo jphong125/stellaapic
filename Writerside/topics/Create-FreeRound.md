@@ -55,8 +55,8 @@ Content-Type: application/json
     "betvalues": "1",
     "bonuscode": "43f4a26e-6da6-496e-9754-0d6c13a19df7",
     "rounds": 10,
-    "startdate": 1713400705,
-    "expirationdate": 1713401305,
+    "startdate": 1713400705000,
+    "expirationdate": 1713401305000,
     "gamelist": [
         "lm_14_childofsuccess",
         "lm_15_childoffortune"
