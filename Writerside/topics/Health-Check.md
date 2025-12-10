@@ -1,7 +1,7 @@
 # Health Check
 
 ## Overview
-HealthCheck method can be used by operators to check if Lucky Monaco provider API service.
+HealthCheck method can be used by operators to check if Stella provider API service.
 
 ## Request
 
@@ -11,7 +11,7 @@ Requested "Health Check" API URL will be notified individually, for security rea
 
 | Name       |Data Type| Description                                                  |  Remark  |
 |:-----------|:---:|:-------------------------------------------------------------|:--------:|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Stella API service | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
 | uuid                |  string   | A unique ID for each request                                 | Required |
 
@@ -26,7 +26,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/v4/HealthCheck
+https://<API URL>/v1/HealthCheck
 ```
 
 
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## Response 
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ### Response parameters
 | Name  |Data Type| Description                        | Remark  |

@@ -42,7 +42,7 @@ Content-Type: application/json
     "secureLogin" : "<partnerId>",
     "token" : "<token>"
     "uuid": "<uuid>"
-    "gameId": "lm_1_pumpkinfarm",
+    "gameId": "lm_1_speed_baccarat1",
     "currency": "USD"
 }
 ```
@@ -50,7 +50,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ### Response Parameters
 
@@ -68,7 +68,7 @@ Example of successful response from LuckyMonaco API servers.
     "error": 0,
     "description": "Success",
 {
-    "gameId": "lm_1_pumpkinfarm",
+    "gameId": "lm_1_speed_baccarat1",
     "currency": "USD",
     "support_betting": [
         "0.1",

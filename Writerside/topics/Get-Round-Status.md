@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ### Response Parameters
 
@@ -72,7 +72,7 @@ Example of successful response from LuckyMonaco API servers.
    "description": "Success",
    "currency" : "USD"
    “betAmount”: “10”,
-   “winAmount”: “100”,
+   “winAmount”: “20”,
    “roundStatus”: “completed”
 
 }

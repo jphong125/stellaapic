@@ -1,8 +1,8 @@
 # Get Transfer Info
 
 ## Overview
-This method returns the status of a particular transaction that transferred the money in or out the player’s balance on the
-Lucky Monaco side.
+This method returns the status of entire transactions that transferred the money in or out the player’s balance on the
+Stella side.
 
 Important: This method will return player’s balance after successful transaction for all transactions. 
 
@@ -13,7 +13,7 @@ Requested get transfer status API URL will be notified individually, for securit
 
 | Name        |Data Type| Description                                                    | Remark   |
 |:------------|:---:|:---------------------------------------------------------------|----------|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| partner Id for authentication in the Stella API service | Required |
 | userId     |string| Id of the User within the Operator system.                     | Required |
 | uuid        |  string   | A unique ID for each request                                   | Required |
 | token       |string| Token of the Partner from Authenticate response                 | Required |
@@ -50,7 +50,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ###  Response Parameters 
 

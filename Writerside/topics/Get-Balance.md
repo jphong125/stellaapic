@@ -1,7 +1,7 @@
 # Get Balance
 
 ## Overview
-Using this method Operator can get the current balance of the player in the Lucky Monaco.
+Using this method Operator can get the current balance of the player in the Stella.
 
 ## Request
 Requested get balance API URL will be notified individually, for security reasons.
@@ -10,7 +10,7 @@ Requested get balance API URL will be notified individually, for security reason
 
 | Name        |Data Type| Description                                                  | Remark   |
 |:------------|:---:|:-------------------------------------------------------------|----------|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Stella API service | Required |
 | userId   |string| Id of the user within the Operator system.                   | Required |
 | currency    |    string  | Currency of the user.                                        |      Required |
 | uuid        |  string   | A unique ID for each request                                 | Required |
@@ -49,13 +49,13 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ###  Response Parameters 
 
 | Name        |Data Type| Description                                            | Remark  |
 |:------------|:---:|:-------------------------------------------------------|---|
-| balance     |string| Current user’s balance within the Lucky Monaco system. |  Required |
+| balance     |string| Current user’s balance within the Stella system. |  Required |
 | error       |  string   | Code of error.                                         | Required |
 | description |string| Response status short description.                     | Optional |
 

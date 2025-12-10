@@ -31,7 +31,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/v4/CloseSession
+https://<API URL>/v1/CloseSession
 ```
 
 HEADER
@@ -44,7 +44,7 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "gameId" : "lm_1_pumpkinfarm",
+    "gameId": "6_speed_baccarat1",
     "userId": "tester",
     "token" : "<token>",
     "uuid": "<uuid>"
@@ -53,7 +53,7 @@ Content-Type: application/json
 
 ## Response 
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ### Response parameters
 |Name|Data Type|            Description             |Remark |

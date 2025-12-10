@@ -27,7 +27,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/v4/Balance
+https://<API URL>/v1/Balance
 ```
 HEADER
 
@@ -39,7 +39,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "providerId": "<Luckymonaco>",
+    "providerId": "<Stella>",
     "userId": "<User ID>",
     "sessionId": "<sessionId>",
     "currency": "USD",
@@ -59,12 +59,6 @@ Example of successful response from Partner API servers.
 |cash|decimal| Money balance that was deposited with real money. | Required |
 | error  |  string   | code of error.                                    | Required |
 | description |string| Response status short description.                | Optional |
-
-### Response Parameter (Reserved for future development)
-
-|Name|Data Type| Description                                                  | Remark   |
-|:---|:---:|:-------------------------------------------------------------|----------|
-|bonus|decimal| This is the balance of money that was won from the FREE ROUND feature. | Optional |
 
 ### Example of Json BODY
 

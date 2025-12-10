@@ -34,7 +34,7 @@ For example, if Operator needs to get data for the last N minutes, they can calc
 
 ## Data Feed URL
 
-URL of the data feeds service will be provided by Lucky Monaco for the production and test environments and looks like :
+URL of the data feeds service will be provided by Stella for the production and test environments and looks like :
 
 https://{API service domain}/lntegrationService/v4/DataFeeds/transactions/ 
 https://{API service domain}/lntegrationService/v4/DataFeeds/failedtransactions/ 
@@ -42,7 +42,7 @@ https://{API service domain}/lntegrationService/v4/JackpotFeeds/jackpots/
 
 Data feeds service is securely protected, hence please be sure:
 player's browser (end) must NOT be used as initiator of requests to the service.
-proper IPs are supplied to Lucky Monaco for whitelisting.
+proper IPs are supplied to Stella for whitelisting.
 
 ## Data formats
 Data will be returned in CSV or JSON format. For more details please see the chapter where the data feed is described.

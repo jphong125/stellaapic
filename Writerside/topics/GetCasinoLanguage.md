@@ -2,7 +2,7 @@
 
 
 ## Overview
-Using this method Casino Operator will get the game language from LuckyMonaco to proceed a specific game.
+Using this method Casino Operator will get the game language from Stella to proceed a specific game.
 
 
 ## Request
@@ -13,7 +13,7 @@ Requested "Get Casino Language" URL will be notified individually, for security 
 
 | Name        |Data Type| Description                                                  | Remark |
 |:------------|:---:|:-------------------------------------------------------------|:---------:|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Stella API service | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
 | uuid                |  string   | A unique ID for each request                                 | Required |
 
@@ -28,7 +28,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/v4/GetCasinoLanguage
+https://<API URL>/v1/GetCasinoLanguage
 ```
 
 HEADER
@@ -48,7 +48,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ###  Response parameters
 

@@ -9,7 +9,7 @@ Requested remove player API URL will be notified individually, for security reas
 ### Request Parameters
 | Name        | Data Type | Description                                                                                                                              | Remark  |
 |:------------|:---------:|:-----------------------------------------------------------------------------------------------------------------------------------------|----------|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service                                                                             | Required |
+| secureLogin  |string| Partner Id for authentication in the Stella API service                                                                             | Required |
 | token      |string| Token of the Partner from Authenticate response                                                                                          | Required |
 | uuid        |  string   | A unique ID for each request                                                                                                             | Required |
 | userList    |  string   | List of player id to add to the existing Free Round Bonus, comma separated. This data must be sent as a JSON in the body of the request. | Required |

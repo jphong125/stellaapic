@@ -1,7 +1,7 @@
 # Get Casino Currency
 
 ## Overview
-Using this method Casino Operator will retrieve the currencies that are available in LuckyMonaco games to proceed a specific game.
+Using this method Casino Operator will retrieve the currencies that are available in Stella games to proceed a specific game.
 
 ## Request
 
@@ -27,7 +27,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/v4/GetCasinoCurrency
+https://<API URL>/v1/GetCasinoCurrency
 ```
 
 HEADER
@@ -47,7 +47,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ### Response parameters
 

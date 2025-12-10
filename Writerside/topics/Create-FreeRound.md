@@ -1,8 +1,8 @@
 # Create FreeRound
 
 ## Overview
-Using this method, the operator can create a new free round bonus with the Lucky Monaco system.<br/> In case of network failure, the operator can send a repeated free round creation request.<br/> 
-The Lucky Monaco system will not create a new FR bonus if there is an active FR bonus with the same bonus code.
+Using this method, the operator can create a new free round bonus with the Stella system.<br/> In case of network failure, the operator can send a repeated free round creation request.<br/> 
+The Stella system will not create a new FR bonus if there is an active FR bonus with the same bonus code.
 
 **Expiration date is mandatory. It should be sent as timestamp in seconds, and the bonus validity period must not be longer than 30 days.**
 
@@ -58,8 +58,8 @@ Content-Type: application/json
     "startdate": 1713400705000,
     "expirationdate": 1713401305000,
     "gamelist": [
-        "lm_14_childofsuccess",
-        "lm_15_childoffortune"
+        "lm_1_SPEEDBACCART1",
+        "lm_2_SPEEDBACCART2"
     ]
 }
 ```

@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ### Response Parameters
 | Name        |Data Type| Description                                  | Remark   |

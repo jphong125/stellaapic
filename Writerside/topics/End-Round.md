@@ -1,13 +1,13 @@
 # End Round
 
 ## Overview
-Every time a game round is over, the Lucky Monaco system will call EndRound method, so that Operator can finalize the
+Every time a game round is over, the Stella system will call EndRound method, so that Operator can finalize the
 game round transactions on their side in real time.
 
 If Operator does not need to finalize transactions in real time it is strongly recommended to disable EndRound
-functionality on the Lucky Monaco side. 
+functionality on the Stella side. 
 
-Important: EndRound request may be sent more than once. (When Lucky Monaco do not received response) If the game round is already finalized, Operator
+Important: EndRound request may be sent more than once. (When Stella do not received response) If the game round is already finalized, Operator
 should  ignore the EndRound request and return the success response.
 
 
@@ -24,7 +24,7 @@ Requested "End round" API URL will be notified individually, for security reason
 | gameId     |  string   | Id of the game.                                                            | Required |
 | roundId    |  string   | Id of the round.                                                           | Required |
 | providerId |  string   | Game Provider id.                                                          | Required |
-| sessionId        |  string   | User’s game session id on Lucky Monaco system.                             | Required |
+| sessionId        |  string   | User’s game session id on Stella system.                             | Required |
 | currency     |  string   | Currency of the User.                                                                     | Required |
 | win        |  decimal  | Win amount in round. Intended to notify Operator about amount won in round | Optional |
 
@@ -40,7 +40,7 @@ POST
 ### Example of URL
 
 ``` http
-https://<API URL>/v4/EndRound
+https://<API URL>/v1/EndRound
 ```
 
 HEADER
@@ -53,8 +53,8 @@ Content-Type: application/json
 
 ``` json
 {
-    "gameId": "Im_60_tumblefortune",
-    "providerId": "Luckymonaco",
+    "gameId": "6_speed_baccarat1",
+    "providerId": "Stella",
     "userId": "421",
     "roundId" : "5103188801",
     "currency" : "USD",
@@ -74,7 +74,6 @@ Example of successful response from Partner API servers.
 |:--------------|:---:|:-----------------------------------------------------|-----|
 | currency      |string| Currency of the User.                                | Required |
 | cash          |decimal| Real balance of the User.                            | Required |
-| bonus         |decimal| Bonus balance of the User.                           | Optional |
 | error  |  string   | Code of error                                        | Required |
 | description |string| Response status short description.                   | Optional |
 
@@ -84,7 +83,6 @@ Example of successful response from Partner API servers.
 {
  "currency" : "USD",
  "cash": "99899.99",
- "bonus": "99.99",
  "error": 0,
  "description": "Success"
  }

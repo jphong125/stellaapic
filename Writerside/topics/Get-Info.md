@@ -10,7 +10,7 @@ Requested get info API URL will be notified individually, for security reasons.
 
 | Name             |Data Type| Description                                                  | Remark   |
 |:-----------------|:---:|:-------------------------------------------------------------|----------|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Stella API service | Required |
 | uuid                |  string   | A unique ID for each request                                 | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
 
@@ -44,7 +44,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ### Response Parameters
 
@@ -68,13 +68,13 @@ Example of successful response from LuckyMonaco API servers.
     "slot": [
         {
             "gameIdNumeric": "1",
-            "gameName": "Pumpkin Farm",
-            "gameId": "lm_1_pumpkinfarm"
+            "gameId": "lm_1_speed_baccarat1",
+            "gameName" : "SPEED BACCARAT1"
         },
         {
             "gameIdNumeric": "2",
-            "gameName": "Kelly's Wheel Double",
-            "gameId": "lm_2_kellyswheeldouble"
+            "gameId": "lm_2_speed_baccarat2",
+            "gameName" : "SPEED BACCARAT2",
         },...
     ],
     "currency": [

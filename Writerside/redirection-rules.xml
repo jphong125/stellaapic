@@ -101,4 +101,70 @@
         </description>
         <accepts>Jackpot-win.html</accepts>
     </rule>
+    <rule id="7ca3175a">
+        <description>Created after removal of "Get Info" from Stella V1.00</description>
+        <accepts>Get-Info.html</accepts>
+    </rule>
+    <rule id="2b6c6345">
+        <description>Created after removal of "Get Betting Table" from Stella V1.00</description>
+        <accepts>Get-Betting-Table-FreeRound.html</accepts>
+    </rule>
+    <rule id="6d9445ac">
+        <description>Created after removal of "Create FreeRound" from Stella V1.00</description>
+        <accepts>Create-FreeRound.html</accepts>
+    </rule>
+    <rule id="469825f9">
+        <description>Created after removal of "Cancel Free Rounds" from Stella V1.00</description>
+        <accepts>Delete-Freeround.html</accepts>
+    </rule>
+    <rule id="609e4672">
+        <description>Created after removal of "Add Player" from Stella V1.00</description>
+        <accepts>Add-Player.html</accepts>
+    </rule>
+    <rule id="21c55777">
+        <description>Created after removal of "Remove Player" from Stella V1.00</description>
+        <accepts>Remove-Player.html</accepts>
+    </rule>
+    <rule id="5239bc57">
+        <description>Created after removal of "Free Round" from Stella V1.00</description>
+        <accepts>Free-Round.html</accepts>
+    </rule>
+    <rule id="7c9b43a">
+        <description>Created after removal of "Start Demo Game" from Stella V1.00</description>
+        <accepts>Start-Demo.html</accepts>
+    </rule>
+    <rule id="45d19270">
+        <description>Created after removal of "Promo Win (Reserved for future development)" from Stella V1.00
+        </description>
+        <accepts>Promo-Win.html</accepts>
+    </rule>
+    <rule id="4de0014e">
+        <description>Created after removal of "Active Jaclpots" from Stella V1.00</description>
+        <accepts>Active-Jaclpots.html</accepts>
+    </rule>
+    <rule id="36c79e47">
+        <description>Created after removal of "Jackpot Winners" from Stella V1.00</description>
+        <accepts>Jackpot-Winners.html</accepts>
+    </rule>
+    <rule id="114ea325">
+        <description>Created after removal of "Jackpot Winnings" from Stella V1.00</description>
+        <accepts>Jackpot-Winnings.html</accepts>
+    </rule>
+    <rule id="701c9690">
+        <description>Created after removal of "Data feed and reports" from Stella V1.00</description>
+        <accepts>Data-feed-and-reports.html</accepts>
+    </rule>
+    <rule id="21c110c1">
+        <description>Created after removal of "Get Casino Icon Info" from Stella V1.00</description>
+        <accepts>Getalistofgameicon.html</accepts>
+    </rule>
+    <rule id="29b60af8">
+        <description>Created after removal of "Get Casino Icon List" from Stella V1.00</description>
+        <accepts>Get-Cason-Icon-List.html</accepts>
+    </rule>
+    <rule id="58e6fd65">
+        <description>Created after removal of "Session Expired (Reserved for future development)" from Stella V1.00
+        </description>
+        <accepts>Session-Expired((T).html</accepts>
+    </rule>
 </rules>

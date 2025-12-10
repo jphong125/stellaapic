@@ -2,7 +2,7 @@
 
 ## Overview
 
-Using this method Operator can cancel an existing Free Rounds Bonus in the Lucky Monaco system.<br/> Free Rounds will be canceled in the Lucky Monaco system regardless of whether the player started to play them or not.
+Using this method Operator can cancel an existing Free Rounds Bonus in the Stella system.<br/> Free Rounds will be canceled in the Stella system regardless of whether the player started to play them or not.
 
 ## Request
 Requested cancel free round API URL will be notified individually, for security reasons.

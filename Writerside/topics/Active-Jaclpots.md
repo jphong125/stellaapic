@@ -82,7 +82,7 @@ This list displays information only for active/open (not won) progressive tiers.
       "mainJackpotId" : "456",
       "name" : "test_name", 
       "level" : "B", 
-      "games" : "lm_6_kittyinthebasket", 
+      "games" : "lm_1_SPEEDBACCAT1", 
       "status" : "A", 
       "tiersNumber" : "4", 
       "tiers" : [

@@ -1,7 +1,7 @@
 # Refund 
 
 ## Overview
-Lucky Monaco system may use this method to rollback a round on the Casino Operator side, in order to reverse
+Stella system may use this method to rollback a round on the Casino Operator side, in order to reverse
 the transaction and adjust player’s balance. <br/> 
 When receive a refund request Operator have to return money back to player’s  balance.
 
@@ -42,7 +42,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/v4/Refund
+https://<API URL>/v1/Refund
 ```
 HEADER
 
@@ -54,11 +54,11 @@ Content-Type: application/json
 
 ``` json
 {
- "providerId": "LuckyMonaco",
+ "providerId": "Stella",
  "userId": "123456",
- "currency": "USD",
- "gameId": "Im_60_tumblefortune",
- "gameName" : "tumblefortune", 
+ "currency": "USD", 
+ "gameId": "6_speed_baccarat1",
+ "gameName" : "SPEED BACCARAT1",
  "roundId": "<roundId>",
  "reference": "585c1306f89c56f5ecfc2f5d",
  "uuid": "4a5d375ac1311b04fba2ea66d067b8e5"

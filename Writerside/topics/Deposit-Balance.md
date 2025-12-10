@@ -2,7 +2,7 @@
 
 ## Overview
 **This method transfers funds into player’s balance (i.e. deposit) within
-Lucky Monaco system.** 
+Stella system.** 
 
 Important: In cases where transfer call fails due to : 
 
@@ -67,7 +67,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers. 
+Example of successful response from Stella API servers. 
 
 ###  Response Parameters 
 

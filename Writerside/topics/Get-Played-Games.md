@@ -8,14 +8,14 @@ Requested "Get Played Game" API URL will be notified individually, for security 
 
 ### Request Parameters
 
-| Name        |Data Type| Description                                                  | Remark   |
-|:------------|:---:|:-------------------------------------------------------------|----------|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
-|  userId    |string| Id of the user within the Operator system.                   | Required |
-| dateplayed  |string| Date, based on the time zone of the user.                    | Required |
-| timeZone    |string| Time zone of the user. Example: UTC, UTC+8, UTC+04:00        | Required |
-| uuid                |  string   | A unique ID for each request                                 | Required |
-| token      |string| Token of the Partner from Authenticate response              | Required |
+| Name        |Data Type| Description                                             | Remark   |
+|:------------|:---:|:--------------------------------------------------------|----------|
+| secureLogin  |string| Partner Id for authentication in the Stella API service | Required |
+|  userId    |string| Id of the user within the Operator system.              | Required |
+| dateplayed  |string| Date, based on the time zone of the user.               | Required |
+| timeZone    |string| Time zone of the user. Example: UTC, UTC+8, UTC+04:00   | Required |
+| uuid                |  string   | A unique ID for each request                            | Required |
+| token      |string| Token of the Partner from Authenticate response         | Required |
 
 ### Examples
 
@@ -52,7 +52,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ### Response Parameters
 
@@ -78,32 +78,32 @@ Example of successful response from LuckyMonaco API servers.
 
     {
 
-      "gameId": "lm_34_giantslamp",
-      "gameName": "Giant's Lamp"
+      "gameId": "6_speed_baccarat1",
+      "gameName": "SPEEDBACCAT1"
     },
     {
 
-      "gameId": "lm_42_medusaqueen",
-      "gameName": "Medusa Queen"
+      "gameId": "7_speed_baccarat2",
+      "gameName": "SPEEDBACCAT2"
     },
     {
 
-      "gameId": "lm_14_childofsuccess",
-      "gameName": "Child of Success"
+      "gameId": "48_SPEEDBACCAT3",
+      "gameName": "SPEEDBACCAT3"
     },
     {
 
-      "gameId": "lm_52_cleopatratumble",
-      "gameName": "Cleopatra Tumble"
+      "gameId": "49_SPEEDBACCAT4",
+      "gameName": "SPEEDBACCAT4"
     },
     {
 
-      "gameId": "lm_53_jellyjelly",
-      "gameName": "Jelly Jelly"
+      "gameId": "52_SPEEDBACCAT5",
+      "gameName": "SPEEDBACCAT5"
     },
     {
 
-      "gameId": "lm_3_killerwhale",
-      "gameName": "Killer Whale"
+      "gameId": "53_SPEEDBACCAT6",
+      "gameName": "SPEEDBACCAT6"
     }
 ```

@@ -11,18 +11,18 @@ Requested get game round API URL will be notified individually, for security rea
 
 ### Request Parameters
 
-| Name        |Data Type| Description                                                  | Remark |
-|:------------|:---:|:-------------------------------------------------------------|--------|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
-| userId      |string| Id of the user within the Operator system.                   | Optional |
-| gameId      |  string   | ID of the game.                                              | Optional       |
-| dateStart   |string| Date to start, based on the time zone of the user.           | Required |
-| dateEnd     |string| Date to end, based on the time zone of the user.             | Required |
-| timeZone    |string| Time zone of the user. Example: UTC, UTC+8, UTC+04:00        | Required |
-| page        |string| Page number (default value 1)                                | Required |
-| limit       |string| Row per page (max 1000)                                      | Required |
-| uuid        |  string   | A unique ID for each request                                 | Required |
-| token       |string| Token of the Partner from Authenticate response              | Required |
+| Name        |Data Type| Description                                             | Remark |
+|:------------|:---:|:--------------------------------------------------------|--------|
+| secureLogin  |string| Partner Id for authentication in the Stella API service | Required |
+| userId      |string| Id of the user within the Operator system.              | Optional |
+| gameId      |  string   | ID of the game.                                         | Optional       |
+| dateStart   |string| Date to start, based on the time zone of the user.      | Required |
+| dateEnd     |string| Date to end, based on the time zone of the user.        | Required |
+| timeZone    |string| Time zone of the user. Example: UTC, UTC+8, UTC+04:00   | Required |
+| page        |string| Page number (default value 1)                           | Required |
+| limit       |string| Row per page (max 1000)                                 | Required |
+| uuid        |  string   | A unique ID for each request                            | Required |
+| token       |string| Token of the Partner from Authenticate response         | Required |
 
 ### Examples
 
@@ -52,7 +52,7 @@ Content-Type: application/json
     "secureLogin" : "S100",
     "token" : "fSYFZMScpZ01FhR26r59GexREh1xHgEY",
     "userId": "hwa10",
-    "gameId": "lm_13_wildkelly",
+    "gameId": "6_speed_baccarat1",
     "dateStart": "2024-10-21 00:00:01",
     "dateEnd": "2024-10-24 23:00:00",
     "timeZone": "GMT+09:00",
@@ -64,7 +64,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ### Response Parameters
 
@@ -82,8 +82,8 @@ Example of successful response from LuckyMonaco API servers.
 |                                   | betAmount    |  string   | Bet amount.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Required |
 |                                   | winAmount    |  string   | Win amount.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Required |
 |                                   | balance      |  string   | User’s balance after successful transaction                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Required |
-|                                   | uerId        |  string   | Unique id for player on the Lucky Monaco side.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Required |
-|                                   |roundDetails |   array   | Additional information about the current game round. <br/>**If the result is 0, the result value is not displayed.(i.e user did not won anything)** <br/> **If there are multiple wins, the win type and amount for each are displayed.**  <br/> "bet" : "type of bet" (i.e. "spin" or "BuyFreeSpin")<br/> "type of result" (i.e. "winspin", "minigame", "freespin") : "win amount" (i.e "10.0")                                                                                                                                                                                              | Required |
+|                                   | uerId        |  string   | Unique id for player on the Stella side.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Required |
+|                                   |roundDetails |   array   | Additional information about the current game round. <br/>**If the result is 0, the result value is not displayed.(i.e user did not won anything)** <br/> **If there are multiple wins, the win type and amount for each are displayed.**  <br/> "bet" : "type of bet" (i.e. "Banker" or "PlayerPair")<br/> "type of result" (i.e. "Banker", "BankerPair") : "win amount" (i.e "10.0")                                                                                                                                                                                                        | Required |
 |                                   |roundStatus  |string| Status of the game round <br/>o InProgress – game round was started but not finished yet by the user <br/>o Completed – game round has been completed by the user<br/>o Cancelled – game round has been canceled automatically by the game round finalization process<br/>o CompleteInProcess – game round is marked as Completed in the db; BetResult or EndRound requests is in asynchronous transaction queue and the system tries to send it to Operator<br/>o CancelInProcess – game round is marked as Cancelled in the db; Refund is in asynchronous queue and being sent to Operator. | Required |
 
 ### Example of Json BODY
@@ -99,106 +99,59 @@ Example of successful response from LuckyMonaco API servers.
     {
 
       "dateTime": "2024-10-24 02:59:20",
-      "gameId": "lm_13_wildkelly",
-      "gameName": "WILD Kelly",
+      "gameId": "6_speed_baccarat1",
+      "gameName": "SPEEDBACCAT1",
       "roundId": 1602530,
       "userId": "hwa10",
       "currency": "USD",
-      "betAmount": "7.2",
-      "winAmount": "0",
-      "balance": "0.16",
+      "betAmount": "13.00",
+      "winAmount": "31.00",
+      "balance": "10145.00",
       "roundStatus": "Completed",
       "roundDetails": {
-
-        "spin": "BuyFreeSpin"
+        "bet": {
+          "type": "bet",
+          "desc": [
+            { "banker": 10 },
+            { "tie": 1 },
+            { "playerpair": 1 },
+            { "bankerpair": 1 }
+          ]
+        },
+        "result": {
+          "type": "result",
+          "desc": [
+            { "banker": 20 },
+            { "playerpair": 11 }
+          ]
+        }
       }
     },
     {
 
       "dateTime": "2024-10-24 02:59:06",
-      "gameId": "lm_13_wildkelly",
-      "gameName": "WILD Kelly",
+      "gameId": "6_speed_baccarat1",
+      "gameName": "SPEEDBACCAT1",
       "roundId": 1602529,
       "userId": "hwa10",
       "currency": "USD",
-      "betAmount": "0.09",
-      "winAmount": "0.15",
-      "balance": "7.36",
+      "betAmount": "10.00",
+      "winAmount": "0.00",
+      "balance": "10135.00",
       "roundStatus": "Completed",
       "roundDetails": {
-
-        "spin": "Spin",
-        "winSpin": "0.15"
+        "bet": {
+          "type": "bet",
+          "desc": [
+            { "banker": 10 },
+          ]
+        },
+        "result": {
+          "type": "result",
+          "desc": [
+            { "banker": 0 }
+          ]
+        }
       }
     },
-    {
-
-      "dateTime": "2024-10-24 02:58:54",
-      "gameId": "lm_13_wildkelly",
-      "gameName": "WILD Kelly",
-      "roundId": 1602527,
-      "userId": "hwa10",
-      "currency": "USD",
-      "betAmount": "0.9",
-      "winAmount": "0",
-      "balance": "7.3",
-      "roundStatus": "Completed",
-      "roundDetails": {
-
-        "spin": "Spin"
-      }
-    },
-    {
-
-      "dateTime": "2024-10-24 02:58:40",
-      "gameId": "lm_13_wildkelly",
-      "gameName": "WILD Kelly",
-      "roundId": 1602526,
-      "userId": "hwa10",
-      "currency": "USD",
-      "betAmount": "0.9",
-      "winAmount": "0",
-      "balance": "8.2",
-      "roundStatus": "Completed",
-      "roundDetails": {
-
-        "spin": "Spin"
-      }
-    },
-    {
-
-      "dateTime": "2024-10-24 02:58:21",
-      "gameId": "lm_13_wildkelly",
-      "gameName": "WILD Kelly",
-      "roundId": 1602525,
-      "userId": "hwa10",
-      "currency": "USD",
-      "betAmount": "0.9",
-      "winAmount": "0",
-      "balance": "9.1",
-      "roundStatus": "Completed",
-      "roundDetails": {
-
-        "spin": "Spin"
-      }
-    },
-    {
-
-      "dateTime": "2024-10-24 02:58:40",
-      "gameId": "lm_13_wildkelly",
-      "gameName": "WILD Kelly",
-      "roundId": 1602526,
-      "userId": "hwa10",
-      "currency": "USD",
-      "betAmount": "0.9",
-      "winAmount": "0",
-      "balance": "8.2",
-      "roundStatus": "Completed",
-      "roundDetails": {
-
-        "spin": "Spin"
-      }
-    },
-  ]
-}
 ```

@@ -1,7 +1,7 @@
 # Cancel Round by Operator
 
 ## Overview
-Using this method Casino Operator Cancels in progress game round   <br/>After  successful cancel call the game round will be marked as Cancelled in the Lucky Monaco system.<br/>
+Using this method Casino Operator Cancels in progress game round   <br/>After  successful cancel call the game round will be marked as Cancelled in the Stella system.<br/>
 This method Operator can use any time they want to close player’s round forcefully
 - Due to a retention policy on the Operator’s system or according to requirements for regulated markets.
 - **This circumstance only applies to the bet which has been completed.**
@@ -15,7 +15,7 @@ Requested "Cancel Round" API URL will be notified individually, for security rea
 
 | Name        |Data Type| Description                                                                                                                         |  Remark  |
 |:------------|:---:|:------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service                                                                        | Required |
+| secureLogin  |string| partner Id for authentication in the Stella API service                                                                        | Required |
 | gameId      |string| Id of the game. This is optional parameter,which has to be sent by Operator if only the session for specific game should be closed. | optional |
 | userId      |string| Identifier of the user within the Casino Operator’s system.                                                                         | Required |
 | roundId     |string| Id of round to be refunded                                                                                                          | Required |
@@ -33,7 +33,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/v4/CancelRound
+https://<API URL>/v1/CancelRound
 ```
 
 HEADER
@@ -46,7 +46,7 @@ Content-Type: application/json
 ``` json
 {
     "secureLogin" : "<partnerId>",
-    "gameId" : "lm_1_pumpkinfarm",
+    "gameId": "6_speed_baccarat1",
     "userId": "tester",
     "roundId" : "123456",
     "token" : "<token>",
@@ -56,7 +56,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ### Response parameters
 |Name|Data Type|                     Description                      |Remark |

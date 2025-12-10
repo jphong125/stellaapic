@@ -1,8 +1,8 @@
 # Create Wallet
 
 ## Overview
-Using this method Casino Operator will create player’s Wallet within the Lucky Monaco system. This method should be called
-before player is sent to the Lucky Monaco’s games.
+Using this method Casino Operator will create player’s Wallet within the Stella system. This method should be called
+before player is sent to the Stella’s games.
 
 
 ## Request
@@ -13,7 +13,7 @@ Requested Create wallet API URL will be notified individually, for security reas
 
 | Name        |Data Type| Description                                                    | Remark   |
 |:------------|:---:|:---------------------------------------------------------------|----------|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| partner Id for authentication in the Stella API service | Required |
 | userId    |string| Id of the User within the Operator system.                     | Required |
 | currency    |string| Currency of the User.                                          | Required |
 | uuid        |  string   | A unique ID for each request                                   | Required |
@@ -52,7 +52,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ###  Response Parameters 
 

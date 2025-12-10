@@ -1,8 +1,8 @@
 # Create User
 
 ## Overview
-Using this method Casino Operator will create player’s account within the Lucky Monaco system. This method should be called
-before player is sent to the Lucky Monaco’s games.
+Using this method Casino Operator will create player’s account within the Stella system. This method should be called
+before player is sent to the Stella’s games.
 
 
 ## Request
@@ -13,7 +13,7 @@ Requested Create User API URL will be notified individually, for security reason
 
 | Name         |Data Type| Description                                                  | Remark   |
 |:-------------|:---:|:-------------------------------------------------------------|----------|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Stella API service | Required |
 | userId       |string| Id of the User within the Operator system.                   | Required |
 | userNickname |string| Nickname of the User within the Operator system.             | Optional |
 | uuid         |  string   | A unique ID for each request                                 | Required |
@@ -53,7 +53,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Stella API servers.
 
 ###  Response Parameters 
 

@@ -1,8 +1,8 @@
 # Bet
 
 ## Overview
-Using this method Lucky Monaco system will check the player balance on Casino Operator side to ensure they still have the
-funds to cover the bet.<br/> **Amount of the bet must be subtracted from player balance in Casino Operator system.** <br/>  Players connection was lost in any cases so lucky monaco will do retransmission 3 times, then do not receive any bet response. Lucky Monaco will request a cancel bet. 
+Using this method Stella system will check the player balance on Casino Operator side to ensure they still have the
+funds to cover the bet.<br/> **Amount of the bet must be subtracted from player balance in Casino Operator system.** <br/>  Players connection was lost in any cases so Stella will do retransmission 3 times, then do not receive any bet response. Stella will request a cancel bet. 
 
 Important: The call is idempotent, i.e. sending bet again only creates one transaction.
 
@@ -12,29 +12,21 @@ Requested "Bet" API URL will be notified individually, for security reasons.
 
 ### Request Parameters
 
-| Name         | Data Type | Description                                                                       | Remark   |
-|:-------------|:---------:|:----------------------------------------------------------------------------------|----------|
-| uuid         |string| A unique ID for each request                                                      | Required |
-| userId       |  string   | User's ID, specified by Operator when creating a game session.                    | Required |
-| gameId       |  string   | ID of the game.                                                                   | Required |
-| gameName     |  string   | name of the game.                                                                 | Required |
-| roundId      |  string   | ID of the round.                                                                  | Required |
-| amount       |  decimal  | Amount of the bet.                                                                | Required |
-| bonusCode           |  string   | Id of the bonus (i.e. FREE ROUND) in Casino Operator system.                                                                            | Optional |
-| reference    |  string   | Unique reference of this transaction.                                             | Required |
-| sessionId    |string| User’s game session id on Lucky Monaco system.                                    | Required |
-| providerId   |  string   | Game Provider ID.                                                                 | Required |
-| currency     |string| Currency of the User                                                              | Required |
-| timeStamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco system.       | Required |
-| roundDetails |  string   | Additional information about the current game round. (i.e. "spin", "buyFreeSpin") | Required |
-
-### Parameters  (Reserved for future development)
-
-|Name|Data Type| Description                                                                                                                             | Remark   |
-|:---|:---:|:----------------------------------------------------------------------------------------------------------------------------------------|----------|
-| jackpotContribution |  string   | Amount of the contribution to the jackpot. If there is a multi-tier jackpot, contain the total amount of contributions to all jackpots. | Optional |
-| jackpotDetails      |  string   | Amounts of the contribution for multi-tier jackpot, separated by tiers.                                                                 | Optional |
-| jackpotId           |  string   | ID of the active jackpot to contribute.                                                                                                 | Optional |
+| Name         | Data Type | Description                                                                                                                    | Remark   |
+|:-------------|:---------:|:-------------------------------------------------------------------------------------------------------------------------------|----------|
+| uuid         |string| A unique ID for each request                                                                                                   | Required |
+| userId       |  string   | User's ID, specified by Operator when creating a game session.                                                                 | Required |
+| gameId       |  string   | ID of the game.                                                                                                                | Required |
+| gameName     |  string   | name of the game.                                                                                                              | Required |
+| roundId      |  string   | ID of the round.                                                                                                               | Required |
+| amount       |  decimal  | Amount of the bet.                                                                                                             | Required |
+| bonusCode           |  string   | Id of the bonus (i.e. FREE ROUND) in Casino Operator system.                                                                   | Optional |
+| reference    |  string   | Unique reference of this transaction.                                                                                          | Required |
+| sessionId    |string| User’s game session id on Stella system.                                                                                       | Required |
+| providerId   |  string   | Game Provider ID.                                                                                                              | Required |
+| currency     |string| Currency of the User                                                                                                           | Required |
+| timeStamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco system.                                                    | Required |
+| roundDetails |  string   | Additional information about the current game round. (i.e. "type:bet,desc:[{banker:10},{tie:1},{playerpair:1},{bankerpair:1}]" | Required |
 
 ### Examples
 
@@ -47,7 +39,7 @@ POST
 URL
 
 ``` http
-https://<API URL>/v4/Bet
+https://<API URL>/v1/Bet
 ```
 HEADER
 
@@ -59,18 +51,18 @@ Content-Type: application/json
 
 ``` json
 {
-    "providerId": "Luckymonaco",
+    "providerId": "Stella",
     "userId": "421",
     "sessionId": "<sessionId>",
     "currency": "USD",
-    "amount": "100", 
-    "roundDetails": "spin",
-    "reference": "585c1306f89c56f5ecfc2f5d",
-    "gameId": "Im_60_tumblefortune",  
-    "gameName": "tumblefortune",
+    "amount": "13", 
+    "roundDetails": {"type": "bet","desc": [{"banker":10}, {"tie":1}, {"playerpair":1}, {"bankerpair":1}]},
+    "reference": "585c1306f89c56f5ecfc4s5d",
+    "gameId": "6_speed_baccarat1",  
+    "gameName": "SPEED BACCARAT1",
     "roundId" : "5103188801",
     "uuid": "4a5d375ac1311b04fba2ea66d067b8e5",
-    "timeStamp": "1482429190374"
+    "timestamp": "1482429190374"
 }
 ```
 
@@ -82,11 +74,11 @@ Example of successful response from Partner API servers.
 
 | Name          |Data Type| Description                                          | Remark  |
 |:--------------|:---:|:-----------------------------------------------------|-----|
+| currency     |string| Currency of the User                                                                                                           | Required |
 | transactionId |string| Id of the transaction within Casino Operator system. | Required |
 | cash          |decimal| Real balance of the player.                          | Required |
 | error         |  string   | Code of error.                                       | Required |
 | description   |string| Response status short description.                   | Optional |
-| bonus        |decimal| Bonus balance of the User. | Optional |
 
 ### Example of Json BODY
 
