@@ -1,7 +1,7 @@
 # Add Player
 
 ## Overview
-Using this method Operator can add players to the existing Free Round Bonus. <br/>If player’s account does not exist in the Stella system yet, it will be registered automatically.
+Using this method Operator can add players to the existing Free Round Bonus. <br/>If player’s account does not exist in the Kyren system yet, it will be registered automatically.
 
 ## Request
 Requested add player round API URL will be notified individually, for security reasons.
@@ -10,7 +10,7 @@ Requested add player round API URL will be notified individually, for security r
 | Name        | Data Type | Description                                                                                                                            | Remark  |
 |:------------|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------|----------|
 | token      |string| Token of the Partner from Authenticate response                                                                                        | Required |
-| secureLogin  |string| Partner Id for authentication in the Stella API service                                                                                | Required |
+| secureLogin  |string| Partner Id for authentication in the Kyren API service                                                                                | Required |
 | userList    |  string   | List of user id to add to the existing Free Round Bonus, comma separated. This data must be sent as a JSON in the body of the request. | Required |
 | bonuscode   |  string   | Bonus id within the Casino Operator’s system.                                                                                          | Required |
 | uuid                |  string   | A unique ID for each request                                                                                                           | Required |
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Kyren API servers.
 
 ### Response Parameters
 

@@ -10,7 +10,7 @@ Requested get betting table(for free round) API URL will be notified individuall
 
 | Name        |Data Type| Description                                                  | Remark   |
 |:------------|:---:|:-------------------------------------------------------------|----------|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Kyren API service | Required |
 |gameId    |string| Slot id                                                      | Required |
 | currency    |string| Currency                                                     | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
@@ -50,7 +50,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from Stella API servers.
+Example of successful response from Kyren API servers.
 
 ### Response Parameters
 

@@ -14,7 +14,7 @@ Requested "Close Session" API URL will be notified individually, for security re
 
 | Name         |Data Type| Description                                                                                                                                                                                                                                                                                                |  Remark  |
 |:-------------|:---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| secureLogin  |string| partner Id for authentication in the LuckyMonaco API service                                                                                                                                                                                                                                               | Required |
+| secureLogin  |string| partner Id for authentication in the Kyren API service                                                                                                                                                                                                                                               | Required |
 | gameId       |string| Id of the game. This is optional parameter,which has to be sent by Operator if only the session for specific game should be closed.                                                                                                                                                                        | optional |
 | userId     |string| Identifier of the user within the Casino Operator’s system.                                                                                                                                                                                                                                                | Required |
 | token      |string| Token of the Partner from Authenticate response                                                                                                                                                                                                                                                            | Required |
@@ -53,7 +53,7 @@ Content-Type: application/json
 
 ## Response 
 
-Example of successful response from Stella API servers.
+Example of successful response from Kyren API servers.
 
 ### Response parameters
 |Name|Data Type|            Description             |Remark |

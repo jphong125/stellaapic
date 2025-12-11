@@ -7,11 +7,11 @@ API is an HTTP listener, which listens POST requests coming to an URL with the r
 
 All responses should be in JSON format.
 
-URL of the history HTTP service will be provided by Stella for the production and stage environments and looks like:
+URL of the history HTTP service will be provided by Kyren for the production and stage environments and looks like:
 
 
 https://{API service domain}/IntegrationService/v4/http/HistoryAPI/
 History HTTP service is securely protected, hence please be sure:
 
 - player’s browser (end) must NOT be used as initiator of requests to the service;
-- proper IPs are supplied to Stella for whitelisting
+- proper IPs are supplied to Kyren for whitelisting

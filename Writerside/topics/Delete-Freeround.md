@@ -2,7 +2,7 @@
 
 ## Overview
 
-Using this method Operator can cancel an existing Free Rounds Bonus in the Stella system.<br/> Free Rounds will be canceled in the Stella system regardless of whether the player started to play them or not.
+Using this method Operator can cancel an existing Free Rounds Bonus in the Kyren system.<br/> Free Rounds will be canceled in the Kyren system regardless of whether the player started to play them or not.
 
 ## Request
 Requested cancel free round API URL will be notified individually, for security reasons.
@@ -11,7 +11,7 @@ Requested cancel free round API URL will be notified individually, for security 
 | Name           | Data Type | Description                                                  | Remark  |
 |:---------------|:---------:|:-------------------------------------------------------------|----------|
 | uuid                |  string   | A unique ID for each request                                 | Required |
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Kyren API service | Required |
 | bonuscode      |  string   | Bonus id within the Casino Operator’s system.                | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
 ### Examples
@@ -47,7 +47,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Kyren API servers.
 
 ### Response Parameters
 

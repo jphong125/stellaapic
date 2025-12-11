@@ -2,7 +2,7 @@
 
 ## Overview
 
-Retrieve the game list from LuckyMonaco to proceed a specific game.
+Retrieve the game list from Kyren to proceed a specific game.
 
 ## Usage
 
@@ -64,9 +64,9 @@ Content-Type: application/json
 
 ## Failure response for getting Game List ( response ) 
 
-Example of failure response from LuckyMonaco API servers.
+Example of failure response from Kyren API servers.
 
-In case of failure, LuckyMonaco servers will return  'HTTP status 4XX' or 'HTTP status 5XX' and following response body.
+In case of failure, Kyren servers will return  'HTTP status 4XX' or 'HTTP status 5XX' and following response body.
 
 ### Example of body2
 

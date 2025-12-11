@@ -7,164 +7,168 @@
     </rule>
     -->
     <rule id="5ea4b029">
-        <description>Created after removal of "LuckyMonaco V3" from LuckyMonaco V3</description>
+        <description>Created after removal of "Kyren V3" from Kyren V3</description>
         <accepts>SUMMARY.html</accepts>
     </rule>
     <rule id="56d9390e">
-        <description>Created after removal of "Starter" from LuckyMonaco V3</description>
+        <description>Created after removal of "Starter" from Kyren V3</description>
         <accepts>starter.html</accepts>
     </rule>
     <rule id="2a63ba43">
-        <description>Created after removal of "Overview" from LuckyMonaco V3</description>
+        <description>Created after removal of "Overview" from Kyren V3</description>
         <accepts>Overview.html</accepts>
     </rule>
     <rule id="ff92027">
-        <description>Created after removal of "Balance" from LuckyMonaco V3</description>
+        <description>Created after removal of "Balance" from Kyren V3</description>
         <accepts>Balance.html</accepts>
     </rule>
     <rule id="45b5c641">
-        <description>Created after removal of "Reference" from LuckyMonaco V3</description>
+        <description>Created after removal of "Reference" from Kyren V3</description>
         <accepts>Reference.html</accepts>
     </rule>
     <rule id="460daf3a">
-        <description>Created after removal of "How to" from LuckyMonaco V3</description>
+        <description>Created after removal of "How to" from Kyren V3</description>
         <accepts>How-to.html</accepts>
     </rule>
     <rule id="17fe97cd">
-        <description>Created after removal of "Tutorial" from LuckyMonaco V3</description>
+        <description>Created after removal of "Tutorial" from Kyren V3</description>
         <accepts>Tutorial.html</accepts>
     </rule>
     <rule id="1a607a9d">
-        <description>Created after removal of "Extra Integration" from LuckyMonaco V3</description>
+        <description>Created after removal of "Extra Integration" from Kyren V3</description>
         <accepts>extra_intro.html</accepts>
     </rule>
     <rule id="2c511e88">
         <description>
-            <![CDATA[Created after removal of "Round (Game Result =>Betting & Win)" from LuckyMonaco V3]]></description>
+            <![CDATA[Created after removal of "Round (Game Result =>Betting & Win)" from Kyren V3]]></description>
         <accepts>round.html</accepts>
     </rule>
     <rule id="2cb8f2d5">
-        <description>Created after removal of "Introduction" from LuckyMonaco V4</description>
+        <description>Created after removal of "Introduction" from Kyren V4</description>
         <accepts>Introduction.html</accepts>
     </rule>
     <rule id="2418287d">
-        <description>Created after removal of "Empty MD Topic" from LuckyMonaco V4</description>
+        <description>Created after removal of "Empty MD Topic" from Kyren V4</description>
         <accepts>Empty-MD-Topic.html</accepts>
     </rule>
     <rule id="411687e">
-        <description>Created after removal of "[x] Get Betting table" from LuckyMonaco V4</description>
+        <description>Created after removal of "[x] Get Betting table" from Kyren V4</description>
         <accepts>Get-Betting-Table.html</accepts>
     </rule>
     <rule id="1bbe7ba2">
-        <description>Created after removal of "Get Balance Per Game" from LuckyMonaco V4</description>
+        <description>Created after removal of "Get Balance Per Game" from Kyren V4</description>
         <accepts>Get-Balance-Per-Game.html</accepts>
     </rule>
     <rule id="55508cf7">
-        <description>Created after removal of "Get Balance Per Currency" from LuckyMonaco V4</description>
+        <description>Created after removal of "Get Balance Per Currency" from Kyren V4</description>
         <accepts>Get-Balance-Per-Currency.html</accepts>
     </rule>
     <rule id="6837caa3">
-        <description>Created after removal of "Get Slot Log" from LuckyMonaco V4</description>
+        <description>Created after removal of "Get Slot Log" from Kyren V4</description>
         <accepts>Get-Slot-Log.html</accepts>
     </rule>
     <rule id="4c78ef6d">
-        <description>Created after removal of "Get Bet History" from LuckyMonaco V4</description>
+        <description>Created after removal of "Get Bet History" from Kyren V4</description>
         <accepts>Get-Bet-History.html</accepts>
     </rule>
     <rule id="4eb7ac87">
-        <description>Created after removal of "Error code for seamless Wallet" from LuckyMonaco V4</description>
+        <description>Created after removal of "Error code for seamless Wallet" from Kyren V4</description>
         <accepts>Error-code-for-seamless-Wallet.html</accepts>
     </rule>
     <rule id="44c03f2a">
-        <description>Created after removal of "Error code for Transfer Wallet" from LuckyMonaco V4</description>
+        <description>Created after removal of "Error code for Transfer Wallet" from Kyren V4</description>
         <accepts>Error-Code.html</accepts>
     </rule>
     <rule id="5e4df113">
-        <description>Created after removal of "Error code for Freeround" from LuckyMonaco V4</description>
+        <description>Created after removal of "Error code for Freeround" from Kyren V4</description>
         <accepts>Error-code-for-Freeround.html</accepts>
     </rule>
     <rule id="42edfd5">
-        <description>Created after removal of "Terminate Session" from LuckyMonaco V4</description>
+        <description>Created after removal of "Terminate Session" from Kyren V4</description>
         <accepts>Terminate-Session.html</accepts>
     </rule>
     <rule id="9b5d5db">
-        <description>Created after removal of "Bonus Win" from LuckyMonaco V4.02</description>
+        <description>Created after removal of "Bonus Win" from Kyren V4.02</description>
         <accepts>Empty-MD-Topic.html</accepts>
     </rule>
     <rule id="8daad3e">
-        <description>Created after removal of "Bonus Win (Reserved for future development)" from LuckyMonaco V4.02
+        <description>Created after removal of "Bonus Win (Reserved for future development)" from Kyren V4.02
         </description>
         <accepts>Bonus-Win.html</accepts>
     </rule>
     <rule id="aaefb6">
-        <description>Created after removal of "Jackpot Win (Reserved for future development)" from LuckyMonaco V4.02
+        <description>Created after removal of "Jackpot Win (Reserved for future development)" from Kyren V4.02
         </description>
         <accepts>Jackpot-win.html</accepts>
     </rule>
     <rule id="7ca3175a">
-        <description>Created after removal of "Get Info" from Stella V1.00</description>
+        <description>Created after removal of "Get Info" from Kyren V1.00</description>
         <accepts>Get-Info.html</accepts>
     </rule>
     <rule id="2b6c6345">
-        <description>Created after removal of "Get Betting Table" from Stella V1.00</description>
+        <description>Created after removal of "Get Betting Table" from Kyren V1.00</description>
         <accepts>Get-Betting-Table-FreeRound.html</accepts>
     </rule>
     <rule id="6d9445ac">
-        <description>Created after removal of "Create FreeRound" from Stella V1.00</description>
+        <description>Created after removal of "Create FreeRound" from Kyren V1.00</description>
         <accepts>Create-FreeRound.html</accepts>
     </rule>
     <rule id="469825f9">
-        <description>Created after removal of "Cancel Free Rounds" from Stella V1.00</description>
+        <description>Created after removal of "Cancel Free Rounds" from Kyren V1.00</description>
         <accepts>Delete-Freeround.html</accepts>
     </rule>
     <rule id="609e4672">
-        <description>Created after removal of "Add Player" from Stella V1.00</description>
+        <description>Created after removal of "Add Player" from Kyren V1.00</description>
         <accepts>Add-Player.html</accepts>
     </rule>
     <rule id="21c55777">
-        <description>Created after removal of "Remove Player" from Stella V1.00</description>
+        <description>Created after removal of "Remove Player" from Kyren V1.00</description>
         <accepts>Remove-Player.html</accepts>
     </rule>
     <rule id="5239bc57">
-        <description>Created after removal of "Free Round" from Stella V1.00</description>
+        <description>Created after removal of "Free Round" from Kyren V1.00</description>
         <accepts>Free-Round.html</accepts>
     </rule>
     <rule id="7c9b43a">
-        <description>Created after removal of "Start Demo Game" from Stella V1.00</description>
+        <description>Created after removal of "Start Demo Game" from Kyren V1.00</description>
         <accepts>Start-Demo.html</accepts>
     </rule>
     <rule id="45d19270">
-        <description>Created after removal of "Promo Win (Reserved for future development)" from Stella V1.00
+        <description>Created after removal of "Promo Win (Reserved for future development)" from Kyren V1.00
         </description>
         <accepts>Promo-Win.html</accepts>
     </rule>
     <rule id="4de0014e">
-        <description>Created after removal of "Active Jaclpots" from Stella V1.00</description>
+        <description>Created after removal of "Active Jaclpots" from Kyren V1.00</description>
         <accepts>Active-Jaclpots.html</accepts>
     </rule>
     <rule id="36c79e47">
-        <description>Created after removal of "Jackpot Winners" from Stella V1.00</description>
+        <description>Created after removal of "Jackpot Winners" from Kyren V1.00</description>
         <accepts>Jackpot-Winners.html</accepts>
     </rule>
     <rule id="114ea325">
-        <description>Created after removal of "Jackpot Winnings" from Stella V1.00</description>
+        <description>Created after removal of "Jackpot Winnings" from Kyren V1.00</description>
         <accepts>Jackpot-Winnings.html</accepts>
     </rule>
     <rule id="701c9690">
-        <description>Created after removal of "Data feed and reports" from Stella V1.00</description>
+        <description>Created after removal of "Data feed and reports" from Kyren V1.00</description>
         <accepts>Data-feed-and-reports.html</accepts>
     </rule>
     <rule id="21c110c1">
-        <description>Created after removal of "Get Casino Icon Info" from Stella V1.00</description>
+        <description>Created after removal of "Get Casino Icon Info" from Kyren V1.00</description>
         <accepts>Getalistofgameicon.html</accepts>
     </rule>
     <rule id="29b60af8">
-        <description>Created after removal of "Get Casino Icon List" from Stella V1.00</description>
+        <description>Created after removal of "Get Casino Icon List" from Kyren V1.00</description>
         <accepts>Get-Cason-Icon-List.html</accepts>
     </rule>
     <rule id="58e6fd65">
-        <description>Created after removal of "Session Expired (Reserved for future development)" from Stella V1.00
+        <description>Created after removal of "Session Expired (Reserved for future development)" from Kyren V1.00
         </description>
         <accepts>Session-Expired((T).html</accepts>
+    </rule>
+    <rule id="6a806e6b">
+        <description>Created after removal of "Kyren_V1" from Kyren V1.00</description>
+        <accepts>Kyren-V1.html</accepts>
     </rule>
 </rules>

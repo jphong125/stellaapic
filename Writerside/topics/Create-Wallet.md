@@ -1,8 +1,8 @@
 # Create Wallet
 
 ## Overview
-Using this method Casino Operator will create player’s Wallet within the Stella system. This method should be called
-before player is sent to the Stella’s games.
+Using this method Casino Operator will create player’s Wallet within the Kyren system. This method should be called
+before player is sent to the Kyren’s games.
 
 
 ## Request
@@ -13,7 +13,7 @@ Requested Create wallet API URL will be notified individually, for security reas
 
 | Name        |Data Type| Description                                                    | Remark   |
 |:------------|:---:|:---------------------------------------------------------------|----------|
-| secureLogin  |string| partner Id for authentication in the Stella API service | Required |
+| secureLogin  |string| partner Id for authentication in the Kyren API service | Required |
 | userId    |string| Id of the User within the Operator system.                     | Required |
 | currency    |string| Currency of the User.                                          | Required |
 | uuid        |  string   | A unique ID for each request                                   | Required |
@@ -52,13 +52,13 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from Stella API servers.
+Example of successful response from Kyren API servers.
 
 ###  Response Parameters 
 
 | Name        |Data Type| Description                                      |Remark  |
 |:------------|:---:|:-------------------------------------------------|---|
-| userId      |string| Id of the player within the Lucky Monaco system. |  Required |
+| userId      |string| Id of the player within the Kyren system. |  Required |
 | error       |  string   | Code of error.                                   | Required |
 | description |string| Response status short description.               | Optional |
 

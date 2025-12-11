@@ -1,11 +1,11 @@
 # Result
 
 ## Overview
-Using this method the Stella system will send to Casino Operator the winning result of a bet. <br /> **The Casino Operator
+Using this method the Kyren system will send to Casino Operator the winning result of a bet. <br /> **The Casino Operator
 will change the balance of the player in accordance with this request and return the updated balance.** <br />
 
 Result request may contain a prize that the player is awarded with during the game round. <br />  The Casino Operator
-will change the balance of the player in accordance with this request and return the updated balance. <br/> Players connection was lost in any cases so Stella will do retransmission 10 times, then do not receive any result response. <br /> 
+will change the balance of the player in accordance with this request and return the updated balance. <br/> Players connection was lost in any cases so Kyren will do retransmission 10 times, then do not receive any result response. <br /> 
 
 Important : The call is idempotent, i.e. sending result again with the same reference number creates only one
 transaction.
@@ -27,9 +27,9 @@ Requested "Result" API URL will be notified individually, for security reasons.
 | reference    |  string   | Unique reference of this transaction.                                                                                     | Required |
 | currency     |  string   | Currency of the User.                                                                                                     | Required |
 | providerId   |  string   | Game Provider id.                                                                                                         | Required |
-| timestamp    |  string   | Date and time when the transaction is processed on the Stella side.                                                       | Required |
+| timestamp    |  string   | Date and time when the transaction is processed on the Kyren side.                                                       | Required |
 | roundDetails |   array   | Additional information about the current game round. (ie. "type:result,desc:[{banker:20},{playerpair:11}]" | Required |
-| sessionId    |  string   | User’s game session id on Stella system.                                                                                  | Required |
+| sessionId    |  string   | User’s game session id on Kyren system.                                                                                  | Required |
 
 ### Examples
 
@@ -55,7 +55,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "providerId": "Stella",
+    "providerId": "Kyren",
     "userId": "421",
     "sessionId": "<sessionId>",
     "currency": "USD",

@@ -11,7 +11,7 @@ Requested get casino games API URL will be notified individually, for security r
 
 | Name        | Data Type | Description                                                  | Remark |
 |:------------|:---------:|:-------------------------------------------------------------|:---------:|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Kyren API service | Required |
 | token      |  string   | Token of the Partner from Authenticate response.             | Required |
 | uuid                |  string   | A unique ID for each request.                                | Required |
 
@@ -47,7 +47,7 @@ Content-Type: application/json
 
 ## Response  
 
-Example of successful response from Stella API servers.
+Example of successful response from Kyren API servers.
 
 ###  Response parameters
 
@@ -56,7 +56,7 @@ Example of successful response from Stella API servers.
 |    error    |                   |  string   | Code of error.                                                                                               |
 | description |                   |  string   | Response status short description.                                                                           |
 |  gameList   |                   |   array   | List of game information.                                                                                    |
-|             |      gameId       |  string   | Symbolic unique identifier of the game provided by Stella.                                                   |
+|             |      gameId       |  string   | Symbolic unique identifier of the game provided by Kyren.                                                   |
 |             |     gameName      |  string   | Name of the game.                                                                                            |
 |             |  typeDescription  |  string   | Short description of the game type. (i.e. "LB" : live baccarat, "vs" : video slot, "vp" : video poker)       |
 |             |     platform      |  string   | Platform for which the game can be opened.                                                                   |
@@ -90,7 +90,7 @@ Example of successful response from Stella API servers.
       "rtp": "98.76%",
       "tableLimits":
         {
-          "maxBef" : 5000.0, "maxPlayers": 1200, minBet: 0.2, ranges: [0.1, 0.2, 0.25,0.4, 0.5,1.0]
+          "maxBet" : 5000.0, "maxPlayers": 1200, minBet: 0.2, ranges: [0.1, 0.2, 0.25,0.4, 0.5,1.0]
         },
       "dataType": "LC",
       "tableImage": "https://client.pragmaticplaylive.net/desktop/assets/snaps/pwnhicogrzeodk79/poster.jpg? V0.38990292533435056",
@@ -109,7 +109,7 @@ Example of successful response from Stella API servers.
       "rtp": "98.76%",
       "tableLimits":
       {
-        "maxBef" : 5000.0, "maxPlayers": 1200, minBet: 0.2, ranges: [0.1, 0.2, 0.25,0.4, 0.5,1.0]
+        "maxBet" : 5000.0, "maxPlayers": 1200, minBet: 0.2, ranges: [0.1, 0.2, 0.25,0.4, 0.5,1.0]
       },
       "dataType": "LC",
       "tableImage": "https://client.pragmaticplaylive.net/desktop/assets/snaps/pwnhicogrzeodk79/poster.jpg? V0.38990292533435056",

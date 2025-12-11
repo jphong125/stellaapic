@@ -79,9 +79,9 @@ Content-Type: application/json
 
 ## Failure response
 
-Example of failure response from LuckyMonaco API servers.
+Example of failure response from Kyren API servers.
 
-In case of failure, LuckyMonaco servers will return  'HTTP status 4XX' or 'HTTP status 5XX' and following response body.
+In case of failure, Kyren servers will return  'HTTP status 4XX' or 'HTTP status 5XX' and following response body.
 
 ### Example of BODY 3
 
@@ -89,7 +89,7 @@ In case of failure, LuckyMonaco servers will return  'HTTP status 4XX' or 'HTTP 
 {
     "error": {
         "code": "G.99",
-        "message": "System error, should be retried, in case of constant occurrences should be reported to Lucky Monaco."
+        "message": "System error, should be retried, in case of constant occurrences should be reported to Kyren."
     }
 }
 ```
@@ -108,6 +108,6 @@ Error codes are classified into following categories.
 |V.3|Slot Not Found|
 |V.4|No Support Currency|
 |V.5|No Support Betting|
-|G.99|System error, should be retried, in case of constant occurrences should be reported to Lucky Monaco.|
+|G.99|System error, should be retried, in case of constant occurrences should be reported to Kyren.|
 
 Error codes will be additionally updated

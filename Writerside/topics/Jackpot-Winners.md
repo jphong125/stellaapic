@@ -13,7 +13,7 @@ Requested "Jackpot Winners" API URL will be notified individually, for security 
 | Name           | Data Type | Description                                                                       | Remark   |
 |:---------------|:---------:|:----------------------------------------------------------------------------------|----------|
 | uuid           |string| A unique ID for each request                                                      | Required |
-| secureLogin    |string| Partner Id for authentication in the LuckyMonaco API service           | Required |
+| secureLogin    |string| Partner Id for authentication in the Kyren API service           | Required |
 | startTimePoint |string| Starting Time point for transferring data period                                                             | Required |
 | endTimePoint   |string| Ending Time point for transferring data period                                                            | Required |
 | token          |string| Token of the Partner from Authenticate response.                       | Required |
@@ -65,7 +65,7 @@ Example of successful response from Partner API servers.
 
 | Name           |Data Type| Description                                                                                                     | Remark   |
 |:---------------|:---:|:----------------------------------------------------------------------------------------------------------------|----------|
-| jackpotTierdId |  string   | unique identifier of the jackpot Tier within the Lucky Monaco system.                                           | Required |
+| jackpotTierdId |  string   | unique identifier of the jackpot Tier within the Kyren system.                                           | Required |
 | userId         |  string   | Player unique identifier within Operator system.                                                                | Required |
 | winAmount      |  string   | won jackpot amount in player’s currency.                                                                        | Required |
 | winDate        |  string   | Jackpot winning type – possible values : <br/> W – standard jackpot winning <br/> WC – community share jackpot winning <br/> NW – non-progressive jackpot winning | Required |

@@ -1,4 +1,4 @@
-# About Stella API V1.00
+# About Kyren API V1.00
 
 Casino Game API supports different types of games : Live Casino, video slots, video poker, etc. <br/>
 and API should not be changed if Casino Operator needs to add more games to their portfolio.
@@ -10,7 +10,7 @@ Casino Operator will use provided symbols for StartGame method during opening sp
 Game Library will be provided to Casino Operator together with integration package or resent when new games are available.
 
 ## Seamless Wallet API
-Operator should provide the Seamless Wallet Integration API on their side. <br/>Stella will call the methods when **user make a bet or get a win and their balance should be updated**
+Operator should provide the Seamless Wallet Integration API on their side. <br/>Kyren will call the methods when **user make a bet or get a win and their balance should be updated**
 
 | Name           | Description                                                                                                                                                                                                                                                                                                               |  Remark  |
 |:---------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
@@ -18,27 +18,27 @@ Operator should provide the Seamless Wallet Integration API on their side. <br/>
 | Balance        | Returns the balance of a player.                                                                                                                                                                                                                                                                                          | Required | 
 | Bet            | Checks if the player has enough funds and subtracts money from player’s balance. Returns the value of updated balance.                                                                                                                                                                                                    | Required |
 | Result         | Adds winning amount to player’s balance. Returns the value of updated balance.                                                                                                                                                                                                                                            | Required |
-| AutoClosing    | Using this method the Stella system will send to Casino Operator for closing the pending winning result of a bet.                                                                                                                                                                                                   | Required |
+| AutoClosing    | Using this method the Kyren system will send to Casino Operator for closing the pending winning result of a bet.                                                                                                                                                                                                   | Required |
 | EndRound       | If the Casino Operator requires to finalize the round that is completed in their system with signal received from the Game Provider, then plz refer this request                                                                                                                                                          | Optional |
-| SessionExpired | Notifies the Casino Operator that player’s game session has expired in Stella system due to inactivity or game client closing.                                                                                                                                                                                      | Optional |
-| Cancel Bet     | Notifies the casino Operator that Canceled player’s bet. This method will be used for cancellation of a bet. (i.e. In the case of player's connection was lost by any reasons, Stella will make retransmission for 3times, however if still there is no bet response received from the operator, then Stella will cancel the bet) | Optional |
-| Refund         | Stella system may use this method to rollback a bet transaction on the Casino Operator side, in order to reverse the transaction and adjust player’s balance.                                                                                                                                                       | Required |
+| SessionExpired | Notifies the Casino Operator that player’s game session has expired in Kyren system due to inactivity or game client closing.                                                                                                                                                                                      | Optional |
+| Cancel Bet     | Notifies the casino Operator that Canceled player’s bet. This method will be used for cancellation of a bet. (i.e. In the case of player's connection was lost by any reasons, Kyren will make retransmission for 3times, however if still there is no bet response received from the operator, then Kyren will cancel the bet) | Optional |
+| Refund         | Kyren system may use this method to rollback a bet transaction on the Casino Operator side, in order to reverse the transaction and adjust player’s balance.                                                                                                                                                       | Required |
 
 
 ## Transfer Wallet API
 
-Operator can use this API for game opening and transferring funds to player’s balance in the Stella system.
+Operator can use this API for game opening and transferring funds to player’s balance in the Kyren system.
 
 | Name             | Description                                                                                                                                      |  Remark  |
 |:-----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| CreateUser       | This method allows registering a new player on Stella system.                                                                              | Required | 
-| CreateWallet     | This method allows registering a new player Wallet on Stella system.                                                                       | Required |
-| DepositBalance   | This method transfers funds in to player’s balance (i.e. deposit) within Stella system.                                                    | Required |
-| WithdrawlBalance | This method transfers funds out of the player’s balance (i.e. withdrawal) within Stella system.                                            | Required |
-| Userinfo         | This method retrieves information about a specific user on Stella system.                                                                  | Optional |
-| GetBalance       | this method Operator can get the current balance of the player in the Stella system.                                                       | Optional |
-| GetTransferInfo  | This method returns the status of a particular transaction that transferred the money in or out the player’s balance in the Stella system. | Optional |
-| SessionExpired   | Notifies the Casino Operator that player’s game session has expired in Stella system due to inactivity or game client closing.             | Optional |
+| CreateUser       | This method allows registering a new player on Kyren system.                                                                              | Required | 
+| CreateWallet     | This method allows registering a new player Wallet on Kyren system.                                                                       | Required |
+| DepositBalance   | This method transfers funds in to player’s balance (i.e. deposit) within Kyren system.                                                    | Required |
+| WithdrawlBalance | This method transfers funds out of the player’s balance (i.e. withdrawal) within Kyren system.                                            | Required |
+| Userinfo         | This method retrieves information about a specific user on Kyren system.                                                                  | Optional |
+| GetBalance       | this method Operator can get the current balance of the player in the Kyren system.                                                       | Optional |
+| GetTransferInfo  | This method returns the status of a particular transaction that transferred the money in or out the player’s balance in the Kyren system. | Optional |
+| SessionExpired   | Notifies the Casino Operator that player’s game session has expired in Kyren system due to inactivity or game client closing.             | Optional |
   
 
 ## Integration API
@@ -52,7 +52,7 @@ Integration API offers generic methods that allow Operators to create a game lob
 | GetCasinoCurrency       | Using this method Casino Operator can retrieve the list of about a specific currency of games available for integration.                                                                                                                | Optional |
 | CloseSession            | This method terminates active game sessions of the player.                                                                                                                                                                              | Optional |
 | CancelRound by Operator | Using this method Casino Operator Cancels in progress game round.                                                                                                                                                                       | Optional |
-| HealthCheck             | Using this method Casino Operator can check if Stella provider API service or Game server are live and ready.                                                                                                                           | Optional |
+| HealthCheck             | Using this method Casino Operator can check if Kyren provider API service or Game server are live and ready.                                                                                                                           | Optional |
 | Start Game              | Using this method Casino Operator can start game.                                                                                                                                                                                       | required |
 
 ## Game History API
@@ -73,13 +73,13 @@ The error codes that should be returned by Casino Operator in the response to AP
 User ID (userId parameter) is unique identifier of the user within Casino Operator system. 
 
 
-If User is new and its account does not exist in the Stella system it will be created automatically on the base of the data sent by Casino Operator server.
+If User is new and its account does not exist in the Kyren system it will be created automatically on the base of the data sent by Casino Operator server.
 
-If User account already exists in the Stella database it will be updated with the response data if necessary.
+If User account already exists in the Kyren database it will be updated with the response data if necessary.
 
 ## Partner Id
-Partner Id (secureLogin parameter) is unique identifier of the Partner within Stella system. <br/>
-Partner ID and Token will be issued by Stella team member.
+Partner Id (secureLogin parameter) is unique identifier of the Partner within Kyren system. <br/>
+Partner ID and Token will be issued by Kyren team member.
 
 ## Play Session
 Play session is a game round in which bet and wins are combined together.
@@ -87,7 +87,7 @@ Play session is a game round in which bet and wins are combined together.
 Each round can contain several bets, win and refunds of the bets.
 
 ## Transaction Reference
-Transaction Reference is unique transaction id within Stella system.
+Transaction Reference is unique transaction id within Kyren system.
 
 Transaction Reference used for bets and wins has to be different. <br/>
 

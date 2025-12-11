@@ -1,7 +1,7 @@
 # User Info
 
 ## Overview
-You can obtain information about a specific user by calling the URL provided by Stella. <br/>
+You can obtain information about a specific user by calling the URL provided by Kyren. <br/>
 By calling the API, you can get the amount held by each wallet.
 
 ## Request
@@ -31,7 +31,7 @@ Content-Type: application/json
 
 | Name        | Data Type  | Description                                                  |Ramark|
 |:------------|:----------:|:-------------------------------------------------------------|---|
-| secureLogin  |string| Partner Id for authentication in the Stella API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Kyren API service | Required |
 | userId     |string| Id of the user within the Operator system.                   | Required |
 | uuid        |  string   | A unique ID for each request                                 | Required |
 | token       |string| Token of the Partner from Authenticate response              | Required |
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from Stella API servers.
+Example of successful response from Kyren API servers.
 
 ### Response Parameters
 

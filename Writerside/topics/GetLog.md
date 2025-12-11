@@ -4,7 +4,7 @@
 You can get the user's slot log.
 
 ## Usage
-You can obtain slot log information by calling the URL provided by Lucky Monaco.
+You can obtain slot log information by calling the URL provided by Kyren.
 
 ## API URL
 For security reasons, we will notify you individually.

@@ -8,7 +8,7 @@ In order to connect to servers, creates a game session for users.
 
 After requesting a game session with individual notified API URL, API servers will respond accordingly.
 
-Redirect a user to received game session URL for entering LuckyMonaco.
+Redirect a user to received game session URL for entering Kyren.
 
 ## API URL
 
@@ -16,7 +16,7 @@ Requested game session API URL will be notified individually, for security reaso
 
 ## Request for a game session ( request )
 
-Requesting a game session to LuckyMonaco API Servers.
+Requesting a game session to Kyren API Servers.
 
 ### Request parameters
 
@@ -56,7 +56,7 @@ Content-Type: application/json
 
 ## Successful response to the game session ( response )
 
-Example of successful response from LuckyMonaco API servers. Use URL parameters.
+Example of successful response from Kyren API servers. Use URL parameters.
 
 
 |Name|Data Type|Description|
@@ -73,9 +73,9 @@ Example of successful response from LuckyMonaco API servers. Use URL parameters.
 
 ## Failure response for a game session ( response )
 
-Example of failure response from LuckyMonaco API servers.
+Example of failure response from Kyren API servers.
 
-In case of failure, LuckyMonaco servers will return  'HTTP status 4XX' or 'HTTP status 5XX' and following response body.
+In case of failure, Kyren servers will return  'HTTP status 4XX' or 'HTTP status 5XX' and following response body.
 
 ### Example of BODY
 
@@ -97,6 +97,6 @@ Error codes are classified into following categories.
 
 |Code|Description (omitting error codes)|
 |:---|:---:|
-|G.01|System error, should be retried, in case of constant occurrences should be reported to LuckyMonaco.|
+|G.01|System error, should be retried, in case of constant occurrences should be reported to Kyren.|
 
 Error codes will be additionally updated

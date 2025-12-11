@@ -4,7 +4,7 @@
 Create User Account
 
 ## Usage
-You can create a user on our server by calling the URL provided by Lucky Monaco.
+You can create a user on our server by calling the URL provided by Kyren.
 
 ## API URL
 For security reasons, we will notify you individually.

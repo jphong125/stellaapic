@@ -1,7 +1,7 @@
 # Auto Closing
 
 ## Overview
-Using this method the Stella system will send to Casino Operator for closing the pending winning result of a bet.<br/> **The Casino Operator
+Using this method the Kyren system will send to Casino Operator for closing the pending winning result of a bet.<br/> **The Casino Operator
 will change the balance of the player in accordance with this request and return the updated balance.**
 
 **This method does not require a separate API construction.** It is sent to the result API. The reason for displaying it separately is to explain the process of how to terminate an incomplete round.
@@ -32,7 +32,7 @@ Requested "Result" API URL will be notified individually, for security reasons. 
 | reference    |  string   | Unique reference of this transaction.                                                     | Required |
 | currency     |  string   | Currency of the User.                                                                     | Required |
 | providerId   |  string   | Game Provider id.                                                                         | Required |
-| timestamp    |  string   | Date and time when the transaction is processed on the Stella side.                 | Required |
+| timestamp    |  string   | Date and time when the transaction is processed on the Kyren side.                 | Required |
 | roundDetails |   array   | Additional information about the current game round. (ie. "type:result,desc:[{banker:20},{playerpair:11}]" | Required |
 
 ### Examples
@@ -59,7 +59,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "providerId": "Stella",
+    "providerId": "Kyren",
     "userId": "421",
     "currency": "USD",
     "amount": 10.0,

@@ -12,8 +12,8 @@ Requested "Jackpot Winnings" API URL will be notified individually, for security
 | Name           | Data Type | Description                                                                       | Remark   |
 |:---------------|:---------:|:----------------------------------------------------------------------------------|----------|
 | uuid           |string| A unique ID for each request                                                      | Required |
-| secureLogin    |string| Partner Id for authentication in the LuckyMonaco API service           | Required |
-| mainJackpotId |string| Unique identifier (parent/main) of the Jackpot within Lucky Monaco system                                                         | Required |
+| secureLogin    |string| Partner Id for authentication in the Kyren API service           | Required |
+| mainJackpotId |string| Unique identifier (parent/main) of the Jackpot within Kyren system                                                         | Required |
 | currency   |string|  ISO-4217 code currency                                                           | Required |
 | token          |string| Token of the Partner from Authenticate response.                       | Required |
 
@@ -65,7 +65,7 @@ Example of successful response from Partner API servers.
 
 | Name           |Data Type| Description                                                                                                     | Remark   |
 |:---------------|:---:|:----------------------------------------------------------------------------------------------------------------|----------|
-| jackpotTierdId |  string   | unique identifier of the jackpot Tier within the Lucky Monaco system.                                           | Required |
+| jackpotTierdId |  string   | unique identifier of the jackpot Tier within the Kyren system.                                           | Required |
 | Tier           |  string   | jackpot tier name identifier. The tier index (0-7) that operator receives in API should be mapped with the appropriate tier in the game : <br/> 0 - the 1st tier (the lowest) <br/> 1 - the 2st tier <br/> 2 - the 3st tier <br/> 3 - the 4st tier <br/> 4 - the 5st tier <br/> 5 - the 6st tier <br/> 6 - the 7st tier <br/> 7 - the 8st tier (the highest) | Required |
 | biggerstWin    |  string   |set of biggest win parameters. See below (biggestWin type) parameters description                                                                     | Required |
 | lastWin       |  string   | set of last win parameters. See below (lastWin type) parameters description | Required |

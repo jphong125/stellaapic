@@ -4,7 +4,7 @@
 Obtains the user's possession of a specific currency (include both fiat or crypto).
 
 ## Usage
-You can obtain the amount of the desired currency (include both fiat or crypto) by calling the URL provided by Lucky Monaco.
+You can obtain the amount of the desired currency (include both fiat or crypto) by calling the URL provided by Kyren.
 
 ## API URL
 For security reasons, we will notify you individually.

@@ -45,7 +45,7 @@ If a free spin is entered during a regular spin, the free spin will have a separ
 }
 ```
 
-## Requested by LuckyMonaco
+## Requested by Kyren
 
 ### Parameters
 
@@ -57,7 +57,7 @@ If a free spin is entered during a regular spin, the free spin will have a separ
 | [gametype](define.md)                  |string| Types of game (e.g. slot,table game)                                                                                                                                                                                                                                                                                                     |
 | [gameid](define.md)                    |string| "gameid" is a unique ID for each games, please check SLOT_SPEC document                                                                                                                                                                                                                                                                  |
 | gameName                               |string| Game Title(English)                                                                                                                                                                                                                                                                                                                      |
-| bonus                                  |string| Freeround Code(optional feature) <br/> Free Round is a promotional tool to grant spinning to player for "free of charge".<br/>Usage and policy for the Free Round must be consulted with Lucky Monaco team. <br/>IMPORTANT : PLEASE NOT THAT, FREE ROUND IS CURRENTLY NOT SUPPORED IN TRANSFER WALLET TYPE.                              |
+| bonus                                  |string| Freeround Code(optional feature) <br/> Free Round is a promotional tool to grant spinning to player for "free of charge".<br/>Usage and policy for the Free Round must be consulted with Kyren team. <br/>IMPORTANT : PLEASE NOT THAT, FREE ROUND IS CURRENTLY NOT SUPPORED IN TRANSFER WALLET TYPE.                              |
 | transaction                            |object| Object containing transaction details.                                                                                                                                                                                                                                                                                                   |
 | transaction.id                         |string| A refrence purposed Id for RoundID. same transactionID can be used MULTIOLE TIMES (I.E NOT UNIQUE) during the operations.<br/>- In case multiple Wins exist ins game playing, same TransactionID will be shared. This DOESN't mean the duplication.<br/>- In this case, DO NOT ignore second or third API requests with same TransionID. |
 | transaction.amount<br/>transaction.win |string| Amount of the win (decimal string)                                                                                                                                                                                                                                                                                                       |

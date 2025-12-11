@@ -3,10 +3,10 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="lv4"
-                  name="Stella V1.00"
-                  start-page="Stella_V1.md" is-library="true">
+                  name="Kyren V1.00"
+                  start-page="Introduction.md" is-library="true">
 
-    <toc-element topic="Stella_V1.md">
+    <toc-element toc-title="Kyren_V1.md">
         <toc-element topic="Version-Control.md"/>
         <toc-element topic="Introduction.md">
         </toc-element>

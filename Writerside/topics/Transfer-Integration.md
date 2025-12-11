@@ -6,8 +6,8 @@ Define a method for integration transfers
 
 ## Usage
 
-You can create a user, create a wallet, and adjust the amount by calling the API provided by Lucky Monaco. 
-!! AS the Seamless is the default type for Lucky Monaco, Please consult with Lucky Monaco team first if you wish to integrating the Transfer Wallet type.
+You can create a user, create a wallet, and adjust the amount by calling the API provided by Kyren. 
+!! AS the Seamless is the default type for Kyren, Please consult with Kyren team first if you wish to integrating the Transfer Wallet type.
 
 ## APIs
 

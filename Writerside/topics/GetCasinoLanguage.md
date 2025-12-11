@@ -2,7 +2,7 @@
 
 
 ## Overview
-Using this method Casino Operator will get the game language from Stella to proceed a specific game.
+Using this method Casino Operator will get the game language from Kyren to proceed a specific game.
 
 
 ## Request
@@ -13,7 +13,7 @@ Requested "Get Casino Language" URL will be notified individually, for security 
 
 | Name        |Data Type| Description                                                  | Remark |
 |:------------|:---:|:-------------------------------------------------------------|:---------:|
-| secureLogin  |string| Partner Id for authentication in the Stella API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Kyren API service | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
 | uuid                |  string   | A unique ID for each request                                 | Required |
 
@@ -48,7 +48,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from Stella API servers.
+Example of successful response from Kyren API servers.
 
 ###  Response parameters
 

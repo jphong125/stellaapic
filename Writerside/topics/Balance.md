@@ -14,7 +14,7 @@ Requested "Balance" API URL will be notified individually, for security reasons.
 | providerId |string| Game Provider identifier.                                   | Required |
 | userId     |string| Identifier of the user within the Casino Operator’s system. | Required |
 | currency   |string| Currency of the player.                                     | Required |
-| sessionId  |string| User’s game session id on Lucky Monaco system.              | Required |
+| sessionId  |string| User’s game session id on Kyren system.              | Required |
 | uuid       |string| A unique ID for each request                                | Required |
 
 ### Examples
@@ -39,7 +39,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "providerId": "<Stella>",
+    "providerId": "<Kyren>",
     "userId": "<User ID>",
     "sessionId": "<sessionId>",
     "currency": "USD",

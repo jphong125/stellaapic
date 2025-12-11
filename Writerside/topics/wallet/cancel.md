@@ -2,7 +2,7 @@
 
 Transaction will be cancelled when an error occurs during an API integration.
 
-## Requested by LuckyMonaco
+## Requested by Kyren
 
 ### Parameters
 

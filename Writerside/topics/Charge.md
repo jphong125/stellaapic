@@ -4,7 +4,7 @@
 Increases the user’s possession of currency (include both fiat or crypto).
 
 ## Usage
-You can deposit (increase) the amount of desired currency (include both fiat or crypto) into the wallet by calling the URL provided by Lucky Monaco.
+You can deposit (increase) the amount of desired currency (include both fiat or crypto) into the wallet by calling the URL provided by Kyren.
 
 ## API URL
 For security reasons, we will notify you individually.

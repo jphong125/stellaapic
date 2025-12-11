@@ -1,13 +1,13 @@
 # End Round
 
 ## Overview
-Every time a game round is over, the Stella system will call EndRound method, so that Operator can finalize the
+Every time a game round is over, the Kyren system will call EndRound method, so that Operator can finalize the
 game round transactions on their side in real time.
 
 If Operator does not need to finalize transactions in real time it is strongly recommended to disable EndRound
-functionality on the Stella side. 
+functionality on the Kyren side. 
 
-Important: EndRound request may be sent more than once. (When Stella do not received response) If the game round is already finalized, Operator
+Important: EndRound request may be sent more than once. (When Kyren do not received response) If the game round is already finalized, Operator
 should  ignore the EndRound request and return the success response.
 
 
@@ -24,7 +24,7 @@ Requested "End round" API URL will be notified individually, for security reason
 | gameId     |  string   | Id of the game.                                                            | Required |
 | roundId    |  string   | Id of the round.                                                           | Required |
 | providerId |  string   | Game Provider id.                                                          | Required |
-| sessionId        |  string   | User’s game session id on Stella system.                             | Required |
+| sessionId        |  string   | User’s game session id on Kyren system.                             | Required |
 | currency     |  string   | Currency of the User.                                                                     | Required |
 | win        |  decimal  | Win amount in round. Intended to notify Operator about amount won in round | Optional |
 
@@ -54,7 +54,7 @@ Content-Type: application/json
 ``` json
 {
     "gameId": "6_speed_baccarat1",
-    "providerId": "Stella",
+    "providerId": "Kyren",
     "userId": "421",
     "roundId" : "5103188801",
     "currency" : "USD",

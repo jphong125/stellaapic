@@ -2,7 +2,7 @@
 
 ## Overview
 **This method transfers funds out of player’s balance (i.e. withdrawl) within
-Stella system.**
+Kyren system.**
 
 Important: In cases where transfer call fails due to:
 
@@ -25,7 +25,7 @@ Requested withdrawl balance API URL will be notified individually, for security 
 
 | Name          |Data Type| Description                                                  | Remark   |
 |:--------------|:---:|:-------------------------------------------------------------|----------|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Kyren API service | Required |
 | userId        |string| Id of the player within the Operator system.                 | Required |
 | currency      |string| Currency of the user.                                        | Required |
 | transactionId |string| Id of the transaction within Casino Operator system.         | Required |
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from Stella API servers.
+Example of successful response from Kyren API servers.
 
 ###  Response Parameters 
 

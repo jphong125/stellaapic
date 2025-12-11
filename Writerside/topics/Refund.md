@@ -1,7 +1,7 @@
 # Refund 
 
 ## Overview
-Stella system may use this method to rollback a round on the Casino Operator side, in order to reverse
+Kyren system may use this method to rollback a round on the Casino Operator side, in order to reverse
 the transaction and adjust player’s balance. <br/> 
 When receive a refund request Operator have to return money back to player’s  balance.
 
@@ -54,7 +54,7 @@ Content-Type: application/json
 
 ``` json
 {
- "providerId": "Stella",
+ "providerId": "Kyren",
  "userId": "123456",
  "currency": "USD", 
  "gameId": "6_speed_baccarat1",

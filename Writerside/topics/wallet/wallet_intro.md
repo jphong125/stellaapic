@@ -17,19 +17,19 @@ EXAMPLE
 
 ## Overview
 
-Should be used for integration of user's Game money with partner's Game money while placing bets and winning in LuckyMonaco.
+Should be used for integration of user's Game money with partner's Game money while placing bets and winning in Kyren.
 
-LuckyMonaco servers will respond to 5 requests related to the user's Game Money.
+Kyren servers will respond to 5 requests related to the user's Game Money.
 
 ## Usage
 
-Any changes regarding Game Money in LuckyMonaco will be reported to Partner's servers.
+Any changes regarding Game Money in Kyren will be reported to Partner's servers.
 
 The web server must respond to the following standards, so that any changes to Game Money can be reported.
 
 ## API url appointed by Partner
 
-LuckyMonaco will request API call to this designated url, and Partner will response in Json.
+Kyren will request API call to this designated url, and Partner will response in Json.
 
 ## Integration
 
@@ -41,7 +41,7 @@ When running Round of spin, at least two API calls are required in the debit -> 
 
 ## You must connect using one of two methods
 
-You must inform LuckyMonaco of the selected method
+You must inform Kyren of the selected method
 so that we can call the API using that method.
 
 ## Exception handling flow (Time out, retry, cancel)
@@ -51,4 +51,4 @@ It will be considered as exception after total of 30 seconds passed since the in
 * Each API (debit, credit, round, cancel) has a timeout of 10 seconds.
 * If an error or timeout occurs, it will be retried up to 3 times.
 * If 3 retries fail, the spin fails and cancel API is called.
-* If the cancellation API fails three times, a log is left on the LuckyMonaco server and the request is stopped.
+* If the cancellation API fails three times, a log is left on the Kyren server and the request is stopped.

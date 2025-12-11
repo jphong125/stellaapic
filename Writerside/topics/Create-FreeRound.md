@@ -1,8 +1,8 @@
 # Create FreeRound
 
 ## Overview
-Using this method, the operator can create a new free round bonus with the Stella system.<br/> In case of network failure, the operator can send a repeated free round creation request.<br/> 
-The Stella system will not create a new FR bonus if there is an active FR bonus with the same bonus code.
+Using this method, the operator can create a new free round bonus with the Kyren system.<br/> In case of network failure, the operator can send a repeated free round creation request.<br/> 
+The Kyren system will not create a new FR bonus if there is an active FR bonus with the same bonus code.
 
 **Expiration date is mandatory. It should be sent as timestamp in seconds, and the bonus validity period must not be longer than 30 days.**
 
@@ -12,7 +12,7 @@ Requested create free round API URL will be notified individually, for security 
 ### Request Parameters
 | Name           |  Data Type  | Description                                                                                                                                     | Remark  |
 |:---------------|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| secureLogin    |   string    | Partner Id for authentication in the LuckyMonaco API service                                                                                    | Required |
+| secureLogin    |   string    | Partner Id for authentication in the Kyren API service                                                                                    | Required |
 | token          |   string    | Token of the Partner from Authenticate response                                                                                                 | Required |
 | uuid           |   string    | A unique ID for each request                                                                                                                    | Required |
 | currency       |   string    | Currency                                                                                                                                        | Required |
@@ -66,7 +66,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from LuckyMonaco API servers.
+Example of successful response from Kyren API servers.
 
 ### Response Parameters
 

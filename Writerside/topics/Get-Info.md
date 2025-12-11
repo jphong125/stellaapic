@@ -10,7 +10,7 @@ Requested get info API URL will be notified individually, for security reasons.
 
 | Name             |Data Type| Description                                                  | Remark   |
 |:-----------------|:---:|:-------------------------------------------------------------|----------|
-| secureLogin  |string| Partner Id for authentication in the Stella API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Kyren API service | Required |
 | uuid                |  string   | A unique ID for each request                                 | Required |
 | token      |string| Token of the Partner from Authenticate response              | Required |
 
@@ -44,7 +44,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from Stella API servers.
+Example of successful response from Kyren API servers.
 
 ### Response Parameters
 

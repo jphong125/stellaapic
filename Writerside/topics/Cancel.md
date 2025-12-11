@@ -15,7 +15,7 @@ Transaction will be cancelled when an error occurs during an API integration.
 | reference  |  string   | Unique reference of this transaction.                                           | Required |
 | providerId |  string   | Game Provider id.                                                               | Required |
 | currency   |string| Currency of the player                                                          | Required |
-| sessionId  |string| Player’s game session id on Lucky Monaco system.                                 | Required |            
+| sessionId  |string| Player’s game session id on Kyren system.                                 | Required |            
 
 ### Example of URL
 
@@ -27,7 +27,7 @@ https://<API URL>/Cancel
 
 ``` json
 {
-    "providerId": "<luckymonaco>",
+    "providerId": "<Kyren>",
     "sessionId": "<Sesseion ID>",
     "userId": "<User ID>",
     "currency" : "USD"

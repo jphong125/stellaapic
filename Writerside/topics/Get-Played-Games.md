@@ -10,7 +10,7 @@ Requested "Get Played Game" API URL will be notified individually, for security 
 
 | Name        |Data Type| Description                                             | Remark   |
 |:------------|:---:|:--------------------------------------------------------|----------|
-| secureLogin  |string| Partner Id for authentication in the Stella API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Kyren API service | Required |
 |  userId    |string| Id of the user within the Operator system.              | Required |
 | dateplayed  |string| Date, based on the time zone of the user.               | Required |
 | timeZone    |string| Time zone of the user. Example: UTC, UTC+8, UTC+04:00   | Required |
@@ -52,7 +52,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from Stella API servers.
+Example of successful response from Kyren API servers.
 
 ### Response Parameters
 

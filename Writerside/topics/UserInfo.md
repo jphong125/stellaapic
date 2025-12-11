@@ -4,7 +4,7 @@
 Get user information.
 
 ## Usage
-You can obtain information about a specific user by calling the URL provided by Lucky Monaco.
+You can obtain information about a specific user by calling the URL provided by Kyren.
 By calling the API, you can get the amount held by each wallet.
 
 ## API URL

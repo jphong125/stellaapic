@@ -1,6 +1,6 @@
 # Seamless Wallet API
 
-This is a simple API for Stella gaming platform to connect to player's wallet. API is an HTTP listener, which listens
+This is a simple API for Kyren gaming platform to connect to player's wallet. API is an HTTP listener, which listens
 application/json POST requests.
 
 In POST requests can be sent HTTP Header:

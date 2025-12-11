@@ -2,7 +2,7 @@
 
 Reporting betting results of Spin/Free Spins.
 
-## Requested by LuckyMonaco
+## Requested by Kyren
 
 ### Parameters
 

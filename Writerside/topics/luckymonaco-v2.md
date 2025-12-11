@@ -1,3 +1,3 @@
-# About LuckyMonaco V2
+# About Kyren V2
 
 Start typing here...

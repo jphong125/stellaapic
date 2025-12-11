@@ -1,8 +1,8 @@
 # Bet
 
 ## Overview
-Using this method Stella system will check the player balance on Casino Operator side to ensure they still have the
-funds to cover the bet.<br/> **Amount of the bet must be subtracted from player balance in Casino Operator system.** <br/>  Players connection was lost in any cases so Stella will do retransmission 3 times, then do not receive any bet response. Stella will request a cancel bet. 
+Using this method Kyren system will check the player balance on Casino Operator side to ensure they still have the
+funds to cover the bet.<br/> **Amount of the bet must be subtracted from player balance in Casino Operator system.** <br/>  Players connection was lost in any cases so Kyren will do retransmission 3 times, then do not receive any bet response. Kyren will request a cancel bet. 
 
 Important: The call is idempotent, i.e. sending bet again only creates one transaction.
 
@@ -22,10 +22,10 @@ Requested "Bet" API URL will be notified individually, for security reasons.
 | amount       |  decimal  | Amount of the bet.                                                                                                             | Required |
 | bonusCode           |  string   | Id of the bonus (i.e. FREE ROUND) in Casino Operator system.                                                                   | Optional |
 | reference    |  string   | Unique reference of this transaction.                                                                                          | Required |
-| sessionId    |string| User’s game session id on Stella system.                                                                                       | Required |
+| sessionId    |string| User’s game session id on Kyren system.                                                                                       | Required |
 | providerId   |  string   | Game Provider ID.                                                                                                              | Required |
 | currency     |string| Currency of the User                                                                                                           | Required |
-| timeStamp    |  string   | Date and time when the transaction is processed on the Lucky Monaco system.                                                    | Required |
+| timeStamp    |  string   | Date and time when the transaction is processed on the Kyren system.                                                    | Required |
 | roundDetails |  string   | Additional information about the current game round. (i.e. "type:bet,desc:[{banker:10},{tie:1},{playerpair:1},{bankerpair:1}]" | Required |
 
 ### Examples
@@ -51,7 +51,7 @@ Content-Type: application/json
 
 ``` json
 {
-    "providerId": "Stella",
+    "providerId": "Kyren",
     "userId": "421",
     "sessionId": "<sessionId>",
     "currency": "USD",

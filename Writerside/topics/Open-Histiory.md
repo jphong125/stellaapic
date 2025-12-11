@@ -10,7 +10,7 @@ Requested open history API URL will be notified individually, for security reaso
 
 | Name        |Data Type| Description                                                  | Remark   |
 |:------------|:---:|:-------------------------------------------------------------|----------|
-| secureLogin  |string| Partner Id for authentication in the LuckyMonaco API service | Required |
+| secureLogin  |string| Partner Id for authentication in the Kyren API service | Required |
 |  userId     |string| Id of the user within the Operator system.                   | Required |
 | roundId     |string| Unique identifier of the game round.                         | Required |
 | uuid                |  string   | A unique ID for each request                                 | Required |
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## Response
 
-Example of successful response from Stella API servers.
+Example of successful response from Kyren API servers.
 
 ### Response Parameters
 | Name        |Data Type| Description                                  | Remark   |

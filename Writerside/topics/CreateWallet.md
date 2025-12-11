@@ -4,7 +4,7 @@
 Create User Wallet
 
 ## Usage
-You can create a wallet for a specific user by calling the URL provided by Lucky Monaco.
+You can create a wallet for a specific user by calling the URL provided by Kyren.
 
 ## API URL
 For security reasons, we will notify you individually.

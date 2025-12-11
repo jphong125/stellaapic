@@ -2,7 +2,7 @@
 
 A request to check wallet balance
 
-## Requested by LuckyMonaco
+## Requested by Kyren
 
 ### Parameters
 
