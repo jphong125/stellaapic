@@ -4,9 +4,9 @@
 
 <instance-profile id="lv4"
                   name="Stella V1.00"
-                  start-page="luckymonaco-v4.md" is-library="true">
+                  start-page="Stella_V1.md" is-library="true">
 
-    <toc-element topic="luckymonaco-v4.md">
+    <toc-element topic="Stella_V1.md">
         <toc-element topic="Version-Control.md"/>
         <toc-element topic="Introduction.md">
         </toc-element>
