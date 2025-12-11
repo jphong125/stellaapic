@@ -6,7 +6,7 @@
                   name="Kyren V1.00"
                   start-page="Introduction.md" is-library="true">
 
-    <toc-element toc-title="Kyren_V1.md">
+    <toc-element topic="Kyren_V1.md">
         <toc-element topic="Version-Control.md"/>
         <toc-element topic="Introduction.md">
         </toc-element>
