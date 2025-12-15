@@ -80,8 +80,27 @@ Example of successful response from Kyren API servers.
   "description": "Success",
   "gameList": [
     {
+      "gameId": "Lobby",
+      "gameName": "Lobby",
+      "typeDescription": "LL",
+      "platform": "MOBILE, PC",
+      "demoGameAvailable": false,
+      "gameIdNumeric": 0,
+      "jurisdictions": "99",
+      "rtp": "98.76%",
+      "tableLimits":
+      {
+        "maxBet" : 5000.0, "maxPlayers": 1200, minBet: 0.2, ranges: [0.1, 0.2, 0.25,0.4, 0.5,1.0]
+      },
+      "dataType": "LC",
+      "tableImage": "https://client.kyrenlive.net/desktop/assets/snaps/pwnhicogrzeodk79/poster.jpg? V0.38990292533435056",
+      "gameDescription": "Enjoy a fast-paced baccarat game streamed live with real guests from a luxury casino hotel.",
+      "release": true,
+      "releaseDate": "2025-12-11"
+    },
+    {
       "gameId": "6_speed_baccarat1",
-      "gameName": "Speed Baccarat1",
+      "gameName": "SOLAIRE MD3109",
       "typeDescription": "LB",
       "platform": "MOBILE, PC",
       "demoGameAvailable": false,
@@ -93,14 +112,14 @@ Example of successful response from Kyren API servers.
           "maxBet" : 5000.0, "maxPlayers": 1200, minBet: 0.2, ranges: [0.1, 0.2, 0.25,0.4, 0.5,1.0]
         },
       "dataType": "LC",
-      "tableImage": "https://client.pragmaticplaylive.net/desktop/assets/snaps/pwnhicogrzeodk79/poster.jpg? V0.38990292533435056",
+      "tableImage": "https://client.kyrenlive.net/desktop/assets/snaps/pwnhicogrzeodk79/poster.jpg? V0.38990292533435056",
       "gameDescription": "Enjoy a fast-paced baccarat game streamed live with real guests from a luxury casino hotel.",
       "release": true,
       "releaseDate": "2025-12-11"
     },
     {
       "gameId": "7_speed_baccarat2",
-      "gameName": "Speed Baccarat2",
+      "gameName": "SOLAIRE MD3110",
       "typeDescription": "LB",
       "platform": "MOBILE, PC",
       "demoGameAvailable": false,
@@ -112,7 +131,7 @@ Example of successful response from Kyren API servers.
         "maxBet" : 5000.0, "maxPlayers": 1200, minBet: 0.2, ranges: [0.1, 0.2, 0.25,0.4, 0.5,1.0]
       },
       "dataType": "LC",
-      "tableImage": "https://client.pragmaticplaylive.net/desktop/assets/snaps/pwnhicogrzeodk79/poster.jpg? V0.38990292533435056",
+      "tableImage": "https://client.kyrenlive.net/desktop/assets/snaps/pwnhicogrzeodk79/poster.jpg? V0.38990292533435056",
       "gameDescription": "Enjoy a fast-paced baccarat game streamed live with real guests from a luxury casino hotel.",
       "release": true,
       "releaseDate": "2025-12-11"
